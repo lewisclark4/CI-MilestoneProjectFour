@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+}
+
+hr {
+    border-color: #f8bab1;
+    margin-top: 0;
+}
+
+#logo-image {
+    top: 0;
+    left: 0;
+    max-width: 225px;
+    object-fit: contain;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+    background-color: #f8bab1;
+    transition: .25s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover .nav-icon{
+    color:#000;
+    transition: .25s ease-in-out;
+}
+
+.nav-icon, .dropdown {
+    color: #f8bab1;
+}
+
+.form-control {
+    border: 1px solid #f8bab1
+}
+
+
