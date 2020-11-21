@@ -41,13 +41,13 @@
             </li>
         </ul>
         <hr class="d-block d-sm-none">
-        <form class="form-inline mr-sm-2" method="GET" action="">
+        <form class="form-inline" method="GET" action="">
             <input class="form-control search-bar" name="q" type="search" placeholder="Search" aria-label="Search">
             <button class="btn nav-icon" type="submit">
                 <i class="fas fa-search"></i>
             </button>
         </form>    
-        <hr class="d-block d-sm-none">
+        <hr class=".d-none .d-sm-block .d-lg-none">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'home' %}">
@@ -79,7 +79,7 @@
             {% endif  %}
             <li class="list-inline-item">
                 <a class="nav-link" href="">
-                    <p class="my-0">
+                    <p id="cart-total">
                     <i class="nav-icon fas fa-shopping-cart"></i>
                         {% if grand_total %}
                             ${{ grand_total|floatformat:2 }}
@@ -92,4 +92,20 @@
         </ul>
     </div>            
 </nav>
-<hr>
+<div class="banner row">
+        <div class="col-4">
+            <i class="fas fa-truck"></i>
+            Free delivery on orders £25+
+        </div>
+        <div class="col-4">
+            <i class="fas fa-pound-sign"></i>
+            SALE now on! save up to 50%
+        </div>
+        <div class="col-4">
+            <i class="fas fa-paw"></i>
+            100% cruelty free products!
+        </div>
+
+
+        
+</div>
