@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+  flex: 1 0 auto;
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -12,6 +16,10 @@ body {
 
 hr {
     border-color: #f8bab1;
+}
+
+footer hr{
+    border-color: #fff;
 }
 
 #logo-image {
@@ -59,9 +67,27 @@ hr {
     flex-flow: row nowrap;
 }
 
-.banner {
+.banner, #footer {
     background-color: #f8bab1;
     color: #fff;
     text-align: center;
     font-size: 0.8em;
+}
+
+.footer-row {
+    padding: 1em;
+
+}
+
+.social-icon i {
+    font-size: 2.5em;
+    text-align: center;
+    color: #f8bab1;
+    padding: 0.5em;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.social-icon i:hover {
+    text-shadow:1px 1px 1px #bab1f8, 1px 1px 3px #bab1f8
 }

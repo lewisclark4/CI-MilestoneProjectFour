@@ -47,7 +47,7 @@
     <header>
         {% include 'includes/navbar.html' %}
     </header>
-
+    <main>
     <!-- messages -->
     {% if messages %} {% endif %}
 
@@ -56,6 +56,9 @@
 
     <!-- page content -->
     {% block content %} {% endblock %}
+    </main>
+    <!-- footer -->
+    {% include 'includes/footer.html' %}
 
     <!-- custom post-load-js -->
     {% block custom-postload-js %} {% endblock %}
