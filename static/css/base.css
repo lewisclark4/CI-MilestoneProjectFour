@@ -79,6 +79,29 @@ footer hr{
 
 }
 
+.footer-header {
+    margin-top: 1em;
+}
+
+.footer-link {
+    list-style-type: none;
+} 
+
+.footer-link a {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.footer-link a:hover {
+    color: #f8bab1;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: .25s ease-in-out;
+}
+
 .social-icon i {
     font-size: 2.5em;
     text-align: center;
@@ -86,8 +109,19 @@ footer hr{
     padding: 0.5em;
     border-radius: 50%;
     background-color: #fff;
+    border: 2px solid transparent;
 }
 
-.social-icon i:hover {
-    text-shadow:1px 1px 1px #bab1f8, 1px 1px 3px #bab1f8
+.submit-button {
+    color: #f8bab1;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.social-icon i:hover, .submit-button:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #f8bab1;
+    transition: .25s ease-in-out;
 }

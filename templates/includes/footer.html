@@ -3,25 +3,41 @@
 <footer id="footer" class="container-fluid">
     <div class="row footer-row">
         <div class="col-12 col-lg-4">
-            <p>
-                <i class="fas fa-question-circle"></i> 
-                Need some help?
+            <p class="footer-header">
+                <i class="fas fa-question-circle"></i>&emsp;
+                <strong>Need some help?</strong>
             </p>
-            <hr>
+            <hr class="d-none d-lg-block">
+            <p>The HEX team are available Monday - Friday from 8am - 6pm</p>
+            <ul>
+                <li class="footer-link"><a href="">About</a></li>
+                <li class="footer-link"><a href="">FAQs</a></li>
+                <li class="footer-link"><a href="">Contact</a></li>
+            </ul>
         </div>
         <div class="col-12 col-lg-4">
-            <p>
-                <i class="fas fa-envelope"></i>
-                Newsletter
+            <hr class="d-lg-none">
+            <p class="footer-header">
+                <i class="fas fa-envelope"></i>&emsp;
+                <strong>Newsletter</strong>
             </p>
-            <hr>
+            <hr class="d-none d-lg-block">
+            <p>Get more to smile about directly to your inbox. We'll send you details of our newest ranges and special offers.</p>
+            <form id="subscription_form" action="" method="POST">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="newsletter-email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp">We'll never share your email with anyone else.</small>
+                </div>
+                <button type="submit" class="btn submit-button"><strong>Subscribe</strong></button>
+            </form>
         </div>
         <div class="col-12 col-lg-4">
-            <p>
-                <i class="fas fa-thumbs-up"></i>
-                Social Media
+            <hr class="d-lg-none">
+            <p class="footer-header">
+                <i class="fas fa-thumbs-up"></i>&emsp;
+                <strong>Social Media</strong>
             </p>
-            <hr>
+            <hr class="d-none d-lg-block">
             <p> Like, Follow and Subscribe to our social media pages to get access to our exclusive products and offers. 
 			<ul class="list-inline">
 				<li class="list-inline-item social-icon text-center text-md-right">
