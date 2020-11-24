@@ -1,0 +1,74 @@
+[
+  {
+    "pk": 1,
+    "model": "products.colour",
+    "fields": {
+      "colour": "Midnight Wine",
+      "hex_value": "#210007"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.colour",
+    "fields": {
+      "colour": "Cherry Red",
+      "hex_value": "#790604"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.colour",
+    "fields": {
+      "colour": "Tickle Me Pink",
+      "hex_value": "#fc89ac"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.colour",
+    "fields": {
+      "colour": "Light Azure",
+      "hex_value": "#74bbfb"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.colour",
+    "fields": {
+      "colour": "Burlywood",
+      "hex_value": "#e8bb9c"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.colour",
+    "fields": {
+      "colour": "Peru",
+      "hex_value": "#ca9262"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.colour",
+    "fields": {
+      "colour": "Bisque",
+      "hex_value": "#f4dfc9"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.colour",
+    "fields": {
+      "colour": "Rosybrown",
+      "hex_value": "#d68b91"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.colour",
+    "fields": {
+      "colour": "Sienna",
+      "hex_value": "#a0522c"
+    }
+  }
+]
