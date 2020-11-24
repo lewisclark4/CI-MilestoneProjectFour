@@ -17,7 +17,7 @@ class Colour(models.Model):
     hex_value = models.CharField(max_length=7)
 
     def __str__(self):
-        return self.name
+        return self.colour
 
     def get_hex_value(self):
         return self.hex_value
@@ -32,4 +32,4 @@ class Product(models.Model):
     colours = models.ManyToManyField(Colour)
 
     def __str__(self):
-        return self.name
+        return self.product_name
