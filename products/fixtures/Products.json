@@ -1,0 +1,2290 @@
+[
+ {
+   "pk": 1,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Almay",
+      "product_name": "Almay Liquid Liner",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/e66b09555d41920597781babffee41dc_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "\nGet beautiful definition with this easy-to-use liquid liner. Water-resistant formula lasts up to 16 hours without irritation. Unique \"inkwell\" design delivers fresh liquid liner for each application. Flexible-tip applicator provides mistake-proof control.\n\nHypoallergenic\nNon-irritating\nOphthalmologist, clinically and allergy tested\nSuitable for contact lens wearers\n\n",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 2,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Almay",
+      "product_name": "Almay Intense i-Colour Play Up Liquid Liner",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/6cf30fccb626b5b1eacc9db7b29dc6c2_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "\n\nPlay up your eye color with dramatic contrasting color! Define your eyes with bold color. Comes with a precision tip applicator so you can smoothly and easily create a high impact look. Features: \n\nHypoallergenic\nnon-irritating\nOphthalmologist\nClinically and allergy tested\nSuitable for contact lens wearers\n\n\n",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 3,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Almay",
+      "product_name": "Almay One Coat Thickening Mascara",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/a49009aa8bdc3aab2b07a78fbfe0bcb8_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Almay One Coat Thickening Mascara gives you up to 100% thicker lashes in one smooth, even coat. This volumizing formula builds lashes double thick in one quick, clump-free application. Nourishing formula is infused with aloe and vitamin B5 to help keep lashes conditioned and silky. Extra gentle, non irritating formula.Hypoallergenic. Ophthalmologist tested.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 4,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Alva",
+      "product_name": "Liquid Eye Shadow",
+      "price": 9.95,
+      "image_url": "http://www.purpicks.com/wp-content/uploads/2018/06/Alva-Liquid-Eye-Shadow-1-Pale-Almond.png",
+      "description": "Our Liquid Edition Eye Shadows have been a real winner since their launch and are a real first of their kind in natural and organic make-up. Whether you're looking for a striking or glamorous look for night time, or something more subtle and natural for wearing during the day, there is a shade for everyone. They dry quickly, and depending on the depth of colour desired, can be blended in on application or left to dry before blending for a more vivid look. Layering is also possible, but however you choose to use these liquid eye shadows they won't gather in crow's feet or fine lines around the eyes. The inclusion of patented beta glucan also means they're perfect for sensitive eyes. Pale Almond is subtle, natural, and perfect for daytime wear, and compliments our Bronzed Hazel liquid eye shadow if a duo tone is desired.",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 5,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Anna Sui",
+      "product_name": "Anna Sui Pencil Eyeliner WP",
+      "price": 26,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/88d74b22173b3f912b2263c4fd505a2b_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "This Anna Sui Pencil Eyeliner is a soft, waterproof eyeliner that glides on effortlessly for a long lasting finish. Used to create intense colour definition.Features:Waterproof formula reduces smudging allowing colours to stay fresh Minimal amount of waxes and oils allow for a smooth application5 essential on-trend colours produced by a combination of pearl and colourants",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 6,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Annabelle",
+      "product_name": "Annabelle Smudgeliner ",
+      "price": 8.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/541b71a4d119bdae25eb1c3690bacf68_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "The new definition of smokey eye: edgy, soft, smudgeable! Annabelle Smudgeliners \nhave a superior long-lasting formula offering rich colour pay-off that \nglides on smoothly to create a defined line, or can be easily blended \nwith the built-in smudger tip to achieve a smokey, sultry look.\nIts excellent coverage means you can really get creative!\nContains natural oxidants and Vitamin E. Mineral-oil free. \nOphthalmologist tested.Shade Range: ",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 7,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Annabelle",
+      "product_name": "Annabelle Glitterama Liquid Eyeliner",
+      "price": 8.96,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/295d6b52d5dc093aa4f7ce001ba30c58_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Shine like a star! Annabelle Glitterama Liquid Eyeliner's long-wearing formula is loaded with \nlight-reflecting micro-glitter to make your eyes pop.It can be applied \nin a thin sparkling line above the upper lash line or over the entire \neyelid as a dramatic eyeshadow. The fine tapered brush applicator \ndistributes\nthe sparkles smoothly and evenly. Ophthalmologist tested.Shade Range:",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 8,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Boosh",
+      "product_name": "Lipstick",
+      "price": 26,
+      "image_url": "https://cdn.shopify.com/s/files/1/1016/3243/products/LIPBALM_LID_grande.jpg?v=1496848378",
+      "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 9,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Burt'S Bees",
+      "product_name": "Burt's Bees Lipstick ",
+      "price": 9.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/cffae93a3ef7d0c543b36a74684735ad_ra,w158,h184_pa,w158,h184.png",
+      "description": "Burt's Bees Lipstick provides luscious, full-coverage color and hours of natural moisture.Features:Moisturizing Satin-finish shades Creamy and lightweight feel, ideal for everyday wear 100% Natural with 100% recyclable materialDirections: Remove lid, apply to lips for your desired level of satin colorIngredients: diheptyl succinate, capryloyl glycerin/sebacic acid copolymer, ricinus communis, helianthus annuus, cera alba, candelilla cera , behenyl alcohol, oleic/linoleic/linolenic polyglycerides, C12-18 acid triglyceride, lanolin hydrogenated vegetable oil, cera carnauba [copernicia cerifera (carnauba) wax], moringa oleifera seed oil rubus idaeus (raspberry) seed.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 10,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Burt'S Bees",
+      "product_name": "Burt's Bees Lip Crayon",
+      "price": 9.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/ab45997fcda6fc649959ea74507c28e3_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Try Burt's Bees Lip Crayons and enjoy the 100% natural creamy matte colour with moisture-rich wear. These lightweight jumbo lip pencils moisturize for a comfortable, everyday wear with a formula infused with Shea Butter, Kendi Oil, and Jojoba \nOil. It's colour that truly cares for your lips!What look do you go for: the natural bronzed babe, tropical brights, or classic beauty? Try all three with this get the look with natural makeup found on our blog, The Well! Features: \n\nCreamy matte color and moisture-rich wear\nFor everyday wear either alone or layered under a Lip Gloss or Lip Shine\nPrecise application in a playful form without the hassle and mess of sharpening\nNo added flavor or fragrance\nHydrates and moisturizes lips, leaving them feeling soft and smoothShades: Ingredients: ricinus communis (castor) seed oil, caprylic/capric triglyceride, simmondsia chinensis (jojoba) seed oil, candelilla cera (euphorbia cerifera wax, cire de candelilla), cera alba (beeswax, cire d'abeille), cera carnauba (copernicia cerifera wax, cire de carnauba), butyrospermum parkii (shea) butter, hydrogenated vegetable oil, aleurites moluccana seed oil*, olea europaea (olive) fruit oil, helianthus annuus (sunflower) seed oil, rosmarinus officinalis (rosemary) leaf extract, tocopherol, lecithin, silica, glycine soja (soybean) oil. +/- (May contain / Peut contenir): CI 77891 (titanium dioxide), CI 77019 (mica), CI 75470 (carmine), CI 77491, CI 77492, CI 77499 (iron oxides) *kendi oil",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 11,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Butter London",
+      "product_name": "butter LONDON Patent Shine 10x Nail Laquer",
+      "price": 22,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/739ca23d0c2ee60e0b19c38568b9d9b6_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Butter London's Patent Shine 10x innovative 10-in-1 formula is loaded with ingredients proven to promote brighter, stronger, healthier nails in classic, creamy, wearable shades for your best-dressed nails.10 Benefits:Up to 10 day wearChip resistantFull colour coverageGel-like cushion finish and shineFade-resistantProtectSmoothStrengthenBrighten7 Free - Butter London does not add formaldehyde, formaldehyde resin, toluene, DBP, camphor, xylene, or ethyl tosalimide to its nail product formulaInstructions: Apply one coat of basecoat to clean, dry nails. Follow with your favorite Butter London Patent Shine 10X Nail Lacquer. Apply one coat of topcoat for a smooth, high-gloss finish. Ingredients: Butyl Acetate, Ethyl Acetate, Isopropyl Alcohol, Nitrocellulose, Tosylamide/Epoxy Resin, Acetyl Tributyl Citrate, Benzophenone -1, Styrene/Acrylates Copolymer, Stearalkonium Hectorite, Malic Acid, Citric Acid, Bambusa Vulgaris (Bamboo) Extract, Ethyl Trymethylbenzoyl Phenylphosphinate, Diamond Powder, Polymethylsilsesquioxane.",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 12,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Clinique",
+      "product_name": "Almost Powder Makeup",
+      "price": 28,
+      "image_url": "https://www.clinique.com/media/export/cms/products/181x209/clq_6MPY02_181x209.png",
+      "description": "More than minerals. Skin looks, acts happier. Long-wear formula helps keep pores out of trouble. Antioxidants protect skin. This natural, perfecting \"no-makeup\" makeup is so lightweight, you'll never even feel it. So foolproof, you can apply it with a sponge, a brush-and almost with your eyes closed.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 13,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Clinique",
+      "product_name": "Line Smoothing Concealer",
+      "price": 20,
+      "image_url": "https://www.clinique.com/media/export/cms/products/181x209/clq_65EF_181x209.png",
+      "description": "Oil-free formula actually \"bridges\" fine lines and wrinkles, smoothing and minimizing them for an instantly firmer look. Skin-brightening ingredients help counteract shadows, reduce redness, give skin more even tone. Ophthalmologist tested. Long-lasting, buildable.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 14,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Clinique",
+      "product_name": "Kohl Shaper For Eyes",
+      "price": 17.5,
+      "image_url": "https://www.clinique.com/media/export/cms/products/181x209/clq_6GAP_181x209.png",
+      "description": "Rich, satiny eyeliner glides on smoky or defined, bold or superfine. Triangular, ergonomic design provides precision control. Sharpener's built into cap. Never be caught with a dull point again. Ophthalmologist tested.",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 15,
+   "model": "products.product",
+   "fields": {
+      "category": 2,
+      "brand_name": "Clinique",
+      "product_name": "Blended Face Powder and Brush",
+      "price": 26,
+      "image_url": "https://www.clinique.com/media/export/cms/products/181x209/clq_6362_181x209.png",
+      "description": "Clinique's signature blended powder. Loose, lightweight texture is right for every type of skin. Sets and perfects makeup, makes pores seem to disappear. Airy, skin-hugging formula delivers a reliably flawless finish.",
+      "colours": "[5,6,7]"
+   }
+},
+ {
+   "pk": 16,
+   "model": "products.product",
+   "fields": {
+      "category": 2,
+      "brand_name": "Clinique",
+      "product_name": "Uplighting Illuminating Powder",
+      "price": 27,
+      "image_url": "https://www.clinique.com/media/export/cms/products/181x209/clq_ZEFR01_181x209.png",
+      "description": "This sheer illuminating powder with soft-focus pigments flatters skin with a candle-lit glow of radiance. Wear it alone, as a finishing powder after foundation, or as a highlighter only where you want it. In 3 luminous shades.",
+      "colours": "[5,6,7]"
+   }
+},
+ {
+   "pk": 17,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Clinique",
+      "product_name": "Soft-Pressed Powder Blusher",
+      "price": 23,
+      "image_url": "https://www.clinique.com/media/export/cms/products/181x209/clq_618J_181x209.png",
+      "description": "Warm, natural-looking powder blush for all skins. Sheer, buildable colour gives cheeks a radiant glow. Silky, fresh finish, too. Wide range of shades, from subtle to vibrant. Comes with brush applicator.",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 18,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Colourpop",
+      "product_name": "No Filter Foundation",
+      "price": 12,
+      "image_url": "https://cdn.shopify.com/s/files/1/1338/0845/products/foundations-lineup_800x1200.jpg?v=1528927785",
+      "description": "Developed for the Selfie Age, our buildable full coverage, natural matte foundation delivers flawless looking skin from day-to-night. The oil-free, lightweight formula blends smoothly and is easily customizable to create the coverage you want. Build it up or sheer it out, it was developed with innovative soft-blurring pigments to deliver true color while looking and feeling natural. The lockable pump is easy to use and keeps your routine mess-free! As always, 100% cruelty-free and vegan.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 19,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Covergirl",
+      "product_name": "CoverGirl Outlast Stay Luminous Foundation Creamy Natural (820) ",
+      "price": 12.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/b074403f4a1c12a7920199e4d8fabe78_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "CoverGirl Outlast Stay Luminous Foundation is perfect for achieving\na dewy finish and a subtle glow. It is oil-free, with a non-greasy formula gives \nyour skin a natural luminosity that lasts all day! This all day foundation hydrates skin while providing \nflawless coverage.Features: Oil-freeLong lastingGive your skin a natural glowing lookDirections: Apply primer first to help your look last all day.Dot foundation on forehead, cheeks and chin. Blend using fingertips, or a makeup sponge if desired.Use a Pressed Powder to finish and voila! Your look is ready to last.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 20,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Covergirl",
+      "product_name": "CoverGirl Ready, Set Gorgeous Liquid Makeup 105",
+      "price": 8.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/414eb9180f66dd8a75ddd34b307e3a36_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "CoverGirl Ready, Set Gorgeous foundation provides a flawless, natural look that lasts all day in one simple step!Features:Blends easily to even skin tone for a flawless lookShine free look lasts all dayOil free, won't clog poresApplication Tips: Dot foundation on forehead, cheeks and chin. Blend using fingertips or a makeup sponge. Use with any COVERGIRL Pressed Powder to help your look last.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 21,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Covergirl",
+      "product_name": "CoverGirl Outlast Stay Brilliant Nail Gloss",
+      "price": 5.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/ad5297ce5c35c04daa3c85b6906aaedc_ra,w158,h184_pa,w158,h184.png",
+      "description": "Dare to go topless with CoverGirl Outlast Stay Brilliant Nail Gloss. New high-gloss nail polish formula that combines a base coat, high-gloss color, and a chip-resistant top coat in one simple step. Features:High gloss colourLasts as long as one week3-in-1 formula - base coat, colour, and top coatQuick, easy and convenientHow to Apply:Step 1: File nails to your desired length and shape.Step 2: Brush your favorite nail color on top of each nail. Allow nail polish to fully dry.Step 3: Apply a second coat for deeper pigment.",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 22,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Covergirl",
+      "product_name": "CoverGirl Colorlicious Lipstick",
+      "price": 10.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/c88809fbffe05fb9594103e635387152_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "CoverGirl Colorlicious Lipstick gives you rich, satisfying color in shades you can't help but crave!Features: Deliciously rich color infused with shea butterFull coverage color, high shine intensityNatural butters help keep lips suppleLasting colourIngredients:\n Ricinus Communis (Castor) Seed Oil, Isopropyl Isostearate, Mica, \nEthylhexyl Hydroxystearate, Acetylated Lanolin, Ozokerite, Euphorbia \nCerifera (Candelilla) Wax/Cire De Candelilla, Paraffin, Squalane, \nCopernicia Cerifera (Carnauba) Wax/Cire De Carnauba, Cetyl Lactate, \nCetyl Alcohol, Fragrance/Parfum, Ascorbyl Palmitate, Tocopheryl Acetate,\n Maltodextrin, Camellia Sinensis Leaf Extract, Butyrospermum Parkii \n(Shea) Butter, Silk Powder/Poudre De Soie, Persea Gratissima (Avocado) \nOil, Cocos Nucifera (Coconut) Oil, Aloe Barbadensis Leaf Extract, \nPropylparaben, Hydrogenated Vegetable Oil, Retinyl Palmitate, Some \nShades Also Contain/Certaines Teintes Contiennent Aussi: Lauroyl Lysine,\n Synthetic Fluorphlogopite, May Contain/Peut Contenir: Titanium Dioxide,\n Red 7 Lake, Yellow 5 Lake, Red 6 Lake, Iron Oxides, Blue 1 Lake, \nCarmine, Red 27 Lake, Yellow 6 Lake, Orange 5, Red 27",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 23,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Covergirl",
+      "product_name": "CoverGirl Outlast Lipcolor",
+      "price": 12.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/be04329866e96a0077545d230489d7a9_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "CoverGirls very popular longwear lip color just got better! The advanced formula with resilient, brilliant color and new applicator gives you up to 24 hours of color in just 2 easy, breezy steps.Features:Lasts up to 24 hoursBeautiful shades that are food proof and transfer resistant all day!Moisturizing topcoat keeps lips feeling moist, soft and smoothApplication Tips: Apply color to clean lips. Let dry 60 seconds. Apply moisturizing topcoat. Reapply topcoat like a balm throughout the day to refresh your look and feel.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 24,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Deciem",
+      "product_name": "Serum Foundation",
+      "price": 6.7,
+      "image_url": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-serum-foundation-30-r-30ml.png?v=6ab9fcb8ca2abb9828afcf9dcdad9f94",
+      "description": "Serum Foundations are lightweight medium-coverage formulations available in a comprehensive shade range across 21 shades. These foundations offer moderate coverage that looks natural with a very lightweight serum feel. They are very low in viscosity and are dispensed with the supplied pump or with the optional glass dropper available for purchase separately if preferred. ",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 25,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Deciem",
+      "product_name": "Coverage Foundation",
+      "price": 6.9,
+      "image_url": "https://3bc01d2807fb1bc0d25c-a86d2521f1af8989841b9619f5314be5.ssl.cf1.rackcdn.com/products/market-img/rdn-coverage-foundation-33-n-30ml.png?v=daa322f179d80e450613c75826602292",
+      "description": "Coverage Foundations are full-coverage formulations available in a comprehensive shade range across 21 shades. These foundations contain higher pigment levels than our Serum Foundations but still offer a smooth finish that avoids the heavy makeup look that can make skin appear more aged. The texture is that of a lightweight, non-oily cream.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 26,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Dior",
+      "product_name": "Precious Rocks                           ",
+      "price": 20.5,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/214/90/0/packshots%252FPDG_Y0002880_F000288001.jpg",
+      "description": "Diorific reveals a nail liner designed to decorate your nails like gemstones with festive shades. In one ultra-precise golden stroke, Dior Vernis Liner delivers a clear varnish strewn with gold, platinum, and silver glitter in various sizes, showering nails with countless little gems.",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 27,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Dior",
+      "product_name": "Dior Addict It-Lash",
+      "price": 25.5,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0698100_v2.jpg",
+      "description": "Dior Addict It-lash can transform the eyes in a single flourish for a fabulous impact, as if by magic. Volume, length and the most extraordinary stylistic effects come together to achieve a fashion-forward, modern-day doe-eyed look. With unconditional hold, easy to apply and easy to remove, it is the ideal mascara for women who want it all, and want it now.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 28,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Dior",
+      "product_name": "DIORSHOW",
+      "price": 25.5,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0697400.jpg",
+      "description": "In 2015, Diorshow, the professional Dior Backstage mascara, is being renewed. Its new-generation formula enriched with microfibres optically reproduces the effect of lash extensions used by runway makeup artists.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 29,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Dior",
+      "product_name": "DIORSHOW PUMP'N'VOLUME",
+      "price": 25.5,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/0/90/0/packshots%252FPDG_landscape_Y0697600_inter.jpg",
+      "description": "Dior reinvents volume with Diorshow Pump 'N' Volume, a brand new mascara by the House, for a fringe of XXL lashes. Spectacular from every angle, this new Dior mascara revolutionizes volume-building application. Simply squeeze the flexible mascara tube to soften the ultra-volumizing formula and load the brush with the creamy product. Achieve extreme volume instantly!",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 30,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Dior",
+      "product_name": "Couture Colour Wardrobe palette",
+      "price": 65,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y9185280_F918528000.jpg",
+      "description": "Directly inspired by runway shows, the Couture Colour Wardrobe palette teams fresh and natural colours with vibrant and sophisticated shades to create countless custom makeup looks to suit any moment.",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 31,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Dior",
+      "product_name": "Colour Design Eye palette",
+      "price": 45,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y9185290_F918529000.jpg",
+      "description": "Inspired by runway shows, the Colour Design Eye palette mixes glowy and iridescent colours with matte and confident shades, to recreate a natural nude or a sophisiticated glamour version of the catwalk look.",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 32,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Dior",
+      "product_name": "Eye Reviver",
+      "price": 43,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0929540.jpg",
+      "description": "Dior has created its 1st illuminating palette to brighten the eyes with an instant radiance-boosting effect. Using Glow-MimeticsTM technology, the incredibly luminous universal neutrals recreate the radiance of a flawless eyelid. The shades combine in perfect harmony with the primer and liner to create smooth, even and wider-looking eyes, while adding structure and brightness.",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 33,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Dior",
+      "product_name": "5 COULEURS DESIGNER",
+      "price": 45,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0148140_f014814208_112016.jpg",
+      "description": "Born of Backstage expertise, inspired by professional techniques and textures, 5 COULEURS DESIGNER features an easy, 5-step makeup lesson (base, 2 shadows, highlighter and liner) to bring out the eyes with flawless sculpting and colour gradation.",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 34,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Dior",
+      "product_name": "5 COULEURS",
+      "price": 45,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0148410.jpg",
+      "description": "An icon of the Dior look and a concentration of expertise in terms of colour and visual effects, the 5 Couleurs palette is reinvented. More creative than ever, with stronger pigments and richer effects, it allows women to explore every facet of colour and express every aspect of their personality. With the 5 Couleurs palette, self-expression is unlimited, creativity is unleashed and colour is more audacious than ever.",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 35,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Dior",
+      "product_name": "Diorskin Rosy Glow",
+      "price": 32,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0715100.jpg",
+      "description": "Rosy Glow reacts to the moisture in the skin to bring a delicate flush of colour to the cheeks. The fresh and luminous color upon application develops into a rosy blush to suit each individual complexion for an incredibly natural, custom healthy glow that lasts all day.",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 36,
+   "model": "products.product",
+   "fields": {
+      "category": 2,
+      "brand_name": "Dior",
+      "product_name": "Diorskin Nude Air Tan",
+      "price": 36.5,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0712400.jpg",
+      "description": "Diorskin Nude Air bronzing powders warm the original skin tone and let the skin breathe for the continual radiant beauty of a sun-kissed healthy glow. Choose the perfect shade of tan, in matte or satiny.",
+      "colours": "[5,6,7]"
+   }
+},
+ {
+   "pk": 37,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Dior",
+      "product_name": "Diorskin Nude Air Glow Powder",
+      "price": 39.5,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0778920.jpg",
+      "description": "A precursor in the art of natural, for beauty that grows more radiant with each day, Dior broadens its nude makeup expertise with the innovation of Diorskin Nude Air Glow Powder: a luminous powder as weightless and beneficial as a breath of fresh air that revives and illuminates the complexion's original colour and lets the skin breathe for a continuously healthy glow.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 38,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Dior",
+      "product_name": "Fix It Colour",
+      "price": 23.5,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0929603_f092960100.jpg",
+      "description": "Inspired by Backstage makeup techniques, Dior invents its first multipurpose colour concealer: 1 stick, 2 textures, 3 application areas, 4 expert shades to target and neutralize the colour imperfections of the complexion and around the eye and lip contours.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 39,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Dior",
+      "product_name": "Diorskin Forever Undercover",
+      "price": 21,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0339200.jpg",
+      "description": "A veritable concentrate of Dior laboratories' expertise, this intuitive formula isn't afraid of a challenge: with a single stroke it provides instant camouflage for imperfections, water resistance and 8-hour** wear.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 40,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Dior",
+      "product_name": "FLASH LUMINIZER",
+      "price": 29,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0883558_F088075002.jpg",
+      "description": "Inspired by the lighting techniques used by Backstage makeup artists, Dior has created Flash Luminizer, the illuminator brush that enhances the complexion in a single click, for professional radiance.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 41,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Dior",
+      "product_name": "DIOR ADDICT LACQUER STICK",
+      "price": 27.5,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_y0028808.jpg",
+      "description": "Try Dior Addict Lacquer Stick, the new-generation lacquer stick by Dior, as easy to apply as it is to wear. A stick with a \"lip fondant\" effect that liberates all the colour and shine of a lacquer, plus the comfort of a balm, with 6 hours* of wear and unrivaled texture.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 42,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Dior",
+      "product_name": "DIOR ADDICT LIP TATTOO",
+      "price": 25,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0028967_v4.jpg",
+      "description": "Dior Addict Lip Tattoo, the first long wear lip tint by Dior, is about to shake up your makeup routine. With its 10-hour hold*, comfortable formula and weightless \"no transfer\" finish, the colour fuses to the lips like a tattoo just seconds after application.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 43,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Dior",
+      "product_name": "ROUGE DIOR - Fall 2017 Limited Edition",
+      "price": 27.5,
+      "image_url": "https://www.dior.com/beauty/version-5.1432748111912/resize-image/ep/0/390/100/0/packshots%252FPDG_Y0027837.jpg",
+      "description": "Designed by Peter Philips to combine with the opulent hues and metallic effects on the eyes, face and nails, the six new Rouge Dior shades for fall 2017 flaunt strong beauty with a distinguished chic style. Its iconic formula offering 16 hours of comfort* ensures that women feel good, regardless of the colour or finish chosen.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 44,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Dr. Hauschka",
+      "product_name": "Dr. Hauschka Foundation",
+      "price": 39,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/965ec1b8b64ab44496aa44f6b4a1ea01_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Dr. Hauschka Foundation features pomegranate essence, macadamia and coconut oil that preserve the moisture \ncontent of the skin and offer it protection. Available in five shades, \nthe foundation does not cover the skin but instead balances out \nunevenness, giving the complexion a smooth, vibrant look.Features: Truly natural and/or organic cosmetics, certified to NATRUE and/or BDIH standardsFree from synthetic fragrances and preservativesFree from mineral oils, parabens, silicone and PEGVeganDermatologically tested for sensitive skinWherever possible, all raw materials come from controlled organic or Demeter cultivation and are recovered under fair conditionsIngredients: Water (Aqua), Alcohol, Simmondsia Chinensis (Jojoba) Seed Oil, Anthyllis Vulneraria Extract, Cocos Nucifera (Coconut) Oil, Caprylic/Capric Triglyceride, Glycerin, Cetearyl Alcohol, Punica Granatum Fruit Extract, Prunus Armeniaca (Apricot) Kernel Oil, Butyrospermum Parkii (Shea) Butter, Macadamia Ternifolia Seed Oil, Daucus Carota Sativa (Carrot) Root Extract, Euphorbia Cerifera (Candelilla) Wax, Fragrance (Parfum), Limonene*, Linalool*, Geraniol*, Citronellol*, Benzyl Benzoate*, Benzyl Salicylate*, Farnesol*, Coumarin*, Citral*, Eugenol*, Benzyl Alcohol*, Bentonite, Xanthan Gum, Sodium Cetearyl Sulfate, Silica. [May contain (+/-) Mica, Iron Oxides (CI 77491, CI 77492, CI 77499), Titanium Dioxide (CI 77891), Ultramarines (CI 77007)].*from natural essential oils ",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 45,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Dr. Hauschka",
+      "product_name": "Dr. Hauschka Lipstick ",
+      "price": 34,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/6598776755f921413532606f6db6c8f8_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Dr. Hauschka Lipstick has all the nurturing qualities of their lip care products. Color glides on effortlessly, leaving your lips velvety-smooth.Features: Rose hip and carrot extract keep lips moist and nourishedRose and Jojoba waxes soften and protectColors from nature highlight your natural tonesFurther contour and highlight with Dr.Hauschka LiplinerIngredients: Ricinus Communis (Castor) Seed Oil, Simmondsia Chinensis (Jojoba) Seed \nOil, Rosa Canina Fruit Extract, Lanolin, Beeswax (Cera Alba), Daucus \nCarota Sativa (Carrot) Root Extract, Euphorbia Cerifera (Candelilla) \nWax, Copernicia Cerifera (Carnauba) Wax, Rosa Damascena Flower Extract, \nAnthyllis Vulneraria Extract, Prunus Amygdalus Dulcis (Sweet Almond) \nOil, Prunus Armeniaca (Apricot) Kernel Oil, Hydrogenated Jojoba Oil, \nRosa Damascena Flower Wax, Fragrance (Parfum), Linalool*, Benzyl \nBenzoate*, Farnesol*, Limonene*, Geraniol*, Benzyl Salicylate*, \nEugenol*, Maltodextrin, Lecithin, Silica, Mica, Carmine (CI 75470), Iron\n Oxides (CI 77491, CI 77492, CI 77499), Titanium Dioxide (CI 77891) \n",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 46,
+   "model": "products.product",
+   "fields": {
+      "category": 2,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio Bronzer",
+      "price": 4.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/5bff7471d5030f2e808476e2ef735b82_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Create a healthy looking glow all year round!  The sheer soft powders \nprovide the perfect hue of color.  Blend all 4 colors together to \nachieve a blend of perfection or choose your favorite color or colors to\n mix, match and blend.Golden Bronzer: An illuminating shimmer that is subtle and radiant.  Ideal for summer or year-round.\n\n\t\t\t\t\tIngredients: Talc, Paraffinum Liquidum (Mineral Oil), Magnesium Stearate, \nHydrogenated Polyisobutene, Sodium Dehydroacetate\nMay Contain: Mica, Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, \nCI 77492, CI 77499), Red 7 Lake (CI 15850), Blue 1 Lake (CI 42090), Red \n40 Lake (CI 16035)\n",
+      "colours": "[5,6,7]"
+   }
+},
+ {
+   "pk": 47,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio Blush Palette Dark",
+      "price": 9.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/73da123512d4ca1f2aebf5149e065d86_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "This beautiful blush palette holds 4 gorgeous shades to mix and match \nthroughout the year for a custom blended color. Great for contouring, \nshading, sculpting, and highlighting, these silky smooth blushes create a\n beautiful pigmented glow. With a mixture of complimentary matte and \nshimmer finishes, you can achieve a professional look every time.Ingredients: Mica, Talc, Ethylhexyl Palmitate, Silica, Nylon-12, PTFE, Zince Stearate, Dimethicone, Tocopheryl Acetate (Ve).\nMAY CONTAIN: Titanium Dioxide (CI 77891), Iron OXides (CI 77491, \nCI 77492, CI 77499), Red 7 Lake (CI 15850), Ultramarines (CI 77007), Red\n 6 Lake (CI 15850), Red 28 Lake (CI 45410). ",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 48,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio Blush Palette Light",
+      "price": 9.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/9afdb02a47f0a04fe1f7aa78c5a49f63_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "This beautiful blush palette holds 4 gorgeous shades to mix and match \nthroughout the year for a custom blended color. Great for contouring, \nshading, sculpting, and highlighting, these silky smooth blushes create a\n beautiful pigmented glow. With a mixture of complimentary matte and \nshimmer finishes, you can achieve a professional look every time.Ingredients: Mica, Talc, Ethylhexyl Palmitate, Silica, Nylon-12, PTFE, Zince Stearate, Dimethicone, Tocopheryl Acetate (Ve).\nMAY CONTAIN: Titanium Dioxide (CI 77891), Iron OXides (CI 77491, \nCI 77492, CI 77499), Red 7 Lake (CI 15850), Ultramarines (CI 77007), Red\n 6 Lake (CI 15850), Red 28 Lake (CI 45410). ",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 49,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio HD Mattifying Cream Foundation",
+      "price": 9.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/b9a2310c06b11611ab850051c90d06b0_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "This high-definition, oil-free, lightweight foundation is perfect for \nnormal to oily skin types. The cream-to-powder formula minimizes fine \nlines and leaves a natural, long-lasting, matte finish. Includes a \ncompact sponge for easy application and portable beauty.Shade Range: Ingredients: Ethylhexl Palmitate, Octyldodecanol, Synthetic Wax, Copernicia Cerifera \n(Carnauba) Wax, Caprylic/Capric Triglyceride, Tridecyl Trimellitate, \nMica, Nylon-12, Silica, Triacontanyl PVP, Polyglyceryl-4 Isostearate, \nPropylparaben, Tocopheryl Acetate MAY CONTAIN: Iron Oxides (CI \n77491, CI 77492, CI 77499), Manganese Violet (CI 77492), Red No. 33 Lake\n (CI 17200), Blue No. 1(CI 42090), Yellow No. 5 Lake (CI 19140), \nTitanium Dioxide (CI 77891), Red No.40 Lake (CI 16035), Chromium \nHydroxide Green (CI 77289). ",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 50,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio Tinted Moisturizer",
+      "price": 4.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/fa4c4e189875760b7d75f327706096f9_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Achieve even skin tone \nand naturally radiant skin with this moisturizing sheer tint of color.  \nThe smooth formula enhances your complexion with the nourishing key \ningredients Aloe, Cucumber and Vitamins A, C & E.Shades: \n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tACTIVE: Benzophenone-3, Ethylhexyl Isopalmitate, Titanium Dioxide. \nINACTIVE: Water, Mineral Oil, Cyclomethicone, C12-15 Alkyl Benzoate, \nPropylene Glycol, Dimethicone, Steareth-21 Cetearyl Alcohol, \nCeteareth-2, Glyceryl Stearate, Xanthan Gum, Methylparaben, \nPropylparabem, Tocopherol(VE), Retinyl Acetate(VA), Ascorbyk \nPalmitate(VC), Aloe Barbadensis (Aloe Vera) Leaf Juice, Cucumis Sativus \n(Cucumber) Fruit Extract, MAY CONTAIN: Iron Oxides (CI 77491, CI 77492, \nCI 77499), Titanium Dioxide (CI 77891)\n\t\t\t\t\t\n\t\t\t\t",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 51,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio Baked Eyeshadow Trio ",
+      "price": 6.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/302303dd9945c08bc0334544602599be_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Three gorgeously coordinated colors come together to create a stunning \nlook. Baked in an oven, these eyeshadows offer rich pigmentation for a \nbeautiful effect. Infused with active key ingredients Jojoba, Rose, \nSunflower, Apricot and Grape to nourish and hydrate the skin. The \nlong-lasting and shimmering color can be worn wet for a vibrant effect \nor dry for sheer pigmentation, offering a variety of gorgeous eye looks!Ingredients: Mica, Talc, Bismuth Oxychloride, \nEthylhexyl Palmitate, Paraffinum Liquidum (mineral oil), Dimethicone, \nMagnesium Aluminum Silicate, Tocopheryl Acetate, Simmondsia Chinensis \n(Jojoba) Seed Oil, Rosa Canina (Rose Hip) Fruit Oil, Helianthus Annuus \n(Sunflower) Seed Oil, Prunus Armeniaca (Apricot) Kernel Oil, Vitis \nVinifera (Grape) Seed Oil, Phenoxyethanol, Methylparaben. May Contain: \nTitanium Dioxide (CI 77891), Iron Oxides (CI 77491 , CI 77492 , CI \n77499), Ultramarine Violet (CI 77077), Manganese Violet (CI 77742), \nFerric Ferrocyanide (CI 77510), Tin Oxide (CI 77861), Yellow No.5 Lake \n(CI 19140), Red No.40 Lake (CI 16035), Blue No.1 Lake (CI 42090). ",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 52,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio Prism Eyeshadow",
+      "price": 13.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/7282990c0ae826129a437ff3cb823cab_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "These ultra-silky and lustrous eyeshadows look like a powder but feel like a cream, allowing for a smooth and flawless application. Use to contour, line, and highlight for a radiant finish. The luminous, shimmery formula creates a gorgeous range of looks for both day and night. ",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 53,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio Cream Eyeliner",
+      "price": 4.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/571e52ec2ce167c2cd5ee2047015a1ed_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "e.l.f. Studio Cream Eyeliner's creamy formula creates smooth lines that are defined and precise.  \nSmudge-proof, budge-proof and water-resistant coverage for all day wear \nto combat against sweat, tears or rain!  Achieve thin or bold lines with\n ease.  Eyeliner Brush included.Ingredients: \n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tIsododecane, Hydrogenated \nPolyisobutene, Polybutene, Polyethylene, Barium Sulfate, Cyclomethicone,\n Disteardimonium Hectorite, Polyglyceryl-4 Isostearate, Propylene \nCarbonate, Iron Oxides (CI 77491, CI 77492, CI 77499), Titanium Dioxide \n(CI77891), Red No.40 Lake (CI 16035), Mica (CI 77019), Blue No.1 Lake \n(CI 42090), Ferric Ferrocyanide (CI 77510), Ultramarine Violet (CI77077)",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 54,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio Matte Lip Color",
+      "price": 4.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/5f81d4f36c4ba153bcc62e81bc93573f_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "This convenient jumbo sized lip pencil creates exact color application \nwith twist up ease so you never have to sharpen.  The pigment rich color\n glides on effortlessly and easily to provide long lasting matte color. \n The enriched Vitamin A, C & E formula moisturizes and hydrates lips\n for beautiful healthy looking lips.How To Use: Apply to lips and blend in color. Re-apply as often as desired. Use alone or layer with your favorite lip gloss shade for a glossy effect. Ingredients: Paraffinum Liquidum (Mineral Oil), Microcrystalline Wax (Cera \nMicrocristallina), Synthetic Beeswax，Ethylhexyl Palmitate, Copernicia \nCerifera (Carnauba) Wax, Ozokerite, Polyethylene, Ceresin, Silica \nDimethyl Silylate, Polyisobutene, Aspartame, Retinol (VA), Magnesium \nAscorbyl Phosphate (VC), Tocopheryl Acetate (VE), Phenoxyethanol, \nEthylparaben，Propylparaben, Methylparaben. May Contain：Titanium Dioxide \n(CI 77891), Iron Oxides (CI 77491, CI 77492,CI 77499), Blue No.1 Lake ( \nCI 42090), Red No.40 Lake (CI 16035), Red No.7 Lake (CI 15850), Red \nNo.27 Lake (CI 45410)",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 55,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "E.L.F.",
+      "product_name": "e.l.f. Studio Moisturizing Lipstick",
+      "price": 4.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/9e370b087244262131cab9db8b6725c7_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "The velvety, satin texture of e.l.f. Studio Moisturizing Lipstick glides on lips with vibrant color and \nluminous shine. Enriched with Shea and Vitamins A, C, & E to nourish\n and hydrate the lips. The rich, creamy formula seals in moisture for \nlong-lasting wear and comfort.Ingredients: Paraffinum Liquidum (Mineral Oil), Petrolatum, Ceresin, Ethylhexyl Palmitate, Hydrogenated Polydecene, Microcrystalline Wax (Cera Microcristallina), Polybutene, Paraffin, Synthetic Beeswax, Polyethylene, Copernicia Cerifera (Carnauba) Wax, Silica Dimethyl Silylate, Fragrance (Parfum), Butyrospermum Parkii (Shea) Butter, Retinyl Palmitate (Va), Tocopheryl Acetate (Ve), Ascorbyl Palmitate (Vc), Neotame, Propylparaben May Contain: Mica, Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, CI 77492, CI 77499), Red 40 Lake (CI 16035), Red 7 Lake (CI 15850), Red 27 Lake (CI 45410), Red 6 Lake (CI 15850), Yellow 5 Lake (CI 19140), Blue 1 Lake (CI 42090) ",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 56,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Essie",
+      "product_name": "Essie Encrusted Nail Polish Collection",
+      "price": 10,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/7dab50d3ac08ea9c5f2373531a47dd17_ra,w158,h184_pa,w158,h184.png",
+      "description": "Get intricate, multi-dimensional, spectacularly ornate caviar nails with Essie Encrusted Nail Polish Collection. With \nall the fine detail of the most fanciful gem-encrusted jewel, these stunning shades take manicures to a whole new richly-sculpted dimension.Shade Range:Belugaria - live like a czarina. this richly ornamented jet black nail lacquer is laced with highly textured matte glitter with flashes of rainbow holographicsPeak of Chic - ascend the pinnacle of fashion and freeze your \nwell-manicured assets in this alpine white holographic polish with icy \ncrystal fringeOn a Silver Platter - violet holographic glitter and antique \nsilver add bold contrast to this pearlescent gold polish that proclaims:\n the world is yours for the takingLots of Lux - pile on the opulence and perfect the art of manicure\n maximalism in this shimmering blue lapis lazuli lacquer with a sleek \nmatte finishIgnite the Night - the scintillating light from this sparkling hematite nail lacquer with a superfine matte finish fans the flames of passion for luxurious fashionHors d'Oeuvres - nothing says extravagance like this delightful \nconfection of platinum gold nail polish with a touch of iridescent \nsilver glitter",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 57,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Essie",
+      "product_name": "Essie Nail Colour Cashmere Matte Collection",
+      "price": 10,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/5a8e814bb61cd9168941f448d4ea8a1c_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "With a satin-matte texture and a subtle but spellbinding \nmicro-iridescent finish, this Essie Nail Colour Cashmere Matte Collection is sure to inspire you to epic \nfashion heights.Features:Soft matte finish with reflective pearl colorLuxurious neutral color palette inspired by rich cashmereFor best results, use without a top coatShades (left to right): Comfy in Cashmere, Wrap Me Up, Just Stitched, All Eyes on Nude, Coat Couture, Spun in Luxe",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 58,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Essie",
+      "product_name": "Essie Nail Colour",
+      "price": 10,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/bec95851afb08acd6f00242e97535f98_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Colour is the obsession! Dive in and make a splash with Essie Nail Polish. DBP, Toluene and Formaldehyde free.Features: Salon quality formulaLong-lasting, chip-resistant, with a high shine finishBright tropical colours from Essie are the perfect pop for summer! Find more beach ready beauty picks on our blog, The Well.",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 59,
+   "model": "products.product",
+   "fields": {
+      "category": 2,
+      "brand_name": "L'Oreal",
+      "product_name": "L'Oreal Paris Infallible Pro-Contour Palette in Medium ",
+      "price": 19.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/7a31b075cf9c0ae4e6eba9ca61c587a7_ra,w158,h184_pa,w158,h184.png",
+      "description": "The L'Oreal Paris Infallible Pro-Contour Palette makes contouring easy. Use the pro-contour brush to enhance and define features for a professional contoured look. Perfectly coordinated highlighting and contouring shades blend easily after applying for a flawless contoured look. Features:Contours in 30 secondsDefinesHighlightsBrush includedHow to Use: Step 1: Use the lighter shade to highlight and create extra dimensions. Step 2: Accentuate contours with the darker shade. Step 3: Blend and buff for a professionally defined look. ",
+      "colours": "[5,6,7]"
+   }
+},
+ {
+   "pk": 60,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "L'Oreal",
+      "product_name": "L'Oreal Visible Lift Serum Absolute",
+      "price": 20.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/39be9facd53cf124ff38e9a25de09e10_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Introducing a breakthrough in age minimizing makeup.Only Visible Lift Serum Absolute features an age reversing serum of 5 ingredients in 1 luminous makeup. This new makeup instantly evens skin tone with a luxuriously lightweight formula that doesn't settle into lines and wrinkles.In 4 weeks, the potent formula addresses 5 sighs of aging to visibly transform skin to smoother, firmer, brighter, even, flawless.5 proven results :\n\n45% more even skin tone\n72% saw more youthful skin\n75% reduction inf ine lines and wrinkles\n79% saw fewer imperfections\n90% saw smoother skin\n\nFinish : LuminousCoverage : MediumSkin Type : All skin types",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 61,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "L'Oreal",
+      "product_name": "L'Oreal Paris Infallible Never Fail Eye Liner",
+      "price": 12.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/2f7610f4a82cc1c7abb8ddc33ab236f0_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Enjoy beautifully defined eyes for up to 16 hours! New Infallible Never Fail Eyeliner is L'Oreal's most advanced mechanical liner with superior long-wearing technology. The rich and creamy formula glides on easily and evenly and sets quickly for fade-proof colour. Use the bulit-in smudger and sharper to create versatile eyeliner looks for any occasion.",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 62,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "L'Oreal",
+      "product_name": "L'Oreal Color Riche Extraordinaire Lip Color",
+      "price": 13.96,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/739bc21253ce772c2b2e7ad40d9d3f44_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Transform lips from ordinary to extraordinary. Color is richer, lip \nsurface is smoother and shine is magnified. Formulated with precious \nmicro-oils and rich color pigments, Extraordinaire provides the ideal \nbalance of color and care for perfect lips. The unique soft-touch \napplicator allows for a silky-smooth, gliding application.Directions: Use the wand to apply starting in the center of your upper lip. Work \nfrom the center to outer edges of your lips, following the contour of \nyour mouth. Then glide across the entire bottom lip.\n\t\t",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 63,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "L'Oreal",
+      "product_name": "L'Oreal Paris Colour Riche Crystal Shine",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/6709b779907bbb8410a81c3156ac5a1c_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Crystal Shine is a spectacular L'Oreal Paris innovation in lip colour that reflects light to perfection!Crystal Shine is brilliance redefined: an explosion of colour that combines the glint of metal with the gleam of crystal. Tiny flakes of crystal are covered by a thick layer of metal and trapped within the rich, moist colour and texture of the lipstick.\nCrystal Shine technology is contained within Colour Riche's new and improved Tri-Active formula of Vitamins A and E, for long lasting comfort.\nColour Riche Crystal Shine is available in 10 stunning shades with crystal reflections-get ready to dazzle!",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 64,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "L'Oreal",
+      "product_name": "L'Oreal Infallible Lipstick ",
+      "price": 13.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/8768b6e9ad0890545f5f261980727caa_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "L'Oreal Infallible Lipstick is a longwear 2-step lip colour with hyaluronic gel for 24HR triple action.The hyaluron-infused longwear formula provides saturated, vibrant colour for lips that appear smooth and replenished.Features:All day smoothness for colour that never driesAll day hydration for endless comfortAll day resistance for colour that never fades ",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 65,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "L'Oreal",
+      "product_name": "L'Oreal Paris Extra Volume Collagen Mascara",
+      "price": 13.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/7bcefaf1f12f609b2d3d1df2cfbcf6db_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "L'Oreal's biggest volume builder! Introducing the latest innovation in mascara technology--Extra Volume Collagen Mascara. It's made with hydra-collagen and enhances the thickness of your lashes for up to 12x more impact without any clumps. Our patented brush is 50% bigger so it builds that incredible volume fast. Your lashes will build extra body and extra impact in just one sweep.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 66,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "L'Oreal",
+      "product_name": "L'Oreal Paris Telescopic Mascara",
+      "price": 13.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/a5add7c57e2a69456749c0e8263175f7_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Want longer, more defined lashes in a single sweep?L'Oreal Paris introduces amazing new technology that lengthens lashes to the extreme and intensifies them at their base. It will change the way women think about lengthening mascara.It's the 1st spectacular stretch-effect mascara from L'Oreal Paris.The High-Precision Flexible Brush stretches the formula towards infinity for up to 60% longer lashes.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 67,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "L'Oreal",
+      "product_name": "L'Oreal Paris Voluminous Volume Building Mascara",
+      "price": 9.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/c9288fc106afdf3f7039a5128e0f621d_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "4X Fuller Lashes\n\n\nDramatic Volume Effect\n\n\nSeparates & Builds Every Lash\n\n\nPatented Volume Maximizing Brush\nL'Oreal presents Voluminous Volume Building Mascara. Uniquely formulated to resist clumping, soften lashes and build lashes to 4X their natural thickness.\n\n\nUnique maximizing formula quickly thickens and builds lashes in a single application for a full and dramatic lash look.\n\n\nPatented Volume Maximizing Brush thickens lashes evenly, smoothly leaving them soft with virtually no flakes, smudges or clumps.\n\n\nVoluminous with Panthenol and Ceramide-R protects and conditions lashes leaving them supple and soft to the touch, resisting clumping and flaking.\n\n\nOpththalmologist and allergy tested.\n\n\nSuitable for sensitive eyes and contact lens wearers.\n\n\nClump-resistant.\n\n\nFragrance-free.\n\n\nAll day wear.\n\n",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 68,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Marcelle",
+      "product_name": "Marcelle Flawless Compact Foundation",
+      "price": 17.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/00148ac1311be275b6653eec741b135a_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "The Marcelle Flawless Compact Foundation is inspired by the cutting-edge colour marching technology (adaptive pigments). This Flawless Skin-Fusion Foundation blends with skin for a natural finish without clogging pores. Based on popular demand, the Flawless Skin-Fusion Foundation is now available in a compact format! It instantly conceals dark circles, redness and all other imperfections.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 69,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Marcelle",
+      "product_name": "Marcelle BB Cream-to-Powder Makeup",
+      "price": 22.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/4ca356be704dce025868182946e52080_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "A perfect addition to Marcelle's best skin enhancing line, Marcelle BB Cream-to-Powder Makeup has a creamy texture at first touch, but transforms to a\n silky, powdery finish upon contact with the skin. Its practical compact\n with mirror and sponge built-in is ideal for all-day touch-ups to \nmaintain a perfect and even skin. Can be used alone or over the BB Cream\n for more coverage.\n\nHypo-allergenic and perfume-free. Paraben free, oil free, and non-comedogenic. Shade Range: ",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 70,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Marcelle",
+      "product_name": "Marcelle Rouge Xpression Lipstick",
+      "price": 11.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/0fbba5395dcc750a7b43b3e3fefb6015_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Luscious lips made easy! Express your true self with Marcelle Rouge Xpression lipstick! Rouge Xpression\n has a dual personality that will delight your lips; it has a \nmoisturizing Maxi-Lip complex that hydrates your lips' delicate skin and\n adds sexy volume.\nReplete with avocado and Omega-6 oils, its formula prevents dry, \ncracked lips and restores moisture. Its creamy, velvety and non-sticky \ntexture ensures total comfort. And with so many vibrant colours, biting \ninto life will never have looked so sexy!\nHypoallergenic and perfume-free.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 71,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Marcelle",
+      "product_name": "Marcelle Ultimate Lash Mascara",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/6f521dc72d362855a605105854a6a54f_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Fabulously full lashes for star-like appeal.Marcelle Ultimate Lash Mascara is all about transformation, from thin to plump, thick \nand full lashes. Specially designed wand is easy to use and applies just\n the right amount of mascara for maximum lash volume that is free of \nclumps and mess. Formulated with proteins and revitalizing ingredients \nto give lashes the royal treatment and last a long, long time without \nflaking. Strong, full lashes are guaranteed, plus it's hypoallergenic \nand perfume-free so it's perfect for everyone.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 72,
+   "model": "products.product",
+   "fields": {
+      "category": 2,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Fit Me Bronzer",
+      "price": 10.29,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/d4f7d82b4858c622bb3c1cef07b9d850_ra,w158,h184_pa,w158,h184.png",
+      "description": "Why You'll Love It\n\nLightweight pigments blend easily and wear evenly\nProvides a natural, fade-proof bronzed color that leaves skin the way it was meant to be...fresh, breathing and natural\n\nFor Best Results: For soft, natural look, brush along cheekbone, sweeping upward.",
+      "colours": "[5,6,7]"
+   }
+},
+ {
+   "pk": 73,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Fit Me Blush",
+      "price": 10.29,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/53d5f825461117c0d96946e1029510b0_ra,w158,h184_pa,w158,h184.png",
+      "description": "Maybelline Fit Me Blush has lightweight pigments blend easily and wear evenly. It provides a natural, fade-proof cheek color that leaves skin the way it was meant to be...fresh, breathing, and natural.\n\nFor Best Results: For soft, natural look, brush along cheekbone, sweeping upward.",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 74,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Fit Me Shine-Free Foundation Stick",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/d04e7c2ed65dabe1dca4eed9aa268e95_ra,w158,h184_pa,w158,h184.png",
+      "description": "Get flawless, shine-free skin instantly and on-the-go for tailor-made \nmattifying coverage.  The anti-shine core has ultra-lightweight powders \nbuilt in to the stick foundation to instantly dissolve excess oil. Features: Maybelline's first gel stick foundation with an anti-shine core\nFresh gel foundation blends to a flawless matte finish\nLightweight powders in the anti-shine core instantly dissolve excess oil",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 75,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Mineral Power Natural Perfecting Powder Foundation",
+      "price": 14.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/c77ad2da76259cfd67a9a9432f635bfb_ra,w158,h184_pa,w158,h184.png",
+      "description": "Why You'll Love ItMineral Power Powder Foundation with micro-minerals provides a more natural, healthier, luminous look.\nDiscover the natural power of micro-minerals:\n100% natural mica creates a more natural luminosity Complete, yet refined coverage Provides buildable, even coverage Preservative-free, talc-free, oil-free, fragrance-free Medium to Full Coverage",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 76,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Superstay Better Skin Foundation ",
+      "price": 14.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/c7d967ef502ecd79ab7ab466c4952d82_ra,w158,h184_pa,w158,h184.png",
+      "description": "The Maybelline Superstay Better Skin Foundation reduces the appearance of spots, bumps, dullness and redness to give you brighter, smoother and more even skin. Features:Longwear that improves skin every minute you're in it: brighter, smoother and more even.With micro-flex technology and the antioxidant power of Actyl-C.Ideal for sensitive skin. Good for all skin types. Medium to full coverageHow to Apply: Apply evenly to your face and blend with your fingers. ",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 77,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Dream Wonder Liquid Touch Foundation",
+      "price": 14.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/ccb99ad6ac7f31a2a73454bdbda01d99_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Maybelline Dream Wonder Liquid Touch Foundation's breakthrough texture fuses with skin. A finish so impeccable, yet undetectable.Features:Exclusive dropperMedium to full coverage, ideal for normal skinFor Best Results: Shake well. Unscrew cap. Holding dropper vertically, allow foundation to drop onto fingertip. Apply to face as usual.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 78,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Dream Liquid Mousse",
+      "price": 14.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/1ca6a4a442b9aa6b5f3d94da77d8846c_ra,w158,h184_pa,w158,h184.png",
+      "description": "Airbrushed perfection made possible:Air-whipped liquid makeup for 100% poreless skin\n\nBreakthrough finish cushions and smooths for the most flawless, luminous coverage\nLightweight air-whipped formula blends to virtually eliminate pores and imperfections\nInnovative shade-match pump makes finding your perfect shade a dream \n",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 79,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline FIT ME! Matte + Poreless Foundation",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/257993e12625cc45a72ec03636ffa5c5_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Maybelline FIT ME! Matte + Poreless Foundation goes beyond  skin tone\n matching to fit the unique texture issues of normal to oily skin for \nthe ultimate natural skin fit.\n\nWhile some foundations can exaggerate pores and oily skin, only Maybelline's \npore-minimizing foundation contains their genius blurring micro-powders \nthat erase pores and absorb oil for a naturally matte and \nporeless-looking finish.Dermatologist and allergy tested.  Does not clog pores. Oil-free.\n\n  \n",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 80,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Eyestudio Color Tattoo Concentrated Crayon",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/3f9f894b56e0616e44c5ee01dea45217_ra,w158,h184_pa,w158,h184.png",
+      "description": "Maybelline Eyestudio Color Tattoo Concentrated Crayons give you high-intensity color that looks vibrant all-day long.Features:Smooth, soft creamy finishPlayful intense colorsAll day tattoo tenacity. Playful color intensity. In an easy glide on crayon.",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 81,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Unstoppable Eyeliner",
+      "price": 8.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/bab89a9fe13b34235e0dd1f4f44c05cf_ra,w158,h184_pa,w158,h184.png",
+      "description": "Unstoppable Eyeliner allows ultra-smooth application for defined lines and eyes.\nIt is a self-sharpening mechanical pencil, and will hold your look in place all day long.\nWaterproof.\nOphthalmologist tested, contact lens safe for sensitive eyes.\n",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 82,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Color Show Nail Lacquer Veils ",
+      "price": 4.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/64cbcfbd001435c3abc3d8f77c16a0bf_ra,w158,h184_pa,w158,h184.png",
+      "description": "Maybelline Color Show Nail Lacquer Veils collection gives you subtle shimmers to refined glitters in colours straight from the shows!Features:Trendy top coat nail art designsEasy-flow brushFormaldehyde, DBP and Toluene freeShade Range: (left to right: Amethyst Aura, Rose Mirage, Crystal Disguise)For Best Results:First\n apply a clear base coat to prevent your nails from yellowing and to \nhelp your nail color last longer. Choose a base shade and with one \nsweep, paint the first line of nail polish up the center of your nail \nstarting from the base to the tip.For the cleanest look, be sure\n to leave a small space at the base of the nail. Then apply nail color \nto the rest of the nail. Pick your textured top coat and paint over your\n base shade for a street styled nail art look.",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 83,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Color Show Nail Lacquer ",
+      "price": 4.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/a05aa31a7e30d9d262ae36d0be2c4f87_ra,w158,h184_pa,w158,h184.png",
+      "description": "High fashion meets high-art. With Maybelline Color Show Nail Lacquer PolkaDots Collection you get 3D nail design for your fingertips!Features: \nCreates Hollywood-worthy special effectsChip-resistant formula Easy-flow brushFormaldehyde, DBP and Toluene freeShade Range: \n",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 84,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Color Sensational Vivid Matte Liquid Lip Colour",
+      "price": 12.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/d0b6855d9b603a00f776de498c971b88_ra,w158,h184_pa,w158,h184.png",
+      "description": "Bold, vivid color glides easily onto lips for a velvety matte finish with Maybelline Color Sensational Vivid Matte Liquid Lip Colour. \nFormula is comfortable and creamy with a smooth feel upon application. \nWith full color coverage, the result is a rich, intense lip look in a \nrange of colors from Nude Flush to Electric Pink to Vivid Violet.Features: Lip color glides on smooth to a matte finishInfused with pure pigments for high-impact colorCreamy liquid base for a soft, cushiony feel",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 85,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Color Sensational Vivids Lipcolour",
+      "price": 9.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/0d31f41c37fd18dfc02daa1671719378_ra,w158,h184_pa,w158,h184.png",
+      "description": "With Maybelline Colour Sensational Vivids Lipcolour bright goes gorgeous, never garish!Get brighter color from Maybelline's exclusive vivid pigments.﻿ Plus get creamier feel from nourishing honey nectar.﻿ Features: Be bright and gorgeousExclusive Vivid colors are brighterHoney nectar formula nourishes lips﻿For Best Results: Apply lipcolor starting in the center of your upper lip. Work from the center to the outer edges of your lip, following the contours of your mouth. Then glide across the entire bottom lip.﻿Shade Range: ",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 86,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Color Sensational Creamy Mattes Lipcolour ",
+      "price": 9.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/81fd80f898674d00f1860cd0724460f4_ra,w158,h184_pa,w158,h184.png",
+      "description": "Maybelline Creamy Mattes by Color Sensational deliver a burst of bold lip color and a surge of creamy texture in great make-a-statement shades, for mattes your lips will love to wear!Features: Lips slip into this creamy matteMattifying cream pure pigments and three precious oilsMake-a-statement shades",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 87,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Great Lash Big Mascara",
+      "price": 7.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/0795abd7feaf855f88055e181652d65a_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Live Big! Great Lash Big has a Bigger Brush for Great Big Live-It-Up Lashes!\n\nThe Great Big Brush provides a bigger, bolder lash effect\nGreat buildable formula still conditions as it thickens with even greater intensity\nNo clumps or globs\n",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 88,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Great Lash Mascara",
+      "price": 7.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/6b4d354890177a73b4d6630d723c2f21_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Great Lash Waterproof Mascara conditions as it thickens lashes. The lash-doubling formula glides on smoothly to build great-looking smudge-proof lashes. The lash-building brush makes it easy to get a full lash look without clumps. Hypoallergenic and contact lens safe.\nAllure 2008 Reader's Choice Award Winner for drugstore mascara.\n",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 89,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Volum' Express The Rocket Mascara",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/0b04408a84154f14800e4c9477f8a924_ra,w158,h184_pa,w158,h184.png",
+      "description": "Explosive Volume in Rocket Time! 8X Bigger, Smoother.\n\nNow, the most explosive, beautiful lashes ever! Maybelline's patented supersonic \nbrush with micro bristles loads on big, sleek volume instantly.\n\nThe fast-glide formula keeps lashes smooth. Zero clumps!",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 90,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Maybelline",
+      "product_name": "Maybelline Great Lash Lots of Lashes Mascara",
+      "price": 7.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/dfaf77464a8cb52a1a8f2a15e8abf920_ra,w158,h184_pa,w158,h184.png",
+      "description": "Introducing a Great Lash innovation - Great Lash Lots of Lashes!The favourite Maybelline mascara now gives the look of more lashes than ever, thanks to the exclusive Great Little Grabber Brush. In just one swipe, the Grabber Brush easily reaches all lashes - even \nin the corners - for a multiplied lash look without the clumps. The result? Great lashes with lots of impact and not a lot of work.For best results: sweep brush from root to \ntip of lashes. Continue building volume until the desired lash look is \nachieved. Do not let dry between coats. Removes easily with soap and \nwater or eye makeup remover. \n                    ",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 91,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Mineral Fusion",
+      "product_name": "Mineral Fusion Blush",
+      "price": 32,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/f1c6dea6717aeaa8796a5f62992d8979_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Mineral Fusion Blush features luxuriously silky, triple-milled minerals that offer a natural flush of color to brighten the complexion and create a healthy, youthful glow. Includes a powerful blend of Pomegranate, White Tea, Red Tea and Sea Kelp, plus Vitamins C and E that defend skin against free radical damage for a healthy radiance. Free of Gluten, Parabens, Artificial Colors, Fragrances and Talc. Never-tested on animals. Hypo-allergenic.Ingredients: Mica, Zinc Stearate, Octyldodecyl Stearoyl Stearate, Titanium Dioxide (CI 77891), Caprylic/Capric Triglyceride, Tocopheryl Acetate (Vitamin E), Ascorbyl Palmitate (Vitamin C), Camellia Sinensis (White Tea) Leaf Extract, Aspalathus Linearis (Rooibos Red Tea) Leaf Extract, Punica Granatum (Pomegranate) Extract, Vitis Vinifera (Grape) Seed Extract, Laminaria Ochroleuca (Sea Kelp) Extract, Aloe Barbadensis (Aloe Vera) Extract, Lauroyl Lysine, Sambucus Nigra Fruit (Elderberry), Phenoxyethanol. MAY CONTAIN (+/-): Iron Oxides (CI 77491, 77492, 77499), Carmine (CI 75470), Ultramarine (CI 77007), Manganese Violet (CI 77742). ",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 92,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Mineral Fusion",
+      "product_name": "Mineral Fusion Eye Pencil",
+      "price": 19,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/3691e75a871b476e86f1e240ce784e70_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Exceptionally rich, the mineral color of Mineral Fusion Eye Pencils glide on smoothly to line, define and enhance eyes. Formulated with Chamomile, Meadowfoam and Vitamin E to soothe delicate skin around eyes. Free of Gluten, Parabens, Artificial Colors, Fragrances and Talc. Never-tested on animals. Hypo-allergenic.Ingredients: Simmondsia Chinensis (Jojoba) Butter, Caprylic/Capric Triglyceride, Limnanthes Alba (Meadowfoam) Seed Oil, Hydrogenated Cottonseed Oil, Mangifera Indica (Mango) Seed Oil, Euphorbia Cerifera (Candelilla) Wax, Glyceryl Caprylate, Copernicia Cerifera (Carnauba) Wax, Macadamia Ternifolia Seed Oil, Tocopherol (Vitamin E), Chamomilla Recutita (Matricaria) Flower Extract, Ascorbyl Palmitate (Vitamin C), Iron Oxides (77491, 77492, 77499), Titanium Dioxide (77891), Mica (77019). Free of Gluten, Parabens, Artificial Colors, Fragrances and Talc. Never-tested on animals. Hypo-allergenic.",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 93,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Mineral Fusion",
+      "product_name": "Mineral Fusion Nail Polish",
+      "price": 10,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/affda4fa0d0c8263549fe901eda814cc_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Mineral Fusion Nail Polish is a healthier alternative to traditional nail polish in many gorgeous shades. Apply this long-lasting chip-resistant mineral nail polish formula flawlessly using the custom, extra-thick brush. Mineral Fusion Nail Polish is a toulene free nail polish and like all of their cosmetics, upholds their standard for Formula Purity.Features:Long-lasting chip resistant formulaFormaldehyde, toulene, camphor and dibutyl pthalate freeCustom, extra-thick brush for flawless applicationIngredients: Ethyl Acetate, Butyl Acetate, Isopropyl Alcohol, Nitrocellulose, Adipic Acid/Neopentyl Glycol/Trimellitic, Anhydride Copolymer, Trimethyl Pentanyl Diisobutyrate, Stearalkonium Hectorite, Diacetone Alcohol Styrene, Acrylates Copolymer, Silica, Citric Acid, Benzophenone. Mica, Oxides, Titanium Dioxide, Bismuth Oxychloride, Aluminum Powder, D&C Red No. 7 Calcium Lake, D&C Violet No. 2, FD&C Yellow No. 5 Alluminum Lake, Ferric Ammonium Ferrocyanide. Mineral Fusion Nail Polish is formaldehyde free, toulene free, camphor free, dibutyl pthalate free, paraben free, hypoallergenic, gluten free, talc free, fragrance free and free of artificial colors. As with all of their cosmetics, Mineral Fusion Nail Polish is never tested on animals.",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 94,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Misa",
+      "product_name": "Misa Nail Laquer",
+      "price": 9.39,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/a0e2af7b4c21ab132512dba3483d35de_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Misa's original nail lacquer formula was developed to meet the product requirements of demanding nail technicians. Each lacquer is properly balanced with resin, plasticizer and nitrocellulose to provide a durable film that offers high gloss, exceptional wear and maximum protection for the nail.The lacquers provide durability for the ultimate in chip-free results, with each lacquer offering a carefully balanced blend of film formers that are not adversely affected when exposed to water or detergents. The formula is nonfading with lasting color fidelity over time, as the use of UV absorbers helps maintain the true colors. The lacquers maintain an excellent shelf life, with a formula that prevents pigment migration, striation, settling and syneresis over longer periods of time than most other nail enamel formulas. And, as we guarantee, the chip-resistant polishes promise superior wear and exceptional gloss retention, while helping to condition, protect, strengthen and reinforce the natural nail.",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 95,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Moov",
+      "product_name": "Moov Cosmetics St. Tropez Collection",
+      "price": 14.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/f426b2e2e9ff8e01788a0947aad93512_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "The Moov Cosmetics St. Tropez Collection is a vegan nail colour that is perfect collection of shades that will take you from day to day.Features:VeganLonger lasting wearCreamy applicationDirections: Apply two coats, best results with Moov 2-in-1 Prime & Prep application.Ingredients: Butyl Acetate, Ethyl Acetate, Nitrocellulose, Adipic Acid/Neopentyl, Gloycol/Trimellitic Anhydride, Copolymer, Tributyl Citrate, Isopropyl Alcohol, Strearalkonium Bentonite, Acrylates Copolymer, Silica,Benzophenone-1, Trimethylpentanediyl DibenzoateNatural, Vegan, Gluten Free, Fair Trade, Sugar Free, Non-GMO, Dairy Free",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 96,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Moov",
+      "product_name": "Moov Cosmetics Caribbean Wedding Collection",
+      "price": 14.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/678f91758b7a611d673124f7ad1f00d0_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "The Moov Cosmetics Caribbean Wedding Collection is a vegan nail colour that has the perfect soft pastel shades for that romantic getaway.Features:VeganLonger lasting wearCreamy applicationDirections: Apply two coats, best results with Moov 2-in-1 Prime & Prep application.Ingredients: Butyl Acetate, Ethyl Acetate, Nitrocellulose, Adipic Acid/Neopentyl, Gloycol/Trimellitic Anhydride, Copolymer, Tributyl Citrate, Isopropyl Alcohol, Strearalkonium Bentonite, Acrylates Copolymer, Silica,Benzophenone-1, Trimethylpentanediyl DibenzoateNatural, Vegan, Gluten Free, Fair Trade, Sugar Free, Non-GMO, Dairy Free",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 97,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Moov",
+      "product_name": "Moov Cosmetics Home Grown Canuck Collection",
+      "price": 14.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/65ca894afba3c4351a3db71c24234c50_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "The Moov Cosmetics Home Grown Canuck Collection is a vegan nail colour that has a fun representation of shades from East to West.Features:VeganLonger lasting wearCreamy applicationDirections: Apply two coats, best results with Moov 2-in-1 Prime & Prep application.Ingredients: Butyl Acetate, Ethyl Acetate, Nitrocellulose, Adipic Acid/Neopentyl, Gloycol/Trimellitic Anhydride, Copolymer, Tributyl Citrate, Isopropyl Alcohol, Strearalkonium Bentonite, Acrylates Copolymer, Silica,Benzophenone-1, Trimethylpentanediyl DibenzoateNatural, Vegan, Gluten Free, Fair Trade, Sugar Free, Non-GMO, Dairy Free",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 98,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Nyx",
+      "product_name": "Doll Eye Mascara",
+      "price": 9.5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw2e036256/ProductImages/Eyes/Doll_Eye_Mascara/800897123543_dolleyemascara_longlash_black_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Hello, dollface! For irresistibly fluttery eyelashes, try this mascara on for size. Doll Eye Mascara uses a unique blend of natural oil and nylon fibers to extend lashes to almost faux proportions. Choose from our Doll Eye Mascara in Long Lash, Volume or Waterproof.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 99,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Nyx",
+      "product_name": "Boudoir Mascara Collection",
+      "price": 6,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwda9f6cec/ProductImages/Eyes/Boudoir_Mascara_Collection/boudoirmascaracollection_main.jpg.jpg?sw=390&sh=390&sm=fit",
+      "description": "Every powder room should have our luxurious Boudoir Mascara Collection available in 7 elite formulas. Whether you want to darken, amp up the volume, or lengthen your lashes - we have a mascara that meets all your needs.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 100,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Nyx",
+      "product_name": "Color Mascara",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw8044f7e7/ProductImages/Eyes/Color_Mascara/colormascara_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Think beyond the ordinary with these fun and vibrant new mascara options from NYX Professional Makeup. Packed full of pigments and delivering on the promise of intense color payoff, everyone will notice your fabulous eye lash color. Go for it - we dare you to try all eight shades!",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 101,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Nyx",
+      "product_name": "Cosmic Gel Liner",
+      "price": 10,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw62a7d3b0/ProductImages/2016/Eyes/Cosmic_Gel_Liner/800897016364_cosmicgelliner_interstellar_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Swap your standard wing for eyes that twinkle like stars! A beam of Cosmic Gel Eye Liner makes an out of this world statement through an intense burst of sparkle and bold color. Available in three shades packed with interstellar shimmer, this formula glides on silky-smooth and is super easy to blend. Like our fan fave Gel Liner and Smudger, these rich colors stay put for strong galactic glam.",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 102,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Nyx",
+      "product_name": "Metallic Eyeliner",
+      "price": 8,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw1a50507a/ProductImages/2018/Eyes/Metallic_Eyeliner/metalliceyeliner_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Spend some quality glam time with our Metallic Eyeliners. From copper to rose gold and silver, this creamy-soft pencil is available in six dazzling shades. Each pigment rich eyeliner slides on effortlessly and loads your lids with a metallic-matte finish. Down to the last swipe? Sharpen your go-to hue to uncover more intense color.",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 103,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Nyx",
+      "product_name": "Studio Liquid Liner",
+      "price": 4.5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw1a631541/ProductImages/Eyes/Studio_Liquid_Liner/studioliquidliner_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Transform your look in seconds with this super-pigmented eyeliner that highlights eyes with an electrifying stroke of color. The fine brush tip allows for precision application and can be used to create lines of varying thickness. Go subtle or go glam.",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 104,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Nyx",
+      "product_name": "Glam Liner Aqua Luxe Collection",
+      "price": 5.5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw37148f7b/ProductImages/Eyes/Glam_Liner_Aqua_Luxe_Collection/glamlineraqualuxecollection_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Stand out from the crowd with these new eye-catching liquid liners. Available in 9 vivacious shades these shimmering long-wearing liners have a flexible brush tip for perfectly precise surprisingly smooth application.",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 105,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "Color Correcting Powder",
+      "price": 10,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw78639528/ProductImages/Face/Color_Correcting_Powder/colorcorrectingpowder_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Even out your complexion using our ultra-fine translucent loose Color Correcting Powder. This lightweight easy to use powder can be applied before or after your foundation. The paraben and talc-free formula helps you achieve a natural matte finish.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 106,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "High Definition Finishing Powder Mini",
+      "price": 3.5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw63a5fdce/ProductImages/2017/Face/High_Definition_Finishing_Powder_Mini/800897846015_highdefinitionfinishingpowdermini_translucent_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Your favorite beauty essential is now available in a convenient travel sized mini. A lightweight, translucent finishing powder that helps soften the appearance of fine lines and pores. This silky pressed powder has a fresh matte finish.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 107,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "Mineral Finishing Powder",
+      "price": 10,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw66d2b512/ProductImages/Face/Mineral_Finishing_Powder/800897815455_mineralfinishingpowder_lightmedium_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "A mineral finishing powder that sets your favorite look with a flawless finish; skin appears fresh and radiant throughout the day. Just a hint of color provides enough coverage to be worn over makeup or on bare moisturized skin.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 108,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Nyx",
+      "product_name": "Cheek Contour Duo Palette",
+      "price": 9,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwb9e0511a/ProductImages/2016/Face/Cheek_Contour_Duo_Palette/800897012007_cheekcontourduopalette_doubledate_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Create natural-looking contours, sun-kissed cheeks and a gorgeous, lit-from-within glow with our new Cheek Contour Duos. Available in six silky shade combinations, each luxurious compact makes it easy to perfect your complexion on the go.",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 109,
+   "model": "products.product",
+   "fields": {
+      "category": 2,
+      "brand_name": "Nyx",
+      "product_name": "Mosaic Powder Blush",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw5b50439f/ProductImages/Face/Mosaic_Powder_Blush/800897124533_mosaicpowderblush_highlighter_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "This medley of 9 matte and shimmery colors creates a flush of color and dazzling glow for every skin tone. Use to highlight enhance brighten and bronze. Each mosaic of color blends beautifully with magical results.",
+      "colours": "[5,6,7]"
+   }
+},
+ {
+   "pk": 110,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Nyx",
+      "product_name": "Baked Blush",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwfdfb0cd6/ProductImages/Face/Baked_Blush/800897824181_bakedblush_fullonfemme_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Baked to sheer perfection this luxurious formula is packed full of pigments to provide a natural glow and highlight to the face. Uniquely designed to be used wet or dry depending upon the makeup statement you want to make. When used dry with a brush the look is light and fresh. Want more color? No Problem! Apply wet with a makeup sponge for more intensity.",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 111,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "Gotcha Covered Concealer Pencil",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw8ad0514f/ProductImages/2016/Face/Gotcha_Covered_Concealer_Pencil/gotchacoveredconcealerpencil_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Skin imperfections, beware! When it comes to covering up discoloration, our new Gotcha Covered Concealer Pencil does NOT mess around. Available in 20 blendable shades, this luxurious concealer is a master at spot concealing.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 112,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "Conceal, Correct, Contour Palette",
+      "price": 12,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwbef45c94/ProductImages/Face/Conceal_Correct_Contour_Palette/800897831479_concealcorrectcontourpalette_light_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Color-match your skin using our perfecting and correcting palettes to conceal, correct, or contour. With six shades to choose from in each set you can cover up problem spots even out imperfections and accentuate your best features in a flash. Use these buildable colors on their own or combine them to create the ideal tone.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 113,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "Gotcha Covered Concealer",
+      "price": 6,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw947da0d5/ProductImages/Face/Gotcha_Covered_Concealer/gotchacoveredconcealer_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Gotcha Covered Concealer always has your back! Now available in 10 more gorgeous shades, our waterproof, full coverage concealer effectively covers up discolorations and imperfections without creasing or caking. Infused with coconut oil, this highly blendable concealer also leaves your face with a healthy-looking glow.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 114,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "Concealer Jar",
+      "price": 5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw04c31800/ProductImages/Face/Concealer_Jar/concealerjar_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Obscure imperfections and blur away problem areas with one of our Concealer Jars. Now available in 10 more shades to accommodate an even wider range of skin tones, this creamy formula stands up to the villains of unwelcome imperfections with a vengeance.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 115,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "HD Photogenic Concealer Wand",
+      "price": 5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw10ab1d12/ProductImages/2016/Face/HD_Photogenic_Concealer_Wand/concealerwand_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Now available in 12 more shades to accommodate an even wider range of skin tones, our best-selling HD Studio Photogenic Concealer effectively covers imperfections, discoloration and under-eye circles without ever looking cakey or obvious. The result is beautiful, natural-looking coverage you can count on.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 116,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "Stay Matte But Not Flat Liquid Foundation",
+      "price": 7.5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw98d18f1b/ProductImages/Face/Stay_Matte_But_Not_Flat_Liquid_Foundation/staymattebutnotflatliquidfoundation_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Now available in 10 more gorgeous shades, Stay Matte But Not Flat Liquid Foundation provides full coverage with a mineral enriched matte finish and accommodates more skin tones than ever before. The oil-free and water-based formula is perfect for both day and nighttime wear.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 117,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "Hydra Touch Powder Foundation",
+      "price": 10,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw0bf2e8ad/ProductImages/Face/Hydra_Touch_Powder_Foundation/hydratouchpowderfoundation_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "A weightless pressed powder that offers buildable coverage with a matte finish. Now available in five more silky shades, Hydra Touch Powder Foundation can be applied dry or wet. Our innovative formula also contains moisturizing botanical extracts to leave skin looking soft and fresh.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 118,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Luv Out Loud Liquid Lipstick",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw063995a2/ProductImages/2017/Lips/Luv_Out_Loud_Liquid_Lipstick/luvoutloudliquidlipstick_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "What qualities make a person beautiful? Passion, confidence and fearlessness, to name a few. Available in six velvety-matte shades, our new Luv Out Loud Liquid Lipsticks capture the attributes we at NYX Professional Makeup find truly beautiful. Gift one, two-or all six lippies to a friend who rocks these amazing qualities and inspires you to live (and luv!) out loud.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 119,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "In Your Element Lipstick - Metal",
+      "price": 9,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwda28cbbe/ProductImages/2017/Holiday/in_your_element_lipsticks/in_your_element_lipstick_metal/inyourelementlipstickmetal_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "A match made in makeup heaven! Our new In Your Element Lipstick Metal collection pairs perfectly with our sparkle inspired eyeshadow palette. These three exclusive lip colors come in seriously rich shades and finishes-from metallic gold, to glossy deep-berry and metallic bronze. Encased in a sleek, black lacquered case, each lipstick's luxurious magnetic closure seals with a click.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 120,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Wicked Lippies",
+      "price": 6.5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw5d579d16/ProductImages/Lips/Wicked_Lippies/wickedlippies_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Take a walk on the wicked side with our jewel-toned lippies available in 12 shimmering shades. Velvety smooth with a dazzling metallic finish - these richly pigmented lipsticks will leave your lips with the ultimate spellbinding look.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 121,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "In Your Element Lipstick - Water",
+      "price": 9,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw649c09f1/ProductImages/2017/Holiday/in_your_element_lipsticks/in_your_element_lipstick_water/inyourelementlipstickwater_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "A match made in makeup heaven! Our new In Your Element Lipstick Water collection pairs perfectly with our heat-inspired eyeshadow palette. These three exclusive lip colors come in seriously rich shades and finishes-from metallic black-violet, to matte true nude and glossy plum. Encased in a sleek, black lacquered case, each lipstick's luxurious magnetic closure seals with a click.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 122,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "In Your Element Lipstick - Wind",
+      "price": 9,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwb5cd298c/ProductImages/2017/Holiday/in_your_element_lipsticks/in_your_element_lipstick_wind/inyourelementlipstickwind_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "A match made in makeup heaven! Our new In Your Element Lipstick Wind collection pairs perfectly with our breeze-inspired eyeshadow palette. These three exclusive lip colors come in seriously rich shades and finishes-from glossy nude, to matte navy blue and metallic brown with blue pearl. Encased in a sleek, black lacquered case, each lipstick's luxurious magnetic closure seals with a click.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 123,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "In Your Element Lipstick - Fire",
+      "price": 9,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwf9f0c84b/ProductImages/2017/Holiday/in_your_element_lipsticks/in_your_element_lipstick_fire/inyourelementlipstickfire_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "A match made in makeup heaven! Our new In Your Element Lipstick Fire collection pairs perfectly with our heat-inspired eyeshadow palette. These three exclusive lip colors come in seriously rich shades and finishes-from matte red, to glossy black and matte, warm mauve. Encased in a sleek, black lacquered case, each lipstick's luxurious magnetic closure seals with a click.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 124,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "In Your Element Lipstick - Earth",
+      "price": 9,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw16c5dd05/ProductImages/2017/Holiday/in_your_element_lipsticks/in_your_element_lipstick_earth/inyourelementlipstickearth_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "A match made in makeup heaven! Our new In Your Element Lipstick Earth collection pairs perfectly with our nature-inspired eyeshadow palette. These three exclusive lip colors come in seriously rich shades and finishes-from deep metallic copper, to glossy, deep berry and matte brown. Encased in a sleek, black lacquered case, each lipstick's luxurious magnetic closure seals with a click.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 125,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Plush Gel Lipstick",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw9c3f0820/ProductImages/2016/Lips/Plush_Gel_Lipstick/plushgellipstick_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Play up your pout with a silky stroke of Plush Gel Lipstick. Available in 12 totally vibrant shades, this lippie brings together an oh-so-soft feel and the high shine of a gloss. Drench lips in a wash of color for an instantly polished look anytime you crave a quick touch-up. Want a bolder finish? (Yes, please!) A second swipe is twice as nice.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 126,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Velvet Matte Lipstick",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw1e94f54f/ProductImages/2016/Lips/Velvet_Matte_Lipstick/velvetmattelipstick_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Dress your lips in decadent color with our Velvet Matte Lipstick--a luxurious new lip color that glides right on and never feels dry. Housed in an elegant soft-touch case, each standout shade is a fashion statement in itself.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 127,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Turnt Up! Lipstick",
+      "price": 6.5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw5c4a6ee3/ProductImages/2016/Lips/Turnt_Up_Lipstick/turntuplipstick_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Speak volumes with a bold swipe of Turnt Up! Lipstick. Go as soft or get as loud as you like using our wide range of 22 statement-making shades. From chic nudes to deep vampy hues, these lightweight and creamy lippies glide on effortlessly. Leaving lips with a kiss of shine and high-impact color you can count on for an unforgettable look.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 128,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Pin-Up Pout Lipstick",
+      "price": 8,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw5c89147f/ProductImages/2017/Lips/Pin_Up_Pout_Lipstick/pinuppoutlipstick_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "From polka dots to pointy pumps, nothing compares to the classics. Our personal fave? Ever so creamy lip color, of course! Take yourself back to the signature lip that started it all with our Pin-Up Pout Lipstick. Inspired by the best of vintage beauty, this retro rouge covers lips in extra plush, richly pigmented and absolutely undeniable color. Our throwback lipstick also offers beautiful coverage in an array of 24 swoon-worthy shades.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 129,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Epic Ink Lip Dye",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw7d8fe312/ProductImages/2017/Lips/Epic_Ink_Lip_Dye/epicinklipdye_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Drench your kiss in knockout color! A stroke of Epic Ink Lip Dye coats lips with a downright dramatic stain. Super-saturated and lightweight, our formula dries to a Matte finish. This stunning lip dye is an absolute makeup bag must-have. Rock it alone for an effortlessly vibrant look. Or give your favorite lippies a boost by wearing it under a similar shade!",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 130,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Strictly Vinyl Lip Gloss",
+      "price": 8,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwd10df14c/ProductImages/2018/Lips/Strictly_Vinyl_Lip_Gloss/strictlyvinyllipgloss_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Strictly Vinyl Lip Gloss is music to our lips! Available in eight plush and pigment packed shades, this beyond glossy lippie is no one-hit wonder. Hardcore color and intense shine is always just a few swipes away.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 131,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Liquid Suede Metallic Matte",
+      "price": 7.5,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw9d2f72a4/ProductImages/2017/Lips/Liquid_Suede_Metallic_Matte/liquidsuedemetallicmatte_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Wrap your lips in high-impact metallic color with Liquid Suede Metallic Matte, a striking new lip inspired by our best-selling Liquid Suede Cream Lipstick. Available in 12 statement-making shades, these shockingly creamy lippies deliver instant dimension and incredible color payoff. In other words, get ready to slay.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 132,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Liquid Suede Cream Lipstick",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwa19d7c26/ProductImages/Lips/Liquid_Suede_Cream_Lipstick/liquidsuedecreamlipstick_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Doll up your lips in plush and vibrant color! Our Liquid Suede Cream Lipstick glides on and sets into a striking matte finish. Now available in 12 more velvety-soft shades, this waterproof lippie creates a positively polished look with every swipe.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 133,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "Soft Matte Metallic Lip Cream",
+      "price": 7,
+      "image_url": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw21376be0/ProductImages/2018/Lips/Soft_Matte_Metallic_Lip_Cream/softmattelipcream_main.jpg?sw=390&sh=390&sm=fit",
+      "description": "Now available in 12 statement-making metallics, our new Soft Matte Metallic Lip Cream shades deliver a burst of pearly color and set to a stunning matte finish. These little beauties are just as lightweight, delightfully creamy and sweetly scented as all the shades you know and love!",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 134,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Nyx",
+      "product_name": "NYX Rouge Cream Blush",
+      "price": 9.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/7e559a82a8c8b56d75ae5f108d8449ba_ra,w158,h184_pa,w158,h184.png",
+      "description": "NYX Rough Cream Blush is a long-lasting, sheer blusher color in a velvety smooth cream.Features:Provides radiant, long-lasting color and a fresh, dewy glowFormula is infused with minerals that hydrate and condition the skinLong-lasting color in the form of a velvety smooth cream",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 135,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "NYX Mineral Stick Foundation",
+      "price": 11.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/f502dbd04258fd8b613887935f0daa53_ra,w158,h184_pa,w158,h184.png",
+      "description": "NYX Mineral Stick Foundation is a luxurious formula that is easy to apply and blend. Use on the entire face or isolated areas that need a little extra attention. Can be blended with fingertips, sponge or foundation brush.Features:Creamy stick foundation that gives a matte satin finishGlides on effortlessly providing medium to full coverage with a natural finishYou can wear as little or as much as you want to get the desired coverage Easy to blend and comfortable to wear at the same timeHow to Use: Apply directly to face from stick or apply using fingers, sponge or brush. Layer and blend for desired result. Set with powder.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 136,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Nyx",
+      "product_name": "NYX Stay Matte But Not Flat Powder Foundation",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/ae8ef30ce1bbfbc56d28f98343d54f4d_ra,w158,h184_pa,w158,h184.png",
+      "description": "Want a matte finish to help you achieve a flawless complexion? The NYX Stay Matte Not Flat Powder Foundation is the perfect finish to flatter all skin tones! Features:Get a naturally flawless look with minimal effortComes in a variety of shades to suit your skin toneProvides the perfect shine-free finish that lasts all dayMineral enriched, talc and oil freeWater & sweat resistantFeels like silk on skinIngredients: Nylon-12, Hydrogenated Polyisobutene, Magnesium Stearate, Silica, Phenyl Trimethicone, Bis-Diglyceryl Polyacyladipate-2, Cyclopentasiloxane, Dimethiconol, Zinc Stearate, Boron Nitride, Methylparaben, Propylparaben, Tocopheryl Acetate. MAY CONTAIN / PEUT CONTENIR (+/-): Mica,Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, 77492, 77499). ",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 137,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "NYX Jumbo Lip Pencil ",
+      "price": 5.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/6b7a0f4f93839573bf046e149d4927df_ra,w158,h184_pa,w158,h184.png",
+      "description": "NYX Jumbo Lip Pencil is a radiant lip liner that also doubles as a lipstick. NYX Jumbo Lip Pencils infuse lips with alluring, nourishing color, and help you create a perfect pout. Features:Line, define and color with one jumbo pencilFormulated with mineral oil which does not dry out your lipsGoes on smoothly for easy applicationComes in a variety of seductive shades",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 138,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Nyx",
+      "product_name": "NYX Soft Matte Lip Cream",
+      "price": 8.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/1dd732e9af6067d5adb4b3b1ba4a4f8c_ra,w158,h184_pa,w158,h184.png",
+      "description": "Neither lipstick nor lip gloss this NYX Soft Matte Lip Cream is a new kind of lip color that goes on silky smooth and sets to a matte finish. Features:Soft Matte Lip Cream is durableUnlike some matte lipstick formulas this lip cream is moisturizing and does not dry outComes in a variety of shades for every occasionLong wearing, high pigmentation Ingredients: Pentaerythrityl Tetraisostearate, Dimethicone,Beeswax, Glyceryl Behenate / Eicosadioate, Phenoxyethanol, Dimethicone /Dimethicone Crosspolymer, Talc, Methyl Methacrylate Crosspolymer, Silica, Aluminium Starch Octenylsuccinate, Isohexadecane,Disteardimonium Hectorite, Propylene Carbonate, Parfum. MAY CONTAIN / PEUT CONTENIR (+/-):CI77019 (Mica) / CI77891 (Titanium Dioxide), CI15850 (D&C Red 6 Na.Salt), CI15850 (D&C Red 7 Ca Lake), CI15985:1 (FD&C Yellow 6 AlLake), CI19140:1 (FD&C Yellow 5 Al Lake), CI45410 (D&C Red 28 AlLake), CI77491 (Iron Oxide Red), CI77492 (Iron Oxide Yellow), CI77499(Iron Oxide Black), CI77742 (Manganese Violet), CI77891 (TitaniumDioxide).",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 139,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Pacifica",
+      "product_name": "Pacifica Super Powder Supernatural Eye Shadow Trio",
+      "price": 14,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/7fb45dded4fbe7603a9aa9f56a65eeca_ra,w158,h184_pa,w158,h184.png",
+      "description": "Pacifica Super Powder Supernatural Eye Shadow Trio Breathless, Glowing, Sunset is an innovative natural eye shadow that applies like a cream and sets to a powder, allowing for a smooth, velvety application that blends easy and provides a long-lasting, creaseless, flawless finish. Anti-aging ingredients including jojoba and argan oils.Features:100% veganCruelty-freeFormulated witout carmine, FD&C color, parabens and petroleumIngredients: Simmondsia chinensis (jojoba) seed oil, euphoriba cerifera (candelill) wax, copernicia prunifera (carnauba) wax, butyrospermum parkii (shea butter), oryza sativa (rice starch), helianthus annuus (sunflower) seed oil, argania spinosa (argan) kernal oil, tocopherol (vitamin e), kaolin. May contain: titanium dioxides (ci 77492, ci 77491, ci 77499), ultramarines, manganese violet.",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 140,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Pacifica",
+      "product_name": "Pacifica Devocean Natural Lipstick Deeply Devoted Creamy Color",
+      "price": 21,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/54eca0da1259fdc4eed0346e6fdcb590_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Pacifica Devocean Lipstick is a 100% natural, hydrating vegan lipstick that will last with intensity, like the deepest of love.What look do you go for: the natural bronzed babe, tropical brights, or classic beauty? Try all three with this get the look with natural makeup piece found on our blog, The Well! Formulated without: Animal ingredients (including carmine, \nbeeswax and lanolin), animal testing. FD & C colors, mineral oil, \nparabens, phthalates, petroleum, propylene glycol, SLS, gluten, peanut \noil and other ingredients you don't want on your skin.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 141,
+   "model": "products.product",
+   "fields": {
+      "category": 2,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Bronze Booster Glow-Boosting Pressed Bronzer",
+      "price": 20.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/7b33d70c5494b72f23edf9d07acf599d_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "This bronzer with benefits provides an instant and lasting tan-boost that blends and builds easily to your desired level of bronze. Lightweight powder glides on smoothly for a totally uniform and even, healthy-looking tan glow. Formulated with Glow Activators, an exclusive infusion of vitamins, moisturizers and antioxidants that provide mistake-proof Triple-Action Bronze Boosting.Directions for Use: May be worn alone or over makeup. Lightly brush powder over face and neck for a natural-looking tan glow. To accentuate and contour, apply more over cheekbones. For the most even application, be sure to tap excess powder from brush before applying.Ingredients: Talc, Mica, Nylon-12, Zinc Stearate, Cyclopentasiloxane, Dimethicone, Diisostearyl Malate, Octyldodecyl Stearoyl Stearate, Dehydroacetic Acid, Inositol, Lauroyl Lysine, Macuna Pruriens Seed Extract, Maltodextrin, Phospholipids, Silica, Sorbic Acid, Sorbitan Sesquioleate, Ascorbic Acid, Tocopherol, Tocopheryl Acetate, Methylparaben, Propylparaben, May Contain: Iron Oxides, Titanium Dioxide, Ultramarines.* Stain-Free. Streak-Free. Orange-Free. Odour-Free.",
+      "colours": "[5,6,7]"
+   }
+},
+ {
+   "pk": 142,
+   "model": "products.product",
+   "fields": {
+      "category": 2,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Organic Wear 100% Natural Origin Bronzer ",
+      "price": 21.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/9b404b7840f4f3a78426c166aa584216_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Physicians Formula Organic Wear 100% Natural Origin Bronzer is made of \nthe finest Italian powder which delivers a buildable natural tan glow.Two shades blend together for the most natural finish. A 100% natural origin bronzer, formulated with 15% certified organic \ningredients, including jojoba seed oil and corn starch to moisturize and\n mattify the skin. Includes mirror and natural goat hair brush. Directions: May\n be worn alone or over makeup. Lightly brush powder over face and neck \nfor a natural-looking tan glow. For the most even application, be sure \nto tap excess powder from brush before applying. For best results on dry\n to very dry skin, apply moisturizer prior to using powder.Ingredients: MICA, SIMMONDSIA CHINENSIS (JOJOBA) SEED OIL*, MAGNESIUM STEARATE, ZEA \nMAYS (CORN) STARCH*, KAOLIN, CALCIUM CARBONATE, ZINC STEARATE, OLEA \nEUROPAEA (OLIVE) FRUIT OIL*, GLYCERIN, GLYCINE SOJA (SOYBEAN) OIL*, \nGLYCERYL CAPRYLATE, CINNAMIC ACID, SODIUM LEVULINATE, TOCOPHEROL, WATER.\n  MAY CONTAIN: IRON OXIDES, TITANIUM DIOXIDE, ULTRAMARINES.  *PRODUCED \nFROM ORGANIC FARMING.100% Free of Harsh Chemicals. 100% Free of Synthetic Preservatives. 100%\n Free of Parabens.  100% Free of GMO's. 100% Free of Synthetic Colors. \n100% Free of Synthetic Fragrances. 100% Cruelty Free.",
+      "colours": "[5,6,7]"
+   }
+},
+ {
+   "pk": 143,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Mineral Wear Airbrushing Blush",
+      "price": 15.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/e096eb4264561b76a90a9a2bfb6cfca2_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Physicians Formula Mineral Wear Airbrushing Blush is an ultra-fine mineral blush delivers a radiant pop of color with a flawless airbrushed finish.Directions: Buff on blush over cheekbones to define and contour or apply right below\n cheekbones for amore defined and dramatic look. For the most even \napplication, be sure to tap excess powder from brush before applying.Ingredients: Mica, Boron Nitride, Zinc Stearate, Lauroyl Lysine, Tricaprylin, \nMagnesium Silicate, Camellia Oleifera Leaf Extract, Chamomilla Recutita \n(Matricaria) Flower Extract, Ginkgo Biloba Leaf Extract, Panax Ginseng \nRoot Extract, Carthamus Tinctorius (Safflower) Seed Oil, Tocopheryl \nAcetate, Retinyl Palmitate, Ascorbyl Palmitate, Chlorphenesin, Potassium\n Sorbate, Sodium Dehydroacetate, May Contain: Iron Oxides, Titanium \nDioxide, Zinc OxideHypoallergenic. Fragrance-Free. Paraben-Free. Gluten Free.  Dermatologist approved. Non-Comedogenic.",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 144,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Mineral Wear Talc-Free All-In-One ABC Cushion Foundation",
+      "price": 20.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/3c711478d1b8a9f1c7d9f2c1cdffdb41_ra,w158,h184_pa,w158,h184.png",
+      "description": "1st Ever Mineral ABC Cushion Foundation! Weightless mineral formula provides the multi-tasking benefits of an alphabet cream with the gentle, flawless, skin-perfecting effects of minerals. Revolutionary cushion foundation instantly corrects visible imperfections, blurs fine lines and pores with a perfected airbrushed finish.ABC Cushion Technology: Ultra-fluid, lightweight formula delivers an instantly smoothing & firming effect, while hydrating skin for effortless perfection. Unique cushion sponge delivery system dispenses the perfect dose. Each tap delivers customizable light to medium coverage.Features:Featuring a proprietary ABC blend of complexion enhancing minerals, soothing plant extracts, smoothing antioxidants and skin nourishing vitamins for moisturizing & brightening benefits that leave skin with a luminous finishLuxurious puff applicator provides a cooling & skin refreshing finish upon applicationUltra-convenient for on-the-go!Directions: Apply pressure onto cushion with puff applicator to release the perfect dose of foundation for customizable light to medium coverage. Gently pat puff onto skin. Flip cushion for extended foundation usage. Close inner lid tightly to prevent product from drying out. Ingredients: Mineral Water, Ethyl Macadamiate, Cyclopentasiloxane, Dimethicone, Zinc Oxide, Cyclohexasiloxane, Cetyl PEG/PPG-10/1 Dimethicone, Butylene Glycol, Mica, Calcium Aluminum Borosilicate, Polyethylene, Polyglyceryl-4 Isostearate, Water/Eau, PEG/PPG-18/18 Dimethicone, Smithsonite Extract, Malachite Extract, Rhodochrosite Extract, Glycyrrhiza Glabra (Licorice) Root Extract, Retinyl Palmitate, Alpha-Arbutin, Helianthus Annuus (Sunflower) Seed Oil, Glycerin, Ethylhexylglycerin, Tocopheryl Acetate, Tetrahexyldecyl Ascorbate, Tocopherol, Aluminum Hydroxide, Alumina, Dimethicone/Methicone Copolymer, Dimethicone/PEG-10/15 Crosspolymer, Disodium Cocoyl Glutamate, Disodium EDTA, Dimethicone/Polyglycerin-3 Crosspolymer, Hexyl Laurate, Magnesium Sulfate, Malic Acid, Polysorbate 20, Sodium Chloride, Sodium Cocoyl Glutamate, Synthetic Fluorphlogopite, Sodium Citrate, Trimethylsiloxysilicate, Triethoxycaprylylsilane, PEG-32, PEG-10 Dimethicone, Silica, Hexylene Glycol, Dipropylene Glycol, Caprylyl Glycol, Phenoxyethanol ",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 145,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Mineral Wear Airbrushing Pressed Powder ",
+      "price": 19.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/cca454e907546544ca9b5b183bb8a96c_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Physicians Formula Mineral Wear Airbrushing Pressed Powder's ultra-fine mineral powder delivers impeccable coverage for a flawless airbrushed finish. Visibly reduces the appearance of fine lines, wrinkles, pores and sun damage.Directions for Use: Apply liberally 15 minutes before sun exposure.  Use water resistant \nsunscreen if swimming or sweating.  Reapply at least every 2 hours.  \nChildren under 6 months: Ask a doctor.  Sun Protection Measures.  \nSpending time in the sun increases your risk of skin cancer and early \nskin aging.  To decrease this risk, regularly use a sunscreen with a \nbroad spectrum SPF of 15 or higher and other sun protection measures \nincluding: limit time in the sun, especially 10 a.m. - 2 p.m. Wear \nlong-sleeve shirts, pants, hats, and sunglasses.Ingredients: Titanium Dioxide, Zinc Oxide. Inactive Ingredients: Mica, Zinc Stearate,\n Tricaprylin, Boron Nitride, Lauroyl Lysine, Camellia Oleifera Leaf \nExtract, Chamomilla Recutita (Matricaria) Flower Extract, Ginkgo Biloba \nLeaf Extract, Panax Ginseng Root Extract, Carthamus Tinctorius \n(Safflower) Seed Oil, Tocopheryl Acetate, Retinyl Palmitate, Ascorbyl \nPalmitate, Magnesium Silicate, Chlorphenesin, Potassium Sorbate, Sodium \nDehydroacetate, May Contain: Iron Oxides, Titanium Dioxide.Hypoallergenic. Fragrance free. Paraben free. Non-Comedogenic. Dermatologist approved. ",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 146,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Mineral Wear Airbrushing Loose Powder ",
+      "price": 14.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/9ad93ab35e838c5a1669cc934c6d93b6_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Physicians Formula Talc-Free Mineral Wear Airbrushing Loose Powder is an ultra-fine mineral powder delivers impeccable coverage for a flawless airbrushed finish. Visibly reduces the appearance of fine lines, wrinkles, pores and sun damage. Formulated with soothing plant extracts, protective antioxidants, nourishing Vitamins C and E. The result is a visibly firm, smooth, healthy and youthful complexion.Directions for Use: May be worn alone or over makeup. Invert jar and gently tap to allow \npowder to gather in tray. Open the sifter lid and lightly buff powder \nover face and neck to even out complexion. For the most even \napplication, be sure to tap excess powder from brush before applying.  \nFor best results on dry to very dry skin, apply moisturizer prior to \nusing powder.Ingredients: Mica. Boron Nitride. Zinc Stearate. Lauroyl Lysine.  Tricaprylin. \nMagnesium Silicate. Carthamus Tinctorius (Safflower) Seed Oil. \nChamomilla Recutita (Matricaria) Flower Extract. Panax Ginseng Root \nExtract. Ginkgo Biloba Leaf Extract. Camellia Oleifera Leaf Extract. \nAscorbyl Palmitate. Tocopheryl Acetate. Retinyl Palmitate. \nChlorphenesin. Potassium Sorbate. Sodium Dehydroacetate. May Contain: \nIron Oxides. Titanium Dioxide.Hypoallergenic. Fragrance free. Paraben free. Dermatologist approved. Non-Comedogenic.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 147,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Youthful Wear Spotless Foundation",
+      "price": 18.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/99d879544d3e44842f2437e17c9ef52a_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Physicians Formula Youthful Wear Spotless Foundation is the 1st-to-Market ultra-fluid foundation delivers skin-perfecting coverage, an incredible sensorial experience and a finish so natural, it looks invisible on the skin.The 35% silicone formula creates a revolutionary, weightless liquid veil texture, combining the best of both worlds: flawless, spotless coverage + the feeling you have no makeup on at all.With just one drop, skin is immediately brighter, smoother and more even!Hypoallergenic. Paraben-Free. Gluten Free. Dermatologist approved. Non-Comedogenic. Clinically Tested. ",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 148,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Organic Wear Jumbo Lash Mascara",
+      "price": 15.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/f0aa3e9c67743493c5caf4ecccccf57a_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Physicians Formula Organic Wear Jumbo Lash Mascara gives you 100% Dramatic Volume & Glamour. Additional Features: 100% of the Total Ingredients are from Natural Origin.  47% of the Total Ingredients are from Organic Farming.  OrganiSoy Moisturizes and helps nourish lashes.  Eco-Olive a natural antioxidant, shields lashes from harsh environmental aggressors. Directions for Use: Sweep mascara brush from lash base to tips. Apply multiple coats for \nadded volume. Can easily be washed off with soap and water or removed \nwith Physicians Formula Eye Makeup Remover Pads or Lotions.Ingredients: Citrus Aurantium Dulcis (Orange) Fruit Water.* Glycerin. Iron Oxide. \nMicrocrystalline Cellulose. Glyceryl Stearate. Water. Beeswax.* Jojoba \nEsters. Tapioca Starch.* Copernicia Cerifera (Carnauba) Wax.* Stearic \nAcid.  Glyceryl Caprylate. Aloe Barbadensis Leaf Juice.* Cellulose Gum. \nCucumis Sativus (Cucumber) Fruit Extract.* Glycine Soya (Soybean) Oil.* \nHydrolyzed Oryza Sativa (Rice) Protein. Leuconostoc/Radish Root Ferment \nFiltrate. Magnesium Aluminum Silicate. Olea Europaea (Olive) Leaf \nExtract.* May Contain: Titanium Dioxide.Hypoallergenic. Fragrance free. Opthamologist approved.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 149,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Organic Wear 100% Natural Origin Mascara",
+      "price": 15.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/78e3d20b744ec40691dd7357c9db6dd3_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Physicians Formula Organic Wear 100% Natural Origin Mascara's revolutionary 100% Natural Origin formula contains the purest \ningredients and provides 5x Lash Boosting for lash length, volume & \ndefinition naturally. 100% Recyclable Eco-Brush defines each lash with ultra-soft plastic bristles. 100% Free of Harsh Chemicals, Synthetic Preservatives, Parabens, Clumping, Smudging, Flaking, Fibers & Dyes.Directions for Use: Sweep mascara brush from lash base to tips. Apply multiple coats for added volume.Ingredients: Citrus Aurantium Dulcis (Orange) Fruit Water*, Glycerin, \nIron Oxide, Microcrystalline Cellulose, Glyceryl Stearate, Water, \nBeeswax*,  Jojoba Esters, Tapioca Starch*, Copernicia Cerifera \n(Carnauba) Wax*, Stearic Acid, Glyceryl Caprylate, Aloe Barbadensis Leaf\n Juice*, Cellulose Gum, Cucumis Sativus (Cucumber) Fruit Extract*,  \nGlycine Soya (Soybean) Oil*, Hydrolyzed Oryza Sativa (Rice) Protein, \nLeuconostoc/Radish Root Ferment Filtrate, Magnesium Aluminum Silicate, \nOlea Europaea (Olive) Leaf Extract*. May Contain: Titanium Dioxide  \n*Produced from Organic Farming.Hypoallergenic.  Safe for Sensitive Eyes and Contact Lens Wearers.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 150,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Organic Wear FakeOut Mascara",
+      "price": 15.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/2b3d5588b073bfae89c6308dcfe96436_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Physicians Formula Organic Wear FakeOut Mascara is the 1st EVER mascara with 100% natural origin lash extension fibers for the full-on fringe of false lashes without irritation.The innovative formula amplifies lash volume, length & curl. Plus the oversized brush creates a fabulously false lash effect instantly!Features:  100% of the Total Ingredients are from Natural Origin  70% of the Total Ingredients are from Organic FarmingDirections: Sweep mascara brush from lash base to tips. Apply multiple coats for added volume.Ingredients: Citrus Aurantium Dulcis (Orange) Fruit Water*, Glycerin*, Glyceryl \nStearate SE, Beeswax*, Microcrystalline Cellulose, Copernicia Cerifera \n(Carnauba) Wax*, Tapioca Starch*, Hydrolyzed Corn Starch, Stearic Acid, \nJojoba Esters, Oryza Sativa (Rice) Powder*, Oryza Sativa (Rice) \nExtract*, Ceiba Pentandra Fiber Powder, Cellulose, Nylon-10/10, Aloe \nBarbadensis Leaf Extract*, Cucumis Sativus (Cucumber) Fruit Extract*, \nGlycine Soja (Soybean) Oil*, Olea Europaea (Olive) Leaf Extract*, \nGlycerin, Magnesium Aluminum Silicate, Water, Glyceryl Caprylate, \nLeuconostoc / Radish Root Ferment Filtrate May Contain: Iron Oxides, \nTitanium Dioxide* Ingredients from Organic FarmingHypoallergenic.  Fragrance Free. Safe for Sensitive Eyes and Contact Lens Wearers.  Ophthalmologist Approved.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 151,
+   "model": "products.product",
+   "fields": {
+      "category": 7,
+      "brand_name": "Physicians Formula",
+      "product_name": "Physicians Formula Organic Wear Lash Boosting Mascara",
+      "price": 15.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/ca3136ce9bff5df45b34b25b3bbf99aa_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Physicians Formula Organic Wear Lash Boosting Mascara is the 1st Ever 100% Natural Lash Boosting formula enhances the appearance of \nlash length, thickness and volume for dramatic lashes instantly and \nlong-term.Additional Features:100% of the Total Ingredients are from Natural Origin.  44% of the Total Ingredients are from Organic Farming.  100% saw enhanced lashes INSTANLY!Delivers ingredients to the base of lashes for  best results!93% saw thicker & longer looking lashes instantly!  92% saw \nextended & fuller looking lashes after 4 weeks!  *Based on \nindividual perception of results of a panel of women wearing Organic \nWear Lash Boosting Mascara.Directions for Use: Sweep mascara brush from lash base to tips. Apply multiple coats for \nadded volume. Can easily be washed off with soap and water or removed \nwith Physicians Formula Eye Makeup Remover Pads or Lotions.Ingredients: Citrus Aurantium Dulcis (Orange) Fruit Water *, Glycerin, Iron Oxides, \nMicrocrystalline Cellulose, Glyceryl Stearate SE, Water, Lactobacillus \nBulgaricus Ferment Filtrate, Beeswax *, Jojoba Esters, Copernicia \nCerifera (Carnauba) Wax *, Tapioca Starch *, Stearic Acid, Glyceryl \nCaprylate, Aloe Barbadensis Leaf Juice *, Cellulose Gum, Cucumis Sativus\n (Cucumber) Fruit Extract *, Glycine Soja (Soybean) Oil *, Hydrolyzed \nOryza Sativa (Rice) Protein, Magnesium Aluminum Silicate, Olea Europaea \n(Olive) Leaf Extract *, Saccharomyces/Copper Ferment, Saccharomyces/Iron\n Ferment, Saccharomyces/Magnesium Ferment, Saccharomyces/Silicon \nFerment, Saccharomyces/Zinc Ferment, Leuconostoc/Aloe Barbadensis \nLeaf/Sorbus Aucuparia Fruit Ferment Filtrate, Leuconostoc/Radish Root \nFerment Filtrate, Populus Tremuloides Bark Extract, Citric Acid  May \nContain: Titanium DioxideHypoallergenic. Fragrance free. Ophthalmologist approved.  Gluten Free.",
+      "colours": "[1]"
+   }
+},
+ {
+   "pk": 152,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Pure Anada",
+      "product_name": "Pure Anada Loose Mineral Velvet Matte Blush ",
+      "price": 12,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/47169d3a86232fa7eec3a0c43ed1ad06_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Pure Anada Loose Mineral Velvet Matte Blush gives your cheeks a soft sweep of subtle color. Comes packaged in a 3 g sifter jar. Shade Range: Ingredients: Mica, Calcium Carbonate, Iron Oxides, Ultramarines, May contain: Titanium Dioxide",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 153,
+   "model": "products.product",
+   "fields": {
+      "category": 1,
+      "brand_name": "Revlon",
+      "product_name": "Revlon Powder Blush ",
+      "price": 13.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/dd6ee943412a416ecfe9e4a1b2bed107_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Revlon Powder Blush is an ultra-soft, silky powder blush adds a natural flush of color to your \ncheeks and looks freshly applied all day. Enhance your complexion \ninstantly.Features:Provides a natural flush of colour with a soft satin finishEnhances cheekbones instantlyEasy to blend, buildable colourAvailable in 9 amazing shades ",
+      "colours": "[6,8,9]"
+   }
+},
+ {
+   "pk": 154,
+   "model": "products.product",
+   "fields": {
+      "category": 5,
+      "brand_name": "Revlon",
+      "product_name": "Revlon New Complexion One-Step Makeup",
+      "price": 18.29,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/3b9b3cd1bce690e330f335cd696bb098_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Give your skin a bright, natural looking finish in one easy step! This creamy formula combines the coverage of a liquid with the finish of a powder for a natural, even finish. Formulated with a special mineral complex to naturally brighten your skin it offers perfect, long-lasting coverage with SPF 15 protection.",
+      "colours": "[5,6,7,8,9]"
+   }
+},
+ {
+   "pk": 155,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Revlon",
+      "product_name": "Revlon ColorStay Skinny Liquid Liner ",
+      "price": 11.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/808647e541dad521fcc1fa0d728dd47e_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Revlon ColorStay Skinny Liquid Liner gives you bold, even colour with a precise skinny tip applicator!Features:0.1mm skinny tip liner that lasts all dayEasy to apply with mistake proof controlBold, even color in one strokeOphthalmologist Tested\n",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 156,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Revlon",
+      "product_name": "Revlon ColorStay Liquid Eye Liner",
+      "price": 11.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/d02f86bc79a8d2f105672d99474300df_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Elegant, sexy and sophisticated, ColorStay Liquid Liner allows you to emphasize your eyes with precision. Easy application dries quickly and lasts all day without smudging or smearing. Available in 4 shades.",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 157,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Revlon",
+      "product_name": "Revlon Transforming Effects Top Coats",
+      "price": 6.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/5a4b4326f96cafe4c8bfc58ad60559e6_ra,w158,h184_pa,w158,h184.jpg",
+      "description": " Transform your mani with these unique Transforming Effects Top Coats from Revlon.  Bold glazes and alluring textures \ninstantly transform your manicure. Wear over your favourite Nail \nEnamel to create unique effects.\nShades:",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 158,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Revlon",
+      "product_name": "Revlon Top Speed Enamel Nail",
+      "price": 6.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/588d0b742409c3ad227d9b9c616e5772_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Revlon Top Speed's patented formula\n delivers  amazingly quick color, with a built-in topcoat that rises to \nthe surface for a glossy, ultra smooth manicure- that sets in 60 \nseconds.  The ColorPrecise brush ensures even, smooth, salon quality \napplication every time.\n",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 159,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Revlon",
+      "product_name": "Revlon Nail Enamel",
+      "price": 6.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/e960bba3ac7a8cb393b2293a976c2b61_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Rich, glorious, gorgeous color. It completes an outfit. It expresses your mood. It sets hearts racing!Revlon Nail Enamel gives up to 10 \ndays of lasting color and shine. Revlon's exclusive silk-protein \nshield works to instantly help even out the surface of the nail while \nrising above color to automatically smooth away bubbles, streaks and \nbrush marks.",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 160,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Revlon",
+      "product_name": "Revlon ColorBurst Lacquer Balm",
+      "price": 11.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/4992a5ad01b474ae1de4a955d6224aca_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Revlon ColorBurst Lacquer Balm offers high shine with balm-like \nmoisture!  Packaged in an adorable chubby crayon, this Lacquer balm is infused with a Triple Butter Complex of Shea, Mango and \nCoconut Butter.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 161,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Revlon",
+      "product_name": "Revlon Ultra HD Matte Lipcolor",
+      "price": 10.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/8e5fad1f09c17ff8b312508a2a7da161_ra,w158,h184_pa,w158,h184.png",
+      "description": "Revlon Ultra HD Matte Lipcolor gives you lightweight, high definition velvety matte color. It has a moisturizing, velvety \nfeel with a 100% wax-free, gel formula. Features: Creamy mango and whipped vanilla fragrance \nPlush velvety applicator Shade Range: (top row, left to right / bottom row, left to right) Devotion, Obsession, Addiction, Temptation / Flirtation, Love, Seduction, Passion",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 162,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Revlon",
+      "product_name": "Revlon Matte Lipstick",
+      "price": 11.79,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/ee024f34ca91f5fa1358d47284f07fb0_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "\nStraight from the Runway shades !\nBeautifully rich matte color glides effortlessly across lips.\nSuede-like, cushiony feel and with maximum color impact.\nBeautifully rich shades from nude to deepest berry.\n",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 163,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Revlon",
+      "product_name": "Revlon ColorStay Ultimate Liquid Lipstick",
+      "price": 14.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/6750098db06175dee7493eca3f711fc3_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Revlon ColorStay Ultimate Liquid Lipstick is a one-step, food-proof lipcolor with a patented ColorStay technology that lasts up to 24 hours.Features:Food-proof lipcolor with a built-in, ultra-conditioning topcoatOne-step application- No topcoat required for comfortable wearStays comfortable and wears beautifullyDoes not feather or fade; no touch-ups required, even after meals \n \nTo Use: Apply a thin, even layer to clean, bare lips and wait until dry.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 164,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Revlon",
+      "product_name": "Revlon Super Lustrous Lipstick",
+      "price": 11.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/6618c0f47d043084550818a74e6250aa_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Revlon Super Lustrous Lipstick is as essential as the little black dress. With a tonne of fabulous, fashionable shades, Super Lustrous Lipstick offers the widest range of colors, so you are sure to find one that looks gorgeous on you! Packed with mega-moisturizers and vitamins C and E for soft, smooth, sexy lips. Your lips stay kissably conditioned for lasting smoothness while the color stays rich and true.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 165,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Revlon",
+      "product_name": "Revlon ColorBurst Matte Balm ",
+      "price": 11.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/76076d06ebd517f1ae7e359d96d50b32_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Revlon ColorBurst Matte Balm offers velvety color with balm-like moisture!Packaged in an adorable chubby crayon, this Matte balm is infused with a Triple Butter Complex of Shea, Mango and \nCoconut Butter.",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 166,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Salon Perfect",
+      "product_name": "Salon Perfect Nail Lacquer ",
+      "price": 6.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/345fc4da3d9055f3742272714aace73b_ra,w158,h184_pa,w158,h184.png",
+      "description": "Salon Perfect Nail Lacquer has a color for every occasion. Dress up your nails with 32 core shades, limited edition collections, and specialty top coats. These professional, salon-tested formulas come in long-wearing cremes, shimmers, glitters, metallics, neons and top coats.Features:Fashion-forward colorsLong-lasting professional formulas1 Coat Coverage Brush 3 Free FormulaDirections: Trim & File Nails. Push Cuticles Back. Clean Nails. Apply One Thin Coat of Nail Polish (wait 1-2 minutes for dry). Apply 2-3 Additional Thin Coats (to preferred coverage).",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 167,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Sante",
+      "product_name": "Sante Eyeshadow Trio",
+      "price": 24.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/a7bde92c185b56ec210838dea41d9bec_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Sante Eyeshadow Trios each have three complementary shades for your lid,\n crease and highlight. Plus they are formulated with organic jojoba and \nchamomile. Vegan and gluten-free. Not \ntested on animals. \t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 168,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Sante",
+      "product_name": "Sante Kajal Eyeliner Pencil",
+      "price": 17.29,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/9006e43a8083b3dff963ecbfa02c3707_ra,w158,h184_pa,w158,h184.png",
+      "description": "Sante gentle eyeliner pencils have a wonderful texture. They are perfectly suitable\n for use on the inner eyelid. Or can be used blended with a sponge to create a \nsophisticated effect and make the color last longer.  Vegan and \ngluten-free. Not tested on animals.Ingredients: Caprylic/Capric Triglyceride, Ricinus Communis \n(Castor) Seed Oil*, Hydrogenated Palm Kernel Glycerides, Copernica \nCerifera (Carnauba) Wax, Hydrogenated Castor O il, Euphorbia Cerifera \n(Candelilla) Wax, Cera Alba (Beeswax), Hydrogenated Palm Glycerides, \nAscorbyl Palmitate, Tocopherol, Mica, [+/-CI 77007, CI 77288, CI 77491, \nCI 77492, CI 77499, CI 77510, CI 77742, CI 77891]",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 169,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Sante",
+      "product_name": "Sante Nail Polish",
+      "price": 19.29,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/e7bf82336f5e267d5d0b491c12fdb7cd_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "The colours of Sante nail polish range from a gentle glow to bold statement colors, and are very skin-friendly. Quick-drying, long-lasting and resistant. Incomparable variety of colors\n and remarkably wearable: no formaldehyde, toluene or rosin. Not tested on animals.Jewel toned shades like Metallic Lavender by Sante make fall beauty a breeze. For more green fall beauty essentials, check out our blog, The Well!",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 170,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Sinful Colours",
+      "product_name": "Sinful Colours Nail Polish",
+      "price": 2.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/49011c715277e5f39fd63a8e05cd71ef_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "At a low price, Sinful Colors makes putting the glitz on your nails a steal, not a splurge. Nails with bling are an easy and quick way to create your own look: the fabulous value Sinful Colors offers (plus their huge variety of shades!) allows you to easily change your color to match your mood or look any time, any day. With vivid shades that pop, wow, flatter and inspire. In cream, glitter, shimmer and matte, and in formulas you want that provide full color coverage. All made in the USA, with the quality you expect from a leading nail brand, without formaldehyde, toluene and DBP.",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 171,
+   "model": "products.product",
+   "fields": {
+      "category": 8,
+      "brand_name": "Suncoat",
+      "product_name": "Suncoat Girl Water-Based Nail Polish",
+      "price": 8.29,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/492cefdf71c66968dd5c6da10cd9c385_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Suncoat Girl water-based nail polishes are uniquely formulated by their chemists without using any of the following chemicals: Phthalate plasticizers, Toluene, Formaldehyde, Acetates, Alcohol, Glycol ethers, FD&C dyes.Only water, acrylic copolymers and polyurethane (plastic), mineral-based pigments, plastic glitter* and carmine are in these natural nail polishes. Virtually odor-free. Releases water vapor when applied, not toxic chemical fumes. These water-based kids' nail polishes are truly the most natural nail polishes in the market place.*: Spectra glitter, inert plastic glitters. Conforms to ASTM D4236.Application: For children 3 years and older. Use under adult supervision. Also great for anyone to use especially when travel, and for special occasions. Can last couple of days on fingernails. Will last longer on toenails. Apply 2 to 3 thin coats to clean grease-free nails. Dry fully between coats. Peel off the nail polish before changing color by soaking nails in warm water, and peel off from one corner.Shade Range:",
+      "colours": "[1,2,3,4,5,9]"
+   }
+},
+ {
+   "pk": 172,
+   "model": "products.product",
+   "fields": {
+      "category": 6,
+      "brand_name": "Wet N Wild",
+      "product_name": "Wet n Wild Mega Slicks Lip Balm Stain",
+      "price": 3.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/be634f08e36f3a6f18feed1c68065596_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "Now you can amp up your lips with one stick for a kissable pout in no \ntime.To keep you pucker-perfect, these all lip balm stains glide on\n smoothly while conditioning the lips. Enriched with Acai Palm Oil, this\n amazing formula forms a protective shield on the lips to prevent \nfeathering. Complete with six great shades and continuous moisture, the \nformula leaves the lips with a unique minty, cooling sensation. No \nmatter how long the kiss, this balm will last and last. ",
+      "colours": "[1,2,3,4,8,9]"
+   }
+},
+ {
+   "pk": 173,
+   "model": "products.product",
+   "fields": {
+      "category": 4,
+      "brand_name": "Wet N Wild",
+      "product_name": "Wet n Wild Color Icon Eyeshadow Single",
+      "price": 1.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/7d6da9fa070a3d82c6a8e8fc4c8110c2_ra,w158,h184_pa,w158,h184.jpeg",
+      "description": "High-pigmentation and pearl-density create a unique, satiny texture that lasts and lasts. A versatile collection\nof classic and trend shades can be easily worn alone or playfully combined for a variety of looks.",
+      "colours": "[1,2,3,4,5]"
+   }
+},
+ {
+   "pk": 174,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Wet N Wild",
+      "product_name": "Wet n Wild ProLine Graphic Marker Eyeliner",
+      "price": 6.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/917bddd5782d5f05820f61f0bef8f23e_ra,w158,h184_pa,w158,h184.png",
+      "description": "Get graphic with Wet n Wild ProLine Graphic Marker Eyeliner! Draw bold lines with this soft, angled marker tip. This marker liner gives you full control for the quickest, easiest graphic application ever! Features:Create bold graphic looks or thin subtle lines with the angled markerDark, opaque color for bold resultsQuick drying and smudge-freeDirections: Create a variety of lines by adjusting angle of the unique angled marker tip.Ingredients: Water/Eau, Acrylates Copolymer, Laureth-21, Butylene Glycol, PEG-40 Hydrogenated Castor Oil, Glycerin, Propanediol, Propylene Glycol, Chlorphenesin, Dipotassium Glycyrrhizate, Caprylhydroxamic Acid, Trisodium EDTA, Black 2/CI 77266. ",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 175,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Wet N Wild",
+      "product_name": "Wet n Wild ProLine Felt Tip Eyeliner",
+      "price": 6.99,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/32cde2248ec2fb43fd0b165521965b3f_ra,w158,h184_pa,w158,h184.png",
+      "description": "The ProLine Felt Tip Eyeliner is a convenient marker with its soft, felt-tip gives you ultimate control to write on your eyeliner however you'd like. The fine, soft felt-tip glides on easily creating fine or bold lines. Features:Benefits of a liquid liner with the convenience of a penFine, soft felt-tip glides on easilyCreate fine or bold lines for subtle or dramatic results Directions: Start at the inner corners of your eyes and make small strokes following the shape of your eye. For extra drama, extend and thicken at the outer corner of your eyes.Ingredients: Water/Eau, Acrylates Copolymer, Butylene Glycol, Laureth-21, Glycerin, Propylene Glycol, PEG-40 Hydrogenated Castor Oil, Chlorphenesin, Sodium Dehydroacetate, Dipotassium Glycyrrhizate, Trisodium EDTA, Methylisothiazolinone, Black 2/CI 77266.",
+      "colours": "[1,2,3,4]"
+   }
+},
+ {
+   "pk": 176,
+   "model": "products.product",
+   "fields": {
+      "category": 3,
+      "brand_name": "Wet N Wild",
+      "product_name": "Wet n Wild MegaLiner Liquid Eyeliner",
+      "price": 5.49,
+      "image_url": "https://d3t32hsnjxo7q6.cloudfront.net/i/a972397ff3150eab0984483fcd226440_ra,w158,h184_pa,w158,h184.jpg",
+      "description": "Wet n Wild MegaLiner Liquid Eyeliner is formulated with high-definition pigment and a unique blend of polymers for a rich, fluid formula. It dries fast and stays put to subtly enhance or dramatically define the eyes. An easy-to-control, flexible brush gives you precise application.Features:Dries fast and stays put Long-lasting, smudgeproof wear Easy-to-control inkwell applicator Directions: Start at the inner corners of your eyes and make small strokes following the shape of your eye. For extra drama, extend and thicken at the outer corner of your eyes.Ingredients: Water/Eau, Propylene Glycol, PVP, Steareth-2, Stearic Acid, Steareth-21, Sodium Polymethacrylate, Glyceryl Stearate, Laureth-21, Phenoxyethanol, Arginine, Caprylyl Glycol, PEG-40 Hydrogenated Castor Oil, Citric Acid, Ethylhexylglycerin, Hexylene Glycol, Sodium Dehydroacetate, Simethicone, Magnesium Aluminum Silicate, Xanthan Gum, Sodium Citrate, Cellulose Gum, Chlorphenesin, Acrylates Copolymer, PPG-26-Buteth-26, Microcrystalline Cellulose, [+/- (MAY CONTAIN/PEUT CONTENIR): Iron Oxides/CI 77491, CI 77492, CI 77499, Ultramarines/CI 77007, Titanium Dioxide/CI 77891, Mica, Black 2/CI 77266, Carmine/CI 75470, Chromium Oxide Greens/CI 77288, Ferric Ferrocyanide/CI 77510].",
+      "colours": "[1,2,3,4]"
+   }
+}
+]
