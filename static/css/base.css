@@ -125,3 +125,17 @@ footer hr{
     background-color: #f8bab1;
     transition: .25s ease-in-out;
 }
+
+
+/* Styling for products */
+
+.product-card {
+    margin: 10px;
+}
+
+.product-image {
+    height: 200px;
+    width: 200px;
+    object-fit: contain
+}
+
