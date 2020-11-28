@@ -203,8 +203,3 @@ nav {
     max-height:100%;
     object-fit: cover;
 }
-
-.text-muted:hover {
-    background-color: red;
-    color: #f8bab1;
-}

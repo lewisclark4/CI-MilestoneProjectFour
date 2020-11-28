@@ -33,14 +33,14 @@
                     </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{% url 'products' %}">All</a>
-                    <a class="dropdown-item" href="#">Blush</a>
-                    <a class="dropdown-item" href="#">Bronzer</a>
-                    <a class="dropdown-item" href="#">Eye Liner</a>
-                    <a class="dropdown-item" href="#">Eye Shadow</a>
-                    <a class="dropdown-item" href="#">Foundation</a>
-                    <a class="dropdown-item" href="#">Lipstick</a>
-                    <a class="dropdown-item" href="#">Mascara</a>
-                    <a class="dropdown-item" href="#">Nail polish</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=blush">Blush</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=bronzer">Bronzer</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=eye_liner">Eye Liner</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=eye_shadow">Eye Shadow</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=foundation">Foundation</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=lipstick">Lipstick</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=mascara">Mascara</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=nail_polish">Nail polish</a>
                     
                 </div>
             </li>
@@ -55,7 +55,7 @@
             </li>
         </ul>
         <div class="dropdown-divider"></div>
-        <form class="form-inline" method="GET" action="">
+        <form class="form-inline" method="GET" action="{% url 'products' %}">
             <input class="form-control search-bar" name="q" type="search" placeholder="Search" aria-label="Search">
             <button class="btn nav-icon" type="submit">
                 <i class="fas fa-search"></i>
