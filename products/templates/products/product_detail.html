@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page-header %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+        <div class="row">
+            <div class="col-10 offset-1 col-md-5 mx-auto">
+                <div class="product-details-image-container">
+                    {% if product.image_url %}
+                        <a href="{{ product.image_url }}" target="_blank">
+                            <img class="product-details-image" src="{{ product.image_url }}" alt="{{ product.product_name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="product-details-image" src="" alt="{{ product.product_name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-10 col-md-5 mx-auto">
+                <div class="product-details-container">
+                    <h5 class="">{{ product.product_name }}</h5>
+                    <p class=""><strong>£{{ product.price }}</strong></p>
+                    {% if product.category %}
+                    <p class="">
+                        <a class="text-muted product-category-tag" href="">
+                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </p>
+                    {% endif %}
+                    <p>{{ product.description }}</p>
+                    <form class="form" action="" method="POST">
+                            <div class="col-3">
+                                <p class=""><strong>Quantity:</strong></p>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input class="form-control qty_input" type="number"
+                                            name="quantity" value="1" min="1" max="99"
+                                            data-item_id="{{ product.id }}"
+                                            id="id_qty_{{ product.id }}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %} 

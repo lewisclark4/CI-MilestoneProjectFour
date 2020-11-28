@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page-header %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort By...
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price (low to high)</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc">Price (high to low)</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc">Rating (low to high)</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">Rating (high to low)</a>
+                </div>
+            </div>
+        <div class="row">
+        {% for product in products %}
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <a class="card product-listing-card" href="{% url 'product_detail' product.id %}">
+                    <div class="product-listing-image-container mx-auto">
+                        <img class="product-listing-image mx-auto" src="{{ product.image_url }}" alt="{{ product.product_name }}">
+                    </div>
+                    <div class="product-listing-details">
+                        <div class="product-listing-name">
+                            <h5>{{ product.product_name }}</h5>
+                        </div>
+                        <hr class="white-rule">
+                        <div class="product-listing-info d-flex justify-content-between">
+                            <p>{{ product.brand_name }}</p>
+                            <p><strong>£{{ product.price }}</strong></p>
+                        </div>
+                    </div>
+                    <button class="btn submit-button"><strong>View colour options</strong></button>
+                </a>
+            </div>   
+        {% endfor %}
+        </div>
+    </div>
+
+{% endblock %} 
+
+
+
+
+    
