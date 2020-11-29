@@ -33,15 +33,9 @@
                     </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{% url 'products' %}">All</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=blush">Blush</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=bronzer">Bronzer</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=eye_liner">Eye Liner</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=eye_shadow">Eye Shadow</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=foundation">Foundation</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=lipstick">Lipstick</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=mascara">Mascara</a>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=nail_polish">Nail polish</a>
-                    
+                    {% for category in all_categories %}
+                    <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}">{{category.friendly_name}}</a>     
+                    {% endfor %}          
                 </div>
             </li>
             <li class="nav-item dropdown">

@@ -5,7 +5,7 @@ from .models import Product, Category, Colour
 
 # Create your views here.
 
-def all_products(request):
+def all_products(request, slug=None):
 
     """
     To display all products, or products filter dependent.
@@ -16,8 +16,40 @@ def all_products(request):
     sort = None
     direction= None
 
-    if request.GET:
 
+    if slug is not None:
+        category = Category.objects.get(slug=slug)
+        if "sort" in request.GET:
+            sortkey = request.GET["sort"]
+            if "direction" in request.GET:
+                direction = request.GET["direction"]
+                if direction == "desc":
+                    sortkey = f"-{sortkey}"
+            products = Product.objects.filter(
+                category=category.id).order_by(sortkey)
+        else:
+            products = Product.objects.filter(
+                category=category.id)
+    else:
+        if "sort" in request.GET:
+            sortkey = request.GET["sort"]
+            if "direction" in request.GET:
+                direction = request.GET["direction"]
+                if direction == "desc":
+                    sortkey = f"-{sortkey}"
+            products = Product.objects.order_by(sortkey)
+        else:
+            products = Product.objects.all()
+            
+
+    context = {
+        "products": products,
+        "category": category,
+    }
+
+    return render(request, "products/products.html", context)
+"""
+    if request.GET:
         if "sort" in request.GET:
             sortkey = request.GET["sort"]
             if "direction" in request.GET:
@@ -43,27 +75,14 @@ def all_products(request):
 
             queries = Q(product_name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
-    
-    current_sorting = f'{sort}_{direction}'
-
-    context = {
-        "products": products,
-        "search" : query,
-        "category": category,
-        "current_sorting": current_sorting,
-    }
-
-    return render(request, "products/products.html", context)
-
-
-
-def product_detail(request, product_id):
+"""
+def product_detail(request, name):
 
     """ 
     returns the product detail view with all of the products information
     """
 
-    product = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, name)
 
     context = {
         "product": product,
