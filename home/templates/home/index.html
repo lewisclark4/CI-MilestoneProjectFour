@@ -5,7 +5,34 @@
 {% endblock %}
 
 {% block content %}
-
-    <h1>Home App Index</h1>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <img class="home-image" src="{% static 'images/hex-logo-desktop.png' %}" alt="Hex Cosmetics Logo">
+            </div>
+            <div class="col-sm-12 col-md-6 shop-all">
+                <a href="{% url 'products' %}" class="mx-auto" >
+                    <button class="btn submit-button"><strong>Shop all products</strong></button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+         <hr class="rose-rule">
+         <h2 class="text-center">Check out our ranges below</h2>
+        <div class="row">
+        {% for category in all_categories %}
+            <div class="col-sm-12 col-md-6 col-lg-3 ">
+                <a class="card category-card" href="{% url 'products_by_category' category.slug %}">
+                {% if category.image %}
+                    <img class="category-image" src="{{ MEDIA_URL }}{{ category.image }}" alt="Shop {{ category.friendly_name }}">
+                {% else %}
+                    <img class="category-image" src="{{ MEDIA_URL }}noimage.png" alt="Shop {{ category.friendly_name }}">
+                {% endif %}
+                    <button class="btn submit-button"><strong>Shop {{ category.friendly_name }}</strong></button>
+                </a>
+            </div> 
+        {% endfor %}  
+        </div>
+    </div>
 {% endblock %} 

@@ -140,10 +140,15 @@ nav {
 }
 
 .submit-button {
-    color: #f8bab1;
     background-color: #fff;
     border-radius: 10px;
     border: 2px solid transparent;
+}
+
+.submit-button:hover,
+.submit-button:focus,
+.submit-button:active {
+  box-shadow: none;
 }
 
 .social-icon i:hover, .submit-button:hover {
@@ -154,48 +159,78 @@ nav {
 }
 
 
-/* Styling for products listings */
-
-.product-listing-card {
-    margin: 10px;
-    border-color: #f8bab1;
+/* Styling for Home/Index.html */
+.home-image {
+    width: 100%;
+    margin-bottom:1em;
 }
 
-.product-listing-card:hover {
+.shop-all{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.category-card {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border: none
+}
+
+.category-card:hover {
+    text-decoration: none
+}
+
+.category-image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Styling for listings */
+
+.listing-card {
+    margin: 10px;
+    border-color: #f8bab1;
+    color: #f8bab1;
+}
+
+.listing-card:hover {
     text-decoration: none;
     box-shadow: inset 0 1px 1px #f8bab1, 0 0 8px #f8bab1;
     transition: .25s ease-in-out;
+    color: #f8bab1;
 }
 
-.product-listing-image-container {
+.listing-image-container {
     height: 200px;
     width: 200px;
     display: flex;
     align-items: center;
 }
 
-.product-listing-image {
-    padding: 5px;
+.listing-image {
     max-width:100%;
     max-height:100%;
     object-fit: contain;
+    border-radius: 2px;
 }
 
-.product-listing-details {
-    color: #f8bab1;
-}
-
-.product-listing-title {
+.listing-title {
     height: 80px;
     padding: 5px;
     text-align: center;
 }
 
-.product-listing-name {
+.listing-name {
     height: 100%;  
 }
 
-.product-listing-info {
+.listing-info {
     padding: 5px;
     background-color:  #f8bab1;
     color: #fff;
@@ -203,7 +238,6 @@ nav {
 }
 
 /* Styling for products details */
-
 
 .product-details-image {
     max-width:100%;
