@@ -60,16 +60,20 @@ def all_products(request, category_slug=None):
             queries = Q(product_name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 """
-def product_detail(request, name):
+def product_detail(request, category_slug, product_slug):
 
     """ 
     returns the product detail view with all of the products information
     """
-
-    product = get_object_or_404(Product, name)
+    category = Category.objects.get(slug=category_slug)
+    product = Product.objects.get(
+        category__slug=category_slug,
+        slug=product_slug,
+    )
 
     context = {
         "product": product,
+        "category": category,
     }
 
     return render(request, "products/product_detail.html", context)
