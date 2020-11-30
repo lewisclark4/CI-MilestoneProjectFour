@@ -5,7 +5,7 @@ from .models import Product, Category, Colour
 
 # Create your views here.
 
-def all_products(request, slug=None):
+def all_products(request, category_slug=None):
 
     """
     To display all products, or products filter dependent.
@@ -17,8 +17,8 @@ def all_products(request, slug=None):
     direction= None
 
 
-    if slug is not None:
-        category = Category.objects.get(slug=slug)
+    if category_slug is not None:
+        category = Category.objects.get(slug=category_slug)
         if "sort" in request.GET:
             sortkey = request.GET["sort"]
             if "direction" in request.GET:
@@ -49,23 +49,7 @@ def all_products(request, slug=None):
 
     return render(request, "products/products.html", context)
 """
-    if request.GET:
-        if "sort" in request.GET:
-            sortkey = request.GET["sort"]
-            if "direction" in request.GET:
-                direction = request.GET["direction"]
-                if direction == "desc":
-                    sortkey = f"-{sortkey}"
-            products = products.order_by(sortkey)
-        else:
-            products = Product.objects.all()
-
-        if "category" in request.GET:
-            category = request.GET["category"]
-            products = products.filter(category__name__iexact=category)
-            category = Category.objects.filter(
-                    name__iexact=category)
-
+   
         if "q" in request.GET:
             query = request.GET["q"]
             

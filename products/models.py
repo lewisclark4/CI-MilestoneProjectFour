@@ -19,7 +19,7 @@ class Category(models.Model):
         return self.friendly_name
 
     def get_absolute_url(self):
-        return reverse('products_by_category', kwargs={'slug': self.slug})
+        return reverse('products_by_category', kwargs={'category_slug': self.slug})
 
 class Colour(models.Model):
     colour = models.CharField(max_length=254)
