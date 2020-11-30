@@ -8,11 +8,10 @@ from .models import Product, Category, Colour
 def all_products(request, category_slug=None):
 
     """
-    To display all products, or products filter dependent.
+    To display all products, or products filter & sort dependent.
     """
     products = Product.objects.all()
-    query = None
-    category = None
+    category= None
     sort = None
     direction= None
 
@@ -48,19 +47,8 @@ def all_products(request, category_slug=None):
     }
 
     return render(request, "products/products.html", context)
-"""
-   
-        if "q" in request.GET:
-            query = request.GET["q"]
-            
-            if not query:
-                messages.error(request, "You didn't enter any search criteria")
-                return redirect(reverse("products"))
 
-            queries = Q(product_name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
-"""
-def product_detail(request, category_slug, product_slug):
+def product_detail(request, product_slug, category_slug):
 
     """ 
     returns the product detail view with all of the products information

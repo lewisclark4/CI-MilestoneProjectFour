@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
+from django.urls import reverse
 
 # Create your models here.
 
@@ -50,7 +51,7 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse(
-            "product_details",
+            "product_detail",
             args=[self.category.slug, self.slug],
         )
 
