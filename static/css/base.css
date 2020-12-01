@@ -47,7 +47,6 @@ nav {
     width: 100%;
 }
 
-
 .navbar-light .navbar-nav .nav-link{
     color: #000;
 }
@@ -86,15 +85,18 @@ nav {
     flex-flow: row nowrap;
 }
 
-.banner {
+.scroll-top-button {
     position: fixed;
-    top: 95px;
-    left: 0;
-    width: 100%;
-
+    bottom: 50px;
+    right: 10px;
+    z-index: 3;
+    border: 1px solid #fff;
+    background-color: #f8bab1;
+    color: #fff;
+    display: None
 }
 
-.banner, #footer {
+#footer {
     background-color: #f8bab1;
     color: #fff;
     text-align: center;
@@ -145,10 +147,8 @@ nav {
     border: 2px solid transparent;
 }
 
-.submit-button:hover,
-.submit-button:focus,
-.submit-button:active {
-  box-shadow: none;
+.btn:hover, .btn:focus, .btn:active {
+    box-shadow: none;
 }
 
 .social-icon i:hover, .submit-button:hover {
