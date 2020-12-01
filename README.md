@@ -29,6 +29,62 @@
 
 ### Skeleton
 
+<details>
+<summary>Home wireframes</summary>
+<p align="center">
+    <img height="400" src="https://ibb.co/1L6n4zR">
+</p>
+</details>
+
+<details>
+<summary>Product Listing wireframes</summary>
+<p align="center">
+    <img height="400" src="https://ibb.co/ncgFt1B">
+</p>
+</details>
+
+<summary>Product Details wireframes</summary>
+<p align="center">
+    <img height="400" src="https://ibb.co/WBMrbnf">
+</p>
+</details>
+
+<summary>Shopping Bag wireframes</summary>
+<p align="center">
+    <img height="400" src="https://ibb.co/68QvPWm">
+</p>
+</details>
+
+<summary>Shipping Details wireframes</summary>
+<p align="center">
+    <img height="400" src="https://ibb.co/GJNqYzR">
+</p>
+</details>
+
+<summary>Payment Details wireframes</summary>
+<p align="center">
+    <img height="400" src="https://ibb.co/jkdLGnY">
+</p>
+</details>
+
+<summary>Order Confirmation wireframes</summary>
+<p align="center">
+    <img height="400" src="https://ibb.co/xsV83b1">
+</p>
+</details>
+
+<summary>About us wireframes</summary>
+<p align="center">
+    <img height="400" src="https://ibb.co/3RM6n79">
+</p>
+</details>
+
+<summary>FAQs wireframes</summary>
+<p align="center">
+    <img height="400" src="https://ibb.co/F6GTzVp">
+</p>
+</details>
+
 ### Surface
 #### Font
 
