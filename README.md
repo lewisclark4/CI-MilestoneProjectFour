@@ -77,56 +77,63 @@
 <details>
 <summary>Home wireframes</summary>
 <p align="center">
-    <img height="400" src="https://ibb.co/1L6n4zR">
+    <img height="400" src="https://i.ibb.co/hyfMTY2/Home.jpg">
 </p>
 </details>
 
 <details>
 <summary>Product Listing wireframes</summary>
 <p align="center">
-    <img height="400" src="https://ibb.co/ncgFt1B">
+    <img height="400" src="https://i.ibb.co/1qvkjXM/Products-Search-Results.jpg">
 </p>
 </details>
 
+<details>
 <summary>Product Details wireframes</summary>
 <p align="center">
-    <img height="400" src="https://ibb.co/WBMrbnf">
+    <img height="400" src="https://i.ibb.co/BTQhXLB/Listings.jpg">
 </p>
 </details>
 
+<details>
 <summary>Shopping Bag wireframes</summary>
 <p align="center">
-    <img height="400" src="https://ibb.co/68QvPWm">
+    <img height="400" src="https://i.ibb.co/8bkz570/Cart.jpg">
 </p>
 </details>
 
+<details>
 <summary>Shipping Details wireframes</summary>
 <p align="center">
-    <img height="400" src="https://ibb.co/GJNqYzR">
+    <img height="400" src="https://i.ibb.co/CtDfCRQ/Checkout-Shipping.jpg">
 </p>
 </details>
 
+<details>
 <summary>Payment Details wireframes</summary>
 <p align="center">
-    <img height="400" src="https://ibb.co/jkdLGnY">
+    <img height="400" src="https://i.ibb.co/k2ph0NT/Checkout-Payment.jpg">
 </p>
 </details>
 
+<details>
 <summary>Order Confirmation wireframes</summary>
 <p align="center">
-    <img height="400" src="https://ibb.co/xsV83b1">
+    <img height="400" src="https://i.ibb.co/mBQFSK9/Checkout-Order-Confirmation.jpg">
 </p>
 </details>
 
+<details>
 <summary>About us wireframes</summary>
 <p align="center">
-    <img height="400" src="https://ibb.co/3RM6n79">
+    <img height="400" src="https://i.ibb.co/5KnpP6g/About.jpg">
 </p>
 </details>
 
+<details>
 <summary>FAQs wireframes</summary>
 <p align="center">
-    <img height="400" src="https://ibb.co/F6GTzVp">
+    <img height="400" src="https://i.ibb.co/dBnYDgZ/FAQs.jpg">
 </p>
 </details>
 
