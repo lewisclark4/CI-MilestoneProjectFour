@@ -11,8 +11,8 @@ class Category(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     class Meta:
-        verbose_name = "Category"
-        verbose_name_plural = "Categories"
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
 
     def __str__(self):
         return self.name
@@ -41,6 +41,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     description = models.TextField()
+    featured = models.BooleanField(default=False)
     colours = models.ManyToManyField(Colour)
 
     def __str__(self):
@@ -52,7 +53,7 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse(
-            "product_detail",
+            'product_detail',
             args=[self.category.slug, self.slug],
         )
 

@@ -1,0 +1,17 @@
+{% load static %}
+<h4 class="featured-products-heading mx-auto"><i class="fas fa-star"></i> Featured Products <i class="fas fa-star"></i></h4>
+<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "groupCells": true }'>
+{% for product in featured_products %}
+    <div class="carousel-cell">
+        <a class="featured-listing-link" href="{{product.get_absolute_url}}">
+            <img src="{{ product.image_url }}" alt="{{ product.product_name }}">
+            <div class="listing-info d-flex justify-content-between">
+                <p class="m-0">{{ product.brand_name }}</p>
+                <p class="m-0"><strong>£{{ product.price }}</strong></p>
+            </div>
+        </a>
+    </div>
+{% endfor %}
+</div>
+
+       

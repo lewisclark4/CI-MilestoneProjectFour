@@ -96,6 +96,32 @@ nav {
     display: None
 }
 
+.featured-products-heading {
+    margin-top: 2em;
+    color: 
+}
+
+.carousel {
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.carousel-cell {
+    height: 150px;
+    width: 150px;
+    margin: 2em;
+}
+
+.carousel img {
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+}
+
+.featured-listing-link:hover {
+    text-decoration: none;
+}
+
 #footer {
     background-color: #f8bab1;
     color: #fff;
