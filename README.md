@@ -233,6 +233,12 @@ Given the introduction of Microsoft Edge, I am reasonably comfortable to have so
 
 ### Bugs Encountered & Fixed
 
+1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price/ rating).
+
+The issue I found was that when I initially created the function, the URL was only designed to pass in the sort type and direction, and thereore if I had already filtered the list to a specific category, using the sort order returned all products.
+
+To fix this I needed to pass in the category (if it had be selected). I utilised slugs to help acheive this (which also improved the URL naming) and passed these arguments into the all_products view.
+
 
 [Back to Top](#overview)
 
@@ -256,4 +262,7 @@ Given the introduction of Microsoft Edge, I am reasonably comfortable to have so
 
 ### Acknowledgements
 
+- [learndjango](https://learndjango.com/tutorials/django-slug-tutorial) + CI Tutor Miklos Sarosi for guidance on implementing slugs into my project to assist with 'bug #1'.
+
 [Back to Top](#overview)
+
