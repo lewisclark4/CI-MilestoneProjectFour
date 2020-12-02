@@ -14,13 +14,52 @@
 
 ## Overview
 
+Hex Cosmetics is a fictitious e-commerce site which is designed user friendly store that is easy to navigate.
+
+Hex Cosmetics provides a wide array of commonly used cosmetic products (mascara, foundation, lipstick etc.) 
+
+Hex Cosmetics also provides a range of different brands to enable site users to purchase well known products.
+
+The site's home page easily allows a site user to select the specific type of make-up they are looking for, as well as being able to shop all products, or view the site's featured products or sale products.
+
+
 ## Live site
 
-## UXD
+## UX
 
-### User stories
+### Strategy
 
-#### Viewing and Navigation
+The key design principle of this site, is to keep the site very visual and not overcrowded with text (excluding products details, given users may want to understand more about any given product). 
+Site visitors will generally be looking for a specific product(s) (or type of product(s)), and therefore it needs to be quick and easy for them to locate and purchase them.
+The site therefore needs to be very intuitive, and have simple & easy to use navigation that is expected of e-commerce sites.
+
+### Scope
+#### Goals
+##### Visitor Goals
+
+The target audience for Hex Cosmetics are:
+- People who are looking for a one-stop shop for their make-up products.
+- People who value buying products from known brands.
+- People who want 
+
+User goals are:
+- Easily find & purchase the makeup products that I want.
+- Be able to navigate the shop quickly & easily.
+- Feel confident that I am making a safe and secure purchase.
+- Buy from a professional & trustworthy online shop.
+
+##### Business Goals
+
+The goals of the Hex Cosmetics business are:
+- Provide a visually appealing online store that helps the user to feel safe that they are buying from a trustworthy source.
+- Make sales of products easy for buyers to increase sales.
+- Connect with customers through Hex Cosmetics social media/ increase social media following.
+- Increase the Hex Cosmetics newsletter subscription.
+
+
+#### User stories
+
+##### Viewing and Navigation
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |      | user    | view a list of available products | identify if there are any products I would like to purchase |
@@ -28,7 +67,7 @@
 |      | user    | identify discounts and special offers | take advantage of savings on games that I'd like to purchase |
 |      | user    | View the total of my cart at any time | see how much money I will spend on the products I want to purchase |
 
-#### Registration and User Accounts
+##### Registration and User Accounts
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |      | user    | register for an account | have an account to be able to store my details for repeat use |
@@ -37,7 +76,7 @@
 |      | user    | recover my password | recover access to my account if I forget my credentials |
 |      | user    | have a personalized user profile | view my order history and order confirmations and save my payment information |
 
-#### Scrolling and Searching
+##### Scrolling and Searching
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |      | user    | sort the list of products| easily identify the best rated, best-priced products|
@@ -45,7 +84,7 @@
 |      | user    | search for a product by name or description. | find a specific product I would like to purchase |
 |      | user    | easily see what I have searched for and the number of results | quickly decide whether the product I want is available |
 
-#### Purchasing and Checkout
+##### Purchasing and Checkout
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |      | user    | easily add or remove the product I want to purchase | easily make changes to my purchase before checkout |
@@ -56,7 +95,15 @@
 |      | user    | view an order confirmation after checkout | verify that I have not made any errors and confirm that my order has been submitted |
 |      | user    | receive an email confirmation after checking out | keep the confirmation of what I have purchased for my records |
 
-#### Admin and Store Management
+##### About HEX
+| Done | As a... | I would like to be able to... | So that I may...|
+| ---- | ------- | ----------------------------- | --------------- |
+|      | user    | view a list of frequently asked questions | identify the answer to a query I may have|
+|      | user    | view details about Hex Cosmetics | so that I can become more familiar with the brand |
+|      | user    | subscribe to the Hex Cosmetics newsletter | so that I can keep up to date with the latest products & offers |
+|      | user    | find Hex Cosmetics on social media | so that I can follow the brand and keep up to date with their latest content |
+
+##### Admin and Store Management
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |      | Admin   | add a product | add new products to the store |
@@ -64,10 +111,6 @@
 |      | Admin   | delete a product | remove products that are no longer for sale |
 |      | Admin   | have access to an admin dashboard | manage products and orders |
 |      | Admin   | view any previous order made | see what was purchased to ensure they get fulfilled |
-
-### Strategy
-
-### Scope
 
 ### Structure
 
