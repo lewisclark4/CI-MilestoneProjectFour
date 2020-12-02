@@ -6,55 +6,19 @@
 
 {% block content %}
     <div class="container">
-        <div class="row">
         {% if not products %}
+        <div class="row">
             <div class="col-12 text-center">
                 <h3>Unfortunately we don't currently have any products available.</h3>
             </div>
+        </div>
         {% else %}
-            {% if not category.slug %}
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sort By...
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price (low to high)</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc">Price (high to low)</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc">Rating (low to high)</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">Rating (high to low)</a>
-                    </div> 
-                </div>
-            {% else %}
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sort By...
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=price&direction=asc">Price (low to high)</a>
-                        <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=price&direction=desc">Price (high to low)</a>
-                        <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=rating&direction=asc">Rating (low to high)</a>
-                        <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=rating&direction=desc">Rating (high to low)</a>
-                    </div> 
-                </div>
-            {% endif %} 
-            <div class="row">
-                {% for product in products %}
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <a class="card listing-card" href="{{product.get_absolute_url}}">
-                            <div class="listing-image-container mx-auto">
-                                <img class="listing-image mx-auto" src="{{ product.image_url }}" alt="{{ product.product_name }}">
-                            </div>
-                            <div class="listing-title">
-                                <h5 class="listing-name"><Strong>{{ product.product_name }}</Strong></h5>
-                            </div>
-                            <div class="listing-info d-flex justify-content-between">
-                                <p class="m-0">{{ product.brand_name }}</p>
-                                <p class="m-0"><strong>£{{ product.price }}</strong></p>
-                            </div>
-                            <button class="btn submit-button"><strong>View colour options</strong></button>
-                        </a>
-                    </div>   
-                {% endfor %}
+        <div class="row">
+            {% include 'products/includes/product_sort.html' %}
+        </div>
+        <div class="row">
+            {% include 'products/includes/product_results.html' %}
+        </div>
         {% endif %}
         </div>
     </div>
