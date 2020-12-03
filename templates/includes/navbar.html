@@ -15,7 +15,7 @@
                 </a>
             </li>
             <li class="nav-item d-lg-none">
-                <a class="nav-link" href="">
+                <a class="nav-link" href=" {% url 'view_basket' %}">
                     <p id="cart-total" class="m-0">
                     <i class="nav-icon fas fa-shopping-cart"></i>
                         {% if grand_total %}
@@ -86,7 +86,7 @@
             </li>
             {% endif  %}
             <li class="nav-item d-none d-lg-block">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{% url 'view_basket' %}">
                     <p id="cart-total" class="m-0">
                     <i class="nav-icon fas fa-shopping-cart"></i>
                         {% if grand_total %}

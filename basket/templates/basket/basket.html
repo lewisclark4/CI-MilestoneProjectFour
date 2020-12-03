@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 text-center">
+                {% if empty_basket %}
+                <h3>Your basket is currently empty!</h3>
+                <a href="{% url 'products' %}" class="btn submit-button">
+                    <span>Continue shopping</span>&nbsp;
+                    <span class="icon"><i class="fas fa-chevron-right fa-xs"></i></span>
+                </a>
+                {% else %}
+                <h3>Shopping Basket</h3>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% if not empty_basket %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div id="shopping-basket-contents">
+            </div>
+            <a class="text-center btn submit-button" href="">
+                <span>Checkout</span>&nbsp;
+                <span class="icon"><i class="fas fa-chevron-right fa-xs"></i></span>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
+
+<span class="icon"><i class="fas fa-arrow-circle-left"></i></span>
+            <span class="is-uppercase"><strong>Keep Shopping</strong></span>
