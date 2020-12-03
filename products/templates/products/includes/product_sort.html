@@ -1,0 +1,25 @@
+{% if not category.slug %}
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sort By...
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price (low to high)</a>
+            <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc">Price (high to low)</a>
+            <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=asc">Rating (low to high)</a>
+            <a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">Rating (high to low)</a>
+        </div> 
+    </div>
+{% else %}
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sort By...
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=price&direction=asc">Price (low to high)</a>
+            <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=price&direction=desc">Price (high to low)</a>
+            <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=rating&direction=asc">Rating (low to high)</a>
+            <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=rating&direction=desc">Rating (high to low)</a>
+        </div> 
+    </div>
+{% endif %} 
