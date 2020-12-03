@@ -76,7 +76,7 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'products.context.all_categories',
                 'products.context.featured_products',
-                'bags.contexts.basket_contents',
+                'basket.context.basket_contents',
             ],
         },
     },
@@ -155,3 +155,6 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
