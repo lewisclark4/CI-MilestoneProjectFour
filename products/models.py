@@ -24,6 +24,7 @@ class Category(models.Model):
         return reverse('products_by_category', kwargs={'category_slug': self.slug})
 
 class Colour(models.Model):
+    product = models.ForeignKey('Product', null=True, blank=True, on_delete=models.CASCADE)
     colour = models.CharField(max_length=254)
     hex_value = models.CharField(max_length=7)
 
@@ -42,7 +43,6 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     description = models.TextField()
     featured = models.BooleanField(default=False)
-    colours = models.ManyToManyField(Colour)
 
     def __str__(self):
         return self.product_name

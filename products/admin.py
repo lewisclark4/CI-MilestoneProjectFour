@@ -12,6 +12,7 @@ admin.site.register(Category,CategoryAdmin)
 
 class ColourAdmin(admin.ModelAdmin):
     list_display = [
+            'product',
             'colour',
             'hex_value',
         ]
