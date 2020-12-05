@@ -15,11 +15,11 @@
                 </a>
             </li>
             <li class="nav-item d-lg-none">
-                <a class="nav-link" href="">
+                <a class="nav-link" href=" {% url 'view_basket' %}">
                     <p id="cart-total" class="m-0">
                     <i class="nav-icon fas fa-shopping-cart"></i>
                         {% if grand_total %}
-                            ${{ grand_total|floatformat:2 }}
+                            £{{ grand_total|floatformat:2 }}
                         {% else %}
                             £0.00
                         {% endif %}
@@ -86,11 +86,11 @@
             </li>
             {% endif  %}
             <li class="nav-item d-none d-lg-block">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{% url 'view_basket' %}">
                     <p id="cart-total" class="m-0">
                     <i class="nav-icon fas fa-shopping-cart"></i>
                         {% if grand_total %}
-                            ${{ grand_total|floatformat:2 }}
+                            £{{ grand_total|floatformat:2 }}
                         {% else %}
                             £0.00
                         {% endif %}
@@ -100,4 +100,5 @@
         </ul>
     </div>            
 </nav>
+
 

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8 text-center">
+                {% if empty_basket %}
+                    <h3>Your basket is currently empty!</h3>
+                    <a href="{% url 'products' %}" class="btn submit-button">
+                        <span>Continue shopping</span>&nbsp;
+                        <span class="icon"><i class="fas fa-chevron-right fa-xs"></i></span>
+                    </a>
+                {% else %}
+                    <h3>Shopping Basket</h3>
+                {% endif %}
+            </div>
+        </div>
+        <hr class="rose-rule">
+    </div>
+    <div class="container">
+        <div class="table-responsive rounded">
+                <table class="table table-sm">
+                    <thead class="text-black">
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+
+                    {% for item in basket_items %}
+                        <tr>
+                            <td class="p-3 w-25">
+                                <img class="img-fluid basket-image" src="{{ item.product.image_url }}">
+                                <p class="my-0"><strong>{{ item.product.product_name }}</strong></p>
+                            </td>
+                            <td class="py-3">
+                                
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">£{{ item.product.price }}</p>
+                            </td>
+                            <td class="py-3 w-25">
+                                <p class="my-0">{{ item.quantity }}</p>
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">£</p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                        <td colspan="5" class="pt-5 text-right">
+                            <h6><strong>Basket Total: £{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if free_delivery_delta > 0 %}
+                                <p>You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!</p>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">
+                            <a href="{% url 'products' %}" class="btn submit-button">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="" class="btn submit-button">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+   
+{% endblock %}
