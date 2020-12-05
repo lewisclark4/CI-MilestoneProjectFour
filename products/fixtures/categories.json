@@ -1,0 +1,82 @@
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "blush",
+        "slug": "blush",
+        "friendly_name": "Blush",
+        "image": "blusher_QyHNhIQ.jpg"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "bronzer",
+        "slug": "bronzer",
+        "friendly_name": "Bronzer",
+        "image": "bronzer_ZXV1qaT.jpg"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "eye_liner",
+        "slug": "eye-liner",
+        "friendly_name": "Eye Liner",
+        "image": "eye-liner_XXN2wdX.jpg"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "eye_shadow",
+        "slug": "eye-shadow",
+        "friendly_name": "Eye Shadow",
+        "image": "eye-shadow_qA11oIa.jpg"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "foundation",
+        "slug": "foundation",
+        "friendly_name": "Foundation",
+        "image": "foundation_bFpVnje.jpg"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+        "name": "lipstick",
+        "slug": "lipstick",
+        "friendly_name": "Lipstick",
+        "image": "lipstick_7EVKm9P.jpg"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "mascara",
+        "slug": "mascara",
+        "friendly_name": "Mascara",
+        "image": "mascara_k0etUMw.jpg"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+        "name": "nail_polish",
+        "slug": "nail-polish",
+        "friendly_name": "Nail polish",
+        "image": "nail-polish_BK8PyIB.jpg"
+    }
+  }
+]

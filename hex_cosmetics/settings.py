@@ -76,7 +76,7 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'products.context.all_categories',
                 'products.context.featured_products',
-                'basket.context.basket_contents',
+                'basket.contexts.basket_contents',
             ],
         },
     },
