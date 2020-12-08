@@ -32,13 +32,13 @@
                     </p>
                     {% endif %}
                     <p>{{ product.description }}</p>
-                    <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
+                    <form class="form" action="{% url 'add_to_basket' product.id 1 %}" method="POST">
                         {% csrf_token %}
                             <div class="col-12">
                                 <p class=""><strong>Colour:</strong></p>
-                                <select class="form-control rounded-0 w-50">
+                                <select class="form-control rounded-0 w-50" name="colour">
                                     {% for colour in colours %}
-                                        <option value="{{ colour.colour}} "> {{ colour.colour }}</option>
+                                        <option value="{{ colour.id }} "> {{ colour.colour }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
