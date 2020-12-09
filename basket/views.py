@@ -8,7 +8,7 @@ def view_basket(request):
     return render(request, "basket/basket.html")
 
 
-def add_to_basket(request, product_id, colour_id=None):
+def add_to_basket(request, product_id):
     """Add products to the basket"""
 
     product = get_object_or_404(Product, pk=product_id)
@@ -23,5 +23,4 @@ def add_to_basket(request, product_id, colour_id=None):
         basket[colour_id] = quantity
 
     request.session['basket'] = basket
-    print(basket)
     return redirect(redirect_url)

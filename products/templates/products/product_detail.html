@@ -32,7 +32,7 @@
                     </p>
                     {% endif %}
                     <p>{{ product.description }}</p>
-                    <form class="form" action="{% url 'add_to_basket' product.id 1 %}" method="POST">
+                    <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                         {% csrf_token %}
                             <div class="col-12">
                                 <p class=""><strong>Colour:</strong></p>

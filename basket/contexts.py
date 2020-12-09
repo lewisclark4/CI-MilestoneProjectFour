@@ -30,6 +30,7 @@ def basket_contents(request):
                 "colour": colour,
                 "product": product,}
             )
+            
         else:
             colour = get_object_or_404(Colour, pk=colour_id)
             product  = get_object_or_404(Product, pk=colour.product.id)
@@ -43,6 +44,7 @@ def basket_contents(request):
                     "colour": colour,
                     "product": product,}
                 )
+    
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
