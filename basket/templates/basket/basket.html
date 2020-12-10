@@ -34,21 +34,43 @@
 
                     {% for item in basket_items %}
                         <tr>
-                            <td class="p-3">
+                            <td class="p-2">
                                 <img class="img-fluid basket-image" src="{{ item.product.image_url }}">  
                             </td>
-                            <td class="py-3">
+                            <td class="py-2">
                                 <p class="my-0"><strong>{{ item.product.product_name }}</strong></p>
                                 <p class="my-0">Colour: {{ item.colour }}</p>
                             </td>
-                            <td class="py-3">
-                                <p class="my-0">£{{ item.product.price }}</p>
+                            <td class="py-2">
+                                <p id="id-price-{{ item.product.id }}" class="my-0">£{{ item.product.price }}</p>
                             </td>
                             <td class="py-3 w-25">
-                                <p class="my-0">{{ item.quantity }}</p>
+                                <form id="basket-qty-update-form_{{item.product.id}}" class="form update-form" method="POST" action="{% url 'update_basket' item.colour.id  %}">
+                                    {% csrf_token %} 
+                                    <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <a class="decrement-qty btn submit-button" 
+                                                        data-item_id="{{ item.product.id }}" id="decrement-qty_{{ item.product.id }}">
+                                                        <span><i class="fas fa-minus fa-sm"></i></span>
+                                                    </a>
+                                                </div>
+                                                    <input class="form-control form-control-sm qty_input" type="number" 
+                                                        name="quantity" value="{{ item.quantity }}" min="1" max="99" 
+                                                        data-item_id="{{ item.product.id }}" id="id_qty_{{ item.product.id }}">
+                                                <div class="input-group-append">
+                                                    <a class="increment-qty btn submit-button"
+                                                        data-item_id="{{ item.product.id }}" id="increment-qty_{{ item.product.id }}">
+                                                        <span><i class="fas fa-plus fa-sm"></i></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </td>
                             <td class="py-3">
-                                <p class="my-0">£</p>
+                                <p id="id-total-{{ item.product.id }}" class="my-0">£{{ item.item_total }}</p>
                             </td>
                         </tr>
                     {% endfor %}

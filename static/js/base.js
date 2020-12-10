@@ -24,16 +24,30 @@ $(document).ready(function () {
         } else {
         input.value = maxVal;
       }
+      updatebasket(productId)
     })
 
     $('.decrement-qty').click(function decrementQty() {
         let productId = $(this).data('item_id')
         let input = document.getElementById(`id_qty_${productId}`);
         let currentVal = parseInt(input.value);
-        if (input.value >= 2) {
+        let minVal = parseInt(input.getAttribute("min"));
+        if (input.value > min ) {
         input.value = currentVal - 1;
         } else {
         input.value = 1;
         }
+        updatebasket(productId)
     })
+
+    function updatebasket(productId) {
+        let form = document.getElementById(`basket-qty-update-form_${productId}`);
+        if (window.location.pathname == "/basket/") {
+            form.submit();
+        }
+    }
+        
 });
+
+
+    

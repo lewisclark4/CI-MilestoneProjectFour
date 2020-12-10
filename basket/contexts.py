@@ -22,13 +22,15 @@ def basket_contents(request):
             colour = get_object_or_404(Colour, pk=colour_id)
             product  = get_object_or_404(Product, pk=colour.product.id)
             total += item_data * product.price
+            item_total = item_data * product.price
             product_count += item_data
             empty_basket = False
             basket_items.append(
                 {"colour_id": colour_id, 
                 "quantity": item_data, 
                 "colour": colour,
-                "product": product,}
+                "product": product,
+                "item_total":item_total}
             )
             
         else:
@@ -36,13 +38,15 @@ def basket_contents(request):
             product  = get_object_or_404(Product, pk=colour.product.id)
             for quantity in item_data.items():
                 total += quantity * product.price
+                item_total = item_data * product.price
                 product_count += quantity
                 empty_basket = False
                 basket_items.append(
                     {"colour_id": colour_id, 
                     "quantity": item_data, 
                     "colour": colour,
-                    "product": product,}
+                    "product": product,
+                    "item_total":item_total}
                 )
     
 
