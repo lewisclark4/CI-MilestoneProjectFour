@@ -32,7 +32,7 @@ $(document).ready(function () {
         let input = document.getElementById(`id_qty_${productId}`);
         let currentVal = parseInt(input.value);
         let minVal = parseInt(input.getAttribute("min"));
-        if (input.value > min ) {
+        if (input.value > minVal ) {
         input.value = currentVal - 1;
         } else {
         input.value = 1;
