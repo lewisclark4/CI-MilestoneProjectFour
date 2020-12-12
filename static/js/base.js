@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
 
     window.onscroll = function () {
-        if (pageYOffset >= 300) {
+        if (pageYOffset >= 750) {
             $('.scroll-top-button').fadeIn(500);
         } else {
             $('.scroll-top-button').fadeOut(500);
@@ -46,6 +46,8 @@ $(document).ready(function () {
             form.submit();
         }
     }
+
+    $(".message").delay(4000).slideUp(400);
         
 });
 

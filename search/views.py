@@ -15,7 +15,7 @@ def search_result(request):
     if "q" in request.GET:
         query = request.GET["q"]
         if not query:
-            messages.error(request, "Please enter a search criteria")
+            messages.warning(request, "Please enter a search criteria")
             return redirect(reverse("products"))
         products = Product.objects.all().filter(
             Q(product_name__icontains=query)
