@@ -28,12 +28,13 @@ class Order(models.Model):
         """
         return uuid.uuid4().hex.upper()
 
-    def update_total(self):
+    def update_order_totals(self):
         """
         Update grand total each time a line item is added,
         accounting for delivery costs.
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        self.order_total = self.lineitems.aggregate(
+            Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_cost = settings.STANDARD_DELIVERY_CHARGE
         else:
@@ -70,4 +71,4 @@ class OrderLineItem(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f'Product ID {self.product.id}, Colour ID {self.colour.id}  on order {self.order.order_number}'
+        return f'Product: {self.product.product_name}, Colour: {self.colour.colour} added to order: {self.order.order_number}'
