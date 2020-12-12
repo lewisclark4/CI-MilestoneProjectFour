@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.contrib import messages
 from products.models import Product, Colour
 
 # Create your views here.
@@ -19,8 +20,10 @@ def add_to_basket(request, product_id):
 
     if colour_id in list(basket.keys()):
         basket[colour_id] += quantity
+        messages.success(request, f"Successfully Added {quantity} x {product.product_name} to your basket")
     else:
         basket[colour_id] = quantity
+        messages.success(request, f"Successfully Added {quantity} x {product.product_name} to your basket")
 
     request.session['basket'] = basket
     return redirect(redirect_url)

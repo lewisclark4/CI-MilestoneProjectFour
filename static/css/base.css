@@ -68,8 +68,30 @@ nav {
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
-  padding: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styling for Toasts */
+
+.message-container {
+    margin-bottom: 2em;
+}
+
+.message {
+    width: 100%;
+    padding: 0.5em;    
+    text-align: center;
+    border-radius: 10px;;
+}
+
+.message-text {
+    margin: auto;
+}
+
+.message-success {
+    background-color:green;
+    color: #fff;
 }
 
 .form-control, .dropdown-menu {
@@ -100,7 +122,6 @@ nav {
 
 .featured-products-heading {
     margin-top: 2em;
-    color: 
 }
 
 .carousel {
