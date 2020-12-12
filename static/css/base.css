@@ -94,6 +94,19 @@ nav {
     color: #fff;
 }
 
+.message-warning {
+    background-color:orange;
+}
+
+.message-info {
+    background-color:lightblue;
+}
+
+.message-error {
+    background-color:red;
+    color: #fff;
+}
+
 .form-control, .dropdown-menu {
     border: 1px solid #f8bab1;
     margin-left: 1px;
