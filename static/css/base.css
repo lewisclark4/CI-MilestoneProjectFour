@@ -51,19 +51,19 @@ nav {
     color: #000;
 }
 
-.navbar-light .navbar-nav .nav-link:hover, .dropdown-item:hover{
+.navbar-light .navbar-nav .nav-link:hover, .dropdown-item:hover {
     color: #fff;
     background-color: #f8bab1;
     transition: .25s ease-in-out;
     border-radius: 2px;
 }
 
-.navbar-light .navbar-nav .nav-link:hover .nav-icon{
+.navbar-light .navbar-nav .nav-link:hover .nav-icon, .remove-basket:hover {
     color:#000;
     transition: .25s ease-in-out;
 }
 
-.nav-icon, .dropdown {
+.nav-icon, .dropdown, .remove-basket {
     color: #f8bab1;
 }
 

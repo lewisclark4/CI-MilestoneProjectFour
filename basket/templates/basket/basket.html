@@ -29,6 +29,7 @@
                             <th scope="col">Price</th>
                             <th scope="col">Qty</th>
                             <th scope="col">Subtotal</th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
 
@@ -44,7 +45,7 @@
                             <td class="py-2">
                                 <p id="id-price-{{ item.product.id }}" class="my-0">£{{ item.product.price }}</p>
                             </td>
-                            <td class="py-3 w-25">
+                            <td class="py-2">
                                 <form id="basket-qty-update-form_{{item.product.id}}" class="form update-form" method="POST" action="{% url 'update_basket' item.colour.id  %}">
                                     {% csrf_token %} 
                                     <div class="form-group">
@@ -56,7 +57,7 @@
                                                     </a>
                                                 </div>
                                                     <input class="form-control form-control-sm qty_input" type="number" 
-                                                        name="quantity" value="{{ item.quantity }}" min="1" max="99" 
+                                                        name="quantity" value="{{ item.quantity }}" min="0" max="99" 
                                                         data-item_id="{{ item.product.id }}" id="id_qty_{{ item.product.id }}">
                                                 <div class="input-group-append">
                                                     <a class="increment-qty btn submit-button"
@@ -69,9 +70,16 @@
                                     </div>
                                 </form>
                             </td>
-                            <td class="py-3">
+                            <td class="py-2">
                                 <p id="id-total-{{ item.product.id }}" class="my-0">£{{ item.item_total }}</p>
                             </td>
+                            <td class="py-2">
+                                <a  href="{% url 'remove_from_basket' item.colour.id %}" aria-label="remove from basket">
+                                    <span class="remove-basket"><i class="fas fa-trash"></i></span>
+                                </a>
+                            </td>
+                                
+
                         </tr>
                     {% endfor %}
                     <tr>

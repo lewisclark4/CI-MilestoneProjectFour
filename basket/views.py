@@ -30,7 +30,6 @@ def update_basket(request, colour_id):
     """updates products in the basket"""
 
     colour = get_object_or_404(Colour, pk=colour_id)
-    product  = get_object_or_404(Product, pk=colour.product.id)
     quantity = int(request.POST.get('quantity'))
     basket = request.session.get('basket', {})
 
@@ -40,4 +39,15 @@ def update_basket(request, colour_id):
         basket.pop(colour_id)
 
     request.session['basket'] = basket
+    return redirect(reverse("view_basket"))
+
+def remove_from_basket(request, colour_id):
+    """Remove the product from the shopping basket"""
+
+    colour = get_object_or_404(Colour, pk=colour_id)
+    basket = request.session.get('basket', {})
+
+    basket.pop(colour_id)
+
+    request.session["basket"] = basket
     return redirect(reverse("view_basket"))
