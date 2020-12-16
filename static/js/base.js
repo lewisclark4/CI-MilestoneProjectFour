@@ -48,7 +48,7 @@ $(document).ready(function () {
     }
 
     $(".message").delay(4000).slideUp(400);
-        
+   
 });
 
 

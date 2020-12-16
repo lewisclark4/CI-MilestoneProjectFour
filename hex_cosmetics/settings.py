@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    #Custom
     'home',
     'products',
     'search',
@@ -48,7 +50,7 @@ INSTALLED_APPS = [
     'checkout',
 
 
-    # Other
+    # 3rd Party
     'crispy_forms',
 
 ]
@@ -173,8 +175,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_CHARGE = 3.99
 
-STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
-STRIPE_SECRET = os.getenv('STRIPE_SECRET')
-STRIPE_SUCCESS_URL = os.getenv('STRIPE_SUCCESS_URL')
-STRIPE_CANCEL_URL = os.getenv('STRIPE_CANCEL_URL')
-STRIPE_CURRENCY = 'gbp'
+STRIPE_PUBLISHABLE_KEY = os.getenv('STRIPE_PUBLISHABLE')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET')
