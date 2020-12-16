@@ -1,11 +1,8 @@
-
-
 const stripe_public_key = $('#id_stripe_public_key').text().slice(1, -1);
 const client_secret = $('#id_client_secret').text().slice(1, -1);
 let stripe = Stripe(stripe_public_key);
-
-var elements = stripe.elements();
-var style = {
+let elements = stripe.elements();
+let style = {
     base: {
         color: '#000',
         fontFamily: '"Quicksand", sans-serif',
@@ -20,5 +17,23 @@ var style = {
         iconColor: '#dc3545'
     }
 };
-var card = elements.create('card', {style: style});
+let card = elements.create('card', {style: style});
+
 card.mount('#card-element');
+
+
+
+var errorDiv = document.getElementById('card-errors');
+
+card.addEventListener('change', e => {
+    if (e.error) {
+        errorDiv.innerHTML = `
+            <span role="alert">
+                <i class="fas fa-exclamation-circle"></i>
+            </span>
+            <span>${e.error.message}</span>
+        `
+    } else {
+        errorDiv.textContent = ""
+    }
+})

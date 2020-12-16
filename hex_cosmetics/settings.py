@@ -166,14 +166,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 
+# Static and media files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Delivery values
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_CHARGE = 3.99
 
+#Stripe settings
 STRIPE_PUBLISHABLE_KEY = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET')
+STRIPE_CURRENCY = 'gbp'
