@@ -35,6 +35,7 @@ def checkout(request):
                     order_line_item = OrderLineItem(
                         order=order, product=product, colour=colour, quantity=item_data,
                     )
+                    order_line_item.save()
                 except Product.DoesNotExist or Colour.DoesNotExist:
                     messages.error(request, (
                         "There was an error processing one of the items in your basket."
@@ -45,7 +46,7 @@ def checkout(request):
 
             request.session["save_info"] = "save-info" in request.POST
             return redirect(reverse("checkout_success", args=[order.order_number]))
-            
+
         else:
             messages.error(
                 request,
@@ -55,7 +56,7 @@ def checkout(request):
     
 
     else:
-    basket = request.session.get('basket', {})
+        basket = request.session.get('basket', {})
         if not basket:
             messages.error(request, "There's nothing in your basket at the moment")
             return redirect(reverse('products'))
@@ -80,3 +81,19 @@ def checkout(request):
 
     return render(request, 'checkout/checkout.html', context)
 
+
+def checkout_success(request, order_number):
+    """
+    Handle successful checkouts
+    """
+    save_info = request.session.get('save_info')
+    order = get_object_or_404(Order, order_number=order_number)
+   
+    if 'bag' in request.session:
+        del request.session['bag']
+
+    context = {
+        'order': order,
+    }
+
+    return render(request, 'checkout/checkout_success.html', context)

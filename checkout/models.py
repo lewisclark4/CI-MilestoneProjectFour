@@ -2,6 +2,7 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
+from decimal import Decimal
 from products.models import Product, Colour
 
 # Create your models here.
@@ -39,7 +40,7 @@ class Order(models.Model):
             self.delivery_cost = settings.STANDARD_DELIVERY_CHARGE
         else:
             self.delivery_cost = 0
-        self.grand_total = self.order_total + self.delivery_cost
+        self.grand_total = self.order_total + Decimal(self.delivery_cost)
         self.save()
 
     def save(self, *args, **kwargs):
