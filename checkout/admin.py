@@ -15,8 +15,8 @@ class OrderAdmin(admin.ModelAdmin):
                        'grand_total',)
 
     fields = ('order_number', 'date_ordered', 'full_name',
-              'email', 'phone_number', 'address1',
-              'address2', 'city', 'county',
+              'email', 'phone_number', 'address_1',
+              'address_2', 'city', 'county',
               'country', 'postcode', 'delivery_cost',
               'order_total', 'grand_total',)
 
