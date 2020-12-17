@@ -11,13 +11,14 @@
         </div>
         <div class="row mb-5">
             <div class="col-12">
-                <p class="text-center"><strong>Order successfully processed! Your order number is {{order.order_number}}.<br> 
-                    A confirmation email will be sent to {{order.email}}<br> 
-                    You can view your order summary below:</strong></p>
+                <p class="text-center"><strong>
+                    Your order number is {{order.order_number}}.<br><br>
+                    A confirmation email will be sent to {{order.email}}</strong>
+                </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-6 mb-5">
                 <p class="text-muted"><strong>Delivery address</strong></p>
                 <hr class="rose-rule">
                 <p>{{order.full_name}}<br>
@@ -35,7 +36,7 @@
                 {% endif %}
                 
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-6 mb-5">
                 <p class="text-muted"><strong>Your order</strong></p>
                 <hr class="rose-rule">
                 {% for item in order.lineitems.all %}
@@ -58,10 +59,17 @@
                             <p>£{{ item.lineitem_total }}</p>
                         </div>
                     </div>
-                    <hr class="rose-rule">
+                    {% if not forloop.last %}
+                        <hr class="rose-rule">
+                    {% endif %}
                 {% endfor %}
             </div>
-             
-        </div>  
+        </div>
+        <hr class="rose-rule">
+
+        <a href="{% url 'products' %}" class="btn submit-button">
+            <span><i class="fas fa-chevron-left fa-xs"></i></span>
+            <span>Back to Shop</span>&nbsp;
+        </a>
     </div>
 {% endblock %}

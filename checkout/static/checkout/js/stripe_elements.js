@@ -1,5 +1,8 @@
 const stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 const clientSecret = $('#id_client_secret').text().slice(1, -1);
+const errorDiv = document.getElementById('card-errors');
+const form = document.getElementById("payment-form")
+const checkoutButton = document.getElementById("checkout-button")
 let stripe = Stripe(stripePublicKey);
 let elements = stripe.elements();
 let style = {
@@ -18,9 +21,7 @@ let style = {
     }
 };
 let card = elements.create('card', {style: style});
-let errorDiv = document.getElementById('card-errors');
-let form = document.getElementById("payment-form")
-let checkoutButton = document.getElementById("checkout-button")
+
 
 card.mount('#card-element');
 
@@ -37,12 +38,12 @@ card.addEventListener('change', e => {
     }
 })
 
-form.addEventListener("submit", e => {
+form.addEventListener('submit', e => {
     e.preventDefault()
     card.update({
-        "disabled": true
+        'disabled': true
     })
-    checkoutButton.setAttribute("disabled", "")
+    checkoutButton.disabled = true
     stripe.confirmCardPayment(clientSecret, {
         payment_method: {
             card: card,
@@ -56,11 +57,11 @@ form.addEventListener("submit", e => {
                 <span>${result.error.message}</span>
                 `
             card.update({
-                "disabled": false
+                'disabled': false
             })
-            paymentButton.removeAttribute("disabled")
+            checkoutButton.disabled = false
         } else {
-            if (result.paymentIntent.status === "succeeded") {
+            if (result.paymentIntent.status === 'succeeded') {
                 form.submit()
             }
         }
