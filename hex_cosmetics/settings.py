@@ -41,10 +41,18 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+
+    #Custom
     'home',
     'products',
     'search',
     'basket',
+    'checkout',
+
+
+    # 3rd Party
+    'crispy_forms',
+
 ]
 
 MIDDLEWARE = [
@@ -58,6 +66,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'hex_cosmetics.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -78,6 +88,10 @@ TEMPLATES = [
                 'products.context.featured_products',
                 'basket.contexts.basket_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
@@ -152,11 +166,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 
+# Static and media files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Delivery values
 FREE_DELIVERY_THRESHOLD = 50
-STANDARD_DELIVERY_PERCENTAGE = 10
+STANDARD_DELIVERY_CHARGE = 3.99
+
+#Stripe settings
+STRIPE_PUBLISHABLE_KEY = os.getenv('STRIPE_PUBLISHABLE')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET')
+STRIPE_CURRENCY = 'gbp'

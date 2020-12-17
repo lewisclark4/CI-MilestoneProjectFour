@@ -205,16 +205,23 @@ nav {
 
 .submit-button {
     background-color: #fff;
-    border-radius: 10px;
-    border: 2px solid transparent;
+    border-radius: 5px;
+    border: 1px solid #f8bab1;
 }
 
 .btn:hover, .btn:focus, .btn:active {
     box-shadow: none;
 }
 
-.social-icon i:hover, .submit-button:hover {
+.social-icon i:hover {
     border: 2px solid #fff;
+    color: #fff;
+    background-color: #f8bab1;
+    transition: .25s ease-in-out;
+}
+
+.submit-button:hover {
+    border: 1px solid #f8bab1;
     color: #fff;
     background-color: #f8bab1;
     transition: .25s ease-in-out;
