@@ -1,6 +1,3 @@
-# https://stripe.com/docs/webhooks/build
-
-
 from django.http import HttpResponse
 from django.conf import settings
 from django.views.decorators.http import require_POST
@@ -17,6 +14,7 @@ def webhook(request):
     webhook_secret = settings.STRIPE_WEBHOOK_SECRET_KEY
 
     payload = request.body
+    sig_header = request.META['HTTP_STRIPE_SIGNATURE']
     event = None
 
     try:
@@ -24,7 +22,7 @@ def webhook(request):
         json.loads(payload), stripe.api_key, webhook_secret
         )
     except ValueError as e:
-        return HttpResponse(status=400)
+        return HttpResponse(content=e, status=400)
     
     except stripe.error.SignatureVerificationError as e:
         return HttpResponse(content=e, status=400)
@@ -32,16 +30,12 @@ def webhook(request):
     except Exception as e:
         return HttpResponse(content=e, status=400)
 
-    print('success!')
-    return HttpResponse(status=200)
-
-    if event.type == 'payment_intent.succeeded':
-        payment_intent = event.data.object 
-
-    elif event.type == 'payment_method.attached':
-        payment_method = event.data.object 
-
-    else:
-        print('Unhandled event type {}'.format(event.type))
-
-    return HttpResponse(status=200)
+    handler = StripeWH_Handler(request)
+    event_map = {
+        'payment_intent.succeeded': handler.handle_payment_intent_succeeded,
+        'payment_intent.payment_failed': handler.handle_payment_intent_payment_failed,
+    }
+    event_type = event['type']
+    event_handler = event_map.get(event_type, handler.handle_event)
+    response = event_handler(event)
+    return response
