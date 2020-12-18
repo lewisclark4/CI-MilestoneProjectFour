@@ -9,7 +9,7 @@ let stripe = Stripe(stripePublicKey);
 let elements = stripe.elements();
 let style = {
     base: {
-        color: '#000',
+        color: '#6c757d',
         fontFamily: '"Quicksand", sans-serif',
         fontSmoothing: 'antialiased',
         fontSize: '16px',
