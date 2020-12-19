@@ -16,6 +16,22 @@
             </div>
             <div class="col-12 col-md-8">
                 <p class="text-muted"><strong>Your order history</strong></p>
+                {% for order in orders %}
+                <details class="order-summary mb-3">
+                    <summary class="d-flex justify-content-between">
+                        <span>{{ order.date_ordered }}</span>
+                        <span>{{ order.order_number }}</span>
+                        <span><strong>£{{ order.grand_total }}</strong></span> 
+                    </summary>
+                    <hr class="rose-rule">
+                    {% include 'checkout/includes/checkout_success_order_items.html' %}
+                    {% if order.delivery_cost %}
+                    <hr class="rose-rule">
+                    <p>Delivery Charge: £{{ order.delivery_cost }}</p>
+                    {% endif %}   
+                </details>
+                <hr class="rose-rule">
+                {% endfor %}
             </div>
 
         </div>
