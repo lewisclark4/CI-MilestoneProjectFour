@@ -23,3 +23,9 @@ def profile(request):
     }
     
     return render(request, "profiles/profile.html", context)
+
+@login_required
+def order_history(request, order_number=None):
+    
+    
+    return render(request, "profiles/order_history.html")
