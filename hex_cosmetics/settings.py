@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'search',
     'basket',
     'checkout',
+    'profiles',
 
 
     # 3rd Party
