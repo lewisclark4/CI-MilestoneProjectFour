@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
+{% load static %}
+
   <head>
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
@@ -24,17 +25,28 @@
       <ul>
         {% if user.is_authenticated %}
         <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
-        <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
+        <li><a href="{% url 'account_logout' %}">Log Out</a></li>
         {% else %}
-        <li><a href="{% url 'account_login' %}">Sign In</a></li>
-        <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+        <li><a href="{% url 'account_login' %}">Log In</a></li>
+        <li><a href="{% url 'account_signup' %}">Log Up</a></li>
         {% endif %}
       </ul>
     </div>
     {% block content %}
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3">
+                {% block inner_content %}
+                
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </section>
     {% endblock %}
     {% endblock %}
     {% block extra_body %}
     {% endblock %}
   </body>
-</html>
+
