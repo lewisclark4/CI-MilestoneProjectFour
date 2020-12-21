@@ -93,7 +93,25 @@ def checkout(request):
             payment_method_types=["card"],
         )
 
-        order_form = OrderForm()
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                saved_info = {
+                    "full_name": profile.user.get_full_name(),
+                    "email": profile.user.email,
+                    "phone_number": profile.default_phone_number,
+                    "country": profile.default_country,
+                    "postcode": profile.default_postcode,
+                    "city": profile.default_city,
+                    "address_1": profile.default_address_1,
+                    "address_2": profile.default_address_2,
+                    "county": profile.default_county,
+                }
+                order_form = OrderForm(initial=saved_info)
+            except UserProfile.DoesNotExist:
+                order_form = OrderForm()
+        else:
+            order_form = OrderForm()
 
     context = {
         'order_form': order_form,

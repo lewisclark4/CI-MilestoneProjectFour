@@ -1,6 +1,7 @@
 from django.shortcuts import HttpResponse, get_object_or_404
 from .models import Order, OrderLineItem
 from products.models import Product, Colour
+from profiles.models import UserProfile
 import json
 import time
 
@@ -59,8 +60,22 @@ class StripeWH_Handler:
             )
         else:
             order = None
+            profile = None
+            username = intent.metadata.username
+            if username != 'AnonymousUser':
+                profile = UserProfile.objects.get(user__username=username)
+                if save_info:
+                    profile.default_phone_number = shipping_details.phone
+                    profile.default_address_1 = shipping_details.address.line1
+                    profile.default_address_2 = shipping_details.address.line2
+                    profile.default_city = shipping_details.address.city
+                    profile.default_county = shipping_details.address.state
+                    profile.default_country = shipping_details.address.country
+                    profile.default_postcode = shipping_details.address.postal_code
+                    profile.save()  
             try:
                 order = Order.objects.create(
+                    user_profile=profile,
                     full_name=shipping_details.name,
                     email=billing_details.email,
                     phone_number=shipping_details.phone,
@@ -72,13 +87,15 @@ class StripeWH_Handler:
                     postcode=shipping_details.address.postal_code,
                     stripe_payment_intent_id=payment_intent_id,
                 )
+
                 for colour_id, item_data in json.loads(basket).items():
                     colour = get_object_or_404(Colour, pk=colour_id)
                     product  = get_object_or_404(Product, pk=colour.product.id)
                     order_line_item = OrderLineItem(
                         order=order, product=product, colour=colour, quantity=item_data,
                     )
-                    order_line_item.save()                
+                    order_line_item.save()
+            
             except Exception as e:
                 if order:
                     order.delete()
