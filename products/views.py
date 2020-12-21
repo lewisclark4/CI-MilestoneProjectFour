@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, reverse
-from django.db.models import Q
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Colour
+from .forms import ProductForm, ColourForm
 
 # Create your views here.
 
@@ -66,3 +68,41 @@ def product_detail(request, product_slug, category_slug):
     }
 
     return render(request, "products/product_detail.html", context)
+
+@login_required
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Added product')
+            return redirect(reverse('add_colour'))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+        
+    context = {
+        'form': form,
+    }
+
+    return render(request, "products/add_product.html", context)
+
+@login_required
+def add_colour(request):
+    if request.method == 'POST':
+        form = ColourForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Added product colour')
+            return redirect(reverse('add_colour'))
+        else:
+            messages.error(request, 'Failed to add product colour. Please ensure the form is valid.')
+    else:
+        form = ColourForm()
+        
+    context = {
+        'form': form,
+    }
+
+    return render(request, "products/add_colour.html", context)
