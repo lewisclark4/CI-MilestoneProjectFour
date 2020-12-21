@@ -6,6 +6,8 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 from basket.contexts import basket_contents
 from products.models import Product, Colour
+from profiles.forms import UserProfileForm
+from profiles.models import UserProfile
 import stripe
 import json
 
@@ -91,7 +93,25 @@ def checkout(request):
             payment_method_types=["card"],
         )
 
-        order_form = OrderForm()
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                saved_info = {
+                    "full_name": profile.user.get_full_name(),
+                    "email": profile.user.email,
+                    "phone_number": profile.default_phone_number,
+                    "country": profile.default_country,
+                    "postcode": profile.default_postcode,
+                    "city": profile.default_city,
+                    "address_1": profile.default_address_1,
+                    "address_2": profile.default_address_2,
+                    "county": profile.default_county,
+                }
+                order_form = OrderForm(initial=saved_info)
+            except UserProfile.DoesNotExist:
+                order_form = OrderForm()
+        else:
+            order_form = OrderForm()
 
     context = {
         'order_form': order_form,
@@ -108,9 +128,28 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
-   
-    if 'bag' in request.session:
-        del request.session['bag']
+
+    if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+        order.user_profile = profile
+        order.save()
+        if save_info:
+            delivery_data = {
+                "default_phone_number": order.phone_number,
+                "default_address_1": order.address_1,
+                "default_address_2": order.address_2,
+                "default_city": order.city,
+                "default_county": order.county,
+                "default_country": order.country,
+                "default_postcode": order.postcode,
+                
+            }
+            user_profile_form = UserProfileForm(delivery_data, instance=profile)
+            if user_profile_form.is_valid():
+                user_profile_form.save()
+    
+    if 'basket' in request.session:
+        del request.session['basket']
 
     context = {
         'order': order,

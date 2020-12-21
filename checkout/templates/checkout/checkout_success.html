@@ -39,30 +39,7 @@
             <div class="col-12 col-lg-6 mb-5">
                 <p class="text-muted"><strong>Your order</strong></p>
                 <hr class="rose-rule">
-                {% for item in order.lineitems.all %}
-                    <div class="row">
-                        <div class="col-2 mb-1">
-                            <a href="{{product.get_absolute_url}}">
-                                {% if item.product.image_url %}
-                                    <img class="w-100" src="{{ item.product.image_url }}" alt="{{ product.name }}">
-                                {% else %}
-                                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                {% endif %}
-                            </a>
-                        </div>
-                        <div class="col-7">
-                            <p class="my-0">{{ item.quantity }} x {{ item.product.product_name }}</p>
-                            <p class="my-0 small text-muted">{{ item.colour.colour }}</p>
-                            <p class="my-0 small text-muted">£{{ item.product.price }}</p>
-                        </div>
-                        <div class="col-3 text-right">
-                            <p>£{{ item.lineitem_total }}</p>
-                        </div>
-                    </div>
-                    {% if not forloop.last %}
-                        <hr class="rose-rule">
-                    {% endif %}
-                {% endfor %}
+                {% include 'checkout/includes/checkout_success_order_items.html' %}
             </div>
         </div>
         <hr class="rose-rule">

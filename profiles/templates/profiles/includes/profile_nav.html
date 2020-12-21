@@ -1,0 +1,34 @@
+<ul class="profile-nav">
+    <li>
+        <a href="{% url 'profile' %}" class="btn submit-button">
+            <span >
+                <i class="fas fa-user-circle"></i>
+            </span>
+            <span>My Details</span>
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'order_history' %}" class="btn submit-button">
+            <span >
+                <i class="fas fa-th-list"></i>
+            </span>
+            <span>Order History</span>
+        </a>
+    </li>
+    <li>
+        <a href="" class="btn submit-button">
+            <span >
+                <i class="fas fa-heart"></i>
+            </span>
+            <span>Wishlist</span>
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'account_change_password' %}" class="btn submit-button">
+            <span>
+                <i class="fas fa-lock"></i>
+            </span>
+            <span>Change Password</span>
+        </a>
+    </li>
+</ul>

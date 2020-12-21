@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'search',
     'basket',
     'checkout',
+    'profiles',
 
 
     # 3rd Party
@@ -181,3 +182,6 @@ STRIPE_PUBLISHABLE_KEY = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET')
 STRIPE_WEBHOOK_SECRET_KEY = os.getenv('STRIPE_WEBHOOK_SECRET')
 STRIPE_CURRENCY = 'gbp'
+
+# Email settings
+DEFAULT_FROM_EMAIL = "hexcosmetics@example.com"
