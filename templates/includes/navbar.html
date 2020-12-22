@@ -59,7 +59,7 @@
         <ul class="navbar-nav mx-auto">
             <li class="nav-item d-none d-lg-block">
                 <a class="nav-link" href="{% url 'home' %}">
-                    <i class="nav-icon fas fa-home"></i> Home
+                    <i class="nav-icon fas fa-home"></i>&nbsp;
                 </a>
             </li>
             {% if user.is_authenticated %}
@@ -69,6 +69,11 @@
                     Profile
                     </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {% if request.user.is_superuser %}
+                        <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
+                        <a class="dropdown-item" href="{% url 'add_colour' %}">Add Product Colour</a>
+                        <div class="dropdown-divider rose-rule"></div>
+                    {% endif %}
                     <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
                     <a class="dropdown-item" href="#">Wishlist</a>
                     <a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a>

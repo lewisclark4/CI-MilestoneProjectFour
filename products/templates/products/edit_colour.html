@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <h2 class="mb-4">Product Management</h2>
+                <h5 class="text-muted">Edit a Product Colour</h5>
+                <hr class="rose-rule">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <form method="POST" action="{% url 'edit_colour' colour.id %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-right">
+                        <a class="btn submit-button" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn submit-button" type="submit">Update Colour</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+{% endblock %}
