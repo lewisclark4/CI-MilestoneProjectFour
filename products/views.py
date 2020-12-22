@@ -90,13 +90,12 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Updated product.')
+            messages.success(request, f'{product.product_name} was updated')
             return redirect(reverse('product_detail', 
                                 args=[ product.category.slug,
                                         product.slug,
@@ -104,7 +103,7 @@ def edit_product(request, product_id):
                                 )
                             )
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, f'Failed to update {product.product_name}. Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         
@@ -114,6 +113,14 @@ def edit_product(request, product_id):
     }
 
     return render(request, "products/edit_product.html", context)
+
+@login_required
+def delete_product(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, f'{product.product_name} was deleted.')
+    return redirect(reverse("products"))
+
 
 @login_required
 def add_colour(request):
@@ -134,4 +141,39 @@ def add_colour(request):
 
     return render(request, "products/add_colour.html", context)
 
+@login_required
+def edit_colour(request, colour_id):
+    colour = get_object_or_404(Colour, pk=colour_id)
+    product  = get_object_or_404(Product, pk=colour.product.id)
+    if request.method == 'POST':
+        form = ColourForm(request.POST, instance=colour)
+        if form.is_valid():
+            form.save()
+            messages.success(request, f'{product.product_name} - {colour.colour} was updated')
+            return redirect(reverse('product_detail', 
+                                args=[ product.category.slug,
+                                        product.slug,
+                                    ],
+                                )
+                            )
+        else:
+            messages.error(request, f'Failed to update {product.product_name} - {colour.colour}. Please ensure the form is valid.')
+    else:
+        form = ColourForm(instance=colour)
+        
+    context = {
+        'form': form,
+        'product': product,
+        'colour': colour,
+    }
 
+    return render(request, "products/edit_colour.html", context)
+
+
+@login_required
+def delete_colour(request, colour_id):
+    colour = get_object_or_404(Colour, pk=colour_id)
+    product  = get_object_or_404(Product, pk=colour.product.id)
+    colour.delete()
+    messages.success(request, f'{product.product_name} - {colour.colour} was deleted.')
+    return redirect(reverse("products"))
