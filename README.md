@@ -1,4 +1,4 @@
-# CI-MilestoneProjectThree
+# CI-MilestoneProjectFour
 ## Table of Contents
 1. [Overview](#overview)
 2. [Live Site](#live-site)
@@ -62,37 +62,37 @@ The goals of the Hex Cosmetics business are:
 ##### Viewing and Navigation
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|      | user    | view a list of available products | identify if there are any products I would like to purchase |
-|      | user    | view individual products details | view the price, description and reviews |
+|&checkmark;| user    | view a list of available products | identify if there are any products I would like to purchase |
+|&checkmark;| user    | view individual products details | view the price, description and reviews |
 |      | user    | identify discounts and special offers | take advantage of savings on games that I'd like to purchase |
 |      | user    | View the total of my cart at any time | see how much money I will spend on the products I want to purchase |
 
 ##### Registration and User Accounts
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|      | user    | register for an account | have an account to be able to store my details for repeat use |
-|      | user    | login or logout | to access my account and help ensure security of my personal information |
+|&checkmark;| user    | register for an account | have an account to be able to store my details for repeat use |
+|&checkmark;| user    | login or logout | to access my account and help ensure security of my personal information |
 |      | user    | log into my account using my Google account | speed up the registration process |
-|      | user    | recover my password | recover access to my account if I forget my credentials |
-|      | user    | have a personalized user profile | view my order history and order confirmations and save my payment information |
+|&checkmark;| user    | recover my password | recover access to my account if I forget my credentials |
+|&checkmark;| user    | have a personalized user profile | view my order history and store delivery information for future use |
 
 ##### Scrolling and Searching
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |      | user    | sort the list of products| easily identify the best rated, best-priced products|
 |      | user    | sort by a specific type of product | find the best-priced or best-rated product in a specific category |
-|      | user    | search for a product by name or description. | find a specific product I would like to purchase |
-|      | user    | easily see what I have searched for and the number of results | quickly decide whether the product I want is available |
+|&checkmark;| user    | search for a product by name or description. | find a specific product I would like to purchase |
+|&checkmark;| user    | easily see what I have searched for | quickly decide whether the product I want is available |
 
 ##### Purchasing and Checkout
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|      | user    | easily add or remove the product I want to purchase | easily make changes to my purchase before checkout |
-|      | user    | view items in my bag to be purchased  | confirm I am purchasing all the products I intend |
-|      | user    | view the total cost of the products | identify the total cost of my purchase and all the products I wish to purchase |
-|      | user    | enter my payment information  | check out and pay for the products I want to buy |
-|      | user    | feel my personal and payment information is safe and secure | confidently provide the needed information to make a purchase |
-|      | user    | view an order confirmation after checkout | verify that I have not made any errors and confirm that my order has been submitted |
+|&checkmark;| user    | easily add or remove the product I want to purchase | easily make changes to my purchase before checkout |
+|&checkmark;| user    | view items in my basket to be purchased  | confirm I am purchasing all the products I intend |
+|&checkmark;| user    | view the total cost of the products | identify the total cost of my purchase and all the products I wish to purchase |
+|&checkmark;| user    | enter my payment information  | check out and pay for the products I want to buy |
+|&checkmark;| user    | feel my personal and payment information is safe and secure | confidently provide the needed information to make a purchase |
+|&checkmark;| user    | view an order confirmation after checkout | verify that I have not made any errors and confirm that my order has been submitted |
 |      | user    | receive an email confirmation after checking out | keep the confirmation of what I have purchased for my records |
 
 ##### About HEX
@@ -106,9 +106,9 @@ The goals of the Hex Cosmetics business are:
 ##### Admin and Store Management
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|      | Admin   | add a product | add new products to the store |
-|      | Admin   | edit a product | change product prices, descriptions, images and other criteria |
-|      | Admin   | delete a product | remove products that are no longer for sale |
+|&checkmark;| Admin   | add a product | add new products to the store |
+|&checkmark;| Admin   | edit a product | change product prices, descriptions, images and other criteria |
+|&checkmark;| Admin   | delete a product | remove products that are no longer for sale |
 |      | Admin   | have access to an admin dashboard | manage products and orders |
 |      | Admin   | view any previous order made | see what was purchased to ensure they get fulfilled |
 
@@ -189,8 +189,51 @@ The goals of the Hex Cosmetics business are:
 [Back to Top](#overview)
 
 ## Technologies and Tools
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+    - Used as the main language for the templates
+* [CSS3](https://www.w3.org/Style/CSS/current-work.en.html)
+    - Used for styling the webpage
+* [Bootstrap](https://www.bootstrapcdn.com/)
+    - CSS framework used to assist with website responsiveness.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - Used mostly for DOM manipulation upon user interaction
+* [jQuery](https://jquery.com/)
+    - JavaScript Library to simplify and expedite JavaScript coding.
+* [Python](https://www.python.org/)
+    - Used for backend data manipulation
+* [Django](https://www.djangoproject.com/) 
+    - Python web framework for quick development.
+* [Django-aullauth](https://django-allauth.readthedocs.io/en/latest/index.html)
+    - Django authentication toolset
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) 
+    - to style the django forms.
+* [Jinja2 ](https://pypi.org/project/Jinja2/)
+    - Used as the main language for template manipulation.
+* [Pillow](https://pillow.readthedocs.io/en/stable/) 
+    - Python imaging library to support opening, manipulating, and saving images.
+* [Stripe](https://stripe.com/gb)
+    - Payment infrastructure to validate and accept credit card payments securely.
+* [Git](https://git-scm.com/) 
+    - To handle version control.
+* [GitHub](https://github.com/)
+    - To store my project source code
+* [Gitpod](https://www.gitpod.io/)
+    - Used as my IDE
+* [Google fonts](https://fonts.google.com/)
+    - Used for website fonts
+* [Font Awesome](https://fontawesome.com/)
+    - To utilise the icon set.
+* [Canva](https://www.canva.com/) 
+    - used to design site to create the logo for Hex Cosmetics.
+* [Balsamiq](https://balsamiq.cloud/) 
+    - used to create the wireframes for this project.
 
-### Other Tools
+
+## Database
+
+* [SQlite3](https://www.sqlite.org/index.html) 
+    - Used as development database.
+
 
 
 
@@ -258,11 +301,18 @@ To fix this I needed to pass in the category (if it had be selected). I utilised
 
 ### Content
 
+- [kaggle]https://www.kaggle.com/oftomorrow/herokuapp-makeup-products my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
+
 ### Images
+- [kaggle]https://www.kaggle.com/oftomorrow/herokuapp-makeup-products The Kaggle data set contains applicable URLs to all product images across the site.
+- [Pixabay](https://pixabay.com/) The category images were sourced from the Pixabay images library, and are all free for use, sharing or modification.
+
+
 
 ### Acknowledgements
 
 - [learndjango](https://learndjango.com/tutorials/django-slug-tutorial) + CI Tutor Miklos Sarosi for guidance on implementing slugs into my project to assist with 'bug #1'.
-
+- [Code Institute](https://codeinstitute.net/) For the excellent overall content & mini projects within the course.
+- [ckz8780 - Github](https://github.com/ckz8780/boutique_ado_v1) ckz8780's fantastic Django module produced for the Code Institute has been invaluable in providing guidance for creating key functionality across the project.
 [Back to Top](#overview)
 
