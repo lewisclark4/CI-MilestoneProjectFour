@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Colour
@@ -89,6 +89,33 @@ def add_product(request):
     return render(request, "products/add_product.html", context)
 
 @login_required
+def edit_product(request, product_id):
+
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Updated product.')
+            return redirect(reverse('product_detail', 
+                                args=[ product.category.slug,
+                                        product.slug,
+                                    ],
+                                )
+                            )
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        form = ProductForm(instance=product)
+        
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, "products/edit_product.html", context)
+
+@login_required
 def add_colour(request):
     if request.method == 'POST':
         form = ColourForm(request.POST)
@@ -106,3 +133,5 @@ def add_colour(request):
     }
 
     return render(request, "products/add_colour.html", context)
+
+
