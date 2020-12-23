@@ -14,18 +14,47 @@
 
 ## Overview
 
-Hex Cosmetics is a fictitious e-commerce site which is designed user friendly store that is easy to navigate.
+Hex Cosmetics is a fictitious new e-commerce site which is has a requirement to be user friendly store that is easy to navigate.
 
-Hex Cosmetics provides a wide array of commonly used cosmetic products (mascara, foundation, lipstick etc.) 
+Hex Cosmetics provides a wide array of commonly used cosmetic products (mascara, foundation, lipstick etc.).
 
-Hex Cosmetics also provides a range of different brands to enable site users to purchase well known products.
+Hex Cosmetics also provides a range of different well known brands to enable site users to be confident in the quality of products that they are purchasing.
 
 The site's home page easily allows a site user to select the specific type of make-up they are looking for, as well as being able to shop all products, or view the site's featured products or sale products.
-
 
 ## Live site
 
 ## UX
+
+### High Level Design Decisions
+
+Below are some of the high level decisions taken to fit with common convention across most ecommerce sites:
+
+* The navigation bar has been fixed to ensure a user can quickly navigate around the site to view other products, a user profile, access the search tool, or easily navigate to the basket.
+
+* The home page contains cards which a user can select to view particular types of product, or allows them to navigate to all products (the search bar is also always available in the Navigation bar).
+
+* The Home page also displays a large image of the HEX Cosmetics Logo to help instil brand awareness.
+
+* Products are displayed in a consistent card format, and users can select the products to drill down into a detailed view of the product.
+
+* Users are able to easily sort product views (e.g. price low to high) to aid their search.
+
+* Feedback is given to users on major action taken across the site in using Django messages.
+
+* Integrated with google to enable expedited user registration.
+
+* Use of 'slugs' do display readable URLs. This improves user experience, looks more professional & can also assist with SEO.
+
+* The user's basket total is available in the navigation bar at all times to allow them to easily identify their current spend.
+
+#### Other Design Decisions
+
+* The initial plan was to implement pagination across the site (particularly for larger searches such as 'all products').
+
+However, I decided that given the current product catalog wasn't particularly large, that implementing pagination would have a navigate impact on user experience (i.e. having to click to load more products).
+
+Had the product catalog been much larger (or should it grow in future) then it would make sense to implement this to balance against the response time for loading more products.
 
 ### Strategy
 
@@ -185,7 +214,6 @@ The goals of the Hex Cosmetics business are:
 
 #### Colour Scheme 
 
-
 [Back to Top](#overview)
 
 ## Technologies and Tools
@@ -282,6 +310,9 @@ The issue I found was that when I initially created the function, the URL was on
 
 To fix this I needed to pass in the category (if it had be selected). I utilised slugs to help acheive this (which also improved the URL naming) and passed these arguments into the all_products view.
 
+2. Following the implementation of slugs, I had the issue when attempting to view 'all products' as I was getting a NoReverseMatch error, in this case because a catgeory slug was not being passed into my href url against each product.
+
+To fix this I created the get_absolute_url model method in the product class, to allow me to obtain the catgeory slug via the Product Class, and pass this, and the product slug as args.
 
 [Back to Top](#overview)
 
@@ -311,7 +342,7 @@ To fix this I needed to pass in the category (if it had be selected). I utilised
 
 ### Acknowledgements
 
-- [learndjango](https://learndjango.com/tutorials/django-slug-tutorial) + CI Tutor Miklos Sarosi for guidance on implementing slugs into my project to assist with 'bug #1'.
+- [learndjango](https://learndjango.com/tutorials/django-slug-tutorial) + CI Tutor Miklos Sarosi for guidance on implementing slugs into my project to assist with 'bug #1 / #2'.
 - [Code Institute](https://codeinstitute.net/) For the excellent overall content & mini projects within the course.
 - [ckz8780 - Github](https://github.com/ckz8780/boutique_ado_v1) ckz8780's fantastic Django module produced for the Code Institute has been invaluable in providing guidance for creating key functionality across the project.
 [Back to Top](#overview)
