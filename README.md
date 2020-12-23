@@ -25,7 +25,6 @@ The site's home page easily allows a site user to select the specific type of ma
 ## Live site
 
 ## UX
-
 ### High Level Design Decisions
 
 Below are some of the high level decisions taken to fit with common convention across most ecommerce sites:
@@ -47,6 +46,12 @@ Below are some of the high level decisions taken to fit with common convention a
 * Use of 'slugs' do display readable URLs. This improves user experience, looks more professional & can also assist with SEO.
 
 * The user's basket total is available in the navigation bar at all times to allow them to easily identify their current spend.
+
+* Contact, About & FAQ URLs can be found in the footer (and therefore available across the whole site).
+
+* Users have the ability to sign up to the Hex Cosmetics Newsletter via the footer (so this can be used for targeted advertisement etc.).
+
+* Links to social media profiles can also be found in the footer in an attempt generate further online engagement with users and increase sales.
 
 #### Other Design Decisions
 
@@ -87,7 +92,6 @@ The goals of the Hex Cosmetics business are:
 
 
 #### User stories
-
 ##### Viewing and Navigation
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
@@ -212,7 +216,46 @@ The goals of the Hex Cosmetics business are:
 ### Surface
 #### Font
 
+In-keeping with the clean, modern & simplistic design for the application, the font 'Quicksand' was chosen as the primary font for this site.
+
+Quicksand is a display sans serif with rounded terminals.
+
+It is designed for display purposes but kept legible enough to use in small sizes as well, and therefore is perfect for use across and should not cause any issues with users reading text.
+
+A standard Sans-serif font is used as a back-up font, should there be any issues with loading the Quicksand font, and should not cause any significant issue with the look and feel of the site.
+
+#### Logo
+
+The logo is light pink, with a white image that looks like eyelashes. This fits with the brand and products offered by HEX Cosmetics.
+
+The logo also displayed the HEX Cosmetics name and tagline.
+
+There is also a version of the logo which just has the image, and this is used as the favicon for the site.
+
 #### Colour Scheme 
+
+The primary colour for the site is a light pink `#f8bab1` colour and was selected due to its likeness to many makeup products, and it is a bright fresh colour that is aesthetically pleasing.
+
+* ![#f8bab1](https://placehold.it/15/f8bab1/000000?text=+) `#f8bab1` - Primary colour
+
+This colour also matches the Hex Cosmetics logo, and therefore reinforces the brand look/ colour across the site. 
+
+This primary colour is offset across the site by 2 text colours - black + white.
+
+* ![#000](https://placehold.it/15/000/000000?text=+) `#000`
+* ![#fff](https://placehold.it/15/fff/000000?text=+) `#fff`
+
+The black text is the main text colour across the site and is used for its readability, as well as the contrast against the white background.
+
+The white text is used against light pink `#f8bab1` backdrop, and is used to reinforce the brand colours (matching the logo etc.).
+
+There are a few other colours used across the site (but much more sparingly):
+
+Form text is grey and still offers a contrast to the white background, however provides a distinction from the black text that is used to display site/ product information.
+
+* ![#6c757d](https://placehold.it/15/6c757d/000000?text=+) `#6c757d`
+
+There is also the use of green (success), orange (warning), red(error) & lightblue (info) within the messages displayed on the site, and these offer a stark contrast to the primary colours used to draw the users attention to the message when it is displayed.
 
 [Back to Top](#overview)
 
