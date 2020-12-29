@@ -23,13 +23,14 @@
             </p>
             <hr class="d-none d-lg-block white-rule">
             <p>Get more to smile about directly to your inbox. We'll send you details of our newest ranges and special offers.</p>
-            <form id="subscription_form" action="" method="POST">
+            <form id="subscription_form" action="{% url 'subscribe' %}" method="POST">
                 <div class="form-group">
                     {% csrf_token %}
                     {{ sub_form|crispy }}
                     <small id="emailHelp">We'll never share your email with anyone else.</small>
                 </div>
                 <button type="submit" class="btn submit-button"><span>Subscribe</span>&nbsp;<span><i class="fas fa-bell"></i></span></button>
+                <input type="hidden" name="subscribe_redirect" value="{{ request.path }}">
             </form>
         </div>
         <div class="col-12 col-lg-4">
