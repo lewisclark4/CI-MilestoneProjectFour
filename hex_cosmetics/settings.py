@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'basket',
     'checkout',
     'profiles',
+    'contact',
 
 
     # 3rd Party
@@ -88,6 +89,7 @@ TEMPLATES = [
                 'products.context.all_categories',
                 'products.context.featured_products',
                 'basket.contexts.basket_contents',
+                'contact.contexts.subscription_form',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',

@@ -25,10 +25,11 @@
             <p>Get more to smile about directly to your inbox. We'll send you details of our newest ranges and special offers.</p>
             <form id="subscription_form" action="" method="POST">
                 <div class="form-group">
-                    <input type="email" class="form-control" id="newsletter-email" aria-describedby="emailHelp" placeholder="Enter email">
+                    {% csrf_token %}
+                    {{ sub_form|crispy }}
                     <small id="emailHelp">We'll never share your email with anyone else.</small>
                 </div>
-                <button type="submit" class="btn submit-button"><strong>Subscribe</strong></button>
+                <button type="submit" class="btn submit-button"><span>Subscribe</span>&nbsp;<span><i class="fas fa-bell"></i></span></button>
             </form>
         </div>
         <div class="col-12 col-lg-4">
