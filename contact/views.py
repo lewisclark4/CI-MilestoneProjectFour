@@ -39,3 +39,6 @@ def secure_message(request):
     }
 
     return render(request, "contact/contact.html", context)
+
+def faqs(request):
+    return render(request, "contact/faqs.html",)

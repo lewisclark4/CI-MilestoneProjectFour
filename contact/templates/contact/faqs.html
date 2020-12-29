@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+        </div> 
+    </div>
+    <hr class="rose-rule">
+    <div class="row">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong>How do I return an item?</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        To be acceptable for return, items should be unused, unopened and have any original seals intact.<br><br>
+                        To initiate a refund, please return the items to the returns address detailed on your Dispatch Note.<br><br>
+                        Please ensure you retain proof of postage for any items that you return.<br><br>
+                        Refunds will be processed within 48 hours of receipt of the returns.<br><br>
+                        <strong>Please note: Hex Cosmetics will only reimburse the cost of the products and not any postage or shipping fees.</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>Where is my order?</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Don’t worry we are working hard to get all orders dispatched as quickly as possible.</p>
+                        <p>We expect orders to be dispatched within 2 working days of your order</p>
+                        <p>The standard delivery time for our delivery partner is 3 working days, but please note that this may be longer during busy periods.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>Can I change my order?</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Our aim is to process your order as soon as possible, to get it on its way to you, so there is a only a small amount of time where we may be able to amend your order.</p>
+                        <p>Please  <a href="{% url 'contact' %}">get in touch </a> ASAP if you have any issues with your order.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <strong>How do I get a replacement for an item missing from my order?</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>If there is an item missing from your order, please <a href="{% url 'contact' %}">report this</a> to our customer services department.</p>
+                        <p>We will endeavour to resolve this for you ASAP.</p>
+                        <p>If an item is missing, please check the parcel it has arrived in for any damage or any signs that this has been tampered with, and advise us accordingly, as this can help us with our fulfillment process.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <strong>How do I get a replacement for a faulty item?</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>If there is a faulty item in your order, please <a href="{% url 'contact' %}">report this</a> to our customer services department.</p>
+                        <p>We will endeavour to resolve this for you ASAP.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <strong>I've received the wrong item, what do I do?</strong>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>We apologise if there has been an error with your order and you have received an incorrect item.</p>
+                        <p>If there is an incorrect item in your order, please <a href="{% url 'contact' %}">report this</a> to our customer services department.</p>
+                        <p>We will endeavour to resolve this for you ASAP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="rose-rule">
+</div>
+{% endblock %}
