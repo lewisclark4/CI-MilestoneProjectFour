@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import Subscription
-from .forms import SubscriptionForm
+from .models import Subscription, Contact
+from .forms import SubscriptionForm, ContactForm
 from django.contrib import messages
 
 # Create your views here.
@@ -23,3 +23,14 @@ def subscribe(request):
                 sub_form.save()
                 messages.success(request, "You are now subscribed to our newsletter.")
     return redirect(subscribe_redirect)
+
+
+def contact(request):
+
+    form = ContactForm()
+
+    context = {
+        'form' : form,
+    }
+
+    return render(request, "contact/contact.html", context)
