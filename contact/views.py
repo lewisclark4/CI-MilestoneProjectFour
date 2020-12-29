@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect
-from .models import Subscription, Contact
-from .forms import SubscriptionForm, ContactForm
+from django.shortcuts import render, redirect, reverse
+from .models import Subscription, SecureMessage
+from .forms import SubscriptionForm, SecureMessageForm
 from django.contrib import messages
 
 # Create your views here.
@@ -14,9 +14,7 @@ def subscribe(request):
         if Subscription.objects.filter(
             email=request.POST.get("email")
         ).exists():
-            messages.info(
-                request, "You are aleady subscribed to our newsletter."
-            )
+            messages.info(request, "You are aleady subscribed to our newsletter.")
             return redirect(subscribe_redirect)
         else:
             if sub_form.is_valid():
@@ -25,9 +23,16 @@ def subscribe(request):
     return redirect(subscribe_redirect)
 
 
-def contact(request):
+def secure_message(request):
 
-    form = ContactForm()
+    if request.method == "POST":
+        form = SecureMessageForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Your message has been received and we aim to reply within 48 hours.")
+        return redirect(reverse("home"))
+
+    form = SecureMessageForm()
 
     context = {
         'form' : form,

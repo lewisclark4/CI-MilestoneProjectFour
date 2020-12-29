@@ -1,5 +1,5 @@
 from django import forms
-from .models import Subscription, Contact
+from .models import Subscription, SecureMessage
 
 
 class SubscriptionForm(forms.ModelForm):
@@ -18,9 +18,9 @@ class SubscriptionForm(forms.ModelForm):
             self.fields[field].widget.attrs["placeholder"] = placeholder
             self.fields[field].label = False
 
-class ContactForm(forms.ModelForm):
+class SecureMessageForm(forms.ModelForm):
     class Meta:
-        model = Contact
+        model = SecureMessage
         fields = ["name", "email", "message"]
 
     def __init__(self, *args, **kwargs):
