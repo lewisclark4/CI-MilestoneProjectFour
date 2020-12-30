@@ -81,3 +81,12 @@ class TestProductsModels(TestCase):
         new_colour = Colour.objects.get(colour='test colour')
 
         self.assertEqual(str(new_colour.hex_value), "000")
+
+    def tearDown(self):
+        new_category = Category.objects.get(name='test_category')
+        new_product = Product.objects.get(product_name='test product')
+        new_colour = Colour.objects.get(colour='test colour')
+
+        del new_category
+        del new_product
+        del new_colour
