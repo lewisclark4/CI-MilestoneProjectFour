@@ -71,3 +71,18 @@ class TestProductsModels(TestCase):
         result = Product.get_absolute_url(new_product)
 
         self.assertEqual(result, expected_result)
+
+        """ Tests for Colour Model Methods """
+    
+    def test_colour_str_method(self):
+        new_colour = Colour.objects.create(
+            colour="test colour", 
+        )
+        self.assertEqual(str(new_colour), "test colour")
+
+    def test_colour_get_hex_value_method(self):
+        new_colour = Colour.objects.create(
+            colour="test colour",
+            hex_value="000"
+        )
+        self.assertEqual(str(new_colour.hex_value), "000")
