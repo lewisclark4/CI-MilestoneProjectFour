@@ -2,87 +2,82 @@ from django.test import TestCase
 from django.utils.text import slugify
 from products.models import Product, Category, Colour
 
+
+
+### https://docs.djangoproject.com/en/3.1/topics/testing/overview/ for guidance on setUp
 class TestProductsModels(TestCase):
 
+    def setUp(self):
+
+        new_category = Category.objects.create(
+            name='test_category', 
+            slug='test-category', 
+            friendly_name='test category',
+        )
+
+        new_product = Product.objects.create(
+            category=new_category,
+            product_name='test product',
+            price=1
+            )
+
+        new_colour = Colour.objects.create(
+            product=new_product,
+            colour='test colour',
+            hex_value='000'
+        )
+        
     """ Tests for Category Model Methods """
 
     def test_category_str_method(self):
-        new_category = Category.objects.create(
-            name="test_category", 
-        )
-        self.assertEqual(str(new_category), "test_category")
+        new_category = Category.objects.get(name='test_category')
+
+        self.assertEqual(str(new_category), 'test_category')
 
     def test_category_get_friendly_name_method(self):
-        new_category = Category.objects.create(
-            name="test_category", 
-            friendly_name="test category",
-        )
+        new_category = Category.objects.get(name='test_category')
         expected_result = new_category.friendly_name
         result = Category.get_friendly_name(new_category)
 
         self.assertEqual(result, expected_result)
-
+    
     def test_category_get_absolute_url_method(self):
-        new_category = Category.objects.create(
-            name="test_category", 
-            slug="test-category", 
-            friendly_name="test category",
-        )
+        new_category = Category.objects.get(name='test_category')
         expected_result = '/products/' + new_category.slug + '/'
         result = Category.get_absolute_url(new_category)
 
         self.assertEqual(result, expected_result)
 
-
     """ Tests for Product Model Methods """
 
     def test_product_str_method(self):
-        new_product = Product.objects.create(
-            product_name="test product",
-            price=1
-        )
+        new_product = Product.objects.get(product_name='test product')
+
         self.assertEqual(str(new_product), "test product")
-
+    
     def test_product_save_method(self):
-        new_product = Product.objects.create(
-            product_name="test product",
-            price=1
-        )
+        new_product = Product.objects.get(product_name="test product")
         expected_result = slugify(new_product.product_name)
-        save = Product.save(new_product)
-        product = Product.objects.get(product_name="test product")
-        result = product.slug
-
+        result = new_product.slug
+        
         self.assertEqual(result, expected_result)
 
     def test_product_get_absolute_url_method(self):
-        new_category = Category.objects.create(
-            name="test_category", 
-            slug="test-category", 
-        )
-        new_product = Product.objects.create(
-            category=new_category,
-            product_name="test product", 
-            slug="test-product",
-            price=1
-            )
-        
+        new_category = Category.objects.get(name='test_category')
+        new_product = Product.objects.get(product_name='test product')
         expected_result = '/products/' + new_category.slug + '/' + new_product.slug + '/'
         result = Product.get_absolute_url(new_product)
 
         self.assertEqual(result, expected_result)
 
-        """ Tests for Colour Model Methods """
+    """ Tests for Colour Model Methods """
     
     def test_colour_str_method(self):
-        new_colour = Colour.objects.create(
-            colour="test colour", 
-        )
+        new_colour = Colour.objects.get(colour='test colour')
+
         self.assertEqual(str(new_colour), "test colour")
 
     def test_colour_get_hex_value_method(self):
-        new_colour = Colour.objects.create(
-            colour="test colour",
-            hex_value="000"
-        )
+        new_colour = Colour.objects.get(colour='test colour')
+
         self.assertEqual(str(new_colour.hex_value), "000")
