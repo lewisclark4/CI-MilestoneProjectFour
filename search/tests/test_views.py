@@ -33,7 +33,7 @@ class TestProductsViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'search/search.html')
    
-      def test_search_by_product_name(self):
+    def test_search_by_product_name(self):
         url = '/search/?q=test+product'
         query = "test product"
         response = self.client.get(url)
