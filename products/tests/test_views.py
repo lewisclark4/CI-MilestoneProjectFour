@@ -25,17 +25,43 @@ class TestProductsViews(TestCase):
         )
     
     def test_all_products_view(self):
-        response = self.client.get("/products/")
+        response = self.client.get('/products/')
 
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, "products/products.html")
+        self.assertTemplateUsed(response, 'products/products.html')
+
+    def test_all_products_sort_price_asc(self):
+        response = self.client.get('/products/?sort=price&direction=asc')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
+
+    def test_all_products_sort_price_desc(self):
+        response = self.client.get('/products/?sort=price&direction=desc')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
 
     def test_category_view(self):
-        response = self.client.get("/products/test-category/")
+        new_category = Category.objects.get(name='test_category')
+        response = self.client.get('/products/' + new_category.slug + '/')
 
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, "products/products.html")
+        self.assertTemplateUsed(response, 'products/products.html')
 
+    def test_category_sort_price_asc(self):
+        new_category = Category.objects.get(name='test_category')
+        response = self.client.get('/products/' + new_category.slug + '/' + '?sort=price&direction=asc')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
+
+    def test_category_sort_price_desc(self):
+        new_category = Category.objects.get(name='test_category')
+        response = self.client.get('/products/' + new_category.slug + '/' + '?sort=price&direction=desc')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
     def test_product_details_view(self):
         new_category = Category.objects.get(name='test_category')
         new_product = Product.objects.get(product_name='test product')
@@ -43,7 +69,7 @@ class TestProductsViews(TestCase):
         response = self.client.get(url)
 
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, "products/product_detail.html")
+        self.assertTemplateUsed(response, 'products/product_detail.html')
 
     def tearDown(self):
         new_category = Category.objects.get(name='test_category')
