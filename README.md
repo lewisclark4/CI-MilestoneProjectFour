@@ -131,10 +131,10 @@ The goals of the Hex Cosmetics business are:
 ##### About HEX
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|      | user    | view a list of frequently asked questions | identify the answer to a query I may have|
-|      | user    | view details about Hex Cosmetics | so that I can become more familiar with the brand |
-|      | user    | subscribe to the Hex Cosmetics newsletter | so that I can keep up to date with the latest products & offers |
-|      | user    | find Hex Cosmetics on social media | so that I can follow the brand and keep up to date with their latest content |
+|&checkmark;| user    | view a list of frequently asked questions | identify the answer to a query I may have|
+|&checkmark;| user    | view details about Hex Cosmetics | so that I can become more familiar with the brand |
+|&checkmark;| user    | subscribe to the Hex Cosmetics newsletter | so that I can keep up to date with the latest products & offers |
+|&checkmark;| user    | find Hex Cosmetics on social media | so that I can follow the brand and keep up to date with their latest content |
 
 ##### Admin and Store Management
 | Done | As a... | I would like to be able to... | So that I may...|
@@ -142,8 +142,8 @@ The goals of the Hex Cosmetics business are:
 |&checkmark;| Admin   | add a product | add new products to the store |
 |&checkmark;| Admin   | edit a product | change product prices, descriptions, images and other criteria |
 |&checkmark;| Admin   | delete a product | remove products that are no longer for sale |
-|      | Admin   | have access to an admin dashboard | manage products and orders |
-|      | Admin   | view any previous order made | see what was purchased to ensure they get fulfilled |
+|&checkmark;| Admin   | have access to an admin dashboard | manage products and orders |
+|&checkmark;| Admin   | view any previous order made | see what was purchased to ensure they get fulfilled |
 
 ### Structure
 
@@ -375,10 +375,10 @@ To fix this I created the get_absolute_url model method in the product class, to
 
 ### Content
 
-- [kaggle]https://www.kaggle.com/oftomorrow/herokuapp-makeup-products my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
+- [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
 
 ### Images
-- [kaggle]https://www.kaggle.com/oftomorrow/herokuapp-makeup-products The Kaggle data set contains applicable URLs to all product images across the site.
+- [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) The Kaggle data set contains applicable URLs to all product images across the site.
 - [Pixabay](https://pixabay.com/) The category images were sourced from the Pixabay images library, and are all free for use, sharing or modification.
 
 
@@ -388,5 +388,12 @@ To fix this I created the get_absolute_url model method in the product class, to
 - [learndjango](https://learndjango.com/tutorials/django-slug-tutorial) + CI Tutor Miklos Sarosi for guidance on implementing slugs into my project to assist with 'bug #1 / #2'.
 - [Code Institute](https://codeinstitute.net/) For the excellent overall content & mini projects within the course.
 - [ckz8780 - Github](https://github.com/ckz8780/boutique_ado_v1) ckz8780's fantastic Django module produced for the Code Institute has been invaluable in providing guidance for creating key functionality across the project.
+- [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/advanced/) for guidance on the setUp and tearDown test methods to keep the database clean.
+- [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/tools/) for guidance on the available testing tools and required arguments to be passed etc.
+- [Stackoverflow](https://stackoverflow.com/questions/4424435/how-to-convert-a-django-queryset-to-a-list) for guidance on transforming data for assertQuerysetEqual tests.
+    - [w3schools](https://www.w3schools.com/python/python_lambda.asp) for explanation of Lambda function.
+- [Stackoverflow]https://stackoverflow.com/questions/2897609/how-can-i-unit-test-django-messages for guidance on testing messages.
+
+
 [Back to Top](#overview)
 

@@ -62,6 +62,7 @@ class TestProductsViews(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
+        
     def test_product_details_view(self):
         new_category = Category.objects.get(name='test_category')
         new_product = Product.objects.get(product_name='test product')

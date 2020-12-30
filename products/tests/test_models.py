@@ -79,8 +79,9 @@ class TestProductsModels(TestCase):
 
     def test_colour_get_hex_value_method(self):
         new_colour = Colour.objects.get(colour='test colour')
+        result = Colour.get_hex_value(new_colour)
 
-        self.assertEqual(str(new_colour.hex_value), "000")
+        self.assertEqual(result, "000")
 
     def tearDown(self):
         new_category = Category.objects.get(name='test_category')
