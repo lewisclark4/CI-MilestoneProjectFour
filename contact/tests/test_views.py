@@ -1,8 +1,8 @@
 from django.test import TestCase
 from django.urls import reverse
 from django.contrib.messages import get_messages
-from contact.models import Subscription, SecureMessage
-from contact.forms import SubscriptionForm, SecureMessageForm
+from contact.models import Subscription
+from contact.forms import SecureMessageForm
 
 class TestContactViews(TestCase):
 
