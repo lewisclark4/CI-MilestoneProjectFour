@@ -2,9 +2,6 @@ from django.test import TestCase
 from django.utils.text import slugify
 from products.models import Product, Category, Colour
 
-
-
-### https://docs.djangoproject.com/en/3.1/topics/testing/overview/ for guidance on setUp
 class TestProductsModels(TestCase):
 
     def setUp(self):

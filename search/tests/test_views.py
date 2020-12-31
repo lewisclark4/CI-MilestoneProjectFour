@@ -5,7 +5,7 @@ from django.db.models import Q
 
 # Create your tests here.
 
-class TestProductsViews(TestCase):
+class TestSearchViews(TestCase):
     def setUp(self):
 
         new_category = Category.objects.create(
