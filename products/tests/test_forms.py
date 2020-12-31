@@ -12,16 +12,14 @@ class TestProductForm(TestCase):
         self.assertEqual(form.errors['price'][0], 'This field is required.')
         self.assertEqual(form.errors['description'][0], 'This field is required.')
 
-    def test_product_form_minimum_required_data(self):
+    def test_product_form_minimum_required_data_is_valid(self):
         form = ProductForm({'brand_name': 'test_brand', 'product_name': 'test product', 'price': '1', 'description': 'test description'})
        
         self.assertTrue(form.is_valid())
 
     def test_product_form_slug_field_excluded(self):
         form = ProductForm()
-        excluded_field = form.Meta.exclude[0]
-        
-        self.assertEqual(excluded_field, 'slug')
+        self.assertEqual(form.Meta.exclude, ('slug',))
 
 class TestColourForm(TestCase):
 

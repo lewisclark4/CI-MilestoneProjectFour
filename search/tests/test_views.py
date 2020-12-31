@@ -75,6 +75,7 @@ class TestSearchViews(TestCase):
         expected_message = 'Please enter a search criteria'
         messages = list(get_messages(response.wsgi_request))
 
+        self.assertEqual(messages[0].tags, 'warning')
         self.assertEqual(str(messages[0]), expected_message)
 
     def tearDown(self):
