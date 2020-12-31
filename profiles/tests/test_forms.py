@@ -11,8 +11,8 @@ class TestUserProfileForms(TestCase):
         form = UserProfileForm(
             {
                 'default_phone_number': '123245789',
-                'default_street_address_1': '1 My Street',
-                'default_street_address_2': 'My Village',
+                'default_address_1': '1 My Street',
+                'default_address_2': 'My Village',
                 'default_city': 'My City',
                 'default_county': 'My County',
                 'default_country': 'GB',

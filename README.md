@@ -392,7 +392,8 @@ To fix this I created the get_absolute_url model method in the product class, to
 - [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/tools/) for guidance on the available testing tools and required arguments to be passed etc.
 - [Stackoverflow](https://stackoverflow.com/questions/4424435/how-to-convert-a-django-queryset-to-a-list) for guidance on transforming data for assertQuerysetEqual tests.
     - [w3schools](https://www.w3schools.com/python/python_lambda.asp) for explanation of Lambda function.
-- [Stackoverflow]https://stackoverflow.com/questions/2897609/how-can-i-unit-test-django-messages for guidance on testing messages.
+- [Stackoverflow](https://stackoverflow.com/questions/2897609/how-can-i-unit-test-django-messages) for guidance on testing messages.
+- [Stackoverflow](https://stackoverflow.com/questions/1995615/how-can-i-format-a-decimal-to-always-show-2-decimal-places) for guidance on how to fix an issue when testing the order model which was preventing me from matching values due to floating point imprecision. 
 
 
 [Back to Top](#overview)
