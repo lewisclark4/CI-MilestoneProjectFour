@@ -50,10 +50,10 @@ class TestProductsModels(TestCase):
     def test_product_str_method(self):
         new_product = Product.objects.get(product_name='test product')
 
-        self.assertEqual(str(new_product), "test product")
+        self.assertEqual(str(new_product), 'test product')
     
     def test_product_save_method(self):
-        new_product = Product.objects.get(product_name="test product")
+        new_product = Product.objects.get(product_name='test product')
         expected_result = slugify(new_product.product_name)
         result = new_product.slug
         
@@ -72,13 +72,13 @@ class TestProductsModels(TestCase):
     def test_colour_str_method(self):
         new_colour = Colour.objects.get(colour='test colour')
 
-        self.assertEqual(str(new_colour), "test colour")
+        self.assertEqual(str(new_colour), 'test colour')
 
     def test_colour_get_hex_value_method(self):
         new_colour = Colour.objects.get(colour='test colour')
         result = Colour.get_hex_value(new_colour)
 
-        self.assertEqual(result, "000")
+        self.assertEqual(result, '000')
 
     def tearDown(self):
         new_category = Category.objects.get(name='test_category')

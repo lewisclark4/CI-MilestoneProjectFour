@@ -35,39 +35,39 @@ class TestSearchViews(TestCase):
    
     def test_search_by_product_name(self):
         url = '/search/?q=test+product'
-        query = "test product"
+        query = 'test product'
         response = self.client.get(url)
         search_result = Product.objects.all().filter(Q(product_name__contains=query))
         
         self.assertQuerysetEqual(
-            response.context["products"], search_result, transform=lambda a: a)
+            response.context['products'], search_result, transform=lambda a: a)
 
     def test_search_by_brand_name(self):
         url = '/search/?q=test+brand'
-        query = "test brand"
+        query = 'test brand'
         response = self.client.get(url)
         search_result = Product.objects.all().filter(Q(brand_name__contains=query))
         
         self.assertQuerysetEqual(
-            response.context["products"], search_result, transform=lambda a: a)
+            response.context['products'], search_result, transform=lambda a: a)
 
     def test_search_by_category(self):
         url = '/search/?q=test+category'
-        query = "test category"
+        query = 'test category'
         response = self.client.get(url)
         search_result = Product.objects.all().filter(Q(category__name__contains=query))
         
         self.assertQuerysetEqual(
-            response.context["products"], search_result, transform=lambda a: a)
+            response.context['products'], search_result, transform=lambda a: a)
     
     def test_search_by_description(self):
         url = '/search/?q=test+description'
-        query = "test description"
+        query = 'test description'
         response = self.client.get(url)
         search_result = Product.objects.all().filter(Q(description__contains=query))
         
         self.assertQuerysetEqual(
-            response.context["products"], search_result, transform=lambda a: a)
+            response.context['products'], search_result, transform=lambda a: a)
     
     def test_error_message_blank_search(self):
         url = '/search/?q='

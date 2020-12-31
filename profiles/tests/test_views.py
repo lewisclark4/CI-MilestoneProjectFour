@@ -25,14 +25,14 @@ class TestProfilesViews(TestCase):
 
     def test_update_profile_form(self):
         self.client.login(username='test_user', password='verysecretpassword1!')
-        data = {"default_phone_number": "12345"}
-        response = self.client.post("/profile/", data)
+        data = {'default_phone_number': '12345'}
+        response = self.client.post('/profile/', data)
         messages = list(get_messages(response.wsgi_request))
         expected_message = 'Your delivery details were updated successfully'
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'profiles/profile.html')
-        self.assertEqual(messages[0].tags, "success")
+        self.assertEqual(messages[0].tags, 'success')
         self.assertEqual(str(messages[0]), expected_message)
 
     def test_order_history_view(self):
