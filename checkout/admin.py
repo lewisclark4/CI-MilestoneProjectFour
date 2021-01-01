@@ -1,11 +1,12 @@
 from django.contrib import admin
 from .models import Order, OrderLineItem
-from products.models import Product, Colour
+
 
 class OrderLineItemAdminInline(admin.TabularInline):
     """ Allows adding and editing inline items from the order model"""
     model = OrderLineItem
-    readonly_fields = ("lineitem_total",)
+    readonly_fields = ('lineitem_total',)
+
 
 class OrderAdmin(admin.ModelAdmin):
     inlines = (OrderLineItemAdminInline,)

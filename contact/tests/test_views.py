@@ -4,10 +4,14 @@ from django.contrib.messages import get_messages
 from contact.models import Subscription
 from contact.forms import SecureMessageForm
 
+
 class TestContactViews(TestCase):
 
     def test_new_subscription_email_and_redirect(self):
-        response = self.client.post(reverse('subscribe'), data={'email_address': 'test@test.com', 'subscribe_redirect': '/'})
+        response = self.client.post(reverse('subscribe'),
+                                    data={
+                                        'email_address': 'test@test.com',
+                                        'subscribe_redirect': '/'})
         messages = list(get_messages(response.wsgi_request))
         expected_message = 'You are now subscribed to our newsletter.'
 
@@ -15,10 +19,13 @@ class TestContactViews(TestCase):
         self.assertEqual(str(messages[0]), expected_message)
 
     def test_existing_subscription_email_and_redirect(self):
-        new_subscription = Subscription.objects.create(
+        Subscription.objects.create(
             email_address='test@test.com'
         )
-        response = self.client.post(reverse('subscribe'), data={'email_address': 'test@test.com', 'subscribe_redirect': '/'})
+        response = self.client.post(reverse('subscribe'),
+                                    data={
+                                        'email_address': 'test@test.com',
+                                        'subscribe_redirect': '/'})
         messages = list(get_messages(response.wsgi_request))
         expected_message = 'You are aleady subscribed to our newsletter.'
 
@@ -33,14 +40,15 @@ class TestContactViews(TestCase):
 
     def test_secure_message_form_submit_and_redirect(self):
         data = {
-            'name':'Mr Test',
-            'email':'test@test.com',
-            'message':'test secure message'
+            'name': 'Mr Test',
+            'email': 'test@test.com',
+            'message': 'test secure message'
         }
         form = SecureMessageForm(data)
         response = self.client.post(reverse('contact'), data, follow=True)
         messages = list(get_messages(response.wsgi_request))
-        expected_message = 'Your message has been received and we aim to reply within 48 hours.'
+        expected_message = ('Your message has been received'
+                            + 'and we aim to reply within 48 hours.')
 
         self.assertTrue(form.is_valid())
         self.assertEqual(messages[0].tags, 'success')

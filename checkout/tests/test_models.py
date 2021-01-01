@@ -4,12 +4,13 @@ from checkout.models import Order, OrderLineItem
 from products.models import Product, Category, Colour
 from decimal import Decimal
 
+
 class TestCheckoutModels(TestCase):
 
-    def setUp(self):   
+    def setUp(self):
         new_category = Category.objects.create(
-            name='test_category', 
-            slug='test-category', 
+            name='test_category',
+            slug='test-category',
             friendly_name='test category',
         )
 
@@ -37,57 +38,55 @@ class TestCheckoutModels(TestCase):
             postcode='AB12CD',
         )
 
-        new_order_line_item = OrderLineItem.objects.create(
+        OrderLineItem.objects.create(
             order=new_order,
             product=new_product,
             colour=new_colour,
-            quantity = 1)
-    
+            quantity=1)
 
     def test_order_str_method(self):
         new_order = Order.objects.get(full_name='Mr test')
-        
+
         self.assertEqual(str(new_order), new_order.order_number)
 
     def test_order_update_order_totals_method(self):
         new_order = Order.objects.get(full_name='Mr test')
         new_product = Product.objects.get(product_name='test product')
-        two_decimal_places = Decimal(10) ** -2 
+        two_decimal_places = Decimal(10) ** -2
 
+        """ Ignored pep8 line length as makes code less readable """
         self.assertEqual(Decimal(new_order.order_total).quantize(two_decimal_places), new_product.price)
         self.assertEqual(Decimal(new_order.delivery_cost).quantize(two_decimal_places), Decimal(settings.STANDARD_DELIVERY_CHARGE).quantize(two_decimal_places))
         self.assertEqual(Decimal(new_order.grand_total).quantize(two_decimal_places), Decimal(new_order.order_total + new_order.delivery_cost).quantize(two_decimal_places))
 
-
     def test_order_free_delivery(self):
         new_order = Order.objects.get(full_name='Mr test')
-        new_category = Category.objects.get(name='test_category')
         new_product = Product.objects.get(product_name='test product')
         new_colour = Colour.objects.get(colour='test colour')
-        new_order_line_item_2 = OrderLineItem.objects.create(
+        OrderLineItem.objects.create(
             order=new_order,
             product=new_product,
             colour=new_colour,
-            quantity = 50)
-        two_decimal_places = Decimal(10) ** -2 
+            quantity=50)
+        two_decimal_places = Decimal(10) ** -2
 
+        """ Ignored pep8 line length as makes code less readable """
         self.assertEqual(Decimal(new_order.delivery_cost).quantize(two_decimal_places), 0)
 
     def test_order_line_item_str_method(self):
         new_order = Order.objects.get(full_name='Mr test')
-        new_category = Category.objects.get(name='test_category')
         new_product = Product.objects.get(product_name='test product')
         new_colour = Colour.objects.get(colour='test colour')
-        new_order_line_item_3 = OrderLineItem.objects.create(
+        new_order_line_item = OrderLineItem.objects.create(
             order=new_order,
             product=new_product,
             colour=new_colour,
-            quantity = 2)
+            quantity=2)
 
-        self.assertEqual(str(new_order_line_item_3),
-            f'Product: {new_product.product_name}, Colour: {new_colour.colour} added to order: {new_order.order_number}',
-        )
-
+        self.assertEqual(str(new_order_line_item),
+                         (f'Product: {new_product.product_name}, '
+                          + f'Colour: {new_colour.colour} '
+                          + f'added to order: {new_order.order_number}'))
 
     def tearDown(self):
         new_order = Order.objects.get(full_name='Mr test')
@@ -98,7 +97,7 @@ class TestCheckoutModels(TestCase):
             order=new_order,
             product=new_product,
             colour=new_colour,
-            quantity = 1)
+            quantity=1)
 
         del new_order
         del new_category

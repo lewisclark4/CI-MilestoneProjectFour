@@ -1,13 +1,14 @@
 from django.test import TestCase
 from contact.models import Subscription, SecureMessage
 
+
 class TestContactModels(TestCase):
 
     def setUp(self):
 
-        new_secure_message = SecureMessage.objects.create(
-            name='Mr Test', 
-            email='test@test.com', 
+        SecureMessage.objects.create(
+            name='Mr Test',
+            email='test@test.com',
             message='test secure message'
         )
 
@@ -22,7 +23,7 @@ class TestContactModels(TestCase):
         new_secure_message = SecureMessage.objects.get(name='Mr Test')
 
         self.assertEqual(str(new_secure_message), 'Mr Test')
-    
+
     def tearDown(self):
         new_secure_message = SecureMessage.objects.get(name='Mr Test')
 

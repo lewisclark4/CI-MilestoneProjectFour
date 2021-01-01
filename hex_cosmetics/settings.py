@@ -99,7 +99,7 @@ TEMPLATES = [
     },
 ]
 
-MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
@@ -186,4 +186,4 @@ STRIPE_WEBHOOK_SECRET_KEY = os.getenv('STRIPE_WEBHOOK_SECRET')
 STRIPE_CURRENCY = 'gbp'
 
 # Email settings
-DEFAULT_FROM_EMAIL = "hexcosmetics@example.com"
+DEFAULT_FROM_EMAIL = 'hexcosmetics@example.com'

@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Subscription(models.Model):
     email_address = models.EmailField(max_length=254)

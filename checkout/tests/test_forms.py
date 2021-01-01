@@ -1,6 +1,7 @@
 from django.test import TestCase
 from checkout.forms import OrderForm
 
+
 class TestCheckoutForms(TestCase):
     def test_checkout_form_explicit_fields(self):
         form = OrderForm()
@@ -15,7 +16,7 @@ class TestCheckoutForms(TestCase):
                 'city',
                 'county',
                 'country',
-                'postcode', 
+                'postcode',
             ),
         )
 
@@ -32,8 +33,13 @@ class TestCheckoutForms(TestCase):
         )
 
         self.assertFalse(form.is_valid())
-        self.assertEqual(form.errors['full_name'][0], 'This field is required.')
-        self.assertEqual(form.errors['email'][0], 'This field is required.')
-        self.assertEqual(form.errors['phone_number'][0], 'This field is required.')
-        self.assertEqual(form.errors['city'][0], 'This field is required.')
-        self.assertEqual(form.errors['country'][0], 'This field is required.')
+        self.assertEqual(
+            form.errors['full_name'][0], 'This field is required.')
+        self.assertEqual(
+            form.errors['email'][0], 'This field is required.')
+        self.assertEqual(
+            form.errors['phone_number'][0], 'This field is required.')
+        self.assertEqual(
+            form.errors['city'][0], 'This field is required.')
+        self.assertEqual(
+            form.errors['country'][0], 'This field is required.')
