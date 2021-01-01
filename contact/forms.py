@@ -16,7 +16,6 @@ class SubscriptionForm(forms.ModelForm):
         for field in self.fields:
             placeholder = placeholders[field]
             self.fields[field].widget.attrs["placeholder"] = placeholder
-            self.fields[field].label = False
 
 class SecureMessageForm(forms.ModelForm):
     class Meta:
