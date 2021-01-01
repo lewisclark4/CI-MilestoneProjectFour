@@ -2,7 +2,6 @@ from django.db import models
 from django.utils.text import slugify
 from django.urls import reverse
 
-# Create your models here.
 
 class Category(models.Model):
     name = models.CharField(max_length=254)
@@ -21,10 +20,16 @@ class Category(models.Model):
         return self.friendly_name
 
     def get_absolute_url(self):
-        return reverse('products_by_category', kwargs={'category_slug': self.slug})
+        return reverse('products_by_category',
+                       kwargs={'category_slug': self.slug})
+
 
 class Colour(models.Model):
-    product = models.ForeignKey('Product', null=True, blank=True, on_delete=models.CASCADE)
+    product = models.ForeignKey(
+                        'Product',
+                        null=True,
+                        blank=True,
+                        on_delete=models.CASCADE)
     colour = models.CharField(max_length=254)
     hex_value = models.CharField(max_length=7)
 
@@ -34,8 +39,13 @@ class Colour(models.Model):
     def get_hex_value(self):
         return self.hex_value
 
+
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+                        'Category',
+                        null=True,
+                        blank=True,
+                        on_delete=models.SET_NULL)
     brand_name = models.CharField(max_length=254)
     product_name = models.CharField(max_length=254)
     slug = models.SlugField(max_length=254, unique=True, null=False)
@@ -56,5 +66,3 @@ class Product(models.Model):
             'product_detail',
             args=[self.category.slug, self.slug],
         )
-
-    

@@ -1,14 +1,13 @@
 from django.test import TestCase
 from products.models import Product, Category, Colour
 
-# Create your tests here.
 
 class TestProductsViews(TestCase):
     def setUp(self):
 
         new_category = Category.objects.create(
-            name='test_category', 
-            slug='test-category', 
+            name='test_category',
+            slug='test-category',
             friendly_name='test category',
         )
 
@@ -18,12 +17,12 @@ class TestProductsViews(TestCase):
             price=1
             )
 
-        new_colour = Colour.objects.create(
+        Colour.objects.create(
             product=new_product,
             colour='test colour',
             hex_value='000'
         )
-    
+
     def test_all_products_view(self):
         response = self.client.get('/products/')
 
@@ -51,20 +50,21 @@ class TestProductsViews(TestCase):
 
     def test_category_sort_price_asc(self):
         new_category = Category.objects.get(name='test_category')
-        response = self.client.get('/products/' + new_category.slug + '/' + '?sort=price&direction=asc')
+        response = self.client.get('/products/' + new_category.slug
+                                   + '/' + '?sort=price&direction=asc')
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
 
     def test_category_sort_price_desc(self):
         new_category = Category.objects.get(name='test_category')
-        response = self.client.get('/products/' + new_category.slug + '/' + '?sort=price&direction=desc')
+        response = self.client.get('/products/' + new_category.slug + '/'
+                                   + '?sort=price&direction=desc')
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
-        
+
     def test_product_details_view(self):
-        new_category = Category.objects.get(name='test_category')
         new_product = Product.objects.get(product_name='test product')
         url = Product.get_absolute_url(new_product)
         response = self.client.get(url)
