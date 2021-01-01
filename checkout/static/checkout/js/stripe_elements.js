@@ -1,10 +1,10 @@
 const stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 const clientSecret = $('#id_client_secret').text().slice(1, -1);
 const errorDiv = document.getElementById('card-errors');
-const form = document.getElementById("payment-form")
-const checkoutButton = document.getElementById("checkout-button")
-const saveInfoCheckBox = document.getElementById("id-save-info")
-const csrfTokenInputName = document.getElementsByName("csrfmiddlewaretoken")
+const form = document.getElementById("payment-form");
+const checkoutButton = document.getElementById("checkout-button");
+const saveInfoCheckBox = document.getElementById("id-save-info");
+const csrfTokenInputName = document.getElementsByName("csrfmiddlewaretoken");
 let stripe = Stripe(stripePublicKey);
 let elements = stripe.elements();
 let style = {
@@ -34,24 +34,24 @@ card.addEventListener('change', e => {
                 <i class="fas fa-exclamation-circle"></i>
             </span>
             <span>${e.error.message}</span>
-        `
+        `;
     } else {
-        errorDiv.textContent = ''
+        errorDiv.textContent = '';
     }
-})
+});
 
 form.addEventListener('submit', e => {
-    e.preventDefault()
+    e.preventDefault();
     card.update({
         'disabled': true
-    })
-    checkoutButton.disabled = true
-    let saveInfo = Boolean(saveInfoCheckBox.checked)
-    let csrfToken = csrfTokenInputName[0].value
-    let postData = new FormData()
-    postData.append("csrfmiddlewaretoken", csrfToken)
-    postData.append("client_secret", clientSecret)
-    postData.append("save_info", saveInfo)
+    });
+    checkoutButton.disabled = true;
+    let saveInfo = Boolean(saveInfoCheckBox.checked);
+    let csrfToken = csrfTokenInputName[0].value;
+    let postData = new FormData();
+    postData.append("csrfmiddlewaretoken", csrfToken);
+    postData.append("client_secret", clientSecret);
+    postData.append("save_info", saveInfo);
     let url = '/checkout/cache_checkout_data/';
 
     fetch(url, {
@@ -62,7 +62,7 @@ form.addEventListener('submit', e => {
         }
     }).then(response => {
         if (!response.ok) {
-            location.reload()
+            location.reload();
         }
     }).then(() => {
         stripe.confirmCardPayment(clientSecret, {
@@ -100,16 +100,16 @@ form.addEventListener('submit', e => {
                         <i class="fas fa-exclamation-circle"></i>
                     </span>
                     <span>${result.error.message}</span>
-                    `
+                    `;
                 card.update({
                     'disabled': false
-                })
-                checkoutButton.disabled = false
+                });
+                checkoutButton.disabled = false;
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
-                    form.submit()
+                    form.submit();
                 }
             }
-        })
-    })
-})
+        });
+    });
+});
