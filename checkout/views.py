@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.http import HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -15,7 +16,8 @@ import json
 @require_POST
 def cache_checkout_data(request):
     try:
-        payment_intent_id = request.POST.get('client_secret').split('_secret')[0]
+        payment_intent_id = request.POST.get(
+                                    'client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(payment_intent_id, metadata={
             'basket': json.dumps(request.session.get('basket', {})),
@@ -24,8 +26,12 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request, 'There was an issue processing your payment. Please try again, or call us for more assistance.')
+        messages.error(
+                    request, ('There was an issue processing your payment. '
+                              + 'Please try again, '
+                              + 'or call us for more assistance.'))
         return HttpResponse(content=e, status=400)
+
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLISHABLE_KEY
@@ -34,53 +40,57 @@ def checkout(request):
     if request.method == 'POST':
         basket = request.session.get('basket', {})
         form_data = {
-            "full_name": request.POST["full_name"],
-            "email": request.POST["email"],
-            "phone_number": request.POST["phone_number"],
-            "address_1": request.POST["address_1"],
-            "address_2": request.POST["address_2"],
-            "city": request.POST["city"],
-            "county": request.POST["county"],
-            "country": request.POST["country"],
-            "postcode": request.POST["postcode"],
+            'full_name': request.POST['full_name'],
+            'email': request.POST['email'],
+            'phone_number': request.POST['phone_number'],
+            'address_1': request.POST['address_1'],
+            'address_2': request.POST['address_2'],
+            'city': request.POST['city'],
+            'county': request.POST['county'],
+            'country': request.POST['country'],
+            'postcode': request.POST['postcode'],
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
-            payment_intent_id = request.POST.get('client_secret').split('_secret')[0]
+            payment_intent_id = request.POST.get(
+                                        'client_secret').split('_secret')[0]
             order.stripe_payment_intent_id = payment_intent_id
             order = order_form.save()
             for colour_id, item_data in basket.items():
                 try:
                     colour = get_object_or_404(Colour, pk=colour_id)
-                    product  = get_object_or_404(Product, pk=colour.product.id)
+                    product = get_object_or_404(Product, pk=colour.product.id)
                     order_line_item = OrderLineItem(
-                        order=order, product=product, colour=colour, quantity=item_data,
+                        order=order,
+                        product=product,
+                        colour=colour,
+                        quantity=item_data,
                     )
                     order_line_item.save()
                 except Product.DoesNotExist or Colour.DoesNotExist:
                     messages.error(request, (
-                        "There was an error processing one of the items in your basket."
-                        "Please call for further assistance."),
+                        'There was an error processing your basket.'
+                        'Please call for further assistance.'),
                     )
                     order.delete()
-                    return redirect(reverse("view_basket"))
+                    return redirect(reverse('view_basket'))
 
-            request.session["save_info"] = "save-info" in request.POST
-            return redirect(reverse("checkout_success", args=[order.order_number]))
+            request.session['save_info'] = 'save-info' in request.POST
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
 
         else:
             messages.error(
                 request,
-                "Your form contains some invalid details."
-                "Please double check your information",
+                'Your form contains some invalid details.'
+                'Please double check your information',
             )
-    
-
     else:
         basket = request.session.get('basket', {})
         if not basket:
-            messages.error(request, "There's nothing in your basket at the moment")
+            messages.error(
+                request, "There's nothing in your basket at the moment")
             return redirect(reverse('products'))
 
         current_basket = basket_contents(request)
@@ -90,22 +100,22 @@ def checkout(request):
         intent = stripe.PaymentIntent.create(
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
-            payment_method_types=["card"],
+            payment_method_types=['card'],
         )
 
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 saved_info = {
-                    "full_name": profile.user.get_full_name(),
-                    "email": profile.user.email,
-                    "phone_number": profile.default_phone_number,
-                    "country": profile.default_country,
-                    "postcode": profile.default_postcode,
-                    "city": profile.default_city,
-                    "address_1": profile.default_address_1,
-                    "address_2": profile.default_address_2,
-                    "county": profile.default_county,
+                    'full_name': profile.user.get_full_name(),
+                    'email': profile.user.email,
+                    'phone_number': profile.default_phone_number,
+                    'country': profile.default_country,
+                    'postcode': profile.default_postcode,
+                    'city': profile.default_city,
+                    'address_1': profile.default_address_1,
+                    'address_2': profile.default_address_2,
+                    'county': profile.default_county,
                 }
                 order_form = OrderForm(initial=saved_info)
             except UserProfile.DoesNotExist:
@@ -115,17 +125,14 @@ def checkout(request):
 
     context = {
         'order_form': order_form,
-        "stripe_public_key": stripe_public_key,
-        "client_secret": intent.client_secret,
+        'stripe_public_key': stripe_public_key,
+        'client_secret': intent.client_secret,
     }
 
     return render(request, 'checkout/checkout.html', context)
 
 
 def checkout_success(request, order_number):
-    """
-    Handle successful checkouts
-    """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
@@ -135,19 +142,20 @@ def checkout_success(request, order_number):
         order.save()
         if save_info:
             delivery_data = {
-                "default_phone_number": order.phone_number,
-                "default_address_1": order.address_1,
-                "default_address_2": order.address_2,
-                "default_city": order.city,
-                "default_county": order.county,
-                "default_country": order.country,
-                "default_postcode": order.postcode,
-                
+                'default_phone_number': order.phone_number,
+                'default_address_1': order.address_1,
+                'default_address_2': order.address_2,
+                'default_city': order.city,
+                'default_county': order.county,
+                'default_country': order.country,
+                'default_postcode': order.postcode,
+
             }
-            user_profile_form = UserProfileForm(delivery_data, instance=profile)
+            user_profile_form = UserProfileForm(
+                                    delivery_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-    
+
     if 'basket' in request.session:
         del request.session['basket']
 

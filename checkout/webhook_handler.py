@@ -8,6 +8,7 @@ from profiles.models import UserProfile
 import json
 import time
 
+
 class StripeWH_Handler:
 
     def __init__(self, request):
@@ -21,14 +22,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )        
-
+        )
 
     def handle_event(self, event):
 
@@ -47,7 +47,7 @@ class StripeWH_Handler:
         grand_total = round(intent.charges.data[0].amount / 100, 2)
 
         for key, value in shipping_details.address.items():
-            if value == "":
+            if value == '':
                 shipping_details.address[key] = None
 
         order_exists = False
@@ -93,7 +93,7 @@ class StripeWH_Handler:
                     profile.default_county = shipping_details.address.state
                     profile.default_country = shipping_details.address.country
                     profile.default_postcode = shipping_details.address.postal_code
-                    profile.save()  
+                    profile.save()
             try:
                 order = Order.objects.create(
                     user_profile=profile,
@@ -111,12 +111,15 @@ class StripeWH_Handler:
 
                 for colour_id, item_data in json.loads(basket).items():
                     colour = get_object_or_404(Colour, pk=colour_id)
-                    product  = get_object_or_404(Product, pk=colour.product.id)
+                    product = get_object_or_404(Product, pk=colour.product.id)
                     order_line_item = OrderLineItem(
-                        order=order, product=product, colour=colour, quantity=item_data,
+                        order=order,
+                        product=product,
+                        colour=colour,
+                        quantity=item_data,
                     )
                     order_line_item.save()
-            
+
             except Exception as e:
                 if order:
                     order.delete()
@@ -132,7 +135,7 @@ class StripeWH_Handler:
         )
 
     def handle_payment_intent_payment_failed(self, event):
-        
+
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)

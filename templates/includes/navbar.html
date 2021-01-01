@@ -16,22 +16,22 @@
             </li>
             <li class="nav-item d-lg-none">
                 <a class="nav-link" href=" {% url 'view_basket' %}">
-                    <p id="cart-total" class="m-0">
+                    <p id="cart-total-mobile" class="m-0">
                     <i class="nav-icon fas fa-shopping-cart"></i>
-                        {% if grand_total %}
-                            £{{ grand_total|floatformat:2 }}
+                        {% if total %}
+                            £{{ total|floatformat:2 }}
                         {% else %}
                             £0.00
                         {% endif %}
                     </p>
                 </a>
             </li>
-            <div class="dropdown-divider"></div>
+            <li class="dropdown-divider"></li>
             <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarCategoryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Products
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarCategoryDropdown">
                     <a class="dropdown-item" href="{% url 'products' %}">All</a>
                     {% for category in all_categories %}
                     <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}">{{category.friendly_name}}</a>     
@@ -39,10 +39,10 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarSpecialsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Specials
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarSpecialsDropdown">
                     <a class="dropdown-item" href="#">Featured</a>
                     <a class="dropdown-item" href="#">Sale</a>
                 </div>
@@ -51,24 +51,24 @@
         <div class="dropdown-divider"></div>
         <form class="form-inline" method="GET" action="{% url 'search' %}">
             <input class="form-control search-bar" name="q" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn nav-icon" type="submit">
+            <button class="btn nav-icon" type="submit" aria-label="search">
                 <i class="fas fa-search"></i>
             </button>
         </form>    
         <div class="dropdown-divider"></div>
         <ul class="navbar-nav mx-auto">
             <li class="nav-item d-none d-lg-block">
-                <a class="nav-link" href="{% url 'home' %}">
+                <a class="nav-link" href="{% url 'home' %}" aria-label="Home">
                     <i class="nav-icon fas fa-home"></i>&nbsp;
                 </a>
             </li>
             {% if user.is_authenticated %}
             <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="nav-icon fas fa-user-circle"></i>
                     Profile
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdown">
                     {% if request.user.is_superuser %}
                         <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
                         <a class="dropdown-item" href="{% url 'add_colour' %}">Add Product Colour</a>
@@ -81,11 +81,11 @@
             </li>
             {% else %}
             <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="nav-icon fas fa-user-circle"></i>
                     Profile
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdown">
                     <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
                     <a class="dropdown-item" href="{% url 'account_login' %}" >Log in</a>
                 </div>
@@ -95,8 +95,8 @@
                 <a class="nav-link" href="{% url 'view_basket' %}">
                     <p id="cart-total" class="m-0">
                     <i class="nav-icon fas fa-shopping-cart"></i>
-                        {% if grand_total %}
-                            £{{ grand_total|floatformat:2 }}
+                        {% if total %}
+                            £{{ total|floatformat:2 }}
                         {% else %}
                             £0.00
                         {% endif %}

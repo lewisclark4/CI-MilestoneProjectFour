@@ -3,12 +3,13 @@ from django.contrib.messages import get_messages
 from django.shortcuts import reverse
 from products.models import Product, Category, Colour
 
+
 class TestBasketViews(TestCase):
 
-    def setUp(self):   
+    def setUp(self):
         new_category = Category.objects.create(
-            name='test_category', 
-            slug='test-category', 
+            name='test_category',
+            slug='test-category',
             friendly_name='test category',
         )
 
@@ -18,7 +19,7 @@ class TestBasketViews(TestCase):
             price=1.00
             )
 
-        new_colour = Colour.objects.create(
+        Colour.objects.create(
             product=new_product,
             colour='test colour',
             hex_value='000'
@@ -37,12 +38,11 @@ class TestBasketViews(TestCase):
         expected_message = f"Successfully added {quantity} x {new_colour.product.product_name} ({new_colour.colour}) to your basket"
     """
 
-
     def tearDown(self):
         new_category = Category.objects.get(name='test_category')
         new_product = Product.objects.get(product_name='test product')
         new_colour = Colour.objects.get(colour='test colour')
-        
+
         del new_category
         del new_product
         del new_colour

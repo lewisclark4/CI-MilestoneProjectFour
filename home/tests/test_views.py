@@ -1,6 +1,5 @@
 from django.test import TestCase
 
-# Create your tests here.
 
 class TestHomeViews(TestCase):
     def test_base_index_page(self):

@@ -305,9 +305,6 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 * [SQlite3](https://www.sqlite.org/index.html) 
     - Used as development database.
 
-
-
-
 [Back to Top](#overview)
 
 ## Features
@@ -318,6 +315,43 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 
 ## Testing
 ### General code validation
+* HTML validation with [W3C Markup Validation Service](https://validator.w3.org/). My code is fully compliant and there are no errors.
+    - When completing the validation, I came across a few minor errors:
+        - A couple of stray div end tags.
+        - Missing alt attributes for a couple of images.
+        - Some duplicate ids (see bug 3 for more detailed explanation)
+* CSS validation with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). My code is fully compliant and there are no errors.
+* Javascript validation with [JSHint](https://jshint.com/). My code is fully compliant. There are some warnings about the undefined $ variable being used (e.g given the use of jQuery in my js files).
+    - When completing this validation, I also identified a few missing semi colons from my code.
+* Python validation with [PEP8 Online](http://pep8online.com/). My code is fully compliant, and there are no errors.
+    - When completing the validation, I came across a few minor errors:
+        - Mostly, these were lines being too long. I have updated the majority of these, except a couple of instances where it would the code unreadable.
+        - It identified a couple of cases where imports were not being used, so I have removed them.
+        - It also identified a couple of cases where variables had been assigned but not used.
+
+### Unit Tests
+
+#### How to run Python unit tests
+
+To run the existing Python tests:
+1. Activate your IDE.
+2. In the terminal enter the following command: `python3 manage.py test`
+    * If you wish to run the tests for a specific app you can enter the following command: `python3 manage.py test <app name>`
+3. The test results will be shown within the terminal.
+
+_NOTE: Depending on your IDE, the Python command may differ, such as `python` or `py`_
+
+### Coverage
+
+[Coverage.py](https://coverage.readthedocs.io/en/v4.5.x/) was used to provide feedback during testing. This was invaluable to identify which parts of my code the tests had covered.
+
+#### How to run coverage
+To view the coverage, you can run the following commands:
+
+1. `coverage run --source=. manage.py test` This will run all tests/
+2. `coverage report` The coverage will be shown within the terminal, broken down by .py file.
+3. You can view an interactive version by using `coverage html`, and then `python3 -m http.server`, and you can view the htmlcov folder in the browser, select specific files, and view which particular sections of code are or aren't being covered by the e
+
 
 ### Browser & Device Compatibility
 
@@ -332,7 +366,6 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 | Mi Browser       | Mobile     |                                                              |                        |
 | Safari           | iPad       |                                                              |                        |
 
-Given the introduction of Microsoft Edge, I am reasonably comfortable to have some issues with IE11, as I have added a Javascript message that will advise users with IE11, that to have the best experience using the site, they should upgrade their browser.
 
 ### Google Lighthouse
 
@@ -345,7 +378,7 @@ Given the introduction of Microsoft Edge, I am reasonably comfortable to have so
 ### Functional testing
 
 
-### Bugs Encountered & Fixed
+### Bugs & Interesting Issues Encountered & Fixed
 
 1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price/ rating).
 
@@ -356,6 +389,10 @@ To fix this I needed to pass in the category (if it had be selected). I utilised
 2. Following the implementation of slugs, I had the issue when attempting to view 'all products' as I was getting a NoReverseMatch error, in this case because a catgeory slug was not being passed into my href url against each product.
 
 To fix this I created the get_absolute_url model method in the product class, to allow me to obtain the catgeory slug via the Product Class, and pass this, and the product slug as args.
+
+3. I have multiple forms/ models which have an email field include. When using django crispy forms, this was creating elements with the same ID. This wouldn't be an issue, except the subscription form is passed to every page via a context processor, and therefore was creating some duplicates.
+
+To fix this, I simply update the field name from email to email_address, and this meant when two forms were on the same page, that they had different IDs.
 
 [Back to Top](#overview)
 
