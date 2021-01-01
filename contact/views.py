@@ -12,7 +12,7 @@ def subscribe(request):
     if request.method == "POST":
         sub_form = SubscriptionForm(request.POST)
         if Subscription.objects.filter(
-            email=request.POST.get("email")
+            email_address=request.POST.get("email_address")
         ).exists():
             messages.info(request, "You are aleady subscribed to our newsletter.")
             return redirect(subscribe_redirect)

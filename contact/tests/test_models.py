@@ -13,7 +13,7 @@ class TestContactModels(TestCase):
 
     def test_subscription_str_method(self):
         new_subscription = Subscription.objects.create(
-            email='test@test.com'
+            email_address='test@test.com'
         )
 
         self.assertEqual(str(new_subscription), 'test@test.com')

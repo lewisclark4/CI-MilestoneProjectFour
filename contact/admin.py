@@ -5,7 +5,7 @@ from .models import Subscription, SecureMessage
 
 
 class SubscriptionAdmin(admin.ModelAdmin):
-    readonly_fields = ('email',)
+    readonly_fields = ('email_address',)
 
 admin.site.register(Subscription, SubscriptionAdmin)
 

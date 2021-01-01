@@ -5,12 +5,12 @@ from .models import Subscription, SecureMessage
 class SubscriptionForm(forms.ModelForm):
     class Meta:
         model = Subscription
-        fields = ["email"]
+        fields = ["email_address"]
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         placeholders = {
-            "email": "Email Address",
+            "email_address": "Email Address",
         }
 
         for field in self.fields:

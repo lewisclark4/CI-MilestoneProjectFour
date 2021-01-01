@@ -12,7 +12,7 @@
             </div>
             <div class="col-sm-12 col-md-6 shop-all">
                 <a href="{% url 'products' %}" class="mx-auto" >
-                    <button class="btn submit-button"><strong>Shop all products</strong></button>
+                    <span class="btn submit-button"><strong>Shop all products</strong></span>
                 </a>
             </div>
         </div>
@@ -29,7 +29,7 @@
                 {% else %}
                     <img class="category-image" src="{{ MEDIA_URL }}noimage.png" alt="Shop {{ category.friendly_name }}">
                 {% endif %}
-                    <button class="btn submit-button"><strong>Shop {{ category.friendly_name }}</strong></button>
+                    <span class="btn submit-button"><strong>Shop {{ category.friendly_name }}</strong></span>
                 </a>
             </div> 
         {% endfor %}  

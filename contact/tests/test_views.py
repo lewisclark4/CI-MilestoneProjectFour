@@ -7,7 +7,7 @@ from contact.forms import SecureMessageForm
 class TestContactViews(TestCase):
 
     def test_new_subscription_email_and_redirect(self):
-        response = self.client.post(reverse('subscribe'), data={'email': 'test@test.com', 'subscribe_redirect': '/'})
+        response = self.client.post(reverse('subscribe'), data={'email_address': 'test@test.com', 'subscribe_redirect': '/'})
         messages = list(get_messages(response.wsgi_request))
         expected_message = 'You are now subscribed to our newsletter.'
 
@@ -16,9 +16,9 @@ class TestContactViews(TestCase):
 
     def test_existing_subscription_email_and_redirect(self):
         new_subscription = Subscription.objects.create(
-            email='test@test.com'
+            email_address='test@test.com'
         )
-        response = self.client.post(reverse('subscribe'), data={'email': 'test@test.com', 'subscribe_redirect': '/'})
+        response = self.client.post(reverse('subscribe'), data={'email_address': 'test@test.com', 'subscribe_redirect': '/'})
         messages = list(get_messages(response.wsgi_request))
         expected_message = 'You are aleady subscribed to our newsletter.'
 

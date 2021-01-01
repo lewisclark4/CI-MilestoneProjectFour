@@ -6,7 +6,7 @@ class TestSubscriptionForm(TestCase):
     def test_subscription_form_explicit_fields(self):
         form = SubscriptionForm()
 
-        self.assertEqual(form.Meta.fields, ['email'])
+        self.assertEqual(form.Meta.fields, ['email_address'])
 
 
 class TestSecureMessageForm(TestCase):
