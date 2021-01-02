@@ -15,8 +15,8 @@ $(document).ready(function () {
     };
 
     $(".category-image").hover(function transformCategoryImage() {
-        $(this).css({ 'transform': 'scale(1.05)', 'transition': 'transform 400ms ease-in-out' });
-        $(this).siblings('.category-friendly-name').css({ 'transform': 'scale(1.05)', 'transition': 'transform 400ms ease-in-out' });
+        $(this).css({ 'transform': 'scale(1.075)', 'transition': 'transform 400ms ease-in-out' });
+        $(this).siblings('.category-friendly-name').css({ 'transform': 'scale(1.075)', 'transition': 'transform 400ms ease-in-out' });
     }, function () {
         $(this).css({ 'transform': 'scale(1)', 'transition': 'transform 400ms ease-in-out' });
         $(this).siblings('.category-friendly-name').css({ 'transform': 'scale(1)', 'transition': 'transform 400ms ease-in-out' });
@@ -26,6 +26,12 @@ $(document).ready(function () {
         $(this).children('.listing-image-container').children('.listing-image').css({ 'transform': 'scale(1.075)', 'transition': 'transform 400ms ease-in-out' });
     }, function () {
         $(this).children('.listing-image-container').children('.listing-image').css({ 'transform': 'scale(1.0)', 'transition': 'transform 400ms ease-in-out' });
+    });
+
+    $(".featured-listing-link").hover(function transformListingImage() {
+        $(this).children('.featured-listing-image').css({ 'transform': 'scale(1.075)', 'transition': 'transform 400ms ease-in-out' });
+    }, function () {
+        $(this).children('.featured-listing-image').css({ 'transform': 'scale(1.0)', 'transition': 'transform 400ms ease-in-out' });
     });
 
     $('.increment-qty').click(function incrementQty() {
