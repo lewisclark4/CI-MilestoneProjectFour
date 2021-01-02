@@ -47,7 +47,6 @@ class TestCheckoutViews(TestCase):
         self.assertEqual(str(messages[0]), expected_message)
 
     def test_checkout_view_post(self):
-        new_product = Product.objects.get(product_name='test product')
         new_colour = Colour.objects.get(colour='test colour')
         session = self.client.session
         session['basket'] = {new_colour.product.id: 1}
@@ -62,13 +61,12 @@ class TestCheckoutViews(TestCase):
             'county': 'My County',
             'country': 'GB',
             'postcode': 'AB12CD',
-            'client_secret': 'client_123456_secret_123456' 
+            'client_secret': 'client_123456_secret_123456',
         }
         response = self.client.post(reverse('checkout'), data=post_data, follow=True)
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'checkout/checkout_success.html')
-        
 
     def test_checkout_success_view(self):
         new_product = Product.objects.get(product_name='test product')
