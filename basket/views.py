@@ -10,7 +10,6 @@ def view_basket(request):
 
 def add_to_basket(request, product_id):
     """Add products to the basket"""
-
     product = get_object_or_404(Product, pk=product_id)
     colour_id = request.POST.get('colour')
     colour = get_object_or_404(Colour, pk=colour_id)
@@ -20,14 +19,15 @@ def add_to_basket(request, product_id):
 
     if colour_id in list(basket.keys()):
         basket[colour_id] += quantity
-        messages.success(request, (f'Successfully added {quantity} x '
-                                   + f'{product.product_name} '
-                                   + f'({colour.colour}) to your basket'))
+        messages.success(
+            request, (f'Successfully updated {product.product_name} '
+                      + f'({colour.colour}) quantity to {quantity}'))
     else:
         basket[colour_id] = quantity
-        messages.success(request, (f'Successfully added {quantity} x '
-                                   + f'{product.product_name} '
-                                   + f'({colour.colour}) to your basket'))
+        messages.success(
+            request, (f'Successfully added {quantity} x '
+                      + f'{product.product_name} '
+                      + f'({colour.colour}) to your basket'))
 
     request.session['basket'] = basket
     return redirect(redirect_url)
@@ -49,7 +49,7 @@ def update_basket(request, colour_id):
     else:
         basket.pop(colour_id)
         messages.success(
-            request, (f'Successfully removed {product.product_name}'
+            request, (f'Successfully removed {product.product_name} '
                       + f'({colour.colour}) from your basket'))
 
     request.session['basket'] = basket
@@ -65,7 +65,7 @@ def remove_from_basket(request, colour_id):
 
     basket.pop(colour_id)
     messages.success(
-            request, (f'Successfully removed {product.product_name}'
+            request, (f'Successfully removed {product.product_name} '
                       + f'({colour.colour}) from your basket'))
 
     request.session['basket'] = basket
