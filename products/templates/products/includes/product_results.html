@@ -1,17 +1,16 @@
 {% for product in products %}
-    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="col-10 col-sm-6 col-md-4 col-lg-3 offset-1 offset-sm-0">
         <a class="card listing-card" href="{{product.get_absolute_url}}">
             <div class="listing-image-container mx-auto">
                 <img class="listing-image mx-auto" src="{{ product.image_url }}" alt="{{ product.product_name }}">
             </div>
             <div class="listing-title">
-                <h5 class="listing-name"><Strong>{{ product.product_name }}</Strong></h5>
+                <h6 class="listing-name"><Strong>{{ product.product_name }}</Strong></h6>
             </div>
             <div class="listing-info d-flex justify-content-between">
                 <p class="m-0">{{ product.brand_name }}</p>
                 <p class="m-0"><strong>£{{ product.price }}</strong></p>
             </div>
-            <span class="btn submit-button"><strong>View colour options</strong></span>
         </a>
     </div>   
 {% endfor %}
