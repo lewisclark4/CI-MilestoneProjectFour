@@ -263,12 +263,8 @@ li {
 
 .category-card {
     margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    border: none
-}
-
-.category-card:hover {
-    text-decoration: none
+    margin-bottom: 1.em;
+    border: none;
 }
 
 .category-image {
@@ -277,7 +273,21 @@ li {
     display: flex;
     align-items: center;
     object-fit: cover;
-    border-radius: 2px;
+}
+
+.category-image:hover {
+    text-decoration: none;
+    box-shadow: inset 0 1px 1px #f8bab1, 0 0 8px #f8bab1;
+    transition: .25s ease-in-out;
+    color: #f8bab1;
+}
+
+.category-friendly-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    background-color: rgba(248, 186, 177, 0.9);
 }
 
 /* Styling for listings */

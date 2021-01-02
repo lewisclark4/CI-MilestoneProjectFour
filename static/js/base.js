@@ -14,6 +14,14 @@ $(document).ready(function () {
         }
     };
 
+    $(".category-image").hover(function transformCategoryImage() {
+        $(this).css({ 'transform': 'scale(1.05)', 'transition': 'transform 400ms ease-in-out' });
+        $(this).siblings('.category-friendly-name').css({ 'transform': 'scale(1.05)', 'transition': 'transform 400ms ease-in-out' });
+    }, function () {
+        $(this).css({ 'transform': 'scale(1)', 'transition': 'transform 400ms ease-in-out' });
+        $(this).siblings('.category-friendly-name').css({ 'transform': 'scale(1)', 'transition': 'transform 400ms ease-in-out' });
+    });
+
     $('.increment-qty').click(function incrementQty() {
         let productId = $(this).data('item_id');
         let input = document.getElementById(`id_qty_${productId}`);
