@@ -341,6 +341,18 @@ li {
 
 /* Styling for products details */
 
+.product-details-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-details-image-container {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
 .product-details-image {
     max-width:100%;
     max-height:100%;
