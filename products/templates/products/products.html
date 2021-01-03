@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block head_title %}Products{% endblock %}
+{% block head_title %}{% if category %}{{category.friendly_name}}{% else %}All Products{% endif %}{% endblock %}
 
 {% block content %}
     <div class="container">
@@ -11,6 +11,9 @@
             </div>
         </div>
         {% else %}
+        <div class="row">
+            {% include 'products/includes/breadcrumbs.html' %}
+        </div>
         <div class="row">
             {% include 'products/includes/product_sort.html' %}
         </div>

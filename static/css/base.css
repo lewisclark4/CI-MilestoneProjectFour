@@ -240,8 +240,8 @@ li {
     transition: .25s ease-in-out;
 }
 
-.submit-button {
-    background-color: #fff;
+.submit-button, .breadcrumb {
+    background-color: #f8bab1;
 }
 
 .submit-button:hover {
@@ -316,6 +316,18 @@ li {
 }
 
 /* Styling for listings */
+#breadcrumb-nav {
+    border: none;
+}
+
+.breadcrumb-item a {
+    color: #000;
+}
+
+.breadcrumb-item a:hover {
+    color: #fff;
+    text-decoration: none;
+}
 
 .product-sort-button {
     background-color: #f8bab1;
@@ -417,11 +429,11 @@ li {
 
 .btn-link, .btn-link:focus  {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .btn-link:hover {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
