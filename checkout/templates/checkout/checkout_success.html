@@ -3,7 +3,7 @@
 {% block head_title %}Checkout Success{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center">Order Confirmation</h2>
@@ -22,20 +22,21 @@
             <div class="col-12 col-lg-6 mb-5">
                 <p class="text-muted"><strong>Delivery address</strong></p>
                 <hr class="rose-rule">
-                <p>{{order.full_name}}<br>
+                <p>
+                {{order.full_name}}<br>
                 {{order.address_1}}<br>
                 {% if order.address_2 %}
-                {{order.address_2}}<br>
+                    {{order.address_2}}<br>
                 {% endif %}
                 {{order.city}}<br>
                 {% if order.county %}
-                {{order.county}}<br>
+                    {{order.county}}<br>
                 {% endif %}
                 {{order.country}}<br>
                 {% if order.postcode %}
-                {{order.postcode}}<br>
+                    {{order.postcode}}<br>
                 {% endif %}
-                
+                </p>
             </div>
             <div class="col-12 col-lg-6 mb-5">
                 <p class="text-muted"><strong>Your order</strong></p>
@@ -49,5 +50,5 @@
             <span><i class="fas fa-chevron-left fa-xs"></i></span>
             <span>Back to Shop</span>&nbsp;
         </a>
-    </div>
+    </section>
 {% endblock %}

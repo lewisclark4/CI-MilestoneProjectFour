@@ -3,7 +3,7 @@
 {% block head_title %}Order History{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center">Order History</h2>
@@ -27,13 +27,30 @@
                         </div>
                         <div id="collapseAccordionId_{{order.order_number}}" class="collapse" aria-labelledby="accordionHeadingId_{{order.order_number}}" data-parent="#accordionOrderHistory">
                             <div class="card-body">
-                                <p>Order Number: {{ order.order_number}}</p>
+                                <p class="text-muted"><strong>Order Number: </strong>{{ order.order_number}}</p>
                                 <hr class="rose-rule">
                                 {% include 'checkout/includes/checkout_success_order_items.html' %}
                                 {% if order.delivery_cost %}
                                     <hr class="rose-rule">
                                     <p>Delivery Charge: <strong>£{{ order.delivery_cost }}</strong></p>
-                                {% endif %}   
+                                {% endif %}  
+                                <hr class="rose-rule">
+                                <p class="text-muted"><strong>Delivery address</strong></p>
+                                <p>
+                                {{order.full_name}}<br>
+                                {{order.address_1}}<br>
+                                {% if order.address_2 %}
+                                    {{order.address_2}}<br>
+                                {% endif %}
+                                {{order.city}}<br>
+                                {% if order.county %}
+                                    {{order.county}}<br>
+                                {% endif %}
+                                {{order.country}}<br>
+                                {% if order.postcode %}
+                                    {{order.postcode}}<br>
+                                {% endif %}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -42,27 +59,5 @@
             </div>
         </div>
         <hr class="rose-rule">
-    </div>
+    </section>
 {% endblock %}
-
-<div id="accordionOrderHistory">
-    <div class="card">
-        <div class="card-header" id="accordionHeadingId_{{order.order_number}}">
-            <h5 class="d-flex justify-content-between">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseAccordionId_{{order.order_number}}" aria-expanded="true" aria-controls="collap#collapseAccordionId_{{order.order_number}}eOne">
-                    <span>{{ order.date_ordered }}</span>
-                    <span><strong>£{{ order.grand_total }}</strong></span> 
-                </button>
-            </h5>
-        </div>
-        <div id="#collapseAccordionId_{{order.order_number}}" class="collapse show" aria-labelledby="accordionHeadingId_{{order.order_number}}" data-parent="#accordionOrderHistory">
-            <div class="card-body">
-                {% include 'checkout/includes/checkout_success_order_items.html' %}
-                {% if order.delivery_cost %}
-                    <hr class="rose-rule">
-                    <p>Delivery Charge: £{{ order.delivery_cost }}</p>
-                    {% endif %}   
-            </div>
-        </div>
-    </div>
-</div>

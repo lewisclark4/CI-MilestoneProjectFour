@@ -3,7 +3,7 @@
 {% block head_title %}{% if category %}{{category.friendly_name}}{% else %}All Products{% endif %}{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <section class="container">
         {% if not products %}
         <div class="row">
             <div class="col-12 text-center">
@@ -22,5 +22,5 @@
         </div>
         <hr class="rose-rule">
         {% endif %}
-    </div>
+    </section>
 {% endblock %} 

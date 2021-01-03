@@ -4,7 +4,7 @@
 
 
 {% block content %}
-<div class="container">
+    <section class="container">
         <div class="row">
             {% include 'products/includes/breadcrumbs.html' %}
         </div>
@@ -15,7 +15,7 @@
                         <a href="{{ product.image_url }}" target="_blank">
                             <img class="product-details-image" src="{{ product.image_url }}" alt="{{ product.product_name }}">
                         </a>
-                        {% else %}
+                    {% else %}
                         <a href="">
                             <img class="product-details-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.product_name }}">
                         </a>
@@ -65,7 +65,7 @@
                                     <div class="input-group-prepend">
                                         <a class="decrement-qty btn submit-button" 
                                             data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
-                                            <span class="icon">
+                                            <span
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </a>
@@ -76,7 +76,7 @@
                                     <div class="input-group-append">
                                         <a class="increment-qty btn submit-button"
                                             data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
-                                            <span class="icon">
+                                            <span>
                                                 <i class="fas fa-plus"></i>
                                             </span>
                                         </a>
@@ -149,5 +149,5 @@
             </div>
         </div>
         {% endif %}
-    </div>
+    </section>
 {% endblock %} 
