@@ -408,12 +408,19 @@ li {
 
 /* Styling for basket */
 
+#order-progress {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 .basket-image {
     height: 100px;
     width: 100px;
-    display: flex;
-    align-items: center;
     object-fit: contain;
+}
+
+.checkout-button {
+    margin: 0.5em;
 }
 
 
@@ -436,4 +443,38 @@ li {
     text-decoration: none;
     color: #fff;
 }
+
+
+
+.steps-form {
+    display: table;
+    width: 100%;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.steps-form .steps-row {
+    display: table-row;
+}
+
+.steps-form .steps-row .steps-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    padding: 1em; 
+}
+
+.step-icon {
+    background-color: #e6ebf1;
+    border-radius: 15px;
+    padding: 0.25em;  
+}
+
+.step-icon.active {
+    background-color: #f8bab1;
+    border-radius: 15px;
+    padding: 0.25em;  
+}
+
 

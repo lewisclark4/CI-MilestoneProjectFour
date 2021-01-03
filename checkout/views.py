@@ -124,6 +124,7 @@ def checkout(request):
             order_form = OrderForm()
 
     context = {
+        'checkout': True,
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,
@@ -161,6 +162,7 @@ def checkout_success(request, order_number):
 
     context = {
         'order': order,
+        'checkout_success': True ,
     }
 
     return render(request, 'checkout/checkout_success.html', context)

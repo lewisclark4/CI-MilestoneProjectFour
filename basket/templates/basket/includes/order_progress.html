@@ -1,0 +1,19 @@
+{% load static %}
+
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3 text-center order-progress">
+        <div class="steps-form">
+            <div class="steps-row setup-panel">
+                <div class="steps-step">
+                    <div class="step-icon active"><i class="fa fa-shopping-basket fa-lg"></i></div>
+                </div>
+                <div class="steps-step">
+                    <div class="step-icon {% if checkout or checkout_success %}active{% endif %}"><i class="fas fa-credit-card fa-lg"></i></div>
+                </div>
+                <div class="steps-step">
+                    <div class="step-icon {% if checkout_success %}active{% endif %}"><i class="fa fa-check fa-lg"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

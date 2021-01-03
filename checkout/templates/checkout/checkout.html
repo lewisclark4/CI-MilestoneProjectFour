@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% block head_title %}Checkout{% endblock %}
 
 {% block custom-css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -9,11 +10,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center">Checkout</h2>
-                <hr class="rose-rule">
+                <h2 class="text-center">Shipping & Payment</h2>
             </div>
         </div>
-
+        {% include 'basket/includes/order_progress.html' %}
         <div class="row">
             <div class="col-12 col-lg-5 offset-lg-1 order-lg-last mb-5">
                 <p class="text-muted"><strong>Order Summary</strong></p>
@@ -94,13 +94,13 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>                    
                     <div class="text-right mb-2">                    
-						<a href="{% url 'view_basket' %}" class="btn submit-button">
+						<a href="{% url 'view_basket' %}" class="btn submit-button checkout-button">
 							<span class="icon">
 								<i class="fas fa-chevron-left"></i>
 							</span>
-							<span>Adjust basket</span>
+							<span>Adjust order</span>
                         </a>
-                        <button id="checkout-button" class="btn submit-button">
+                        <button id="checkout-button" class="btn submit-button checkout-button">
                             <span>Make Secure Payment</span>
                             <span class="icon">
                                 <i class="fas fa-lock"></i>

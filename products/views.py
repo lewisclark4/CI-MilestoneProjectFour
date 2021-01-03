@@ -58,11 +58,13 @@ def product_detail(request, product_slug, category_slug):
         slug=product_slug,
     )
     colours = Colour.objects.filter(product=product)
+    count_colours = Colour.objects.filter(product=product).count()
 
     context = {
         'product': product,
         'category': category,
         'colours': colours,
+        'count': count_colours,
     }
 
     return render(request, 'products/product_detail.html', context)

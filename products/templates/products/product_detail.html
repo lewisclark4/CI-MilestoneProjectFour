@@ -41,7 +41,6 @@
             <div class="col-12 col-md-6">
                 <div class="product-details-container mx-auto">
                     <h4>{{ product.product_name }}</h4>
-                    <p><strong>£{{ product.price }}</strong></p>
                     {% if product.category %}
                     <p>
                         <a class="text-muted product-category-tag" href="{% url 'products_by_category' product.category.slug %}">
@@ -52,7 +51,7 @@
                     <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="col-6 offset-3 p-0 mb-3">
-                            <p class="m-0"><strong>Colour selection</strong></p>
+                            <p class="m-0"><strong>Colour</strong> ({{count}} options available)</p>
                             <select class="form-control" name="colour">
                                 {% for colour in colours %}
                                     <option class="product-colour" value="{{ colour.id }}" style= "background:{{colour.hex_value}}; color:#FFF; ">{{ colour.colour }}</option>

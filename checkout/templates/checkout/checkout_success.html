@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
+{% block head_title %}Checkout Success{% endblock %}
 
 {% block content %}
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center">Order Confirmation</h2>
-                <hr class="rose-rule">
             </div>
         </div>
+        {% include 'basket/includes/order_progress.html' %}
         <div class="row mb-5">
             <div class="col-12">
                 <p class="text-center"><strong>
