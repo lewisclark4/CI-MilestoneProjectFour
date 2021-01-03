@@ -419,8 +419,8 @@ li {
     object-fit: contain;
 }
 
-.checkout-button {
-    margin: 0.5em;
+.checkout-button, .profile-button {
+    margin: 0.25em;
 }
 
 /* Styling for faqs */
@@ -430,12 +430,18 @@ li {
 }
 
 .card-header {
+    padding: 0;
+}
+
+.card-header {
     background-color:  #f8bab1;
 }
 
 .btn-link, .btn-link:focus  {
     text-decoration: none;
     color: #000;
+    width: 100%;
+    text-align: left;
 }
 
 .btn-link:hover {
@@ -443,7 +449,9 @@ li {
     color: #fff;
 }
 
-
+.order-date {
+    margin-right: 2em;
+}
 
 .steps-form {
     display: table;
@@ -475,5 +483,4 @@ li {
     border-radius: 15px;
     padding: 0.25em;  
 }
-
 

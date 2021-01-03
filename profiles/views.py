@@ -29,7 +29,7 @@ def profile(request):
 def order_history(request):
 
     profile = get_object_or_404(UserProfile, user=request.user)
-    orders = profile.orders.all()
+    orders = profile.orders.all().order_by('-date_ordered')
 
     context = {
          'orders': orders,

@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block head_title %}Order History{% endblock %}
 
 {% block content %}
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center">My Profile</h2>
+                <h2 class="text-center">Order History</h2>
                 <hr class="rose-rule">
             </div>
         </div>
@@ -15,27 +15,54 @@
                 {% include 'profiles/includes/profile_nav.html' %}
             </div>
             <div class="col-12 col-md-8">
-                <p class="text-muted"><strong>Your order history</strong></p>
-                {% for order in orders %}
-                <details class="order-summary mb-3">
-                    <summary class="d-flex justify-content-between">
-                        <span>{{ order.date_ordered }}</span>
-                        <span>{{ order.order_number }}</span>
-                        <span><strong>£{{ order.grand_total }}</strong></span> 
-                    </summary>
-                    <hr class="rose-rule">
-                    {% include 'checkout/includes/checkout_success_order_items.html' %}
-                    {% if order.delivery_cost %}
+                <p class="text-muted"><strong>Click below to view your order details</strong></p>
+                <div id="accordionOrderHistory">
+                    {% for order in orders %}
+                    <div class="card">
+                        <div class="card-header" id="accordionHeadingId_{{order.order_number}}">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAccordionId_{{order.order_number}}" aria-expanded="true" aria-controls="#collapseAccordionId_{{order.order_number}}">
+                                <span class="order-date">{{ order.date_ordered }}</span>   
+                                <span><strong>£{{ order.grand_total }}</strong></span>
+                            </button>
+                        </div>
+                        <div id="collapseAccordionId_{{order.order_number}}" class="collapse" aria-labelledby="accordionHeadingId_{{order.order_number}}" data-parent="#accordionOrderHistory">
+                            <div class="card-body">
+                                <p>Order Number: {{ order.order_number}}</p>
+                                <hr class="rose-rule">
+                                {% include 'checkout/includes/checkout_success_order_items.html' %}
+                                {% if order.delivery_cost %}
+                                    <hr class="rose-rule">
+                                    <p>Delivery Charge: <strong>£{{ order.delivery_cost }}</strong></p>
+                                {% endif %}   
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <hr class="rose-rule">
+    </div>
+{% endblock %}
+
+<div id="accordionOrderHistory">
+    <div class="card">
+        <div class="card-header" id="accordionHeadingId_{{order.order_number}}">
+            <h5 class="d-flex justify-content-between">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseAccordionId_{{order.order_number}}" aria-expanded="true" aria-controls="collap#collapseAccordionId_{{order.order_number}}eOne">
+                    <span>{{ order.date_ordered }}</span>
+                    <span><strong>£{{ order.grand_total }}</strong></span> 
+                </button>
+            </h5>
+        </div>
+        <div id="#collapseAccordionId_{{order.order_number}}" class="collapse show" aria-labelledby="accordionHeadingId_{{order.order_number}}" data-parent="#accordionOrderHistory">
+            <div class="card-body">
+                {% include 'checkout/includes/checkout_success_order_items.html' %}
+                {% if order.delivery_cost %}
                     <hr class="rose-rule">
                     <p>Delivery Charge: £{{ order.delivery_cost }}</p>
                     {% endif %}   
-                </details>
-                <hr class="rose-rule">
-                {% endfor %}
             </div>
-
         </div>
-
-        
     </div>
-{% endblock %}
+</div>
