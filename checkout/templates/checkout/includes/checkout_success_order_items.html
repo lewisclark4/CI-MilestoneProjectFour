@@ -1,21 +1,21 @@
  {% for item in order.lineitems.all %}
     <div class="row">
-        <div class="col-2 mb-1">
+        <div class="col-6 col-md-3">
             <a href="{{product.get_absolute_url}}">
                 {% if item.product.image_url %}
-                    <img class="w-100" src="{{ item.product.image_url }}" alt="{{ product.name }}">
+                    <img class="w-100 basket-image" src="{{ item.product.image_url }}" alt="{{ product.name }}">
                 {% else %}
-                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="w-100 basket-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 {% endif %}
             </a>
         </div>
-        <div class="col-7">
+        <div class="col-6">
             <p class="my-0">{{ item.quantity }} x {{ item.product.product_name }}</p>
             <p class="my-0 small text-muted">{{ item.colour.colour }}</p>
             <p class="my-0 small text-muted">£{{ item.product.price }}</p>
         </div>
-        <div class="col-3 text-right">
-            <p>£{{ item.lineitem_total }}</p>
+        <div class="col-12 col-md-3 text-right">
+            <p><strong>£{{ item.lineitem_total }}</strong></p>
         </div>
     </div>
     {% if not forloop.last %}
