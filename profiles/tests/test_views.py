@@ -28,15 +28,30 @@ class TestProfilesViews(TestCase):
         self.client.login(
             username='test_user',
             password='verysecretpassword1!')
-        data = {'default_phone_number': '12345'}
+        data = {'first_name': 'test'}
         response = self.client.post('/profile/', data)
         messages = list(get_messages(response.wsgi_request))
-        expected_message = 'Your delivery details were updated successfully'
+        expected_message = 'Your details were updated successfully'
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'profiles/profile.html')
         self.assertEqual(messages[0].tags, 'success')
         self.assertEqual(str(messages[0]), expected_message)
+
+    def test_update_delivery_info_form(self):
+        self.client.login(
+            username='test_user',
+            password='verysecretpassword1!')
+        data = {'default_phone_number': '12345'}
+        response = self.client.post('/profile/delivery/', data)
+        messages = list(get_messages(response.wsgi_request))
+        expected_message = 'Your delivery details were updated successfully'
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'profiles/delivery.html')
+        self.assertEqual(messages[0].tags, 'success')
+        self.assertEqual(str(messages[0]), expected_message)
+
 
     def test_order_history_view(self):
         self.client.login(
