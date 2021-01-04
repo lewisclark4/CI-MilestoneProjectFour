@@ -82,7 +82,7 @@ nav {
     width: 100%;
     padding: 0.5em;    
     text-align: center;
-    border-radius: 10px;;
+    border-radius: 5px;
 }
 
 .message-text {
@@ -142,7 +142,8 @@ nav {
     bottom: 0;
     width: 100%;
     color: #000;
-    background-color: #f8bab1db;
+    padding: 5px;
+    background-color: #f8bab1;
 }
 
 .carousel {
@@ -155,6 +156,7 @@ nav {
     width: 200px;
     margin: 1em;
     border: 1px solid #f8bab1;
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -329,9 +331,10 @@ li {
     text-decoration: none;
 }
 
-.product-sort-button {
+.product-sort-button, .search-row  {
     background-color: #f8bab1;
     color: #fff;
+    border-radius: 5px;
 }
 
 .listing-card {
@@ -474,12 +477,13 @@ li {
 
 .step-icon {
     background-color: #e6ebf1;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 0.25em;  
 }
 
 .step-icon.active {
     background-color: #f8bab1;
-    border-radius: 15px;
+    color: #fff;
+    border-radius: 5px;
     padding: 0.25em;  
 }
