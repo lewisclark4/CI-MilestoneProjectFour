@@ -276,6 +276,14 @@ li {
     box-shadow: none;
 }
 
+.subscribe-button {
+    color: #fff;
+}
+
+.subscribe-button:hover {
+    color: #000;
+}
+
 /* Styling for Home/Index.html */
 .home-image {
     width: 100%;
@@ -409,6 +417,9 @@ li {
     object-fit: cover;
 }
 
+.input-group-append .btn, .input-group-prepend .btn  {
+    z-index: 0;
+}
 /* Styling for basket */
 
 #order-progress {

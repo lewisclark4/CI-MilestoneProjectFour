@@ -1,14 +1,20 @@
 {% if category %}
-<nav id="breadcrumb-nav" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{% url 'products' %}"><strong>All Products</strong></a></li>
-        {% if not product %}
-            <li class="breadcrumb-item">{{category.friendly_name}}</li>
-        {% else %}
-            <li class="breadcrumb-item"><a href="{{category.get_absolute_url}}"><strong>{{category.friendly_name}}</strong></a></li>
-            <li class="breadcrumb-item">{{product.product_name}}</li>
-        {% endif %}
-    </ol>
-</nav>
+    <nav id="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'products' %}"><strong>All Products</strong></a></li>
+            {% if not product %}
+                <li class="breadcrumb-item">{{category.friendly_name}}</li>
+            {% else %}
+                <li class="breadcrumb-item"><a href="{{category.get_absolute_url}}"><strong>{{category.friendly_name}}</strong></a></li>
+                <li class="breadcrumb-item">{{product.product_name}}</li>
+            {% endif %}
+        </ol>
+    </nav>
+{% else %}
+    <nav id="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">All Products</li>
+        </ol>
+    </nav>
 {% endif %}
 

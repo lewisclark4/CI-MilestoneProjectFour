@@ -26,44 +26,8 @@
                     </p>
                 </a>
             </li>
-            <li class="dropdown-divider"></li>
-            <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarCategoryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Products
-                    </a>
-                <div class="dropdown-menu" aria-labelledby="navbarCategoryDropdown">
-                    <a class="dropdown-item" href="{% url 'products' %}">All</a>
-                    {% for category in all_categories %}
-                    <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}">{{category.friendly_name}}</a>     
-                    {% endfor %}          
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarSpecialsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Specials
-                    </a>
-                <div class="dropdown-menu" aria-labelledby="navbarSpecialsDropdown">
-                    <a class="dropdown-item" href="{% url 'featured_products' %}">Featured</a>
-                    <a class="dropdown-item" href="#">Sale</a>
-                </div>
-            </li>
-        </ul>
-        <div class="dropdown-divider"></div>
-        <form class="form-inline" method="GET" action="{% url 'search' %}">
-            <input class="form-control search-bar" name="q" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn nav-icon" type="submit" aria-label="search">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>    
-        <div class="dropdown-divider"></div>
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item d-none d-lg-block">
-                <a class="nav-link" href="{% url 'home' %}" aria-label="Home">
-                    <i class="nav-icon fas fa-home"></i>&nbsp;
-                </a>
-            </li>
             {% if user.is_authenticated %}
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown d-lg-none">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="nav-icon fas fa-user-circle"></i>
                     Profile
@@ -75,12 +39,76 @@
                         <div class="dropdown-divider rose-rule"></div>
                     {% endif %}
                     <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
-                    <a class="dropdown-item" href="#">Wishlist</a>
                     <a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a>
                 </div>
             </li>
             {% else %}
+            <li class="nav-item dropdown d-lg-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="nav-icon fas fa-user-circle"></i>
+                    Profile
+                    </a>
+                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdown">
+                    <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
+                    <a class="dropdown-item" href="{% url 'account_login' %}" >Log in</a>
+                </div>
+            </li>
+            {% endif  %}
+            <li class="dropdown-divider rose-rule"></li>
             <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarCategoryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                    </a>
+                <div class="dropdown-menu" aria-labelledby="navbarCategoryDropdown">
+                    <a class="dropdown-item" href="{% url 'products' %}">View All</a>
+                    <a class="dropdown-item" href="{% url 'featured_products' %}">Featured</a>
+                    <div class="dropdown-divider rose-rule"></div>
+                    {% for category in all_categories %}
+                    <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}">{{category.friendly_name}}</a>     
+                    {% endfor %}          
+                </div>
+            </li>
+            <li class="nav-item dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarContactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact
+                    </a>
+                <div class="dropdown-menu" aria-labelledby="navbarContactDropdown">
+                    <a class="dropdown-item" href="{% url 'about' %}">About</a>
+                    <a class="dropdown-item" href="{% url 'faqs' %}">FAQs</a>
+                    <a class="dropdown-item" href="{% url 'contact' %}">Contact Us</a>           
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline justify-content-center" method="GET" action="{% url 'search' %}">
+            <input class="form-control search-bar" name="q" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn nav-icon" type="submit" aria-label="search">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>    
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item d-none d-lg-block">
+                <a class="nav-link" href="{% url 'home' %}" aria-label="Home">
+                    <i class="nav-icon fas fa-home"></i>&nbsp;
+                </a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item dropdown d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="nav-icon fas fa-user-circle"></i>
+                    Profile
+                    </a>
+                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdown">
+                    {% if request.user.is_superuser %}
+                        <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
+                        <a class="dropdown-item" href="{% url 'add_colour' %}">Add Product Colour</a>
+                        <div class="dropdown-divider rose-rule"></div>
+                    {% endif %}
+                    <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
+                    <a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a>
+                </div>
+            </li>
+            {% else %}
+            <li class="nav-item dropdown d-none d-lg-block">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="nav-icon fas fa-user-circle"></i>
                     Profile
@@ -102,6 +130,17 @@
                         {% endif %}
                     </p>
                 </a>
+            </li>
+            <li class="dropdown-divider rose-rule"></li>
+            <li class="nav-item dropdown d-lg-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarContactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact
+                    </a>
+                <div class="dropdown-menu" aria-labelledby="navbarContactDropdown">
+                    <a class="dropdown-item" href="{% url 'about' %}">About</a>
+                    <a class="dropdown-item" href="{% url 'faqs' %}">FAQs</a>
+                    <a class="dropdown-item" href="{% url 'contact' %}">Contact Us</a>           
+                </div>
             </li>
         </ul>
     </div>            
