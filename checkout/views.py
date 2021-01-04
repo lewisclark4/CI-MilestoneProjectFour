@@ -7,7 +7,7 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 from basket.contexts import basket_contents
 from products.models import Product, Colour
-from profiles.forms import UserProfileForm
+from profiles.forms import UserProfileForm, UserForm
 from profiles.models import UserProfile
 import stripe
 import json
@@ -150,12 +150,20 @@ def checkout_success(request, order_number):
                 'default_county': order.county,
                 'default_country': order.country,
                 'default_postcode': order.postcode,
-
+            }
+            user_data = {
+                'first_name': order.full_name.split()[0],
+                'last_name': order.full_name.split()[-1],
+                'email': order.email,
             }
             user_profile_form = UserProfileForm(
                                     delivery_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
+
+            user_form = UserForm(user_data, instance=request.user)
+            if user_form.is_valid():
+                user_form.save()
 
     if 'basket' in request.session:
         del request.session['basket']
