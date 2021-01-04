@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
+{% block head_title %}Edit {{ product.product_name }}{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col-12 col-md-6 offset-md-3">
                 <h2 class="mb-4">Product Management</h2>
@@ -16,11 +17,11 @@
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">
-                        <a class="btn submit-button" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn submit-button" type="submit">Update {{ product.product_name }}</button>
+                        <a class="btn submit-button rose-border" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn submit-button rose-border" type="submit">Update {{ product.product_name }}</button>
                     </div>
                 </form>
             </div>            
         </div>
-    </div>
+    </section>
 {% endblock %}

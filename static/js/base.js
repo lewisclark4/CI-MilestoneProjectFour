@@ -14,6 +14,26 @@ $(document).ready(function () {
         }
     };
 
+    $(".category-image").hover(function transformCategoryImage() {
+        $(this).css({ 'transform': 'scale(1.075)', 'transition': 'transform 400ms ease-in-out' });
+        $(this).siblings('.category-friendly-name').css({ 'transform': 'scale(1.075)', 'transition': 'transform 400ms ease-in-out' });
+    }, function () {
+        $(this).css({ 'transform': 'scale(1)', 'transition': 'transform 400ms ease-in-out' });
+        $(this).siblings('.category-friendly-name').css({ 'transform': 'scale(1)', 'transition': 'transform 400ms ease-in-out' });
+    });
+
+    $(".listing-card").hover(function transformListingImage() {
+        $(this).children('.listing-image-container').children('.listing-image').css({ 'transform': 'scale(1.075)', 'transition': 'transform 400ms ease-in-out' });
+    }, function () {
+        $(this).children('.listing-image-container').children('.listing-image').css({ 'transform': 'scale(1.0)', 'transition': 'transform 400ms ease-in-out' });
+    });
+
+    $(".featured-listing-link").hover(function transformListingImage() {
+        $(this).children('.featured-listing-image').css({ 'transform': 'scale(1.075)', 'transition': 'transform 400ms ease-in-out' });
+    }, function () {
+        $(this).children('.featured-listing-image').css({ 'transform': 'scale(1.0)', 'transition': 'transform 400ms ease-in-out' });
+    });
+
     $('.increment-qty').click(function incrementQty() {
         let productId = $(this).data('item_id');
         let input = document.getElementById(`id_qty_${productId}`);

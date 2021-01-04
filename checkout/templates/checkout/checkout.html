@@ -1,41 +1,41 @@
 {% extends "base.html" %}
 {% load static %}
+{% block head_title %}Checkout{% endblock %}
 
 {% block custom-css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center">Checkout</h2>
-                <hr class="rose-rule">
+                <h2 class="text-center">Shipping & Payment</h2>
             </div>
         </div>
-
+        {% include 'basket/includes/order_progress.html' %}
         <div class="row">
             <div class="col-12 col-lg-5 offset-lg-1 order-lg-last mb-5">
                 <p class="text-muted"><strong>Order Summary</strong></p>
                 <hr class="rose-rule">
                 {% for item in basket_items %}
                     <div class="row">
-                        <div class="col-2 mb-1">
-                            <a href="{{product.get_absolute_url}}">
+                        <div class="col-6 col-md-3">
+                            <a href="{{item.product.get_absolute_url}}">
                                 {% if item.product.image_url %}
-                                    <img class="w-100" src="{{ item.product.image_url }}" alt="{{ product.name }}">
+                                    <img class="w-100 basket-image" src="{{ item.product.image_url }}" alt="{{ item.product.name }}">
                                 {% else %}
-                                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    <img class="w-100 basket-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                 {% endif %}
                             </a>
                         </div>
-                        <div class="col-7">
+                        <div class="col-6">
                             <p class="my-0">{{ item.quantity }} x {{ item.product.product_name }}</p>
                             <p class="my-0 small text-muted">{{ item.colour.colour }}</p>
                             <p class="my-0 small text-muted">£{{ item.product.price }}</p>
                         </div>
-                        <div class="col-3 text-right">
-                            <p>£{{ item.item_total }}</p>
+                        <div class="col-12 col-md-3 text-right">
+                            <p><strong>£{{ item.item_total }}</strong></p>
                         </div>
                     </div>
                     <hr class="rose-rule">
@@ -94,15 +94,15 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>                    
                     <div class="text-right mb-2">                    
-						<a href="{% url 'view_basket' %}" class="btn submit-button">
-							<span class="icon">
+						<a href="{% url 'view_basket' %}" class="btn submit-button checkout-button">
+							<span>
 								<i class="fas fa-chevron-left"></i>
 							</span>
-							<span>Adjust basket</span>
+							<span>Adjust order</span>
                         </a>
-                        <button id="checkout-button" class="btn submit-button">
+                        <button id="checkout-button" class="btn submit-button checkout-button">
                             <span>Make Secure Payment</span>
-                            <span class="icon">
+                            <span>
                                 <i class="fas fa-lock"></i>
                             </span>
                         </button>
@@ -111,7 +111,7 @@
             </div>
         </div>
         <hr class="rose-rule">
-    </div>
+    </section>
 {% endblock %}
 
 {% block custom-postload-js %}

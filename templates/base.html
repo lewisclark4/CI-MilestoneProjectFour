@@ -9,12 +9,8 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Your new favourite makeup site. A one stop shop for brand new look or to stick to what you know. We've got all of your best-loved products, as well as all the new things you need to know about."
+        <meta name="description" content="Your new favourite makeup site. A one stop shop for brand new look or to stick to what you know. We've got all of your best-loved products, as well as all the new things you need to know about.">
     {% endblock %}
-
-    <!-- Custom Meta tags -->
-    {% block custom-meta %} {% endblock %}
-
 
     <!-- Main css -->
     {% block core-css %}
@@ -39,9 +35,6 @@
         <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
-    <!-- custom JavaScript imports -->
-    {% block custom-js %} {% endblock %}
-
     <!-- Tab Title + customization -->
     <title>Hex Cosmetics | {% block head_title %}{% endblock %}</title>
   </head>
@@ -52,7 +45,7 @@
     <main>
     <!-- messages -->
     {% if messages %}
-        <div class="container message-container">
+        <section class="container message-container">
             <div class="row">
                 {% for message in messages %} 
                     {% with message.level as level %} 
@@ -68,12 +61,8 @@
                     {% endwith %} 
                 {% endfor %}
             </div>
-        </div>        
+        </section>        
     {% endif %}
-
-    <!-- page header -->
-    {% block page-header %}
-    {% endblock %}
 
     <!-- page content -->
     {% block content %} {% endblock %}

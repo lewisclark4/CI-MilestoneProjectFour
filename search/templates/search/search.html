@@ -2,9 +2,17 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
+<section class="container">
+    <div class="row text-center search-row">
+        <div class="col-12">
+                <h4 class="m-2">Showing {{ count }} result{% if count > 1 %}s{% endif %} for the search: "{{ query }}"</h4>
+        </div>
+    </div>
     <div class="row">
         {% include 'products/includes/product_results.html' %}
+        <div class="col-12">
+            <hr class="rose-rule">
+        </div>
     </div>
-</div>
+</section>
 {% endblock %}

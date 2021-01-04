@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
+{% block head_title %}About{% endblock %}
 
 {% block content %}
-<div class="container">
+    <section class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6 offset-md-3">
                 <img class="home-image" src="{% static 'images/hex-logo-desktop.png' %}" alt="Hex Cosmetics Logo">
@@ -20,5 +21,5 @@
             </div>
         </div>
         <hr class="rose-rule">
-    </div>
+    </section>
 {% endblock %}

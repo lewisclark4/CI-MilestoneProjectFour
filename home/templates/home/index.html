@@ -1,25 +1,22 @@
 {% extends "base.html" %}
 {% load static %}
-
-{% block page-header %}
-{% endblock %}
+{% block head_title %}Home{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6">
                 <img class="home-image" src="{% static 'images/hex-logo-desktop.png' %}" alt="Hex Cosmetics Logo">
             </div>
             <div class="col-sm-12 col-md-6 shop-all">
                 <a href="{% url 'products' %}" class="mx-auto" >
-                    <span class="btn submit-button"><strong>Shop all products</strong></span>
+                    <span class="btn submit-button rose-border"><strong>Shop all products</strong></span>
                 </a>
             </div>
         </div>
-    </div>
-    <div class="container">
-         <hr class="rose-rule">
-         <h2 class="text-center">Check out our ranges below</h2>
+    </section>
+    <section class="container">
+        <hr class="rose-rule">
         <div class="row">
         {% for category in all_categories %}
             <div class="col-sm-12 col-md-6 col-lg-3 ">
@@ -29,11 +26,11 @@
                 {% else %}
                     <img class="category-image" src="{{ MEDIA_URL }}noimage.png" alt="Shop {{ category.friendly_name }}">
                 {% endif %}
-                    <span class="btn submit-button"><strong>Shop {{ category.friendly_name }}</strong></span>
+                    <span class="category-friendly-name text-center"><strong>Shop {{ category.friendly_name }}</strong></span>
                 </a>
             </div> 
-        {% endfor %}  
+        {% endfor %}
         </div>
         <hr class="rose-rule">
-    </div>
+    </section>
 {% endblock %} 

@@ -82,7 +82,7 @@ nav {
     width: 100%;
     padding: 0.5em;    
     text-align: center;
-    border-radius: 10px;;
+    border-radius: 5px;
 }
 
 .message-text {
@@ -137,25 +137,56 @@ nav {
     margin-top: 2em;
 }
 
+.featured-listing-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    padding: 5px;
+    background-color: #f8bab1;
+}
+
 .carousel {
     margin-top: 2em;
     margin-bottom: 4em;
 }
 
 .carousel-cell {
-    height: 150px;
-    width: 150px;
-    margin: 2em;
+    height: 200px;
+    width: 200px;
+    margin: 1em;
+    border: 1px solid #f8bab1;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.carousel img {
-    max-width:100%;
-    max-height:100%;
+.featured-listing-image {
+    padding-top: 10px;
+    max-width:80%;
+    max-height:80%;
     object-fit: contain;
 }
 
-.featured-listing-link:hover {
-    text-decoration: none;
+.flickity-page-dots .dot {
+  background: transparent;
+
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: transparent;
+}
+
+.flickity-button {
+  background: transparent;
+}
+
+.flickity-button-icon {
+  fill: #f8bab1;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #f8bab1;
 }
 
 #footer {
@@ -174,6 +205,10 @@ nav {
     margin-top: 1em;
 }
 
+ul {
+    padding: 0;
+}
+
 li {
     list-style-type: none;
 } 
@@ -182,36 +217,22 @@ li {
     text-decoration: underline;
     text-decoration-color: #fff;
     color: #fff;
-    border: 2px solid transparent;
 }
 
 .footer-link a:hover {
-    color: #f8bab1;
-    background-color: #fff;
-    border: 2px solid #fff;
-    border-radius: 5px;
+    color: #000;
+    text-decoration-color: #000;
     transition: .25s ease-in-out;
 }
 
 .social-icon i {
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: center;
     color: #f8bab1;
-    padding: 0.5em;
+    padding: 0.25em;
     border-radius: 50%;
     background-color: #fff;
     border: 2px solid transparent;
-}
-
-.submit-button {
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #f8bab1;
-    margin: 0.25em;
-}
-
-.btn:hover, .btn:focus, .btn:active {
-    box-shadow: none;
 }
 
 .social-icon i:hover {
@@ -221,13 +242,39 @@ li {
     transition: .25s ease-in-out;
 }
 
+.submit-button, .breadcrumb {
+    background-color: #f8bab1;
+}
+
 .submit-button:hover {
-    border: 1px solid #f8bab1;
     color: #fff;
     background-color: #f8bab1;
     transition: .25s ease-in-out;
 }
 
+.rose-border {
+    border-radius: 5px;
+    border: 2px solid #f8bab1;
+}
+
+.rose-border:hover {
+    border: 2px solid #f8bab1;
+    transition: .25s ease-in-out;
+}
+
+.white-border {
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.white-border:hover {
+    border: 2px solid #fff;
+    transition: .25s ease-in-out;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    box-shadow: none;
+}
 
 /* Styling for Home/Index.html */
 .home-image {
@@ -245,11 +292,7 @@ li {
 .category-card {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    border: none
-}
-
-.category-card:hover {
-    text-decoration: none
+    border: none;
 }
 
 .category-image {
@@ -258,27 +301,58 @@ li {
     display: flex;
     align-items: center;
     object-fit: cover;
-    border-radius: 2px;
+}
+
+.category-image:hover, .listing-card:hover, .carousel-cell:hover {
+    text-decoration: none;
+    box-shadow: inset 0 1px 1px #f8bab1, 0 0 8px #f8bab1;
+    transition: .25s ease-in-out;
+}
+
+.category-friendly-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    background-color: #f8bab1db;
 }
 
 /* Styling for listings */
+#breadcrumb-nav {
+    border: none;
+}
+
+.breadcrumb-item a {
+    color: #000;
+}
+
+.breadcrumb-item a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.product-sort-button, .search-row  {
+    background-color: #f8bab1;
+    color: #fff;
+    border-radius: 5px;
+}
 
 .listing-card {
     margin: 10px;
     border-color: #f8bab1;
-    color: #f8bab1;
+    color: #000;
 }
 
 .listing-card:hover {
     text-decoration: none;
     box-shadow: inset 0 1px 1px #f8bab1, 0 0 8px #f8bab1;
     transition: .25s ease-in-out;
-    color: #f8bab1;
+    color: #000;
 }
 
 .listing-image-container {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    max-width: 150px;
     display: flex;
     align-items: center;
 }
@@ -287,11 +361,11 @@ li {
     max-width:100%;
     max-height:100%;
     object-fit: contain;
-    border-radius: 2px;
+    padding-top: 10px;
 }
 
 .listing-title {
-    height: 80px;
+    height: 4rem;
     padding: 5px;
     text-align: center;
 }
@@ -301,13 +375,33 @@ li {
 }
 
 .listing-info {
+    height: 100%; 
     padding: 5px;
     background-color:  #f8bab1;
-    color: #fff;
-    
+    color: #000;
+}
+
+.product-name, .product-price {
+    margin:0;
 }
 
 /* Styling for products details */
+
+.product-details-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#accordion-mobile {
+    text-align: left;
+}
+
+.product-details-image-container {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
 
 .product-details-image {
     max-width:100%;
@@ -317,14 +411,20 @@ li {
 
 /* Styling for basket */
 
+#order-progress {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 .basket-image {
     height: 100px;
     width: 100px;
-    display: flex;
-    align-items: center;
     object-fit: contain;
 }
 
+.checkout-button, .profile-button {
+    margin: 0.25em;
+}
 
 /* Styling for faqs */
     
@@ -333,16 +433,57 @@ li {
 }
 
 .card-header {
+    padding: 0;
+}
+
+.card-header {
     background-color:  #f8bab1;
 }
 
 .btn-link, .btn-link:focus  {
     text-decoration: none;
-    color: #fff;
+    color: #000;
+    width: 100%;
+    text-align: left;
 }
 
 .btn-link:hover {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
+.order-date {
+    margin-right: 2em;
+}
+
+.steps-form {
+    display: table;
+    width: 100%;
+    position: relative;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.steps-form .steps-row {
+    display: table-row;
+}
+
+.steps-form .steps-row .steps-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    padding: 1em; 
+}
+
+.step-icon {
+    background-color: #e6ebf1;
+    border-radius: 5px;
+    padding: 0.25em;  
+}
+
+.step-icon.active {
+    background-color: #f8bab1;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.25em;  
+}

@@ -1,11 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
-
-{% block page-header %}
-{% endblock %}
+{% block head_title %}{% if category %}{{category.friendly_name}}{% else %}All Products{% endif %}{% endblock %}
 
 {% block content %}
-    <div class="container">
+    <section class="container">
         {% if not products %}
         <div class="row">
             <div class="col-12 text-center">
@@ -14,11 +12,15 @@
         </div>
         {% else %}
         <div class="row">
+            {% include 'products/includes/breadcrumbs.html' %}
+        </div>
+        <div class="row">
             {% include 'products/includes/product_sort.html' %}
         </div>
         <div class="row">
             {% include 'products/includes/product_results.html' %}
         </div>
+        <hr class="rose-rule">
         {% endif %}
-    </div>
+    </section>
 {% endblock %} 
