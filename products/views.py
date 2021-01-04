@@ -46,6 +46,27 @@ def all_products(request, category_slug=None):
 
     return render(request, 'products/products.html', context)
 
+def featured_products(request):
+
+    if 'sort' in request.GET:
+        sortkey = request.GET['sort']
+        if 'direction' in request.GET:
+            direction = request.GET['direction']
+            if direction == 'desc':
+                sortkey = f'-{sortkey}'
+        products = Product.objects.filter(
+            featured=True).order_by(sortkey)
+    else:
+        products = Product.objects.filter(
+            featured=True)
+    
+    context = {
+        'featured': True,
+        'products': products,
+    }
+
+    return render(request, 'products/products.html', context)
+
 
 def product_detail(request, product_slug, category_slug):
 
