@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv('HEX_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['kexcosmetics.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['hex-cosmetics.herokuapp.com', 'localhost']
 
 
 # Application definition
