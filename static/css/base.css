@@ -252,24 +252,9 @@ li {
     transition: .25s ease-in-out;
 }
 
-.rose-border {
-    border-radius: 5px;
-    border: 2px solid #f8bab1;
-}
-
-.rose-border:hover {
-    border: 2px solid #f8bab1;
-    transition: .25s ease-in-out;
-}
-
 .white-border {
     border-radius: 5px;
     border: 2px solid #fff;
-}
-
-.white-border:hover {
-    border: 2px solid #fff;
-    transition: .25s ease-in-out;
 }
 
 .btn:hover, .btn:focus, .btn:active {

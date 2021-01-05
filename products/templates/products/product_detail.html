@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn submit-button rose-border mt-3"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Basket</button>
+                        <button type="submit" class="btn submit-button mt-3"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Basket</button>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
                     <div id="accordion-mobile" class="d-block d-lg-none mt-3">
@@ -124,10 +124,10 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-sm-12 col-md-6">
-                                <a class="btn submit-button rose-border" href="{% url 'edit_product' product.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ product.product_name }}</a>
+                                <a class="btn submit-button" href="{% url 'edit_product' product.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ product.product_name }}</a>
                             </div>
                             <div class="col-sm-12 col-md-6">
-                                <a class="btn submit-button rose-border" data-toggle="modal" data-target="#DeleteProductModal_{{ product.id }}"><i class="fas fa-trash"></i>&nbsp;Delete {{ product.product_name }}</a>
+                                <a class="btn submit-button" data-toggle="modal" data-target="#DeleteProductModal_{{ product.id }}"><i class="fas fa-trash"></i>&nbsp;Delete {{ product.product_name }}</a>
                             </div>
                         </div>
                         <hr class="rose-rule">
@@ -137,10 +137,10 @@
                         <div class="row mb-3">              
                             {% for colour in colours %}   
                             <div class="col-sm-12 col-md-6">
-                                <a class="btn submit-button rose-border" href="{% url 'edit_colour' colour.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ colour.colour }}</a>
+                                <a class="btn submit-button" href="{% url 'edit_colour' colour.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ colour.colour }}</a>
                             </div>
                             <div class="col-sm-12 col-md-6 mb-3">
-                                <a class="btn submit-button rose-border" data-toggle="modal" data-target="#DeleteColourModal_{{ colour.id }}"><i class="fas fa-trash"></i>&nbsp;Delete {{ colour.colour }}</a>
+                                <a class="btn submit-button" data-toggle="modal" data-target="#DeleteColourModal_{{ colour.id }}"><i class="fas fa-trash"></i>&nbsp;Delete {{ colour.colour }}</a>
                             </div>
                             {% endfor %}
                         </div>
