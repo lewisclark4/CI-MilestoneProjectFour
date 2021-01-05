@@ -1,4 +1,11 @@
-{% if category %}
+{% if featured %}
+    <nav id="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'products' %}"><strong>All Products</strong></a></li>
+            <li class="breadcrumb-item">Featured</li>
+        </ol>
+    </nav>
+{% elif category %}
     <nav id="breadcrumb-nav" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{% url 'products' %}"><strong>All Products</strong></a></li>

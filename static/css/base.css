@@ -418,7 +418,7 @@ li {
     object-fit: contain;
 }
 
-.checkout-button, .profile-button {
+.checkout-button, .profile-button, .product-button {
     margin: 0.25em;
 }
 
