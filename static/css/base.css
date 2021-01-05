@@ -252,28 +252,21 @@ li {
     transition: .25s ease-in-out;
 }
 
-.rose-border {
-    border-radius: 5px;
-    border: 2px solid #f8bab1;
-}
-
-.rose-border:hover {
-    border: 2px solid #f8bab1;
-    transition: .25s ease-in-out;
-}
-
 .white-border {
     border-radius: 5px;
     border: 2px solid #fff;
 }
 
-.white-border:hover {
-    border: 2px solid #fff;
-    transition: .25s ease-in-out;
-}
-
 .btn:hover, .btn:focus, .btn:active {
     box-shadow: none;
+}
+
+.subscribe-button {
+    color: #fff;
+}
+
+.subscribe-button:hover {
+    color: #000;
 }
 
 /* Styling for Home/Index.html */
@@ -409,6 +402,9 @@ li {
     object-fit: cover;
 }
 
+.input-group-append .btn, .input-group-prepend .btn  {
+    z-index: 0;
+}
 /* Styling for basket */
 
 #order-progress {
@@ -422,7 +418,7 @@ li {
     object-fit: contain;
 }
 
-.checkout-button, .profile-button {
+.checkout-button, .profile-button, .product-button {
     margin: 0.25em;
 }
 

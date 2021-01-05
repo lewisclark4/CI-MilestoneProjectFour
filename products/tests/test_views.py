@@ -64,6 +64,26 @@ class TestProductsViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
 
+    def test_featured_products_view(self):
+        response = self.client.get('/products/featured/')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
+
+    def test_feautred_product_sort_price_asc(self):
+        new_category = Category.objects.get(name='test_category')
+        response = self.client.get('/products/featured/?sort=price&direction=asc')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
+
+    def test_feautred_product_sort_price_desc(self):
+        new_category = Category.objects.get(name='test_category')
+        response = self.client.get('/products/featured/?sort=price&direction=desc')
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
+
     def test_product_details_view(self):
         new_product = Product.objects.get(product_name='test product')
         url = Product.get_absolute_url(new_product)

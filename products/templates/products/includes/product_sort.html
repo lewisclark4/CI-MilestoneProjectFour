@@ -1,11 +1,21 @@
-{% if not category.slug %}
+{% if featured %}
     <div class="dropdown">
         <button class="btn product-sort-button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Sort By...
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price (low to high)</a>
-            <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc">Price (high to low)</a>
+            <a class="dropdown-item" href="{% url 'featured_products' %}?sort=price&direction=asc">Price (low to high)</a>
+            <a class="dropdown-item" href="{% url 'featured_products' %}?sort=price&direction=desc">Price (high to low)</a>
+        </div> 
+    </div>
+{% elif category.slug %}
+    <div class="dropdown">
+        <button class="btn product-sort-button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sort By...
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=price&direction=asc">Price (low to high)</a>
+            <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=price&direction=desc">Price (high to low)</a>
         </div> 
     </div>
 {% else %}
@@ -14,8 +24,8 @@
             Sort By...
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=price&direction=asc">Price (low to high)</a>
-            <a class="dropdown-item" href="{% url 'products_by_category' category.slug %}?sort=price&direction=desc">Price (high to low)</a>
+            <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price (low to high)</a>
+            <a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc">Price (high to low)</a>
         </div> 
     </div>
 {% endif %} 

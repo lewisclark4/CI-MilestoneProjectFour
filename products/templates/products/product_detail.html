@@ -65,14 +65,14 @@
                                     <div class="input-group-prepend">
                                         <a class="decrement-qty btn submit-button" 
                                             data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
-                                            <span
+                                            <span>
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </a>
                                     </div>
-                                        <input class="form-control qty_input" type="number" 
-                                            name="quantity" value="1" min="1" max="99" 
-                                            data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                    <input class="form-control qty_input" type="number" 
+                                        name="quantity" value="1" min="1" max="99" 
+                                        data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                     <div class="input-group-append">
                                         <a class="increment-qty btn submit-button"
                                             data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn submit-button rose-border mt-3"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Basket</button>
+                        <button type="submit" class="btn submit-button mt-3"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Basket</button>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
                     <div id="accordion-mobile" class="d-block d-lg-none mt-3">
@@ -124,10 +124,10 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-sm-12 col-md-6">
-                                <a class="btn submit-button rose-border" href="{% url 'edit_product' product.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ product.product_name }}</a>
+                                <a class="btn submit-button product-button" href="{% url 'edit_product' product.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ product.product_name }}</a>
                             </div>
                             <div class="col-sm-12 col-md-6">
-                                <a class="btn submit-button rose-border" href="{% url 'delete_product' product.id %}"><i class="fas fa-trash"></i>&nbsp;Delete {{ product.product_name }}</a>
+                                <a class="btn submit-button product-button" data-toggle="modal" data-target="#DeleteProductModal_{{ product.id }}"><i class="fas fa-trash"></i>&nbsp;Delete {{ product.product_name }}</a>
                             </div>
                         </div>
                         <hr class="rose-rule">
@@ -137,10 +137,10 @@
                         <div class="row mb-3">              
                             {% for colour in colours %}   
                             <div class="col-sm-12 col-md-6">
-                                <a class="btn submit-button rose-border" href="{% url 'edit_colour' colour.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ colour.colour }}</a>
+                                <a class="btn submit-button product-button" href="{% url 'edit_colour' colour.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ colour.colour }}</a>
                             </div>
                             <div class="col-sm-12 col-md-6 mb-3">
-                                <a class="btn submit-button rose-border" href="{% url 'delete_colour' colour.id %}"><i class="fas fa-trash"></i>&nbsp;Delete {{ colour.colour }}</a>
+                                <a class="btn submit-button product-button" data-toggle="modal" data-target="#DeleteColourModal_{{ colour.id }}"><i class="fas fa-trash"></i>&nbsp;Delete {{ colour.colour }}</a>
                             </div>
                             {% endfor %}
                         </div>
@@ -150,4 +150,46 @@
         </div>
         {% endif %}
     </section>
+    <!-- Delete Product Modal -->
+    <div class="modal fade" id="DeleteProductModal_{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="modalProduct_{{ product.id }}Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduct_{{ product.id }}Label">Delete {{ colour.colour }}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete this product?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a type="button" class="btn submit-button" href="{% url 'delete_product' product.id %}">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Delete Colour Modal -->
+    {% for colour in colours %}  
+        <div class="modal fade" id="DeleteColourModal_{{ colour.id }}" tabindex="-1" role="dialog" aria-labelledby="modalColour_{{ colour.id }}Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalColour_{{ colour.id }}Label">Delete {{ colour.colour }}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete this colour?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a type="button" class="btn submit-button" href="{% url 'delete_colour' colour.id %}">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
 {% endblock %} 
