@@ -1,0 +1,1 @@
+web: gunicorn hex_cosmetics.wsgi:application
