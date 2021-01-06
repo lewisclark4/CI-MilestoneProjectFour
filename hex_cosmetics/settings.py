@@ -32,7 +32,7 @@ if 'PRODUCTION' in os.environ:
 else:
     DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['hex-cosmetics.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['hex-cosmetics.herokuapp.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
     'storages',
 
     #Custom
@@ -123,6 +124,13 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 6
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': ['profile', 'email',],
+        'AUTH_PARAMS': {'access_type': 'online',},
+    }
+}
 
 WSGI_APPLICATION = 'hex_cosmetics.wsgi.application'
 
