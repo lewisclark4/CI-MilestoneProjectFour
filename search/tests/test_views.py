@@ -75,19 +75,18 @@ class TestSearchViews(TestCase):
         self.assertEqual(messages[0].tags, 'warning')
         self.assertEqual(str(messages[0]), expected_message)
 
-
     def test_no_search_results(self):
         q = {
-            'q' :  '123456789'    
+            'q':  '123456789'
         }
         response = self.client.get(reverse('search'), q, follow=True)
-        expected_message = f"There were no results found for the search: {q['q']}."
+        expected_message = ("There were no results"
+                            + f" found for the search: {q['q']}.")
         messages = list(get_messages(response.wsgi_request))
-        
+
         self.assertRedirects(response, '/products/')
         self.assertEqual(messages[0].tags, 'warning')
         self.assertEqual(str(messages[0]), expected_message)
-        
 
     def tearDown(self):
         new_category = Category.objects.get(name='test_category')

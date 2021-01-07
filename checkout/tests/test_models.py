@@ -54,7 +54,6 @@ class TestCheckoutModels(TestCase):
         new_product = Product.objects.get(product_name='test product')
         two_decimal_places = Decimal(10) ** -2
 
-        """ Ignored pep8 line length as makes code less readable """
         self.assertEqual(Decimal(new_order.order_total).quantize(two_decimal_places), new_product.price)
         self.assertEqual(Decimal(new_order.delivery_cost).quantize(two_decimal_places), Decimal(settings.STANDARD_DELIVERY_CHARGE).quantize(two_decimal_places))
         self.assertEqual(Decimal(new_order.grand_total).quantize(two_decimal_places), Decimal(new_order.order_total + new_order.delivery_cost).quantize(two_decimal_places))
@@ -70,7 +69,6 @@ class TestCheckoutModels(TestCase):
             quantity=50)
         two_decimal_places = Decimal(10) ** -2
 
-        """ Ignored pep8 line length as makes code less readable """
         self.assertEqual(Decimal(new_order.delivery_cost).quantize(two_decimal_places), 0)
 
     def test_order_line_item_str_method(self):

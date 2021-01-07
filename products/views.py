@@ -12,7 +12,6 @@ def all_products(request, category_slug=None):
     """
     products = Product.objects.all()
     category = None
-    sort = None
     direction = None
 
     if category_slug is not None:
@@ -46,6 +45,7 @@ def all_products(request, category_slug=None):
 
     return render(request, 'products/products.html', context)
 
+
 def featured_products(request):
 
     if 'sort' in request.GET:
@@ -59,7 +59,7 @@ def featured_products(request):
     else:
         products = Product.objects.filter(
             featured=True)
-    
+
     context = {
         'featured': True,
         'products': products,
@@ -142,8 +142,8 @@ def edit_product(request, product_id):
                                     args=[product.category.slug,
                                           product.slug],))
         else:
-            messages.error(request, f'Failed to update {product.product_name}. '
-                                    + 'Please ensure the form is valid.')
+            messages.error(request, f'Failed to update {product.product_name}.'
+                                    + ' Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
 

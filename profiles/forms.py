@@ -32,7 +32,8 @@ class UserProfileForm(forms.ModelForm):
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].label = False
-            
+
+
 class UserForm(forms.ModelForm):
     class Meta:
         model = User
