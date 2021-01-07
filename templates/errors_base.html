@@ -1,0 +1,17 @@
+{% load static %}
+{% block content %}
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <img class="home-image" src="{% static 'images/hex-logo-desktop.png' %}" alt="Hex Cosmetics Logo">
+            </div>
+            <div class="col-sm-12 col-md-6 shop-all">
+                {% block error-code %}{% endblock error-code %}
+                <p>Sorry, something is not quite right.</p>
+                <a href="{% url 'home' %}" class="mx-auto" >
+                    <span class="btn submit-button"><strong>Return Home</strong></span>
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %} 
