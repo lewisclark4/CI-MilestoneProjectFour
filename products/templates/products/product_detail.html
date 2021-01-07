@@ -21,7 +21,7 @@
                         </a>
                     {% endif %}
                     </div>
-                <div id="accordion" class="d-none d-lg-block">
+                <div id="accordionProductDescriptionDesktop" class="d-none d-lg-block">
                     <div class="card mb-5">
                         <div class="card-header" id="productDescriptionDesktop">
                             <h5 class="mb-0">
@@ -30,7 +30,7 @@
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapseDesktopDescription" class="collapse show" aria-labelledby="productDescriptionDesktop" data-parent="#accordion">
+                        <div id="collapseDesktopDescription" class="collapse show" aria-labelledby="productDescriptionDesktop" data-parent="#accordionProductDescriptionDesktop">
                             <div class="card-body">
                                 <p>{{ product.description }}</p>
                             </div>
@@ -87,7 +87,7 @@
                         <button type="submit" class="btn submit-button mt-3"><i class="fas fa-shopping-basket mr-2"></i>Add to Basket</button>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
-                    <div id="accordion-mobile" class="d-block d-lg-none mt-3">
+                    <div id="accordion-product-description-mobile" class="d-block d-lg-none mt-3">
                         <div class="card mb-5">
                             <div class="card-header" id="productDescriptionMobile">
                                 <h5 class="mb-0">
@@ -96,7 +96,7 @@
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseMobileDescription" class="collapse show" aria-labelledby="productDescriptionMobile" data-parent="#accordion-mobile">
+                            <div id="collapseMobileDescription" class="collapse show" aria-labelledby="productDescriptionMobile" data-parent="#accordion-product-description-mobile">
                                 <div class="card-body">
                                     <p>{{ product.description }}</p>
                                 </div>
@@ -165,7 +165,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <a type="button" class="btn submit-button" href="{% url 'delete_product' product.id %}">Delete</a>
+                        <a class="btn submit-button" href="{% url 'delete_product' product.id %}">Delete</a>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <a type="button" class="btn submit-button" href="{% url 'delete_colour' colour.id %}">Delete</a>
+                        <a class="btn submit-button" href="{% url 'delete_colour' colour.id %}">Delete</a>
                     </div>
                 </div>
             </div>

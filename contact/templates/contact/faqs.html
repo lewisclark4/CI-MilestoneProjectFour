@@ -6,21 +6,21 @@
 <section class="container">
     <div class="row text-center">
         <div class="col-12 col-md-6 offset-md-3">
-            <h2>Frequently Asked Questions</h2>
+            <h3>Frequently Asked Questions</h3>
         </div> 
     </div>
     <hr class="rose-rule">
     <div class="row">
-        <div id="accordion">
+        <div id="accordion-faq">
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="faqOne">
                     <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">
                         <strong>How do I return an item?</strong>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseFaqOne" class="collapse show" aria-labelledby="faqOne" data-parent="#accordion-faq">
                     <div class="card-body">
                         To be acceptable for return, items should be unused, unopened and have any original seals intact.<br><br>
                         To initiate a refund, please return the items to the returns address detailed on your Dispatch Note.<br><br>
@@ -31,14 +31,14 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingTwo">
+                <div class="card-header" id="faqTwo">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFaqTwo" aria-expanded="false" aria-controls="collapseFaqTwo">
                         <strong>Where is my order?</strong>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div id="collapseFaqTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion-faq">
                     <div class="card-body">
                         <p>Don’t worry we are working hard to get all orders dispatched as quickly as possible.</p>
                         <p>We expect orders to be dispatched within 2 working days of your order</p>
@@ -48,14 +48,14 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingThree">
+                <div class="card-header" id="faqThree">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFaqThree" aria-expanded="false" aria-controls="collapseFaqThree">
                         <strong>Can I change my order?</strong>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="collapseFaqThree" class="collapse" aria-labelledby="faqThree" data-parent="#accordion-faq">
                     <div class="card-body">
                         <p>Our aim is to process your order as soon as possible, to get it on its way to you, so there is a only a small amount of time where we may be able to amend your order.</p>
                         <p>Please  <a href="{% url 'contact' %}">get in touch </a> ASAP if you have any issues with your order.</p>
@@ -63,14 +63,14 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingFour">
+                <div class="card-header" id="faqFour">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFaqFour" aria-expanded="false" aria-controls="collapseFaqFour">
                         <strong>How do I get a replacement for an item missing from my order?</strong>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div id="collapseFaqFour" class="collapse" aria-labelledby="faqFour" data-parent="#accordion-faq">
                     <div class="card-body">
                         <p>If there is an item missing from your order, please <a href="{% url 'contact' %}">report this</a> to our customer services department.</p>
                         <p>We will endeavour to resolve this for you ASAP.</p>
@@ -79,14 +79,14 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingFive">
+                <div class="card-header" id="faqFive">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFaqFive" aria-expanded="false" aria-controls="collapseFaqFive">
                         <strong>How do I get a replacement for a faulty item?</strong>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div id="collapseFaqFive" class="collapse" aria-labelledby="faqFive" data-parent="#accordion-faq">
                     <div class="card-body">
                         <p>If there is a faulty item in your order, please <a href="{% url 'contact' %}">report this</a> to our customer services department.</p>
                         <p>We will endeavour to resolve this for you ASAP.</p>
@@ -94,14 +94,14 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header" id="headingSix">
+                <div class="card-header" id="faqSix">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFaqSix" aria-expanded="false" aria-controls="collapseFaqSix">
                         <strong>I've received the wrong item, what do I do?</strong>
                         </button>
                     </h5>
                 </div>
-                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div id="collapseFaqSix" class="collapse" aria-labelledby="headingFaqSix" data-parent="#accordion-faq">
                     <div class="card-body">
                         <p>We apologise if there has been an error with your order and you have received an incorrect item.</p>
                         <p>If there is an incorrect item in your order, please <a href="{% url 'contact' %}">report this</a> to our customer services department.</p>

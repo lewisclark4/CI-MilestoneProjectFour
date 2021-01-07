@@ -28,11 +28,11 @@
             </li>
             {% if user.is_authenticated %}
             <li class="nav-item dropdown d-lg-none">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdownMobile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="nav-icon fas fa-user-circle"></i>
                     Profile
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdownMobile">
                     {% if request.user.is_superuser %}
                         <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
                         <a class="dropdown-item" href="{% url 'add_colour' %}">Add Product Colour</a>
@@ -44,11 +44,11 @@
             </li>
             {% else %}
             <li class="nav-item dropdown d-lg-none">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdownMobile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="nav-icon fas fa-user-circle"></i>
                     Profile
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdownMobile">
                     <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
                     <a class="dropdown-item" href="{% url 'account_login' %}" >Log in</a>
                 </div>
@@ -69,10 +69,10 @@
                 </div>
             </li>
             <li class="nav-item dropdown d-none d-lg-block">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarContactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarContactDropdownDesktop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Contact
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarContactDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarContactDropdownDesktop">
                     <a class="dropdown-item" href="{% url 'about' %}">About</a>
                     <a class="dropdown-item" href="{% url 'faqs' %}">FAQs</a>
                     <a class="dropdown-item" href="{% url 'contact' %}">Contact Us</a>           
@@ -93,11 +93,11 @@
             </li>
             {% if user.is_authenticated %}
             <li class="nav-item dropdown d-none d-lg-block">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdownDesktop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="nav-icon fas fa-user-circle"></i>
                     Profile
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdownDesktop">
                     {% if request.user.is_superuser %}
                         <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
                         <a class="dropdown-item" href="{% url 'add_colour' %}">Add Product Colour</a>
@@ -109,11 +109,11 @@
             </li>
             {% else %}
             <li class="nav-item dropdown d-none d-lg-block">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdownDesktop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="nav-icon fas fa-user-circle"></i>
                     Profile
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarProfileDropdownDesktop">
                     <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
                     <a class="dropdown-item" href="{% url 'account_login' %}" >Log in</a>
                 </div>
@@ -133,10 +133,10 @@
             </li>
             <li class="dropdown-divider rose-rule"></li>
             <li class="nav-item dropdown d-lg-none">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarContactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarContactDropdownMobile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Contact
                     </a>
-                <div class="dropdown-menu" aria-labelledby="navbarContactDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarContactDropdownMobile">
                     <a class="dropdown-item" href="{% url 'about' %}">About</a>
                     <a class="dropdown-item" href="{% url 'faqs' %}">FAQs</a>
                     <a class="dropdown-item" href="{% url 'contact' %}">Contact Us</a>           
