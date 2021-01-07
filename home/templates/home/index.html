@@ -17,7 +17,7 @@
     </section>
     <section class="container">
         <hr class="rose-rule">
-        <div class="row">
+        <div class="row text-center">
         {% for category in all_categories %}
             <div class="col-sm-12 col-md-6 col-lg-3 ">
                 <a class="card category-card" href="{% url 'products_by_category' category.slug %}">
@@ -26,7 +26,7 @@
                 {% else %}
                     <img class="category-image" src="{{ MEDIA_URL }}noimage.png" alt="Shop {{ category.friendly_name }}">
                 {% endif %}
-                    <span class="category-friendly-name text-center"><strong>Shop {{ category.friendly_name }}</strong></span>
+                    <span class="category-friendly-name"><strong>Shop {{ category.friendly_name }}</strong></span>
                 </a>
             </div> 
         {% endfor %}

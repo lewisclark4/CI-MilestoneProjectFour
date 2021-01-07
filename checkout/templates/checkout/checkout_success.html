@@ -4,15 +4,15 @@
 
 {% block content %}
     <section class="container">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-12">
-                <h2 class="text-center">Order Confirmation</h2>
+                <h3>Order Confirmation</h3>
             </div>
         </div>
         {% include 'basket/includes/order_progress.html' %}
-        <div class="row mb-5">
+        <div class="row text-center mb-5">
             <div class="col-12">
-                <p class="text-center"><strong>
+                <p><strong>
                     Your order number is {{order.order_number}}.<br><br>
                     A confirmation email will be sent to {{order.email}}</strong>
                 </p>

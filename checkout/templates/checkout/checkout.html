@@ -8,9 +8,9 @@
 
 {% block content %}
     <section class="container">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-12">
-                <h2 class="text-center">Shipping & Payment</h2>
+                <h3>Shipping & Payment</h3>
             </div>
         </div>
         {% include 'basket/includes/order_progress.html' %}
@@ -23,9 +23,9 @@
                         <div class="col-6 col-md-3">
                             <a href="{{item.product.get_absolute_url}}">
                                 {% if item.product.image_url %}
-                                    <img class="w-100 basket-image" src="{{ item.product.image_url }}" alt="{{ item.product.name }}">
+                                    <img class="basket-image" src="{{ item.product.image_url }}" alt="{{ item.product.name }}">
                                 {% else %}
-                                    <img class="w-100 basket-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                    <img class="basket-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                 {% endif %}
                             </a>
                         </div>

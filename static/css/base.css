@@ -262,7 +262,12 @@ li {
 
 .white-border {
     border-radius: 5px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
+}
+
+.white-border:hover {
+    border-radius: 5px;
+    border: 1px solid #000;
 }
 
 .btn:hover, .btn:focus, .btn:active {
