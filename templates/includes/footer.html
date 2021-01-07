@@ -7,7 +7,7 @@
                 <i class="fas fa-question-circle mr-2"></i>
                 <strong>Need some help?</strong>
             </p>
-            <hr class="d-none d-lg-block white-rule">
+            <hr class="d-none d-lg-block black-rule">
             <p>The HEX team are available Monday - Friday from 8am - 6pm</p>
             <ul>
                 <li class="footer-link"><a href="{% url 'about' %}">About</a></li>
@@ -16,12 +16,12 @@
             </ul>
         </div>
         <div class="col-12 col-lg-4">
-            <hr class="d-lg-none white-rule">
+            <hr class="d-lg-none black-rule">
             <p class="footer-header">
                 <i class="fas fa-envelope mr-2"></i>
                 <strong>Newsletter</strong>
             </p>
-            <hr class="d-none d-lg-block white-rule">
+            <hr class="d-none d-lg-block black-rule">
             <p>Get more to smile about directly to your inbox. We'll send you details of our newest ranges and special offers.</p>
             <form id="subscription_form" action="{% url 'subscribe' %}" method="POST">
                 <div class="form-group">
@@ -29,17 +29,17 @@
                     {{ sub_form|crispy }}
                     <small id="emailHelp">We'll never share your email with anyone else.</small>
                 </div>
-                <button type="submit" class="btn white-border subscribe-button">Subscribe</button>
+                <button type="submit" class="btn black-border submit-button">Subscribe</button>
                 <input type="hidden" name="subscribe_redirect" value="{{ request.path }}">
             </form>
         </div>
         <div class="col-12 col-lg-4">
-            <hr class="d-lg-none white-rule">
+            <hr class="d-lg-none black-rule">
             <p class="footer-header">
                 <i class="fas fa-thumbs-up mr-2"></i>
                 <strong>Social Media</strong>
             </p>
-            <hr class="d-none d-lg-block white-rule">
+            <hr class="d-none d-lg-block black-rule">
             <p> Like, Follow and Subscribe to our social media pages to get access to our exclusive products and offers. 
 			<ul class="list-inline">
 				<li class="list-inline-item social-icon">

@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     font-family: "Quicksand", sans-serif;
     overflow-x: hidden;
+    color: #000;
 }
 
 .row {
@@ -23,8 +24,8 @@ body {
     border-color: #f8bab1;
 }
 
-.white-rule {
-    border-color: #fff;
+.black-rule {
+    border-color: #000;
 }
 
 #logo-image {
@@ -199,7 +200,6 @@ nav {
 
 #footer {
     background-color: #f8bab1;
-    color: #fff;
     text-align: center;
     font-size: 1em;
 }
@@ -223,13 +223,13 @@ li {
 
 .footer-link a {
     text-decoration: underline;
-    text-decoration-color: #fff;
-    color: #fff;
+    text-decoration-color: #000;
+    color: #000;
 }
 
 .footer-link a:hover {
-    color: #000;
-    text-decoration-color: #000;
+    color: #fff;
+    text-decoration-color: #fff;
     transition: .25s ease-in-out;
 }
 
@@ -240,11 +240,11 @@ li {
     padding: 0.25em;
     border-radius: 50%;
     background-color: #fff;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
 }
 
 .social-icon i:hover {
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     color: #fff;
     background-color: #f8bab1;
     transition: .25s ease-in-out;
@@ -260,26 +260,18 @@ li {
     transition: .25s ease-in-out;
 }
 
-.white-border {
-    border-radius: 5px;
-    border: 1px solid #fff;
-}
-
-.white-border:hover {
+.black-border {
     border-radius: 5px;
     border: 1px solid #000;
 }
 
+.black-border:hover {
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
 .btn:hover, .btn:focus, .btn:active {
     box-shadow: none;
-}
-
-.subscribe-button {
-    color: #fff;
-}
-
-.subscribe-button:hover {
-    color: #000;
 }
 
 /* Styling for Home/Index.html */
