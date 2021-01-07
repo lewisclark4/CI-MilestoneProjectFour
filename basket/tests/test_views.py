@@ -59,10 +59,9 @@ class TestBasketViews(TestCase):
         }
         response_2 = self.client.post(reverse('add_to_basket', kwargs={'product_id': new_product.id}), data=post_data_2)
         messages_2 = list(get_messages(response_2.wsgi_request))
-        expected_message_2 = ("Successfully updated "
-                              + f"{new_product.product_name} "
-                              + f"({new_colour.colour}) "
-                              + f"quantity to {int(post_data_2['quantity'])}")
+        expected_message_2 = (f"Successfully added {post_data_2['quantity']} "
+                            + f"x {new_product.product_name} "
+                            + f"({new_colour.colour}) to your basket")
 
         self.assertRedirects(response_2, '/')
         self.assertEqual(messages_2[0].tags, 'success')

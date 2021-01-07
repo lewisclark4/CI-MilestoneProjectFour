@@ -66,8 +66,6 @@ $(document).ready(function () {
             form.submit();
         }
     }
-
-    $(".message").delay(4000).slideUp(400);
    
 });
 

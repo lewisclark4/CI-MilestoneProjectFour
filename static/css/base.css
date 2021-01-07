@@ -90,21 +90,27 @@ nav {
 }
 
 .message-success {
-    background-color:green;
-    color: #fff;
+    background-color:lightgreen;
+    color: green;
+    border: 1px solid green;
+
 }
 
 .message-warning {
-    background-color:orange;
+    background-color:lemonchiffon;
+    border: 1px solid orange;
 }
 
 .message-info {
     background-color:lightblue;
+    color: blue;
+    border: 1px solid blue;
 }
 
 .message-error {
-    background-color:red;
+    background-color:indianred;
     color: #fff;
+    border: 1px solid red;
 }
 
 .form-control, .dropdown-menu {

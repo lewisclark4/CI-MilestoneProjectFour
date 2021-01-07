@@ -20,8 +20,9 @@ def add_to_basket(request, product_id):
     if colour_id in list(basket.keys()):
         basket[colour_id] += quantity
         messages.success(
-            request, (f'Successfully updated {product.product_name} '
-                      + f'({colour.colour}) quantity to {quantity}'))
+            request, (f'Successfully added {quantity} x '
+                      + f'{product.product_name} '
+                      + f'({colour.colour}) to your basket'))
     else:
         basket[colour_id] = quantity
         messages.success(
