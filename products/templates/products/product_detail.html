@@ -26,7 +26,7 @@
                         <div class="card-header" id="productDescriptionDesktop">
                             <h5 class="mb-0">
                                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDesktopDescription" aria-expanded="true" aria-controls="collapseDesktopDescription">
-                                <strong><i class="fas fa-plus"></i>&emsp;Description</strong>
+                                <strong><i class="fas fa-plus mr-2"></i>Description</strong>
                                 </button>
                             </h5>
                         </div>
@@ -51,7 +51,7 @@
                     <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="col-6 offset-3 p-0 mb-3">
-                            <p class="m-0"><strong>Colour</strong> ({{count}} options available)</p>
+                            <p class="m-0"><strong>Colour</strong> ({{count}} option{% if count > 1 %}s{% endif %} available)</p>
                             <select class="form-control" name="colour">
                                 {% for colour in colours %}
                                     <option class="product-colour" value="{{ colour.id }}" style= "background:{{colour.hex_value}}; color:#FFF; ">{{ colour.colour }}</option>
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn submit-button mt-3"><i class="fas fa-shopping-basket"></i>&nbsp;Add to Basket</button>
+                        <button type="submit" class="btn submit-button mt-3"><i class="fas fa-shopping-basket mr-2"></i>Add to Basket</button>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form>
                     <div id="accordion-mobile" class="d-block d-lg-none mt-3">
@@ -92,7 +92,7 @@
                             <div class="card-header" id="productDescriptionMobile">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseMobileDescription" aria-expanded="true" aria-controls="collapseMobileDescription">
-                                    <strong><i class="fas fa-plus"></i>&emsp;Description</strong>
+                                    <strong><i class="fas fa-plus mr-2"></i>Description</strong>
                                     </button>
                                 </h5>
                             </div>
@@ -113,7 +113,7 @@
                 <div class="card-header" id="productMaintenance">
                     <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseProductMaintenance" aria-expanded="true" aria-controls="collapseProductMaintenance">
-                        <strong><i class="fas fa-plus"></i>&emsp;Product Maintenance</strong>
+                        <strong><i class="fas fa-plus mr-2"></i>Product Maintenance</strong>
                         </button>
                     </h5>
                 </div>
@@ -124,10 +124,10 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-sm-12 col-md-6">
-                                <a class="btn submit-button product-button" href="{% url 'edit_product' product.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ product.product_name }}</a>
+                                <a class="btn submit-button product-button" href="{% url 'edit_product' product.id %}"><i class="fas fa-wrench mr-2"></i>Edit {{ product.product_name }}</a>
                             </div>
                             <div class="col-sm-12 col-md-6">
-                                <a class="btn submit-button product-button" data-toggle="modal" data-target="#DeleteProductModal_{{ product.id }}"><i class="fas fa-trash"></i>&nbsp;Delete {{ product.product_name }}</a>
+                                <a class="btn submit-button product-button" data-toggle="modal" data-target="#DeleteProductModal_{{ product.id }}"><i class="fas fa-trash mr-2"></i>Delete {{ product.product_name }}</a>
                             </div>
                         </div>
                         <hr class="rose-rule">
@@ -137,10 +137,10 @@
                         <div class="row mb-3">              
                             {% for colour in colours %}   
                             <div class="col-sm-12 col-md-6">
-                                <a class="btn submit-button product-button" href="{% url 'edit_colour' colour.id %}"><i class="fas fa-wrench"></i>&nbsp;Edit {{ colour.colour }}</a>
+                                <a class="btn submit-button product-button" href="{% url 'edit_colour' colour.id %}"><i class="fas fa-wrench mr-2"></i>Edit {{ colour.colour }}</a>
                             </div>
                             <div class="col-sm-12 col-md-6 mb-3">
-                                <a class="btn submit-button product-button" data-toggle="modal" data-target="#DeleteColourModal_{{ colour.id }}"><i class="fas fa-trash"></i>&nbsp;Delete {{ colour.colour }}</a>
+                                <a class="btn submit-button product-button" data-toggle="modal" data-target="#DeleteColourModal_{{ colour.id }}"><i class="fas fa-trash mr-2"></i>Delete {{ colour.colour }}</a>
                             </div>
                             {% endfor %}
                         </div>
