@@ -123,10 +123,10 @@
                             <h5>Edit or Remove Product</h5>
                         </div>
                         <div class="row mb-3">
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-12 col-md-6">
                                 <a class="btn submit-button product-button" href="{% url 'edit_product' product.id %}"><i class="fas fa-wrench mr-2"></i>Edit {{ product.product_name }}</a>
                             </div>
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-12 col-md-6">
                                 <a class="btn submit-button product-button" data-toggle="modal" data-target="#DeleteProductModal_{{ product.id }}"><i class="fas fa-trash mr-2"></i>Delete {{ product.product_name }}</a>
                             </div>
                         </div>
@@ -136,10 +136,10 @@
                         </div>
                         <div class="row mb-3">              
                             {% for colour in colours %}   
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-12 col-md-6">
                                 <a class="btn submit-button product-button" href="{% url 'edit_colour' colour.id %}"><i class="fas fa-wrench mr-2"></i>Edit {{ colour.colour }}</a>
                             </div>
-                            <div class="col-sm-12 col-md-6 mb-3">
+                            <div class="col-12 col-md-6 mb-3">
                                 <a class="btn submit-button product-button" data-toggle="modal" data-target="#DeleteColourModal_{{ colour.id }}"><i class="fas fa-trash mr-2"></i>Delete {{ colour.colour }}</a>
                             </div>
                             {% endfor %}
