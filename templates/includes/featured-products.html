@@ -1,5 +1,5 @@
 {% load static %}
-<h4 class="featured-products-heading mx-auto"><i class="fas fa-star"></i> Featured Products <i class="fas fa-star"></i></h4>
+<h4 class="featured-products-heading mx-auto"><i class="fas fa-star fa-sm"></i> Featured Products <i class="fas fa-star fa-sm"></i></h4>
 <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "groupCells": true, "wrapAround": true}'>
 {% for product in featured_products %}
     <div class="carousel-cell">
@@ -10,7 +10,7 @@
                 <img class="featured-listing-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.product_name }}">
             {% endif %}
             <div class="featured-listing-info d-flex justify-content-between">
-                <p class="product-name">{{ product.brand_name }}</p>
+                <p class="product-name"><strong>{{ product.brand_name }}</strong></p>
                 <p class="product-name"><strong>£{{ product.price }}</strong></p>
             </div>
         </a>

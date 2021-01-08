@@ -48,7 +48,7 @@ class TestContactViews(TestCase):
         response = self.client.post(reverse('contact'), data, follow=True)
         messages = list(get_messages(response.wsgi_request))
         expected_message = ('Your message has been received'
-                            + 'and we aim to reply within 48 hours.')
+                            + ' and we aim to reply within 48 hours.')
 
         self.assertTrue(form.is_valid())
         self.assertEqual(messages[0].tags, 'success')

@@ -5,13 +5,13 @@
 
 {% block content %}
     <section class="container">
-        <div class="row">
-            <div class="col-12 text-center">
+        <div class="row text-center">
+            <div class="col-12">
                 {% if empty_basket %}
                     <h3>Your basket is currently empty!</h3>
                     <a href="{% url 'products' %}" class="btn submit-button">
-                        <span>Continue shopping</span>&nbsp;
-                        <span><i class="fas fa-chevron-right fa-xs"></i></span>
+                        <span>Continue shopping</span>
+                        <span><i class="fas fa-chevron-right fa-xs ml-2"></i></span>
                     </a>
                 {% else %}
                     <h3>Basket</h3>
@@ -24,7 +24,7 @@
         <div class="row">
             {% for item in basket_items %}
             <div class="col-12 col-md-3">
-                <div class="row  text-center">
+                <div class="row text-center">
                     <div class="col-2">
                         <a  href="{% url 'remove_from_basket' item.colour.id %}" aria-label="remove from basket">
                             <span class="remove-basket"><i class="fas fa-trash"></i></span>

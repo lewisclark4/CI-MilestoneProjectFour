@@ -18,6 +18,7 @@ class SubscriptionForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].label = False
 
+
 class SecureMessageForm(forms.ModelForm):
     class Meta:
         model = SecureMessage

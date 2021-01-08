@@ -63,7 +63,8 @@ class TestCheckoutViews(TestCase):
             'postcode': 'AB12CD',
             'client_secret': 'client_123456_secret_123456',
         }
-        response = self.client.post(reverse('checkout'), data=post_data, follow=True)
+        response = self.client.post(reverse('checkout'),
+                                    data=post_data, follow=True)
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'checkout/checkout_success.html')

@@ -32,7 +32,7 @@ def secure_message(request):
             form.save()
             messages.success(
                 request, ('Your message has been received'
-                          + 'and we aim to reply within 48 hours.'))
+                          + ' and we aim to reply within 48 hours.'))
         return redirect(reverse('home'))
 
     form = SecureMessageForm()

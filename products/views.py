@@ -12,7 +12,6 @@ def all_products(request, category_slug=None):
     """
     products = Product.objects.all()
     category = None
-    sort = None
     direction = None
 
     if category_slug is not None:
@@ -46,6 +45,7 @@ def all_products(request, category_slug=None):
 
     return render(request, 'products/products.html', context)
 
+
 def featured_products(request):
 
     if 'sort' in request.GET:
@@ -59,7 +59,7 @@ def featured_products(request):
     else:
         products = Product.objects.filter(
             featured=True)
-    
+
     context = {
         'featured': True,
         'products': products,
@@ -108,7 +108,7 @@ def add_product(request):
             return redirect(reverse('add_colour'))
         else:
             messages.error(
-                request, 'Failed to add product.'
+                request, 'Failed to add product. '
                          + 'Please ensure the form is valid.')
     else:
         form = ProductForm()
@@ -143,7 +143,7 @@ def edit_product(request, product_id):
                                           product.slug],))
         else:
             messages.error(request, f'Failed to update {product.product_name}.'
-                                    + 'Please ensure the form is valid.')
+                                    + ' Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
 
@@ -189,7 +189,7 @@ def add_colour(request):
             return redirect(reverse('add_colour'))
         else:
             messages.error(
-                request, 'Failed to add product colour.'
+                request, 'Failed to add product colour. '
                          + 'Please ensure the form is valid.')
     else:
         form = ColourForm()
@@ -218,14 +218,14 @@ def edit_colour(request, colour_id):
         form = ColourForm(request.POST, instance=colour)
         if form.is_valid():
             form.save()
-            messages.success(request, f'{product.product_name} -'
+            messages.success(request, f'{product.product_name} - '
                                       + '{colour.colour} was updated')
             return redirect(reverse('product_detail',
                                     args=[product.category.slug,
                                           product.slug],))
         else:
             messages.error(request, f'Failed to update {product.product_name}'
-                                    + ' - {colour.colour}.'
+                                    + ' - {colour.colour}. '
                                     + 'Please ensure the form is valid.')
     else:
         form = ColourForm(instance=colour)

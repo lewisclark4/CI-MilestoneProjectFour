@@ -4,9 +4,9 @@
 
 {% block content %}
     <section class="container">
-        <div class="row">
+        <div class="row text-center">
             <div class="col-12">
-                <h2 class="text-center">Order History</h2>
+                <h3>Order History</h3>
                 <hr class="rose-rule">
             </div>
         </div>
@@ -15,17 +15,20 @@
                 {% include 'profiles/includes/profile_nav.html' %}
             </div>
             <div class="col-12 col-md-8">
+                {% if count < 1 %}
+                <p class="text-muted"><strong>You haven't placed any orders yet.</strong></p>
+                {% else %}
                 <p class="text-muted"><strong>Click below to view your order details</strong></p>
-                <div id="accordionOrderHistory">
+                <div id="accordion-order-history">
                     {% for order in orders %}
                     <div class="card">
                         <div class="card-header" id="accordionHeadingId_{{order.order_number}}">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAccordionId_{{order.order_number}}" aria-expanded="true" aria-controls="#collapseAccordionId_{{order.order_number}}">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAccordionId_{{order.order_number}}" aria-expanded="true" aria-controls="collapseAccordionId_{{order.order_number}}">
                                 <span class="order-date">{{ order.date_ordered }}</span>   
                                 <span><strong>£{{ order.grand_total }}</strong></span>
                             </button>
                         </div>
-                        <div id="collapseAccordionId_{{order.order_number}}" class="collapse" aria-labelledby="accordionHeadingId_{{order.order_number}}" data-parent="#accordionOrderHistory">
+                        <div id="collapseAccordionId_{{order.order_number}}" class="collapse" aria-labelledby="accordionHeadingId_{{order.order_number}}" data-parent="#accordion-order-history">
                             <div class="card-body">
                                 <p class="text-muted"><strong>Order Number: </strong>{{ order.order_number}}</p>
                                 <hr class="rose-rule">
@@ -56,6 +59,7 @@
                     </div>
                     {% endfor %}
                 </div>
+                {% endif %}
             </div>
         </div>
         <hr class="rose-rule">

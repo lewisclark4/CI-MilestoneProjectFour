@@ -55,9 +55,11 @@ def order_history(request):
 
     profile = get_object_or_404(UserProfile, user=request.user)
     orders = profile.orders.all().order_by('-date_ordered')
+    order_count = profile.orders.all().count()
 
     context = {
          'orders': orders,
+         'count': order_count,
     }
 
     return render(request, 'profiles/order_history.html', context)

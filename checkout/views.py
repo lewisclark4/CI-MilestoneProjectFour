@@ -70,7 +70,7 @@ def checkout(request):
                     order_line_item.save()
                 except Product.DoesNotExist or Colour.DoesNotExist:
                     messages.error(request, (
-                        'There was an error processing your basket.'
+                        'There was an error processing your basket. '
                         'Please call for further assistance.'),
                     )
                     order.delete()
@@ -83,7 +83,7 @@ def checkout(request):
         else:
             messages.error(
                 request,
-                'Your form contains some invalid details.'
+                'Your form contains some invalid details. '
                 'Please double check your information',
             )
     else:

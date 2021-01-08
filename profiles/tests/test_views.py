@@ -52,7 +52,6 @@ class TestProfilesViews(TestCase):
         self.assertEqual(messages[0].tags, 'success')
         self.assertEqual(str(messages[0]), expected_message)
 
-
     def test_order_history_view(self):
         self.client.login(
             username='test_user',
