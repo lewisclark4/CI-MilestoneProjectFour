@@ -1,6 +1,6 @@
 # CI-MilestoneProjectFour
 
-[![Build Status](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour.svg?branch=master)](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour) ![Django](https://img.shields.io/badge/Django-3.1-pink) [![Python](https://img.shields.io/badge/python-3.8-pink.svg) [![Code style](https://img.shields.io/badge/code%20style-pep8-success)]
+[![Build Status](https://travis-ci.com/lewisclark4/CI-MilestoneProjectFour.svg?branch=master)](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour) ![Django](https://img.shields.io/badge/Django-3.1-pink) [Python](https://img.shields.io/badge/python-3.8-pink.svg) [Code style](https://img.shields.io/badge/code%20style-pep8-success)
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -472,13 +472,35 @@ The site can be cloned to your local repository as follows steps - [GitHub guide
 10. You can now run locally using the following command.
     - `python manage.py runserver`
 
+
+### Continuous integration
+
+You can implement automated testing before deployment to ensure that all tests are passed prior to changes being deployed to the live site.
+
+Instructions for setting this up can be found at [Travis-CI](https://docs.travis-ci.com/user/tutorial/)
+
+1. Sign up to Travis CI via your Github profile.
+2. Grant Travis CI with the required authorisations to your Github.
+3. Activate your account and select your repo to connect for Travis-CI.
+4. Travis-CI will run the .travis.yml file and provide feedback if there are any errors preventing deployment (i.e. failed tests or missing environment variables).
+
 ### Heroku Deployment
 
 To deploy this site to Heroku, complete the following steps:
 
 1. Create a [Heroku](https://signup.heroku.com/) account and log in.
+2. Create a new app in Heroku
+3. In the settings tab, set the [Environment Variables](#Environment-Variables) detialed above
+4. From the Heroku dashboard of your application, click on "Deploy" > "Deployment method" and select GitHub.
+5. Connect to the appropriate GitHub repository.
+6. Set the project up for automatic deploys it will deploy once the master branch is updated.
+    - OR in the manual deployment section, select the master branch and click 'Deploy Branch'.
+7. You can also select the option for 'Wait for CI to pass before deploy', which will ensure the Travis-CI build is successful prior to deployment.
+8. The site should be successfully deployed.
 
-2. 
+If you do not set the project up for automatic deploys, you are also able to push updates from your command line.
+- login to Heroku using the command `heroku login` and complete your user details.
+- Push to Heroku using the command  `git push heroku master`.
 
 ### Contributions
 
