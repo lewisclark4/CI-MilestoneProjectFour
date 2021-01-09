@@ -27,7 +27,7 @@ class TestContactViews(TestCase):
                                         'email_address': 'test@test.com',
                                         'subscribe_redirect': '/'})
         messages = list(get_messages(response.wsgi_request))
-        expected_message = 'You are aleady subscribed to our newsletter.'
+        expected_message = 'You are already subscribed to our newsletter.'
 
         self.assertRedirects(response, '/')
         self.assertEqual(str(messages[0]), expected_message)

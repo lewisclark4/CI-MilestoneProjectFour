@@ -14,7 +14,7 @@ def subscribe(request):
             email_address=request.POST.get('email_address')
         ).exists():
             messages.info(
-                request, 'You are aleady subscribed to our newsletter.')
+                request, 'You are already subscribed to our newsletter.')
             return redirect(subscribe_redirect)
         else:
             if sub_form.is_valid():
