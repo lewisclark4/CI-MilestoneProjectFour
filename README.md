@@ -1,16 +1,18 @@
 # CI-MilestoneProjectFour
+
+[![Build Status](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour.svg?branch=master)] (https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour) ![Django](https://img.shields.io/badge/Django-3.1-pink) ![Python]https://img.shields.io/badge/python-3.8-pink.svg [![Code style](https://img.shields.io/badge/code%20style-pep8-success)]
+
 ## Table of Contents
 1. [Overview](#overview)
 2. [Live Site](#live-site)
-3. [User Experience & Design](#uxd)
+3. [User Experience & Design](#ux)
 
-    - [Wireframes](#skeleton)
+    - [Wireframes](#Wireframes)
 4. [Technologies and Tools](#technologies-and-tools)
 5. [Features](#features)
 6. [Testing](#testing)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
-
 
 ## Overview
 
@@ -22,7 +24,11 @@ Hex Cosmetics also provides a range of different well known brands to enable sit
 
 The site's home page easily allows a site user to select the specific type of make-up they are looking for, as well as being able to shop all products, or view the site's featured products or sale products.
 
+_NOTE: This is my final project in relation to my studies with Code Institute. This project should display the knowledge I have gained throughout the course, for the programming languages HTML, CSS, JavaScript & Python, while utilsing some of their associated open source libraries and frameworks._
+
 ## Live site
+My project is hosted on Heroku and can be found [here](https://hex-cosmetics.herokuapp.com/).
+
 
 ## UX
 ### High Level Design Decisions
@@ -67,9 +73,8 @@ The key design principle of this site, is to keep the site very visual and not o
 Site visitors will generally be looking for a specific product(s) (or type of product(s)), and therefore it needs to be quick and easy for them to locate and purchase them.
 The site therefore needs to be very intuitive, and have simple & easy to use navigation that is expected of e-commerce sites.
 
-### Scope
-#### Goals
-##### Visitor Goals
+### Goals
+#### Visitor Goals
 
 The target audience for Hex Cosmetics are:
 - People who are looking for a one-stop shop for their make-up products.
@@ -82,7 +87,7 @@ User goals are:
 - Feel confident that I am making a safe and secure purchase.
 - Buy from a professional & trustworthy online shop.
 
-##### Business Goals
+#### Business Goals
 
 The goals of the Hex Cosmetics business are:
 - Provide a visually appealing online store that helps the user to feel safe that they are buying from a trustworthy source.
@@ -91,33 +96,31 @@ The goals of the Hex Cosmetics business are:
 - Increase the Hex Cosmetics newsletter subscription.
 
 
-#### User stories
-##### Viewing and Navigation
+### User stories
+#### Viewing and Navigation
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |&checkmark;| user    | view a list of available products | identify if there are any products I would like to purchase |
 |&checkmark;| user    | view individual products details | view the price, description and reviews |
-|      | user    | identify discounts and special offers | take advantage of savings on games that I'd like to purchase |
-|      | user    | View the total of my cart at any time | see how much money I will spend on the products I want to purchase |
+|&checkmark;      | user    | View the total of my cart at any time | see how much money I will spend on the products I want to purchase |
 
-##### Registration and User Accounts
+#### Registration and User Accounts
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |&checkmark;| user    | register for an account | have an account to be able to store my details for repeat use |
 |&checkmark;| user    | login or logout | to access my account and help ensure security of my personal information |
-|      | user    | log into my account using my Google account | speed up the registration process |
+|&checkmark;| user    | log into my account using my Google account | speed up the registration process |
 |&checkmark;| user    | recover my password | recover access to my account if I forget my credentials |
 |&checkmark;| user    | have a personalized user profile | view my order history and store delivery information for future use |
 
-##### Scrolling and Searching
+#### Scrolling and Searching
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|      | user    | sort the list of products| easily identify the best rated, best-priced products|
-|      | user    | sort by a specific type of product | find the best-priced or best-rated product in a specific category |
+|&checkmark;| user    | sort the list of products| easily identify the best-priced products|
 |&checkmark;| user    | search for a product by name or description. | find a specific product I would like to purchase |
 |&checkmark;| user    | easily see what I have searched for | quickly decide whether the product I want is available |
 
-##### Purchasing and Checkout
+#### Purchasing and Checkout
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |&checkmark;| user    | easily add or remove the product I want to purchase | easily make changes to my purchase before checkout |
@@ -126,9 +129,9 @@ The goals of the Hex Cosmetics business are:
 |&checkmark;| user    | enter my payment information  | check out and pay for the products I want to buy |
 |&checkmark;| user    | feel my personal and payment information is safe and secure | confidently provide the needed information to make a purchase |
 |&checkmark;| user    | view an order confirmation after checkout | verify that I have not made any errors and confirm that my order has been submitted |
-|      | user    | receive an email confirmation after checking out | keep the confirmation of what I have purchased for my records |
+|&checkmark;| user    | receive an email confirmation after checking out | keep the confirmation of what I have purchased for my records |
 
-##### About HEX
+#### About HEX
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |&checkmark;| user    | view a list of frequently asked questions | identify the answer to a query I may have|
@@ -136,7 +139,7 @@ The goals of the Hex Cosmetics business are:
 |&checkmark;| user    | subscribe to the Hex Cosmetics newsletter | so that I can keep up to date with the latest products & offers |
 |&checkmark;| user    | find Hex Cosmetics on social media | so that I can follow the brand and keep up to date with their latest content |
 
-##### Admin and Store Management
+#### Admin and Store Management
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |&checkmark;| Admin   | add a product | add new products to the store |
@@ -145,10 +148,7 @@ The goals of the Hex Cosmetics business are:
 |&checkmark;| Admin   | have access to an admin dashboard | manage products and orders |
 |&checkmark;| Admin   | view any previous order made | see what was purchased to ensure they get fulfilled |
 
-### Structure
-
-
-### Skeleton
+### Wireframes
 
 <details>
 <summary>Home wireframes</summary>
@@ -394,6 +394,10 @@ To fix this I created the get_absolute_url model method in the product class, to
 
 To fix this, I simply update the field name from email to email_address, and this meant when two forms were on the same page, that they had different IDs.
 
+4. When updating the quantity in the basket, I was submitting the form each time a user clicked the increment/ decrement button, which was updating the quantity as expected, but sometimes resulted in multiple messages being displayed on screen.
+
+To fix this, I added a timer, so that the form would only submit 1 second after the button had been pressed, and the timer would be reset
+
 [Back to Top](#overview)
 
 ## Deployment
@@ -413,12 +417,13 @@ To fix this, I simply update the field name from email to email_address, and thi
 ### Content
 
 - [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
+- [TheBrandBoy](https://thebrandboy.com/make-up-company-about-us/) the content of my about us page was copied from this page, and the wording altered slightly for grammatical purposes.
+- [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mdbootstrap/949845#css-tab-view) the order progress section in my basket/checkout pages adapted the code found on this page (html & css).
+- [Stackoverflow](https://stackoverflow.com/questions/19966417/prevent-typing-non-numeric-in-input-type-number) I adapted the solution on this page to stop non numeric characters being entered into the input box on the basket page.
 
 ### Images
 - [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) The Kaggle data set contains applicable URLs to all product images across the site.
 - [Pixabay](https://pixabay.com/) The category images were sourced from the Pixabay images library, and are all free for use, sharing or modification.
-
-
 
 ### Acknowledgements
 
@@ -432,6 +437,12 @@ To fix this, I simply update the field name from email to email_address, and thi
 - [Stackoverflow](https://stackoverflow.com/questions/2897609/how-can-i-unit-test-django-messages) for guidance on testing messages.
 - [Stackoverflow](https://stackoverflow.com/questions/1995615/how-can-i-format-a-decimal-to-always-show-2-decimal-places) for guidance on how to fix an issue when testing the order model which was preventing me from matching values due to floating point imprecision. 
 - CI Tutor Kevin, for his guidance on test unit testing for my basket. I was having an issue with passing the correct data in the post request (which was resulting in a 404 error), and Kevin pointed out that I had incorrectly named a parameter that I was passing as post data.
+- [Flickity](https://flickity.metafizzy.co/style) for guidance on the styling of the slider for my featured products.
+- [Medium](https://whizzoe.medium.com/in-5-mins-set-up-google-login-to-sign-up-users-on-django-e71d5c38f5d5) for guidance on how to set up the Google social login/ registration.
+- [Travis-CI](https://docs.travis-ci.com/user/languages/python/) for guidance on how to create the .yml file for my continuous integration builds + ensuring all tests pass before deployment to Heroku.
+- [Stackoverflow](https://stackoverflow.com/questions/39985774/custom-404-django-template) for guidance on creating custom error templates.
+- [Stackoverflow](https://stackoverflow.com/questions/3015319/settimeout-cleartimeout-problems) for guidance on the timeout issues I was having when updating the basket quantity, see bug/fix #4.
+- [w3schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) for guidance on how to update the input field so the default up/down arrows weren't displayed.
 
 [Back to Top](#overview)
 
