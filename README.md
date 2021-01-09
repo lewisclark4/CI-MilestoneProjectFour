@@ -1,6 +1,6 @@
 # CI-MilestoneProjectFour
 
-[![Build Status](https://travis-ci.com/lewisclark4/CI-MilestoneProjectFour.svg?branch=master)](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour) ![Django](https://img.shields.io/badge/Django-3.1-pink) [Python](https://img.shields.io/badge/python-3.8-pink.svg) [Code style](https://img.shields.io/badge/code%20style-pep8-success)
+[![Build Status](https://travis-ci.com/lewisclark4/CI-MilestoneProjectFour.svg?branch=master)](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour) ![Django](https://img.shields.io/badge/Django-3.1-pink) ![Python](https://img.shields.io/badge/python-3.8-pink.svg) ![Code style](https://img.shields.io/badge/code%20style-pep8-success)
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -354,6 +354,10 @@ _NOTE: Depending on your IDE, the Python command may differ, such as `python` or
 
 [Coverage.py](https://coverage.readthedocs.io/en/v4.5.x/) was used to provide feedback during testing. This was invaluable to identify which parts of my code the tests had covered.
 
+My code coverage currently stands at 84%, and covers most major functionality. 
+
+I would like to increase this coverage as close to 100% as possible, but due to time constraints, this will need to wait for a later release.
+
 #### How to run coverage
 
 To view the coverage, you can run the following commands:
@@ -365,25 +369,48 @@ To view the coverage, you can run the following commands:
 
 ### Browser & Device Compatibility
 
+I tested the following browsers across my personal devices:
+
 | **Browser**      | **Device** | **Compatibility**                                            | **Version**            |
 | :--------------- | :--------- | :----------------------------------------------------------- | :--------------------- |
-| Google Chrome    | PC         |                                                              |                        |
-| Microsoft Edge   | PC         |                                                              |                        |
-| IE 11            | PC         |                                                              |                        |
-| Google Chrome    | Mobile     |                                                              |                        |
-| Firefox          | Mobile     |                                                              |                        |
-| Microsoft Edge   | Mobile     |                                                              |                        |
-| Mi Browser       | Mobile     |                                                              |                        |
-| Safari           | iPad       |                                                              |                        |
+| Google Chrome    | PC         | Excellent, supports all functionality                        |  86.0.4240.198         |
+| IE 11            | PC         | Styling - excellent. Javascript - poor as doesnt support ES6 |  11.0.9600.19811       |
+| Google Chrome    | Mobile     | Excellent, supports all functionality                        |  87.0.4280.141         |
+| Firefox          | Mobile     | Excellent, supports all functionality                        |  84.1.4                |
+| Microsoft Edge   | Mobile     | Excellent, supports all functionality                        |  45.12.4.5121          |
+| Opera            | Mobile     | Excellent, supports all functionality                        |  61.2.3076.56749       |
+| Mi Browser       | Mobile     | Excellent, supports all functionality                        |  12.4.4-g              |
+| Safari           | iPad       | Excellent, supports all functionality                        |  12.4.8                |
 
+I also used [BrowserStack](https://www.browserstack.com/) to view my site across all of the latest (non Beta/Dev) browsers.
+
+* Safari 12.1
+* Firefox 84
+* Chrome 87
+* Opera 73
+* Edge 87
+
+The compatability across all of the browsers was excellent and functioned as expected, and all styling & JavaScript worked as expected.
 
 ### Google Lighthouse
 
-| **Device** | **Performance** | **Accessibility** | **Best Practices** | **SEO** |
-| :----------| :---------      | :-----------------| :----------------- | :------ |
-| Desktop    |                 |                   |                    |         |
-| Mobile     |                 |                   |                    |         |
+| **Performance** | **Accessibility** | **Best Practices** | **SEO** |
+| :-------------- | :---------------- | :----------------- | :------ |
+|     93          |        92         |         93         |   100   |
 
+The above is the results of a Google Lighthouse report generated on the index.html landing page of the site on desktop.
+
+Lighthouse enabled me to identify various issues and implement change across my site such as:
+
+- Addition of various Accessibility & SEO items, such as;
+    - Addition of Meta description
+    - Addition of aria labels or applicable elements
+
+- To revisit responsiveness across the site due to image resizing.
+
+To improve performance, Lighthouse suggests improvements such as resizing images.
+
+At the moment, this isn't feasible across the site, as the majority images are all sourced externally (the category images & logo images could be resized to improve performance).
 
 ### Functional testing
 
@@ -456,22 +483,23 @@ The site can be cloned to your local repository as follows steps - [GitHub guide
 5. The clone will be created.
 
 6. Install all required modules using the command
-    - `pip install -r requirements.txt.`
+    - `pip3 install -r requirements.txt.`
 
 7. Migrate the models to create your test database (i.e. in SQLite) using the following command.
-    - `python manage.py migrate`
+    - `python3 manage.py migrate`
 
 8. You can load the fixtures using the following commands (they must be completed in order).
-    - `python manage.py load data categories`
-    - `python manage.py load data products`
-    - `python manage.py load data colours`
+    - `python3 manage.py load data categories`
+    - `python3 manage.py load data products`
+    - `python3 manage.py load data colours`
 
 9. Create your superuser to access the django admin panel and database using the following command (then follow the instructions in your command line)
-    - `python manage.py createsuperuser`
+    - `python3 manage.py createsuperuser`
 
 10. You can now run locally using the following command.
-    - `python manage.py runserver`
+    - `python3 manage.py runserver`
 
+_NOTE: Depending on your IDE, the Python command may differ, such as `python` or `py`_
 
 ### Continuous integration
 
