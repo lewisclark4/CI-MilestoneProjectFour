@@ -279,6 +279,8 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
     - Used for backend data manipulation
 * [Django](https://www.djangoproject.com/) 
     - Python web framework for quick development.
+* [Coverage](https://coverage.readthedocs.io/en/v4.5.x/)
+    - Used to calculate code coverage of python unit tests.
 * [Django-aullauth](https://django-allauth.readthedocs.io/en/latest/index.html)
     - Django authentication toolset
 * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) 
@@ -287,6 +289,14 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
     - Used as the main language for template manipulation.
 * [Pillow](https://pillow.readthedocs.io/en/stable/) 
     - Python imaging library to support opening, manipulating, and saving images.
+* [Psycopg2](https://pypi.org/project/psycopg2/)
+    - PostgreSQL database adapter for Python.
+* [Gunicorn](https://pypi.org/project/gunicorn/)
+    - Python WSGI HTTP Server.
+* [AWS S3](https://aws.amazon.com/)
+    - Used to store static files.
+* [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+    - Used to  configure and manage s3 buckets
 * [Stripe](https://stripe.com/gb)
     - Payment infrastructure to validate and accept credit card payments securely.
 * [Git](https://git-scm.com/) 
@@ -303,11 +313,15 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
     - used to design site to create the logo for Hex Cosmetics.
 * [Balsamiq](https://balsamiq.cloud/) 
     - used to create the wireframes for this project.
+* [Browserstack](https://www.browserstack.com/)
+    - To test responsiveness & functionality on various browsers.
 
 ## Database
 
 * [SQlite3](https://www.sqlite.org/index.html) 
     - Used as development database.
+* [PostgreSQL](https://www.postgresql.org/) 
+    - Used as production database and provided as heroku add-on.
 
 [Back to Top](#overview)
 
@@ -369,7 +383,6 @@ To view the coverage, you can run the following commands:
 1. `coverage run --source=. manage.py test` This will run all tests/
 2. `coverage report` The coverage will be shown within the terminal, broken down by .py file.
 3. You can view an interactive version by using `coverage html`, and then `python3 -m http.server`, and you can view the htmlcov folder in the browser, select specific files, and view which particular sections of code are or aren't being covered by the e
-
 
 ### Browser & Device Compatibility
 
