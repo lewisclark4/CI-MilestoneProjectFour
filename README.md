@@ -319,6 +319,10 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 
 ## Testing
 
+### Test User Stories
+
+
+
 ### General code validation
 
 * HTML validation with [W3C Markup Validation Service](https://validator.w3.org/). My code is fully compliant and there are no errors.
@@ -392,6 +396,8 @@ I also used [BrowserStack](https://www.browserstack.com/) to view my site across
 
 The compatability across all of the browsers was excellent and functioned as expected, and all styling & JavaScript worked as expected.
 
+This testing highlighted one instance where the responsiveness wasn't working as intended and enabled me to update this.
+
 ### Google Lighthouse
 
 | **Performance** | **Accessibility** | **Best Practices** | **SEO** |
@@ -408,9 +414,11 @@ Lighthouse enabled me to identify various issues and implement change across my 
 
 - To revisit responsiveness across the site due to image resizing.
 
-To improve performance, Lighthouse suggests improvements such as resizing images.
+To improve performance, Lighthouse suggests improvements such as resizing images and/or serving these images in next gen formats.
 
 At the moment, this isn't feasible across the site, as the majority images are all sourced externally (the category images & logo images could be resized to improve performance).
+
+However obtaining correctly sized images should be considered as a future enhancement should the site grow and have more content to be loaded. These images could be hosted in the S3 bucket.
 
 ### Functional testing
 
@@ -427,7 +435,28 @@ At the moment, this isn't feasible across the site, as the majority images are a
     - To fix this, I simply update the field name from email to email_address, and this meant when two forms were on the same page, that they had different IDs.
 
 4. When updating the quantity in the basket, I was submitting the form each time a user clicked the increment/ decrement button, which was updating the quantity as expected, but sometimes resulted in multiple messages being displayed on screen.
-    - To fix this, I added a timer, so that the form would only submit 1 second after the button had been pressed, and the timer would be reset
+    - To fix this, I added a timer, so that the form would only submit 1 second after the button had been pressed, and the timer would be reset.
+
+5. Following bug/fix #4, I wanted the form to reload when a user typed a quantity also (has the same timeout logic). Therefore I created an event listener to submit a form when a updated the input field via their keyboard. This inadvertently, allowed users to submit non-numeric chars.
+    - To fix this, I added some more JavaScript to prevent the input of non-numeric characters (see credit #4)
+
+6. I noticed that if I accessed my search view directly via URL, then it searched based on 'None' and returned no results.
+    - To fix this I updated the search_result view to return a count of products. If there were no results, then this redirects the user to the products page.
+
+
+#### Minor fixes from manual testing
+
+1. Identified that in my basket, the images of the products were not a tags that linked back to the product, so I updated this.
+2. The input prepend/ append buttons were displaying over the navbar, so I changed the z-index of place them behind the navbnar.
+3. I noticed that I had not included featured products in the breadcrumbs, so I was able to add a 'featured' boolean to the context and display a breadcrumb item if applicable.
+4. I noticed that if a user had no orders, the text on the order history still said to view orders below. I added a count to the context to display different text if no orders.
+5. When testing responsiveness across the site, I noticed on smaller screens that where multiple buttons were close to each other, they sometimes touched. I therefore just added a margin to the buttons.
+6. I noticed that on products where only 1 colour was available, text said '1 colours available', I added a count to the context and only displayed the s where there was more than 1 colour.
+7. When I went to edit a product, but cancelled, the view returned me to all products, rather than the product I was on. I therefore changed the view to return me back to the specific product.
+8. A couple of messages had typo's in them, so these were updated accordinly (as well as in the corresponding unit tests).
+9. Various typo's across the site were updated.
+10. Some pages had missing {% block head_title %}. I therefore added these accordingly.
+11. Some styling inconsistencies were identified and updated (e.g. some elements did not have rounded edges as per site theme). 
 
 [Back to Top](#overview)
 
@@ -548,10 +577,10 @@ If you do not set the project up for automatic deploys, you are also able to pus
 
 ### Content
 
-* [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
-* [TheBrandBoy](https://thebrandboy.com/make-up-company-about-us/) the content of my about us page was copied from this page, and the wording altered slightly for grammatical purposes.
-* [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mdbootstrap/949845#css-tab-view) the order progress section in my basket/checkout pages adapted the code found on this page (html & css).
-* [Stackoverflow](https://stackoverflow.com/questions/19966417/prevent-typing-non-numeric-in-input-type-number) I adapted the solution on this page to stop non numeric characters being entered into the input box on the basket page.
+1. [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
+2.  [TheBrandBoy](https://thebrandboy.com/make-up-company-about-us/) the content of my about us page was copied from this page, and the wording altered slightly for grammatical purposes.
+3. [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mdbootstrap/949845#css-tab-view) the order progress section in my basket/checkout pages adapted the code found on this page (html & css).
+4. [Stackoverflow](https://stackoverflow.com/questions/19966417/prevent-typing-non-numeric-in-input-type-number) I adapted the solution on this page to stop non numeric characters being entered into the input box on the basket page.
 
 ### Images
 * [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) The Kaggle data set contains applicable URLs to all product images across the site.
@@ -577,4 +606,3 @@ If you do not set the project up for automatic deploys, you are also able to pus
 * [w3schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) for guidance on how to update the input field so the default up/down arrows weren't displayed.
 
 [Back to Top](#overview)
-
