@@ -1,6 +1,6 @@
 # CI-MilestoneProjectFour
 
-[![Build Status](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour.svg?branch=master)] (https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour) ![Django](https://img.shields.io/badge/Django-3.1-pink) ![Python]https://img.shields.io/badge/python-3.8-pink.svg [![Code style](https://img.shields.io/badge/code%20style-pep8-success)]
+[![Build Status](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour.svg?branch=master)](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour) ![Django](https://img.shields.io/badge/Django-3.1-pink) [![Python](https://img.shields.io/badge/python-3.8-pink.svg) [![Code style](https://img.shields.io/badge/code%20style-pep8-success)]
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -31,6 +31,7 @@ My project is hosted on Heroku and can be found [here](https://hex-cosmetics.her
 
 
 ## UX
+
 ### High Level Design Decisions
 
 Below are some of the high level decisions taken to fit with common convention across most ecommerce sites:
@@ -74,6 +75,7 @@ Site visitors will generally be looking for a specific product(s) (or type of pr
 The site therefore needs to be very intuitive, and have simple & easy to use navigation that is expected of e-commerce sites.
 
 ### Goals
+
 #### Visitor Goals
 
 The target audience for Hex Cosmetics are:
@@ -97,6 +99,7 @@ The goals of the Hex Cosmetics business are:
 
 
 ### User stories
+
 #### Viewing and Navigation
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
@@ -214,6 +217,7 @@ The goals of the Hex Cosmetics business are:
 </details>
 
 ### Surface
+
 #### Font
 
 In-keeping with the clean, modern & simplistic design for the application, the font 'Quicksand' was chosen as the primary font for this site.
@@ -260,6 +264,7 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 [Back to Top](#overview)
 
 ## Technologies and Tools
+
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
     - Used as the main language for the templates
 * [CSS3](https://www.w3.org/Style/CSS/current-work.en.html)
@@ -299,7 +304,6 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 * [Balsamiq](https://balsamiq.cloud/) 
     - used to create the wireframes for this project.
 
-
 ## Database
 
 * [SQlite3](https://www.sqlite.org/index.html) 
@@ -314,18 +318,23 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 [Back to Top](#overview)
 
 ## Testing
+
 ### General code validation
+
 * HTML validation with [W3C Markup Validation Service](https://validator.w3.org/). My code is fully compliant and there are no errors.
     - When completing the validation, I came across a few minor errors:
         - A couple of stray div end tags.
         - Missing alt attributes for a couple of images.
         - Some duplicate ids (see bug 3 for more detailed explanation)
+
 * CSS validation with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). My code is fully compliant and there are no errors.
+
 * Javascript validation with [JSHint](https://jshint.com/). My code is fully compliant. There are some warnings about the undefined $ variable being used (e.g given the use of jQuery in my js files).
     - When completing this validation, I also identified a few missing semi colons from my code.
+
 * Python validation with [PEP8 Online](http://pep8online.com/). My code is fully compliant, and there are no errors.
     - When completing the validation, I came across a few minor errors:
-        - Mostly, these were lines being too long. I have updated the majority of these, except a couple of instances where it would the code unreadable.
+        - Mostly, these were lines being too long. I have updated the majority of these. There are some instances where I have intentionally left the line 'too long', where it would the code too unreadable.
         - It identified a couple of cases where imports were not being used, so I have removed them.
         - It also identified a couple of cases where variables had been assigned but not used.
 
@@ -346,6 +355,7 @@ _NOTE: Depending on your IDE, the Python command may differ, such as `python` or
 [Coverage.py](https://coverage.readthedocs.io/en/v4.5.x/) was used to provide feedback during testing. This was invaluable to identify which parts of my code the tests had covered.
 
 #### How to run coverage
+
 To view the coverage, you can run the following commands:
 
 1. `coverage run --source=. manage.py test` This will run all tests/
@@ -380,35 +390,107 @@ To view the coverage, you can run the following commands:
 
 ### Bugs & Interesting Issues Encountered & Fixed
 
-1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price/ rating).
-
-The issue I found was that when I initially created the function, the URL was only designed to pass in the sort type and direction, and thereore if I had already filtered the list to a specific category, using the sort order returned all products.
-
-To fix this I needed to pass in the category (if it had be selected). I utilised slugs to help acheive this (which also improved the URL naming) and passed these arguments into the all_products view.
+1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price/ rating). The issue I found was that when I initially created the function, the URL was only designed to pass in the sort type and direction, and thereore if I had already filtered the list to a specific category, using the sort order returned all products.
+    - To fix this I needed to pass in the category (if it had be selected). I utilised slugs to help acheive this (which also improved the URL naming) and passed these arguments into the all_products view.
 
 2. Following the implementation of slugs, I had the issue when attempting to view 'all products' as I was getting a NoReverseMatch error, in this case because a catgeory slug was not being passed into my href url against each product.
-
-To fix this I created the get_absolute_url model method in the product class, to allow me to obtain the catgeory slug via the Product Class, and pass this, and the product slug as args.
+    - To fix this I created the get_absolute_url model method in the product class, to allow me to obtain the catgeory slug via the Product Class, and pass this, and the product slug as args.
 
 3. I have multiple forms/ models which have an email field include. When using django crispy forms, this was creating elements with the same ID. This wouldn't be an issue, except the subscription form is passed to every page via a context processor, and therefore was creating some duplicates.
-
-To fix this, I simply update the field name from email to email_address, and this meant when two forms were on the same page, that they had different IDs.
+    - To fix this, I simply update the field name from email to email_address, and this meant when two forms were on the same page, that they had different IDs.
 
 4. When updating the quantity in the basket, I was submitting the form each time a user clicked the increment/ decrement button, which was updating the quantity as expected, but sometimes resulted in multiple messages being displayed on screen.
-
-To fix this, I added a timer, so that the form would only submit 1 second after the button had been pressed, and the timer would be reset
+    - To fix this, I added a timer, so that the form would only submit 1 second after the button had been pressed, and the timer would be reset
 
 [Back to Top](#overview)
 
 ## Deployment
 
+### Requirements
+
+To allow you to access all functionality you will require access to the following (free services are sufficient):
+
+* [Stripe](https://dashboard.stripe.com/register)
+    - [Test Keys](https://stripe.com/docs/keys)
+    - [Webhook Secret](https://stripe.com/docs/webhooks/signatures)
+
+* [AWS](https://aws.amazon.com/)
+    - [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
+
+* [Google Account](https://support.google.com/accounts/answer/27441?hl=en)
+    - [App Password](https://support.google.com/mail/answer/185833?hl=en-GB)
+
+Documentation above to confirm how to create the account, and locate the required environment variables.
+
 ### Environment Variables
 
-#### env.py
+| Variable Name         | Comment                                                       | 
+| --------------------- | ------------------------------------------------------------- |
+| USE_AWS               | To use AWS S3 for static & media files instead of local files |
+| AWS_ACCESS_KEY_ID     | Access to AWS S3 Bucket - Generated by AWS                    |
+| AWS_SECRET_ACCESS_KEY | Access to AWS S3 Bucket - Generated by AWS                    |
+| DATABASE_URL          | Can be automatically generated using Heroku Postgres add-on   |
+| HEX_SECRET_KEY        | The Django Secret Key for securing signed data                |
+| EMAIL_HOST_PASSWORD   | App password to sign in to gmail. Generated in Google Account |
+| EMAIL_HOST_USER       | App user / email for gmail. E-mails sent from this address    |
+| STRIPE_PUBLISHABLE    | To identify your account with Stripe                          |
+| STRIPE_SECRET         | To perform an API request to Stripe                           |
+| STRIPE_WEBHOOK_SECRET | Secret key for webhook endpoint                               |
+| PRODUCTION            | To run in production mode with DEBUG = False                  |
+| DEBUG                 | CAUTION - This is optional and will set DEBUG in Production   |
+
+For Local Deployment, you can replace `PRODUCTION` with `DEVELOPMENT`. This will set DEBUG to TRUE.
+
+### Cloning
+
+The site can be cloned to your local repository as follows steps - [GitHub guide](https://help.github.com/en/articles/cloning-a-repository):
+
+1. On GitHub, navigate to the main page of the repository.
+
+2. Above the list of files, click the 'Code' button. To clone the repository using HTTPS, select HTTPS and copy the URL.
+
+3. in your IDE, change the current working directory to the location where you want the cloned directory.
+
+4. Type git clone, and then paste the URL you copied earlier - `git clone https://github.com/<USERNAME>/<REPOSITORY>` - and press enter.
+
+5. The clone will be created.
+
+6. Install all required modules using the command
+    - `pip install -r requirements.txt.`
+
+7. Migrate the models to create your test database (i.e. in SQLite) using the following command.
+    - `python manage.py migrate`
+
+8. You can load the fixtures using the following commands (they must be completed in order).
+    - `python manage.py load data categories`
+    - `python manage.py load data products`
+    - `python manage.py load data colours`
+
+9. Create your superuser to access the django admin panel and database using the following command (then follow the instructions in your command line)
+    - `python manage.py createsuperuser`
+
+10. You can now run locally using the following command.
+    - `python manage.py runserver`
 
 ### Heroku Deployment
 
+To deploy this site to Heroku, complete the following steps:
+
+1. Create a [Heroku](https://signup.heroku.com/) account and log in.
+
+2. 
+
 ### Contributions
+
+1. If you wish to implement changes to the code, I would recommend creating a separate branch, as this will keep the original master branch as a backup if the any issues arise.
+2. Use `git checkout -b <branchname>` to create a new branch.
+3. You can now edit the code accordingly.
+4. Once you have made changes, you need to stage the changes to be committed. You can do this as follows `git add <filename>` for a single file or `git add .` to stage all updated files.
+5. You then need to commit the changes. You can do this as follows `git commit -m "summary of updates"`.
+4. Use `git push origin <branchname>`to push the changes to the branch in the repository.
+5. You will need to merge these changes to the master branch in order for them to be deployed to the live site.
+6. To do this, switch to the new branch on GitHub using the branch selector dropdown menu.
+7. Create a new pull request, note the changes made in the comments section, and merge.
 
 [Back to Top](#overview)
 
@@ -416,33 +498,33 @@ To fix this, I added a timer, so that the form would only submit 1 second after 
 
 ### Content
 
-- [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
-- [TheBrandBoy](https://thebrandboy.com/make-up-company-about-us/) the content of my about us page was copied from this page, and the wording altered slightly for grammatical purposes.
-- [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mdbootstrap/949845#css-tab-view) the order progress section in my basket/checkout pages adapted the code found on this page (html & css).
-- [Stackoverflow](https://stackoverflow.com/questions/19966417/prevent-typing-non-numeric-in-input-type-number) I adapted the solution on this page to stop non numeric characters being entered into the input box on the basket page.
+* [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
+* [TheBrandBoy](https://thebrandboy.com/make-up-company-about-us/) the content of my about us page was copied from this page, and the wording altered slightly for grammatical purposes.
+* [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mdbootstrap/949845#css-tab-view) the order progress section in my basket/checkout pages adapted the code found on this page (html & css).
+* [Stackoverflow](https://stackoverflow.com/questions/19966417/prevent-typing-non-numeric-in-input-type-number) I adapted the solution on this page to stop non numeric characters being entered into the input box on the basket page.
 
 ### Images
-- [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) The Kaggle data set contains applicable URLs to all product images across the site.
-- [Pixabay](https://pixabay.com/) The category images were sourced from the Pixabay images library, and are all free for use, sharing or modification.
+* [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) The Kaggle data set contains applicable URLs to all product images across the site.
+* [Pixabay](https://pixabay.com/) The category images were sourced from the Pixabay images library, and are all free for use, sharing or modification.
 
 ### Acknowledgements
 
-- [learndjango](https://learndjango.com/tutorials/django-slug-tutorial) + CI Tutor Miklos Sarosi for guidance on implementing slugs into my project to assist with 'bug #1 / #2'.
-- [Code Institute](https://codeinstitute.net/) For the excellent overall content & mini projects within the course.
-- [ckz8780 - Github](https://github.com/ckz8780/boutique_ado_v1) ckz8780's fantastic Django module produced for the Code Institute has been invaluable in providing guidance for creating key functionality across the project.
-- [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/advanced/) for guidance on the setUp and tearDown test methods to keep the database clean.
-- [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/tools/) for guidance on the available testing tools and required arguments to be passed etc.
-- [Stackoverflow](https://stackoverflow.com/questions/4424435/how-to-convert-a-django-queryset-to-a-list) for guidance on transforming data for assertQuerysetEqual tests.
+* [learndjango](https://learndjango.com/tutorials/django-slug-tutorial) + CI Tutor Miklos Sarosi for guidance on implementing slugs into my project to assist with 'bug #1 / #2'.
+* [Code Institute](https://codeinstitute.net/) For the excellent overall content & mini projects within the course.
+* [ckz8780 - Github](https://github.com/ckz8780/boutique_ado_v1) ckz8780's fantastic Django module produced for the Code Institute has been invaluable in providing guidance for creating key functionality across the project.
+* [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/advanced/) for guidance on the setUp and tearDown test methods to keep the database clean.
+* [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/tools/) for guidance on the available testing tools and required arguments to be passed etc.
+* [Stackoverflow](https://stackoverflow.com/questions/4424435/how-to-convert-a-django-queryset-to-a-list) for guidance on transforming data for assertQuerysetEqual tests.
     - [w3schools](https://www.w3schools.com/python/python_lambda.asp) for explanation of Lambda function.
-- [Stackoverflow](https://stackoverflow.com/questions/2897609/how-can-i-unit-test-django-messages) for guidance on testing messages.
-- [Stackoverflow](https://stackoverflow.com/questions/1995615/how-can-i-format-a-decimal-to-always-show-2-decimal-places) for guidance on how to fix an issue when testing the order model which was preventing me from matching values due to floating point imprecision. 
-- CI Tutor Kevin, for his guidance on test unit testing for my basket. I was having an issue with passing the correct data in the post request (which was resulting in a 404 error), and Kevin pointed out that I had incorrectly named a parameter that I was passing as post data.
-- [Flickity](https://flickity.metafizzy.co/style) for guidance on the styling of the slider for my featured products.
-- [Medium](https://whizzoe.medium.com/in-5-mins-set-up-google-login-to-sign-up-users-on-django-e71d5c38f5d5) for guidance on how to set up the Google social login/ registration.
-- [Travis-CI](https://docs.travis-ci.com/user/languages/python/) for guidance on how to create the .yml file for my continuous integration builds + ensuring all tests pass before deployment to Heroku.
-- [Stackoverflow](https://stackoverflow.com/questions/39985774/custom-404-django-template) for guidance on creating custom error templates.
-- [Stackoverflow](https://stackoverflow.com/questions/3015319/settimeout-cleartimeout-problems) for guidance on the timeout issues I was having when updating the basket quantity, see bug/fix #4.
-- [w3schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) for guidance on how to update the input field so the default up/down arrows weren't displayed.
+* [Stackoverflow](https://stackoverflow.com/questions/2897609/how-can-i-unit-test-django-messages) for guidance on testing messages.
+* [Stackoverflow](https://stackoverflow.com/questions/1995615/how-can-i-format-a-decimal-to-always-show-2-decimal-places) for guidance on how to fix an issue when testing the order model which was preventing me from matching values due to floating point imprecision. 
+* CI Tutor Kevin, for his guidance on test unit testing for my basket. I was having an issue with passing the correct data in the post request (which was resulting in a 404 error), and Kevin pointed out that I had incorrectly named a parameter that I was passing as post data.
+* [Flickity](https://flickity.metafizzy.co/style) for guidance on the styling of the slider for my featured products.
+* [Medium](https://whizzoe.medium.com/in-5-mins-set-up-google-login-to-sign-up-users-on-django-e71d5c38f5d5) for guidance on how to set up the Google social login/ registration.
+* [Travis-CI](https://docs.travis-ci.com/user/languages/python/) for guidance on how to create the .yml file for my continuous integration builds + ensuring all tests pass before deployment to Heroku.
+* [Stackoverflow](https://stackoverflow.com/questions/39985774/custom-404-django-template) for guidance on creating custom error templates.
+* [Stackoverflow](https://stackoverflow.com/questions/3015319/settimeout-cleartimeout-problems) for guidance on the timeout issues I was having when updating the basket quantity, see bug/fix #4.
+* [w3schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) for guidance on how to update the input field so the default up/down arrows weren't displayed.
 
 [Back to Top](#overview)
 
