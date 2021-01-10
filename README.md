@@ -504,8 +504,101 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 3. Featured items slider
     [x] Check that the images slide by mouse click & slide and by finger swipe on mobile devices.
     [x] Check the images slide by clicking/ pressing the arrow buttons to move through the images.
-    [x] Hover over the image and confirm the applicable javascript works as expected.
+    [x] Hover over the images and confirm the applicable javascript works as expected.
     [x] Select the products & confirm I am redirected to the product detail page.
+
+#### Pages
+
+1. Home Page
+    [x] Click categories to confirm that it redirects to the correct category / view of products.
+    [x] Hover over the images and confirm the applicable javascript works as expected.
+
+2. All Product
+    [x] Click products link to confirm that it redirects to the correct product detail view.
+    [x] Test the 'sort by' button and confirm products are ordered correctly based on selection.
+    [x] Hover over the images and confirm the applicable javascript works as expected.
+
+3. Category product view.
+    [x] Same tests as per 2.
+    [x] Test that the breadcrumb allows me to return to the all products view.
+
+3.  Product detail view.
+    [x] Test that I am able to collapse the description accordion.
+    [x] Check that only the colours applicable to the product can be selected.
+    [x] Test that the product increment decrement buttons change the value as expected.
+    [x] Test that I am unable to input a non-numeric character into the quantity input box. 
+    [x] Test that the breadcrumb allows me to return to the all products view or the applicable category view.
+    [x] Test that the category tag returns me to the applicable category view.
+    [x] Test that I can add the product, colour & quantity to the basket.
+    [x] Test that I receive a message to confirm the product has been added to the basket.
+    [x] Test that the product maintenance accordion is only visible if logged in as superuser.
+    [x] Test that the superuser can show the accordion body.
+    [x] Test that the superuser can navigate to the edit product page.
+    [x] Test that the superuser can navigate to the edit product colour page.
+    [x] Test that the superuser is displayed a warning modal if attempting to delete a product.
+    [x] Test that the superuser is displayed a warning modal if attempting to delete a product colour.
+    [x] Test that the superuser can delete the product.
+    [x] Test that the superuser can delete a product colour.
+
+4. Edit Product / Product colours
+    [x] Test that the applicable product details are pre populated into the form.
+    [x] Test that I am able to update product detials.
+    [x] Test that if I cancel the edit, I am returned to the applicable product detail page.
+
+5. Add Product / Product colours
+    [x] Test that I am able to add a product.
+    [x] Test that I am redirected to add a product colour after adding a product.
+    [x] Test that I am returned to the products view if I select cancel on the add page.
+
+6. Search
+    [x] Test that I am able to search for key words and be displayed appropriate results.
+    [x] Test that I can see how many results are found for my search.
+    [x] Test that I receive a message if no results are found.
+
+7. Basket
+    [x] Test that all items added to my basket are present.
+    [x] Test that I can increase and decrease the quantity of a product using the '+' & '-' buttons.
+    [x] Test that I can type in the quantity of a product that I want.
+    [x] Test that I am unable to input a non-numeric character into the quantity input box. 
+    [x] Test that the basket is updated when I have finished updating the quantity.
+    [x] Test that items are removed from the basket if the quantity is changed to 0.
+    [x] Test that items are removed from the basket if the trash icon is selected.
+    [x] Test that the delivery charge is correct based on the value of items in the basket.
+    [x] Test that the total value of my order is correct based on the price of the items in my basket + delivery costs.
+    [x] Test that I can progress to the checkout page.
+    [x] Test that I can return to the products view.
+    [x] Test that the order progress bar highlights that I'm currently at the basket stage.
+
+8. Checkout
+    [x] Test that all items added to my basket are displayed in the order summary.
+    [x] Test that the total value of my order is correct based on the price of the items in my basket + delivery costs.
+    [x] Test that my personal information is prepopulated into the order form, if it has previously been saved.
+    [x] Test that I am able to return to my basket to adjust my order.
+    [x] Test that I am add my details & card details and submit my order.
+    [x] Test that I am redirected to the confirmation page after a successful checkout.
+    [x] Test that I am able to save the order form details to my profile for future use.
+    [x] Test that my order form details are not saved if I do not select that option.
+    [x] Test that the order progress bar highlights that I've progressed past the basket and now at the payment stage.
+
+9. Checkout success
+    [x] Test that the order number is displayed.
+    [x] Test that an email is sent to confirm the order has been placed.
+    [x] Test that the appropriate order summary replayed.
+    [x] Test that the correct delivery details are displayed.
+    [x] Test that the order progress bar highlights that I am at the confirmation stage.
+    [x] Test that I can return to the products view.
+
+10. Contact
+    [x] Test that I can view the contact pages
+    [x] Test that I can toggle the accordion on the FAQs pag to view the answers to relevant questions.
+    [x] Test that I can submit a query via the contact form.
+    [x] Test that I receive a message confirming that the query has been received.
+
+11. Profile
+    [x] Test that I am able to view the details recorded on my profile (name, email, phone number, address).
+    [x] Test that I am able to update these details.
+    [x] Test that I am able to view my order history and view the details of those order.
+    [x] Test that I am able to update my password.
 
 ### General code validation
 
@@ -608,8 +701,8 @@ However obtaining correctly sized images should be considered as a future enhanc
 1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price). The issue I found was that when I initially created the function, the URL was only designed to pass in the sort type and direction, and thereore if I had already filtered the list to a specific category, using the sort order returned all products.
     - To fix this I needed to pass in the category (if it had be selected). I utilised slugs to help acheive this (which also improved the URL naming) and passed these arguments into the all_products view.
 
-2. Following the implementation of slugs, I had the issue when attempting to view 'all products' as I was getting a NoReverseMatch error, in this case because a catgeory slug was not being passed into my href url against each product.
-    - To fix this I created the get_absolute_url model method in the product class, to allow me to obtain the catgeory slug via the Product Class, and pass this, and the product slug as args.
+2. Following the implementation of slugs, I had the issue when attempting to view 'all products' as I was getting a NoReverseMatch error, in this case because a category slug was not being passed into my href url against each product.
+    - To fix this I created the get_absolute_url model method in the product class, to allow me to obtain the category slug via the Product Class, and pass this, and the product slug as args.
 
 3. I have multiple forms/ models which have an email field include. When using django crispy forms, this was creating elements with the same ID. This wouldn't be an issue, except the subscription form is passed to every page via a context processor, and therefore was creating some duplicates.
     - To fix this, I simply update the field name from email to email_address, and this meant when two forms were on the same page, that they had different IDs.
@@ -625,6 +718,8 @@ However obtaining correctly sized images should be considered as a future enhanc
 
 
 #### Minor fixes from manual testing
+
+In total I identified approx. 70 minor tweaks and changes that I wanted to make following this testing. Many of these had similar themes (e.g. typo or responsiveness), so some examples/ larger issues are below.
 
 1. Identified that in my basket, the images of the products were not a tags that linked back to the product, so I updated this.
 2. The input prepend/ append buttons were displaying over the navbar, so I changed the z-index of place them behind the navbnar.
