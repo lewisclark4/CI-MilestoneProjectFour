@@ -6,13 +6,28 @@
 1. [Overview](#overview)
 2. [Live Site](#live-site)
 3. [User Experience & Design](#ux)
-
+    - [Goals](#goals)
+    - [User Stories](#user-stories)
     - [Wireframes](#Wireframes)
 4. [Technologies and Tools](#technologies-and-tools)
 5. [Features](#features)
+    - [Future Features](#future-features-to-implement)
 6. [Testing](#testing)
+    - [User Story Testing](#test-user-stories)
+    - [Manual Testing](#manual-testing)
+    - [Code Validation](#general-code-validation)
+    - [Unit Tests](#unit-tests)
+    - [Coverage](#coverage)
+    - [Bugs and fixes](#bugs-and-fixes)
 7. [Deployment](#deployment)
+    - [Requirements](#requirements)
+    - [Environment Variables](#environment-variables)
+    - [Cloning & Local Deployment](#cloning-and-local-deployment)
+    - [Continuous Integration](#continuous-integration)
+    - [Heroku Deployment](#heroku-deployment)
+    - [Contributions](#contributions)
 8. [Credits](#credits)
+    - [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -28,7 +43,6 @@ _NOTE: This is my final project in relation to my studies with Code Institute. T
 
 ## Live site
 My project is hosted on Heroku and can be found [here](https://hex-cosmetics.herokuapp.com/).
-
 
 ## UX
 
@@ -97,7 +111,6 @@ The goals of the Hex Cosmetics business are:
 - Connect with customers through Hex Cosmetics social media/ increase social media following.
 - Increase the Hex Cosmetics newsletter subscription.
 
-
 ### User stories
 
 #### Viewing and sorting products
@@ -144,7 +157,6 @@ The goals of the Hex Cosmetics business are:
 |&checkmark;| user | subscribe to the Hex Cosmetics newsletter |  keep up to date with the latest products & offers |
 |&checkmark;| user | find Hex Cosmetics on social media |  follow the brand and keep up to date with their latest content |
 |&checkmark;| user | contact Hex Cosmetics | ask any questions that I have |
-
 
 #### Admin and Store Management
 
@@ -523,9 +535,6 @@ This could also notify the user that their order has been dispatched.
 
 8. Additional payment methods (e.g. paypal).
 
-
-
-
 [Back to Top](#overview)
 
 ## Testing
@@ -675,7 +684,7 @@ This could also notify the user that their order has been dispatched.
 - [x] I am able to delete a product colour via the product detail view.
 - [x] I receive a warning to confirm I want to delete the record.    
 
-### Manaul Testing
+### Manual Testing
 
 #### General
 
@@ -722,7 +731,7 @@ This could also notify the user that their order has been dispatched.
 - [x] Same tests as per 2.
 - [x] Test that the breadcrumb allows me to return to the all products view.
 
-3.  Product detail view.
+4.  Product detail view.
 - [x] Test that I am able to collapse the description accordion.
 - [x] Check that only the colours applicable to the product can be selected.
 - [x] Test that the product increment decrement buttons change the value as expected.
@@ -740,22 +749,22 @@ This could also notify the user that their order has been dispatched.
 - [x] Test that the superuser can delete the product.
 - [x] Test that the superuser can delete a product colour.
 
-4. Edit Product / Product colours
+5. Edit Product / Product colours
 - [x] Test that the applicable product details are pre populated into the form.
 - [x] Test that I am able to update product detials.
 - [x] Test that if I cancel the edit, I am returned to the applicable product detail page.
 
-5. Add Product / Product colours
+6. Add Product / Product colours
 - [x] Test that I am able to add a product.
 - [x] Test that I am redirected to add a product colour after adding a product.
 - [x] Test that I am returned to the products view if I select cancel on the add page.
 
-6. Search
+7. Search
 - [x] Test that I am able to search for key words and be displayed appropriate results.
 - [x] Test that I can see how many results are found for my search.
 - [x] Test that I receive a message if no results are found.
 
-7. Basket
+8. Basket
 - [x] Test that all items added to my basket are present.
 - [x] Test that I can increase and decrease the quantity of a product using the '+' & '-' buttons.
 - [x] Test that I can type in the quantity of a product that I want.
@@ -769,7 +778,7 @@ This could also notify the user that their order has been dispatched.
 - [x] Test that I can return to the products view.
 - [x] Test that the order progress bar highlights that I'm currently at the basket stage.
 
-8. Checkout
+9. Checkout
 - [x] Test that all items added to my basket are displayed in the order summary.
 - [x] Test that the total value of my order is correct based on the price of the items in my basket + delivery costs.
 - [x] Test that my personal information is prepopulated into the order form, if it has previously been saved.
@@ -780,7 +789,7 @@ This could also notify the user that their order has been dispatched.
 - [x] Test that my order form details are not saved if I do not select that option.
 - [x] Test that the order progress bar highlights that I've progressed past the basket and now at the payment stage.
 
-9. Checkout success
+10. Checkout success
 - [x] Test that the order number is displayed.
 - [x] Test that an email is sent to confirm the order has been placed.
 - [x] Test that the appropriate order summary replayed.
@@ -788,13 +797,13 @@ This could also notify the user that their order has been dispatched.
 - [x] Test that the order progress bar highlights that I am at the confirmation stage.
 - [x] Test that I can return to the products view.
 
-10. Contact
+11. Contact
 - [x] Test that I can view the contact pages
 - [x] Test that I can toggle the accordion on the FAQs pag to view the answers to relevant questions.
 - [x] Test that I can submit a query via the contact form.
 - [x] Test that I receive a message confirming that the query has been received.
 
-11. Profile
+12. Profile
 - [x] Test that I am able to view the details recorded on my profile (name, email, phone number, address).
 - [x] Test that I am able to update these details.
 - [x] Test that I am able to view my order history and view the details of those order.
@@ -896,7 +905,9 @@ At the moment, this isn't feasible across the site, as the majority images are a
 
 However obtaining correctly sized images should be considered as a future enhancement should the site grow and have more content to be loaded. These images could be hosted in the S3 bucket.
 
-### Bugs & Interesting Issues Encountered & Fixed
+### Bugs and fixes
+
+#### Interesting Bugs/ Issues Encountered & Fixed
 
 1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price). The issue I found was that when I initially created the function, the URL was only designed to pass in the sort type and direction, and thereore if I had already filtered the list to a specific category, using the sort order returned all products.
     - To fix this I needed to pass in the category (if it had be selected). I utilised slugs to help acheive this (which also improved the URL naming) and passed these arguments into the all_products view.
@@ -915,7 +926,6 @@ However obtaining correctly sized images should be considered as a future enhanc
 
 6. I noticed that if I accessed my search view directly via URL, then it searched based on 'None' and returned no results.
     - To fix this I updated the search_result view to return a count of products. If there were no results, then this redirects the user to the products page.
-
 
 #### Minor fixes from manual testing
 
@@ -972,7 +982,7 @@ Documentation above to confirm how to create the account, and locate the require
 
 For Local Deployment, you can replace `PRODUCTION` with `DEVELOPMENT`. This will set DEBUG to TRUE.
 
-### Cloning
+### Cloning and local deployment
 
 The site can be cloned to your local repository as follows steps - [GitHub guide](https://help.github.com/en/articles/cloning-a-repository):
 

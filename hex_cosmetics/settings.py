@@ -226,8 +226,6 @@ STRIPE_WEBHOOK_SECRET_KEY = os.getenv('STRIPE_WEBHOOK_SECRET')
 STRIPE_CURRENCY = 'gbp'
 
 # Email settings
-DEFAULT_FROM_EMAIL = 'hexcosmetics@example.com'
-
 if "PRODUCTION" in os.environ:
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_USE_TLS = True
