@@ -1,16 +1,18 @@
 # CI-MilestoneProjectFour
+
+[![Build Status](https://travis-ci.com/lewisclark4/CI-MilestoneProjectFour.svg?branch=master)](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour) ![Django](https://img.shields.io/badge/Django-3.1-pink) ![Python](https://img.shields.io/badge/python-3.8-pink.svg) ![Code style](https://img.shields.io/badge/code%20style-pep8-success)
+
 ## Table of Contents
 1. [Overview](#overview)
 2. [Live Site](#live-site)
-3. [User Experience & Design](#uxd)
+3. [User Experience & Design](#ux)
 
-    - [Wireframes](#skeleton)
+    - [Wireframes](#Wireframes)
 4. [Technologies and Tools](#technologies-and-tools)
 5. [Features](#features)
 6. [Testing](#testing)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
-
 
 ## Overview
 
@@ -22,9 +24,14 @@ Hex Cosmetics also provides a range of different well known brands to enable sit
 
 The site's home page easily allows a site user to select the specific type of make-up they are looking for, as well as being able to shop all products, or view the site's featured products or sale products.
 
+_NOTE: This is my final project in relation to my studies with Code Institute. This project should display the knowledge I have gained throughout the course, for the programming languages HTML, CSS, JavaScript & Python, while utilsing some of their associated open source libraries and frameworks._
+
 ## Live site
+My project is hosted on Heroku and can be found [here](https://hex-cosmetics.herokuapp.com/).
+
 
 ## UX
+
 ### High Level Design Decisions
 
 Below are some of the high level decisions taken to fit with common convention across most ecommerce sites:
@@ -67,9 +74,9 @@ The key design principle of this site, is to keep the site very visual and not o
 Site visitors will generally be looking for a specific product(s) (or type of product(s)), and therefore it needs to be quick and easy for them to locate and purchase them.
 The site therefore needs to be very intuitive, and have simple & easy to use navigation that is expected of e-commerce sites.
 
-### Scope
-#### Goals
-##### Visitor Goals
+### Goals
+
+#### Visitor Goals
 
 The target audience for Hex Cosmetics are:
 - People who are looking for a one-stop shop for their make-up products.
@@ -82,7 +89,7 @@ User goals are:
 - Feel confident that I am making a safe and secure purchase.
 - Buy from a professional & trustworthy online shop.
 
-##### Business Goals
+#### Business Goals
 
 The goals of the Hex Cosmetics business are:
 - Provide a visually appealing online store that helps the user to feel safe that they are buying from a trustworthy source.
@@ -91,64 +98,63 @@ The goals of the Hex Cosmetics business are:
 - Increase the Hex Cosmetics newsletter subscription.
 
 
-#### User stories
-##### Viewing and Navigation
+### User stories
+
+#### Viewing and sorting products
+
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| user    | view a list of available products | identify if there are any products I would like to purchase |
-|&checkmark;| user    | view individual products details | view the price, description and reviews |
-|      | user    | identify discounts and special offers | take advantage of savings on games that I'd like to purchase |
-|      | user    | View the total of my cart at any time | see how much money I will spend on the products I want to purchase |
+|&checkmark;| user | view a list of available products | identify if there are any products I would like to purchase |
+|&checkmark;| user | view individual products details | view the price and description etc. |
+|&checkmark;| user | View the total of my basket at any time | see how much money I will spend on the products I want to purchase |
+|&checkmark;| user | sort the list of products| easily identify the best-priced products|
+|&checkmark;| user | search for a product by name or description | find a specific product I would like to purchase |
+|&checkmark;| user | easily see what I have searched for | quickly decide whether the product I want is available |
 
-##### Registration and User Accounts
+#### Registration and User Accounts
+
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| user    | register for an account | have an account to be able to store my details for repeat use |
-|&checkmark;| user    | login or logout | to access my account and help ensure security of my personal information |
-|      | user    | log into my account using my Google account | speed up the registration process |
-|&checkmark;| user    | recover my password | recover access to my account if I forget my credentials |
-|&checkmark;| user    | have a personalized user profile | view my order history and store delivery information for future use |
+|&checkmark;| user | register for an account | have an account to be able to store my details for repeat use |
+|&checkmark;| user | login or logout | to access my account and help ensure security of my personal information |
+|&checkmark;| user | log into my account via an existing social or email account | speed up the registration process |
+|&checkmark;| user | recover my password | recover access to my account if I forget my credentials |
+|&checkmark;| user | have a personalized user profile | view my order history and store delivery information for future use |
 
-##### Scrolling and Searching
+#### Basket and Checkout
+
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|      | user    | sort the list of products| easily identify the best rated, best-priced products|
-|      | user    | sort by a specific type of product | find the best-priced or best-rated product in a specific category |
-|&checkmark;| user    | search for a product by name or description. | find a specific product I would like to purchase |
-|&checkmark;| user    | easily see what I have searched for | quickly decide whether the product I want is available |
+|&checkmark;| user | easily add items to my basket | purchase the items |
+|&checkmark;| user | easily remove items from my basket | remove items that I no longer wish to purchase |
+|&checkmark;| user | easily edit the quantity of items in my basket | purchase the required number of products. |
+|&checkmark;| user | view items in my basket | confirm I am purchasing all the products I intend |
+|&checkmark;| user | view the total cost of the products | identify the total cost of my purchase and all the products I wish to purchase |
+|&checkmark;| user | enter my payment information  | check out and pay for the products I want to buy |
+|&checkmark;| user | feel my personal and payment information is safe and secure | confidently provide the needed information to make a purchase |
+|&checkmark;| user | view an order confirmation after checkout | verify that I have not made any errors and confirm that my order has been submitted |
+|&checkmark;| user | receive an email confirmation after checking out | keep the confirmation of what I have purchased for my records |
 
-##### Purchasing and Checkout
+#### Contact HEX
+
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| user    | easily add or remove the product I want to purchase | easily make changes to my purchase before checkout |
-|&checkmark;| user    | view items in my basket to be purchased  | confirm I am purchasing all the products I intend |
-|&checkmark;| user    | view the total cost of the products | identify the total cost of my purchase and all the products I wish to purchase |
-|&checkmark;| user    | enter my payment information  | check out and pay for the products I want to buy |
-|&checkmark;| user    | feel my personal and payment information is safe and secure | confidently provide the needed information to make a purchase |
-|&checkmark;| user    | view an order confirmation after checkout | verify that I have not made any errors and confirm that my order has been submitted |
-|      | user    | receive an email confirmation after checking out | keep the confirmation of what I have purchased for my records |
+|&checkmark;| user | view a list of frequently asked questions | identify the answer to a query I may have|
+|&checkmark;| user | view details about Hex Cosmetics | become more familiar with the brand |
+|&checkmark;| user | subscribe to the Hex Cosmetics newsletter |  keep up to date with the latest products & offers |
+|&checkmark;| user | find Hex Cosmetics on social media |  follow the brand and keep up to date with their latest content |
+|&checkmark;| user | contact Hex Cosmetics | ask any questions that I have |
 
-##### About HEX
+
+#### Admin and Store Management
+
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| user    | view a list of frequently asked questions | identify the answer to a query I may have|
-|&checkmark;| user    | view details about Hex Cosmetics | so that I can become more familiar with the brand |
-|&checkmark;| user    | subscribe to the Hex Cosmetics newsletter | so that I can keep up to date with the latest products & offers |
-|&checkmark;| user    | find Hex Cosmetics on social media | so that I can follow the brand and keep up to date with their latest content |
+|&checkmark;| Admin | add a product | add new products to the store |
+|&checkmark;| Admin | edit a product | change product prices, descriptions, images and other criteria |
+|&checkmark;| Admin | delete a product | remove products that are no longer for sale |
 
-##### Admin and Store Management
-| Done | As a... | I would like to be able to... | So that I may...|
-| ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| Admin   | add a product | add new products to the store |
-|&checkmark;| Admin   | edit a product | change product prices, descriptions, images and other criteria |
-|&checkmark;| Admin   | delete a product | remove products that are no longer for sale |
-|&checkmark;| Admin   | have access to an admin dashboard | manage products and orders |
-|&checkmark;| Admin   | view any previous order made | see what was purchased to ensure they get fulfilled |
-
-### Structure
-
-
-### Skeleton
+### Wireframes
 
 <details>
 <summary>Home wireframes</summary>
@@ -214,6 +220,7 @@ The goals of the Hex Cosmetics business are:
 </details>
 
 ### Surface
+
 #### Font
 
 In-keeping with the clean, modern & simplistic design for the application, the font 'Quicksand' was chosen as the primary font for this site.
@@ -260,6 +267,7 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 [Back to Top](#overview)
 
 ## Technologies and Tools
+
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
     - Used as the main language for the templates
 * [CSS3](https://www.w3.org/Style/CSS/current-work.en.html)
@@ -274,6 +282,8 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
     - Used for backend data manipulation
 * [Django](https://www.djangoproject.com/) 
     - Python web framework for quick development.
+* [Coverage](https://coverage.readthedocs.io/en/v4.5.x/)
+    - Used to calculate code coverage of python unit tests.
 * [Django-aullauth](https://django-allauth.readthedocs.io/en/latest/index.html)
     - Django authentication toolset
 * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) 
@@ -282,6 +292,14 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
     - Used as the main language for template manipulation.
 * [Pillow](https://pillow.readthedocs.io/en/stable/) 
     - Python imaging library to support opening, manipulating, and saving images.
+* [Psycopg2](https://pypi.org/project/psycopg2/)
+    - PostgreSQL database adapter for Python.
+* [Gunicorn](https://pypi.org/project/gunicorn/)
+    - Python WSGI HTTP Server.
+* [AWS S3](https://aws.amazon.com/)
+    - Used to store static files.
+* [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+    - Used to  configure and manage s3 buckets
 * [Stripe](https://stripe.com/gb)
     - Payment infrastructure to validate and accept credit card payments securely.
 * [Git](https://git-scm.com/) 
@@ -298,34 +316,506 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
     - used to design site to create the logo for Hex Cosmetics.
 * [Balsamiq](https://balsamiq.cloud/) 
     - used to create the wireframes for this project.
-
+* [Browserstack](https://www.browserstack.com/)
+    - To test responsiveness & functionality on various browsers.
 
 ## Database
 
 * [SQlite3](https://www.sqlite.org/index.html) 
     - Used as development database.
+* [PostgreSQL](https://www.postgresql.org/) 
+    - Used as production database and provided as heroku add-on.
 
 [Back to Top](#overview)
 
 ## Features
 
+### Navbar
+
+The navbar (collapsable and reordered on smaller devices) can be used to navigate to different areas of the site depending on user interaction.
+
+The navbar is fixed so that it can be selected by the user at all times for improved UX/ site navigation.
+
+The links in the navbar are highlighted when hovered over, to give feedback to the user that they can interact with these links.
+
+The website logo also acts as a link back to the home page, as is standard expectation for users.
+
+The links displayed to the users change depending on whether the visitor is a registered user and in session.
+
+This removes the unnecesary links to login or register, and displays links to view their personal profile details, as well as log out if required.
+
+The navbar also displays the current value of a users basket, and this is also used to navigate to view the basket contents.
+
+The navbar also contains the search bar, to enable users to search for products based on keywords (product name, brand name, description or category).
+
+### Footer
+
+The footer displays links to helpful pages (About, FAQ, & Contact pages), as is fairly common convention across many websites.
+
+The footer also allows users to sign up to the newsletter. It was intentionally added to the footer so that it would be available across the site and increase usage.
+
+This could be used by the admin to utilise for targeted advertisement.
+
+Also as is common convention, links to social media pages can also be found in the footer. This can help increase online presence and be used for further marketing activities.
+
+Selectable icons & links in the footer should all have effects when hovered over, to give feedback to the user that they can interact with these links.
+
+### Featured items slider
+
+This slider is present on every page and it displays all products marked as featured in the products model.
+
+The slider is looped so when a user looks through all of the products, it will start again from the first product.
+
+This tool could be used to promote new products or best sellers etc. to increase sales across the site.
+
+### Search
+
+The search page displays all products that match the key words searched by a user.
+
+The search page will tell the user how many results have been found for their search.
+
+The products will be displayed as cards, as per the product views.
+
+### Home
+
+The home page has a large picture of the Hex Cosmetics logo, to try to reinforce the brand image.
+
+Users can then select to shop all products, or shop by a particular type of product.
+
+All categories are displayed in as cards, with an image of the type of product, and a banner which is labelled "Shop 'category'".
+
+When hovered over, the image, banner, & text is enlarged, and the text changes colour.
+
+This provides feedback to the user that they can interact and select the card.
+
+When a card is clicked, it will redirect the user to a product view for the applicable product type, displaying all relevant products.
+
+### Product views
+
+The product views contains a 'breadcrumbs' list at the top of the page, to improve navigation around the site.
+
+This allows users to return to the all products view if currently viewing a specific category.
+
+There is a sort button, which allows a user to select whether to view products with a price high-to-low, or low-to-high.
+
+All products are displayed in a card style list, and contain an image of the product, and the product name, brand & price.
+
+When a user hovers over the card, the image is enlarged, there is a shadow effect on the card, and some font changes colour.
+
+This provides feedback to the user that they can interact and select the card.
+
+When a card is clicked, it will redirect the user to the product detail of the selected product.
+
+### Product Details
+
+The product deatils view contains a 'breadcrumbs' list at the top of the page, to improve navigation around the site.
+
+This allows users to return to the all products view or a category view.
+
+This page expands on the product details already shown to the user.
+
+A product description is contained in an accordion so can be displayed or hidden by the user.
+
+There an a select list to enable users to select the colour of product that they wish to purchase.
+
+There is an input field (with '+' & '-' buttons) to allow a client to select how many items they would like.
+
+There is an add to basket button which will add the applicable product, colour & quantity to the basket.
+
+#### Product Maintenance
+
+In additon, superusers are able to edit or deleted products/ product colours via the product maintenance accordion on this page.
+
+The edit buttons will redirect the super user to the appropriate edit product (or product colour) form, which will be prepopulated will the current details recorded in the database.
+
+If a super user attempts to delete a product, they will be presented with a warning modal to confirm they want to delete the product first.
+
+### Basket
+
+There is an order progress bar which highlights that the user is at the first step of the checkout process.
+
+The items in the basket are then displayed in a tabular style format.
+
+The applicable product details are displayed (an image, product name, product colour & product price).
+
+The quantity the user has selected is also displayed, and can be updated as required.
+
+If a user changes the value to 0 the item is removed from the basket (there is also a trash icon, which will remove the item from the basket).
+
+If the user increases or decreases the quantity, the basket gets updates and a message is displayed to the client to confirm the change made. The basket total should update too.
+
+The line item total is displayed (product price * quantity).
+
+The total item costs is displayed (sum line items).
+
+The total delivery charge is displayed.
+
+The total cost is displayed (sum line items + delivery).
+
+You are able to navigate back to the products view, or proceed to the checkout page.
+
+### Checkout
+
+There is an order progress bar which highlights that the user is now at the checkout stage.
+
+There is an order for for a user to complete with their details & delivery details (prepopulated if already saved against the user profile).
+
+There is also an order summary displayed to highlight the items to be purchased + total value of the order.
+
+There is a stripe card element mounted to the page that a user can complete enter their card details.
+
+A user can then submit an order or return to update their basket.
+
+### Checkout success
+
+There is an order progress bar which highlights that the user is now at the confirmation stage.
+
+This page is just a final confirmation of the order that has been placed (e.g. products purchased, delivery address & order number)
+
+A user is able to return to the shop to view more products.
+
+### Contact
+
+#### About
+
+This page give a summary of the companies ethics and mission.
+
+#### FAQs
+
+This page displays an accordion with a list of the most common questions that might be asked, so that a user can easily find the answer they require.
+
+#### Contact Us
+
+This pages displayes a form that a user can submit with their name, email address & any message or question that they have.
+
+When the form is submitted then a message is displayed to the client to inform them the message was received and they will receive a response soon (assuming the form was valid).
+
+
 ## Future Features to implement
+
+I believe the following are features that should be built in future releases.
+
+1. I think a boolean 'Active' field should be added to the products & colours models. This could allow products or colours to be removed from sale temporarily (or permanently without a full delete.)
+
+This would be important if products or colours become discontinued, as currently the order model is set to PROTECT on delete, which prevents a product/ colour being deleted if there has been a previous order.
+
+2. Currently there is no stock/ inventory management on the site. This should be implemented to prevent orders being made that cannot be fulfilled.
+
+It would need to ensure that a user cannot add more items to the basket than is currently available, and a user is also not able tp purchase items that are now out of stock.
+
+3. I would like to implement a wishlist, that a user can save their favourit products to.
+
+I think this would act as a cross between the orderLineItem model and the basket, to enable a product & colour to be recorded and persist across sessions.
+
+4. I would like to implement views for products that are on sale. 
+
+This would also require updates to the basket & checkout apps, as these currently use the product price to calculate order totals. 
+
+4. To improve brand exposure, I would like to implement a blog on the site, and have articles for all of the latest trends or items.
+
+5. Complete further unit testing to cover all Python code.
+
+6. Improved Admin functionality, such as the ability for a admin to mark orders as dispatched. 
+
+This could also notify the user that their order has been dispatched.
+
+7. Ability for a user to unsubscribe from the newletter.
+
+8. Additional payment methods (e.g. paypal).
+
+
+
 
 [Back to Top](#overview)
 
 ## Testing
+
+### Test User Stories
+
+#### Viewing and sorting products
+
+1. As a user, I would like to be able to view a list of available products, so that I may identify if there are any products I would like to purchase
+- [x] I am able to select to view all products via the site home/index page.
+- [x] I am able to select to view all products via the products list in the navbar.
+- [x] I am able to select to view all products in a specific category via the site home/index page.
+- [x] I am able to select to view all products in a specific category via the products list in the navbar.
+- [x] I am able to select to view all featured products via the products list in the navbar.
+
+2. As a user, I would like to be able to view individual products details, so that I may view the price and description etc.
+- [x] I am able to view the product name, brand, price and image when looking for products.
+- [x] I am able to select a product to view more information about that product.
+- [x] I am also able to view a description of a product, as well as all available colours for that product.
+
+3. As a user, I would like to be able to View the total of my basket at any time, so that I may see how much money I will spend on the products I want to purchase
+- [x] I am able to view the total value of my basket (excluding delivery charges) via the navbar on any page across the site.
+- [x] I am also able to navigate to my basket to see the total value (including delivery charges) via the navbar at any time.
+
+4. As a user, I would like to be able to sort the list of products, so that I may easily identify the best-priced products.
+- [x] I am able to sort all products by price high-to-low & low-to-high when viewing all products.
+- [x] I am able to sort all products by price high-to-low & low-to-high when viewing all products in a specific category.
+- [x] I am able to sort all products by price high-to-low & low-to-high when viewing all featured products.
+
+5. As a user, I would like to be able to search for a product by name or description, so that I may find a specific product I would like to purchase.
+- [x] I am able to search for a product based on product name.
+- [x] I am able to search for a product based on product description.
+- [x] I am able to search for a product based on brand name.
+- [x] I am able to search for a product based on product category.
+
+6. As a user, I would like to be able to easily see what I have searched for, so that I may quickly decide whether the product I want is available.
+- [x] When I search for items, I am displayed a message to confirm the number of results for my search.
+- [x] If there are no results for my search, I am displayed a message to inform me. 
+
+#### Registration and User Accounts
+
+7. As a user, I would like to be able to register for an account, so that I may have an account to be able to store my details for repeat use.
+- [x] I am able to register for an account/ profile.
+- [x] I am able to record & update my personal details on the profile for repeat use.
+
+8. As a user, I would like to be able to login or logout, so that I may to access my account and help ensure security of my personal information.
+- [x] (if not logged in) I am able to log in to my account via the navbar at any time, or when checking out
+- [x] (if logged in) I am able to log out of my account at any time, via the navbar.
+
+9. As a user, I would like to be able to log into my account via an existing social or email account, so that I may speed up the registration process.
+- [x] I am able to register for/ log into an account via my Google account.
+- [x] I can select the button to log in via google, then select which google account I wish to use.
+- [x] I am then logged into my account.
+
+10. As a user, I would like to be able to recover my password, so that I may recover access to my account if I forget my credentials.
+- [x] I am able to navigate to the forgot password page, via the log in page.
+- [x] I am able to submit the email address for my account.
+- [x] I receive an email to my email address with a link to reset my password.
+- [x] I am able to set a new password by using the link sent to me on email.
+
+11. As a user, I would like to be able to have a personalized user profile, so that I may view my order history and store delivery information for future use.
+- [x] When I create an account, I view the details stored on my profile via the profile link on the navbar.
+- [x] I am able to save & amend my personal details (e.g. name, email address) via the profile.
+- [x] I am able to save & amend my delivery details (e.g. address) via the profile.
+- [x] I am able to save & amend my personal details (e.g. name, email address) when processing an order.
+- [x] I am able to save & amend my delivery details (e.g. address) when processing an order.
+
+#### Basket and Checkout
+
+12. As a user, I would like to be able to easily add items to my basket, so that I may purchase the items.
+- [x] I am able to add a product to my basket via a button when viewing a product's details.
+- [x] I am able to select the colour of the product I wish to add to my basket.
+- [x] I am able to select the quantity of the product I wish to add to my basket.
+
+13. As a user, I would like to be able to easily remove items from my basket, so that I may remove items that I no longer wish to purchase.
+- [x] I am able to navigate to my basket via the navbar.
+- [x] I am able to reduce the quantity of a product to 0, and the item is removed from my basket.
+- [x] I am also able to select the 'trash' icon and the product is removed from my basker
+
+14. As a user, I would like to be able to easily edit the quantity of items in my basket, so that I may purchase the required number of products.
+- [x] I am able increment the quantity in my basket by pressing the '+' button against the product I wish to increase the quantity.
+- [x] I am able decrement the quantity in my basket by pressing the '-' button against the product I wish to decrease the quantity.
+- [x] I am able to type in a numeric value for the number of items I wish to purchase.
+- [x] I am able to see my basket has been updated when I change the quantity of a product in my basket.  
+
+15. As a user, I would like to be able to easily view all items in my basket, so that I can check what products I have selected to purchase.
+- [x] I am able to see a list of products (colours, quantity & price) that have been added to my basket.
+
+16. As a user, I would like to be able to view the total cost of the products, so that I may identify the total cost of my purchase and all the products I wish to purchase.
+- [x] I am able to easily identify the cost of each product.
+- [x] I am able to easily identify line item total based on the quantity of product I wish to purchase.
+- [x] I am able to easily identify the total value of all items in my basket.
+- [x] I am able to easily identify if there is a delivery charge.
+- [x] I am able to easily identify the total value of the order (including delivery).
+
+17. As a user, I would like to be able to enter my payment information, so that I may check out and pay for the products I want to buy.
+- [x] I am able to enter my card details into a payment field.
+- [x] I am able to submit my payment and order.
+
+18. As a user, I would like to be able to feel my personal and payment information is safe and secure, so that I may confidently provide the needed information to make a purchase.
+- [x] I am able to see a payment form that is familiar in format to other reuptable companies.
+- [x] I receive clear errors if incorrect details are input into the field so I can trust there is validation occuring.
+
+19. As a user, I would like to be able to view an order confirmation after checkout, so that I may verify that I have not made any errors and confirm that my order has been submitted.
+- [x] I am taken to an order success page following a successful checkout which reconfirms details of my order.
+
+20. As a user, I would like to be able to receive an email confirmation after checking out, so that I may keep the confirmation of what I have purchased for my records.
+- [x] I receive an email following a successful checkout to confirm my order has been placed.
+
+#### Contact HEX
+21. As a user, I would like to be able to view a list of frequently asked questions, so that I may identify the answer to a query I may have.
+- [x] I am able to navigate (via the navbar or footer) to an FAQs page.
+- [x] I am able to see a list of FAQs that answer my query.
+
+22. As a user, I would like to be able to view details about Hex Cosmetics, so that I may so that I can become more familiar with the brand.
+- [x] I am able to navigate to the about page via the navbar,
+- [x] I am able to view details of the companies ethics and mission.
+
+23. As a user, I would like to be able to subscribe to the Hex Cosmetics newsletter, so that I may so that I can keep up to date with the latest products & offers.
+- [x] I am able to subscribe to the newsletter via the footer (available on every page).
+- [x] I receive a message to confirm that I am subscribed.
+
+24. As a user, I would like to be able to find Hex Cosmetics on social media, so that I may so that I can follow the brand and keep up to date with their latest content.
+- [x] I am able to navigate to the social accounts via the footer (available on every page), so that I can like, follow & subscribe.
+
+25. As a user, I would like to be able to contact Hex Cosmetics, so that I ask any questions that I have.
+- [x] I am able to navigate (via the navbar or footer) to the contact page.
+- [x] I am able to submit my query via a form on this page.
+- [x] I receive a message to confirm the message has been received and an indication of when to expect a reply.
+
+#### Administration
+
+26. As an admin, I would like to be able to add a product, so that I may add new products to the store.
+- [x] I am able to navigate to the add product page via the navbar.
+- [x] I am able to complete a form for all the required details to add a new product.
+- [x] I am then redirected to the add colour page, so I can add the required colours for the product.
+- [x] I receive an error message if any details are not completed correctly.
+
+27. As an admin, I would like to be able to edit a product, so that I may change product prices, descriptions, images and other criteria.
+- [x] I am able to edit a product via the product detail view.
+- [x] I am able to edit a product colour via the product detail view.
+- [x] I am able to view the details already recorded and update required fields.
+- [x] I receive an error message if any details are not completed correctly.
+
+28. As an admin, I would like to be able to delete a product, so that I may remove products that are no longer for sale.
+- [x] I am able to delete a product via the product detail view.
+- [x] I am able to delete a product colour via the product detail view.
+- [x] I receive a warning to confirm I want to delete the record.    
+
+### Manaul Testing
+
+#### General
+
+- [x] Use of Google DevTools to identify any console errors.
+- [x] Constant iterations of bootstrap grid reviews to ensure responsiveness across the site (also with Google DevTools)
+- [x] Repeat checks to make sure all css & js effects worked as expected.
+
+#### Common elements
+
+1. Navbar
+- [x] Hover over icons/ links and confirm highlighted as expected.
+- [x] Click the logo and confirm I am returned to the home/index page.
+- [x] Click each link in the navbar to confirm that it leads to the correct page.
+- [x] Confirm that when logged out the options "Register" and "Log in" are visible in the profile list.
+- [x] Confirm that when logged in the options and that "My Profile" and "Log out" are visible in the profile list.
+- [x] Click the "Products" link in the navbar, confirm that all categories are listed.
+- [x] Add an item to the basket, confirm that the basket total is updated.
+- [x] Remove all items from the basket & confirm the value returns to £0.00
+
+2. Footer
+- [x] Hover over icons/ links and confirm highlighted as expected.
+- [x] Click each link in the navbar to confirm that it leads to the correct page.
+- [x] Try to subscribe to newsletter without email & confirm a prompt to complete the field is received.
+- [x] Try to subscribe to newsletter with email & confirm a message is displayed to show that I have subscribed.
+    
+3. Featured items slider
+- [x] Check that the images slide by mouse click & slide and by finger swipe on mobile devices.
+- [x] Check the images slide by clicking/ pressing the arrow buttons to move through the images.
+- [x] Hover over the images and confirm the applicable javascript works as expected.
+- [x] Select the products & confirm I am redirected to the product detail page.
+
+#### Pages
+
+1. Home Page
+- [x] Click categories to confirm that it redirects to the correct category / view of products.
+- [x] Hover over the images and confirm the applicable javascript works as expected.
+
+2. All Product
+- [x] Click products link to confirm that it redirects to the correct product detail view.
+- [x] Test the 'sort by' button and confirm products are ordered correctly based on selection.
+- [x] Hover over the images and confirm the applicable javascript works as expected.
+
+3. Category product view.
+- [x] Same tests as per 2.
+- [x] Test that the breadcrumb allows me to return to the all products view.
+
+3.  Product detail view.
+- [x] Test that I am able to collapse the description accordion.
+- [x] Check that only the colours applicable to the product can be selected.
+- [x] Test that the product increment decrement buttons change the value as expected.
+- [x] Test that I am unable to input a non-numeric character into the quantity input box. 
+- [x] Test that the breadcrumb allows me to return to the all products view or the applicable category view.
+- [x] Test that the category tag returns me to the applicable category view.
+- [x] Test that I can add the product, colour & quantity to the basket.
+- [x] Test that I receive a message to confirm the product has been added to the basket.
+- [x] Test that the product maintenance accordion is only visible if logged in as superuser.
+- [x] Test that the superuser can show the accordion body.
+- [x] Test that the superuser can navigate to the edit product page.
+- [x] Test that the superuser can navigate to the edit product colour page.
+- [x] Test that the superuser is displayed a warning modal if attempting to delete a product.
+- [x] Test that the superuser is displayed a warning modal if attempting to delete a product colour.
+- [x] Test that the superuser can delete the product.
+- [x] Test that the superuser can delete a product colour.
+
+4. Edit Product / Product colours
+- [x] Test that the applicable product details are pre populated into the form.
+- [x] Test that I am able to update product detials.
+- [x] Test that if I cancel the edit, I am returned to the applicable product detail page.
+
+5. Add Product / Product colours
+- [x] Test that I am able to add a product.
+- [x] Test that I am redirected to add a product colour after adding a product.
+- [x] Test that I am returned to the products view if I select cancel on the add page.
+
+6. Search
+- [x] Test that I am able to search for key words and be displayed appropriate results.
+- [x] Test that I can see how many results are found for my search.
+- [x] Test that I receive a message if no results are found.
+
+7. Basket
+- [x] Test that all items added to my basket are present.
+- [x] Test that I can increase and decrease the quantity of a product using the '+' & '-' buttons.
+- [x] Test that I can type in the quantity of a product that I want.
+- [x] Test that I am unable to input a non-numeric character into the quantity input box. 
+- [x] Test that the basket is updated when I have finished updating the quantity.
+- [x] Test that items are removed from the basket if the quantity is changed to 0.
+- [x] Test that items are removed from the basket if the trash icon is selected.
+- [x] Test that the delivery charge is correct based on the value of items in the basket.
+- [x] Test that the total value of my order is correct based on the price of the items in my basket + delivery costs.
+- [x] Test that I can progress to the checkout page.
+- [x] Test that I can return to the products view.
+- [x] Test that the order progress bar highlights that I'm currently at the basket stage.
+
+8. Checkout
+- [x] Test that all items added to my basket are displayed in the order summary.
+- [x] Test that the total value of my order is correct based on the price of the items in my basket + delivery costs.
+- [x] Test that my personal information is prepopulated into the order form, if it has previously been saved.
+- [x] Test that I am able to return to my basket to adjust my order.
+- [x] Test that I am add my details & card details and submit my order.
+- [x] Test that I am redirected to the confirmation page after a successful checkout.
+- [x] Test that I am able to save the order form details to my profile for future use.
+- [x] Test that my order form details are not saved if I do not select that option.
+- [x] Test that the order progress bar highlights that I've progressed past the basket and now at the payment stage.
+
+9. Checkout success
+- [x] Test that the order number is displayed.
+- [x] Test that an email is sent to confirm the order has been placed.
+- [x] Test that the appropriate order summary replayed.
+- [x] Test that the correct delivery details are displayed.
+- [x] Test that the order progress bar highlights that I am at the confirmation stage.
+- [x] Test that I can return to the products view.
+
+10. Contact
+- [x] Test that I can view the contact pages
+- [x] Test that I can toggle the accordion on the FAQs pag to view the answers to relevant questions.
+- [x] Test that I can submit a query via the contact form.
+- [x] Test that I receive a message confirming that the query has been received.
+
+11. Profile
+- [x] Test that I am able to view the details recorded on my profile (name, email, phone number, address).
+- [x] Test that I am able to update these details.
+- [x] Test that I am able to view my order history and view the details of those order.
+- [x] Test that I am able to update my password.
+
 ### General code validation
-* HTML validation with [W3C Markup Validation Service](https://validator.w3.org/). My code is fully compliant and there are no errors.
+
+- [x] HTML validation with [W3C Markup Validation Service](https://validator.w3.org/). My code is fully compliant and there are no errors.
     - When completing the validation, I came across a few minor errors:
         - A couple of stray div end tags.
         - Missing alt attributes for a couple of images.
         - Some duplicate ids (see bug 3 for more detailed explanation)
-* CSS validation with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). My code is fully compliant and there are no errors.
-* Javascript validation with [JSHint](https://jshint.com/). My code is fully compliant. There are some warnings about the undefined $ variable being used (e.g given the use of jQuery in my js files).
+
+- [x] CSS validation with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). My code is fully compliant and there are no errors.
+
+- [x] Javascript validation with [JSHint](https://jshint.com/). My code is fully compliant. There are some warnings about the undefined $ variable being used (e.g given the use of jQuery in my js files).
     - When completing this validation, I also identified a few missing semi colons from my code.
-* Python validation with [PEP8 Online](http://pep8online.com/). My code is fully compliant, and there are no errors.
+
+- [x] Python validation with [PEP8 Online](http://pep8online.com/). My code is fully compliant, and there are no errors.
     - When completing the validation, I came across a few minor errors:
-        - Mostly, these were lines being too long. I have updated the majority of these, except a couple of instances where it would the code unreadable.
+        - Mostly, these were lines being too long. I have updated the majority of these. There are some instances where I have intentionally left the line 'too long', where it would the code too unreadable.
         - It identified a couple of cases where imports were not being used, so I have removed them.
         - It also identified a couple of cases where variables had been assigned but not used.
 
@@ -345,66 +835,216 @@ _NOTE: Depending on your IDE, the Python command may differ, such as `python` or
 
 [Coverage.py](https://coverage.readthedocs.io/en/v4.5.x/) was used to provide feedback during testing. This was invaluable to identify which parts of my code the tests had covered.
 
+My code coverage currently stands at 84%, and covers most major functionality. 
+
+I would like to increase this coverage as close to 100% as possible, but due to time constraints, this will need to wait for a later release.
+
 #### How to run coverage
+
 To view the coverage, you can run the following commands:
 
 1. `coverage run --source=. manage.py test` This will run all tests/
 2. `coverage report` The coverage will be shown within the terminal, broken down by .py file.
 3. You can view an interactive version by using `coverage html`, and then `python3 -m http.server`, and you can view the htmlcov folder in the browser, select specific files, and view which particular sections of code are or aren't being covered by the e
 
-
 ### Browser & Device Compatibility
+
+I tested the following browsers across my personal devices:
 
 | **Browser**      | **Device** | **Compatibility**                                            | **Version**            |
 | :--------------- | :--------- | :----------------------------------------------------------- | :--------------------- |
-| Google Chrome    | PC         |                                                              |                        |
-| Microsoft Edge   | PC         |                                                              |                        |
-| IE 11            | PC         |                                                              |                        |
-| Google Chrome    | Mobile     |                                                              |                        |
-| Firefox          | Mobile     |                                                              |                        |
-| Microsoft Edge   | Mobile     |                                                              |                        |
-| Mi Browser       | Mobile     |                                                              |                        |
-| Safari           | iPad       |                                                              |                        |
+| Google Chrome    | PC         | Excellent, supports all functionality                        |  86.0.4240.198         |
+| IE 11            | PC         | Styling - excellent. Javascript - poor as doesnt support ES6 |  11.0.9600.19811       |
+| Google Chrome    | Mobile     | Excellent, supports all functionality                        |  87.0.4280.141         |
+| Firefox          | Mobile     | Excellent, supports all functionality                        |  84.1.4                |
+| Microsoft Edge   | Mobile     | Excellent, supports all functionality                        |  45.12.4.5121          |
+| Opera            | Mobile     | Excellent, supports all functionality                        |  61.2.3076.56749       |
+| Mi Browser       | Mobile     | Excellent, supports all functionality                        |  12.4.4-g              |
+| Safari           | iPad       | Excellent, supports all functionality                        |  12.4.8                |
 
+I also used [BrowserStack](https://www.browserstack.com/) to view my site across all of the latest (non Beta/Dev) browsers.
+
+* Safari 12.1
+* Firefox 84
+* Chrome 87
+* Opera 73
+* Edge 87
+
+The compatability across all of the browsers was excellent and functioned as expected, and all styling & JavaScript worked as expected.
+
+This testing highlighted one instance where the responsiveness wasn't working as intended and enabled me to update this.
 
 ### Google Lighthouse
 
-| **Device** | **Performance** | **Accessibility** | **Best Practices** | **SEO** |
-| :----------| :---------      | :-----------------| :----------------- | :------ |
-| Desktop    |                 |                   |                    |         |
-| Mobile     |                 |                   |                    |         |
+| **Performance** | **Accessibility** | **Best Practices** | **SEO** |
+| :-------------- | :---------------- | :----------------- | :------ |
+|     93          |        92         |         93         |   100   |
 
+The above is the results of a Google Lighthouse report generated on the index.html landing page of the site on desktop.
 
-### Functional testing
+Lighthouse enabled me to identify various issues and implement change across my site such as:
 
+- Addition of various Accessibility & SEO items, such as;
+    - Addition of Meta description
+    - Addition of aria labels or applicable elements
+
+- To revisit responsiveness across the site due to image resizing, while still not perfect, this helped improve the performance result.
+
+To improve performance, Lighthouse suggests improvements such as resizing images and/or serving these images in next gen formats.
+
+At the moment, this isn't feasible across the site, as the majority images are all sourced externally (the category images & logo images could be resized to improve performance).
+
+However obtaining correctly sized images should be considered as a future enhancement should the site grow and have more content to be loaded. These images could be hosted in the S3 bucket.
 
 ### Bugs & Interesting Issues Encountered & Fixed
 
-1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price/ rating).
+1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price). The issue I found was that when I initially created the function, the URL was only designed to pass in the sort type and direction, and thereore if I had already filtered the list to a specific category, using the sort order returned all products.
+    - To fix this I needed to pass in the category (if it had be selected). I utilised slugs to help acheive this (which also improved the URL naming) and passed these arguments into the all_products view.
 
-The issue I found was that when I initially created the function, the URL was only designed to pass in the sort type and direction, and thereore if I had already filtered the list to a specific category, using the sort order returned all products.
-
-To fix this I needed to pass in the category (if it had be selected). I utilised slugs to help acheive this (which also improved the URL naming) and passed these arguments into the all_products view.
-
-2. Following the implementation of slugs, I had the issue when attempting to view 'all products' as I was getting a NoReverseMatch error, in this case because a catgeory slug was not being passed into my href url against each product.
-
-To fix this I created the get_absolute_url model method in the product class, to allow me to obtain the catgeory slug via the Product Class, and pass this, and the product slug as args.
+2. Following the implementation of slugs, I had the issue when attempting to view 'all products' as I was getting a NoReverseMatch error, in this case because a category slug was not being passed into my href url against each product.
+    - To fix this I created the get_absolute_url model method in the product class, to allow me to obtain the category slug via the Product Class, and pass this, and the product slug as args.
 
 3. I have multiple forms/ models which have an email field include. When using django crispy forms, this was creating elements with the same ID. This wouldn't be an issue, except the subscription form is passed to every page via a context processor, and therefore was creating some duplicates.
+    - To fix this, I simply update the field name from email to email_address, and this meant when two forms were on the same page, that they had different IDs.
 
-To fix this, I simply update the field name from email to email_address, and this meant when two forms were on the same page, that they had different IDs.
+4. When updating the quantity in the basket, I was submitting the form each time a user clicked the increment/ decrement button, which was updating the quantity as expected, but sometimes resulted in multiple messages being displayed on screen.
+    - To fix this, I added a timer, so that the form would only submit 1 second after the button had been pressed, and the timer would be reset.
+
+5. Following bug/fix #4, I wanted the form to reload when a user typed a quantity also (has the same timeout logic). Therefore I created an event listener to submit a form when a updated the input field via their keyboard. This inadvertently, allowed users to submit non-numeric chars.
+    - To fix this, I added some more JavaScript to prevent the input of non-numeric characters (see credit #4)
+
+6. I noticed that if I accessed my search view directly via URL, then it searched based on 'None' and returned no results.
+    - To fix this I updated the search_result view to return a count of products. If there were no results, then this redirects the user to the products page.
+
+
+#### Minor fixes from manual testing
+
+In total I identified approx. 70 minor tweaks and changes that I wanted to make following this testing. Many of these had similar themes (e.g. typo or responsiveness), so some examples/ larger issues are below.
+
+1. Identified that in my basket, the images of the products were not a tags that linked back to the product, so I updated this.
+2. The input prepend/ append buttons were displaying over the navbar, so I changed the z-index of place them behind the navbnar.
+3. I noticed that I had not included featured products in the breadcrumbs, so I was able to add a 'featured' boolean to the context and display a breadcrumb item if applicable.
+4. I noticed that if a user had no orders, the text on the order history still said to view orders below. I added a count to the context to display different text if no orders.
+5. When testing responsiveness across the site, I noticed on smaller screens that where multiple buttons were close to each other, they sometimes touched. I therefore just added a margin to the buttons.
+6. I noticed that on products where only 1 colour was available, text said '1 colours available', I added a count to the context and only displayed the s where there was more than 1 colour.
+7. When I went to edit a product, but cancelled, the view returned me to all products, rather than the product I was on. I therefore changed the view to return me back to the specific product.
+8. A couple of messages had typo's in them, so these were updated accordinly (as well as in the corresponding unit tests).
+9. Various typo's across the site were updated.
+10. Some pages had missing {% block head_title %}. I therefore added these accordingly.
+11. Some styling inconsistencies were identified and updated (e.g. some elements did not have rounded edges as per site theme). 
 
 [Back to Top](#overview)
 
 ## Deployment
 
+### Requirements
+
+To allow you to access all functionality you will require access to the following (free services are sufficient):
+
+* [Stripe](https://dashboard.stripe.com/register)
+    - [Test Keys](https://stripe.com/docs/keys)
+    - [Webhook Secret](https://stripe.com/docs/webhooks/signatures)
+
+* [AWS](https://aws.amazon.com/)
+    - [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
+
+* [Google Account](https://support.google.com/accounts/answer/27441?hl=en)
+    - [App Password](https://support.google.com/mail/answer/185833?hl=en-GB)
+
+Documentation above to confirm how to create the account, and locate the required environment variables.
+
 ### Environment Variables
 
-#### env.py
+| Variable Name         | Comment                                                       | 
+| --------------------- | ------------------------------------------------------------- |
+| USE_AWS               | To use AWS S3 for static & media files instead of local files |
+| AWS_ACCESS_KEY_ID     | Access to AWS S3 Bucket - Generated by AWS                    |
+| AWS_SECRET_ACCESS_KEY | Access to AWS S3 Bucket - Generated by AWS                    |
+| DATABASE_URL          | Can be automatically generated using Heroku Postgres add-on   |
+| HEX_SECRET_KEY        | The Django Secret Key for securing signed data                |
+| EMAIL_HOST_PASSWORD   | App password to sign in to gmail. Generated in Google Account |
+| EMAIL_HOST_USER       | App user / email for gmail. E-mails sent from this address    |
+| STRIPE_PUBLISHABLE    | To identify your account with Stripe                          |
+| STRIPE_SECRET         | To perform an API request to Stripe                           |
+| STRIPE_WEBHOOK_SECRET | Secret key for webhook endpoint                               |
+| PRODUCTION            | To run in production mode with DEBUG = False                  |
+| DEBUG                 | CAUTION - This is optional and will set DEBUG in Production   |
+
+For Local Deployment, you can replace `PRODUCTION` with `DEVELOPMENT`. This will set DEBUG to TRUE.
+
+### Cloning
+
+The site can be cloned to your local repository as follows steps - [GitHub guide](https://help.github.com/en/articles/cloning-a-repository):
+
+1. On GitHub, navigate to the main page of the repository.
+
+2. Above the list of files, click the 'Code' button. To clone the repository using HTTPS, select HTTPS and copy the URL.
+
+3. in your IDE, change the current working directory to the location where you want the cloned directory.
+
+4. Type git clone, and then paste the URL you copied earlier - `git clone https://github.com/<USERNAME>/<REPOSITORY>` - and press enter.
+
+5. The clone will be created.
+
+6. Install all required modules using the command
+    - `pip3 install -r requirements.txt.`
+
+7. Migrate the models to create your test database (i.e. in SQLite) using the following command.
+    - `python3 manage.py migrate`
+
+8. You can load the fixtures using the following commands (they must be completed in order).
+    - `python3 manage.py load data categories`
+    - `python3 manage.py load data products`
+    - `python3 manage.py load data colours`
+
+9. Create your superuser to access the django admin panel and database using the following command (then follow the instructions in your command line)
+    - `python3 manage.py createsuperuser`
+
+10. You can now run locally using the following command.
+    - `python3 manage.py runserver`
+
+_NOTE: Depending on your IDE, the Python command may differ, such as `python` or `py`_
+
+### Continuous integration
+
+You can implement automated testing before deployment to ensure that all tests are passed prior to changes being deployed to the live site.
+
+Instructions for setting this up can be found at [Travis-CI](https://docs.travis-ci.com/user/tutorial/)
+
+1. Sign up to Travis CI via your Github profile.
+2. Grant Travis CI with the required authorisations to your Github.
+3. Activate your account and select your repo to connect for Travis-CI.
+4. Travis-CI will run the .travis.yml file and provide feedback if there are any errors preventing deployment (i.e. failed tests or missing environment variables).
 
 ### Heroku Deployment
 
+To deploy this site to Heroku, complete the following steps:
+
+1. Create a [Heroku](https://signup.heroku.com/) account and log in.
+2. Create a new app in Heroku
+3. In the settings tab, set the [Environment Variables](#Environment-Variables) detialed above
+4. From the Heroku dashboard of your application, click on "Deploy" > "Deployment method" and select GitHub.
+5. Connect to the appropriate GitHub repository.
+6. Set the project up for automatic deploys it will deploy once the master branch is updated.
+    - OR in the manual deployment section, select the master branch and click 'Deploy Branch'.
+7. You can also select the option for 'Wait for CI to pass before deploy', which will ensure the Travis-CI build is successful prior to deployment.
+8. The site should be successfully deployed.
+
+If you do not set the project up for automatic deploys, you are also able to push updates from your command line.
+- login to Heroku using the command `heroku login` and complete your user details.
+- Push to Heroku using the command  `git push heroku master`.
+
 ### Contributions
+
+1. If you wish to implement changes to the code, I would recommend creating a separate branch, as this will keep the original master branch as a backup if the any issues arise.
+2. Use `git checkout -b <branchname>` to create a new branch.
+3. You can now edit the code accordingly.
+4. Once you have made changes, you need to stage the changes to be committed. You can do this as follows `git add <filename>` for a single file or `git add .` to stage all updated files.
+5. You then need to commit the changes. You can do this as follows `git commit -m "summary of updates"`.
+4. Use `git push origin <branchname>`to push the changes to the branch in the repository.
+5. You will need to merge these changes to the master branch in order for them to be deployed to the live site.
+6. To do this, switch to the new branch on GitHub using the branch selector dropdown menu.
+7. Create a new pull request, note the changes made in the comments section, and merge.
 
 [Back to Top](#overview)
 
@@ -412,26 +1052,32 @@ To fix this, I simply update the field name from email to email_address, and thi
 
 ### Content
 
-- [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
+1. [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) my fixture data was obtained from this dataset. I then pruned the data to extract the relevant data that was loaded into the project.
+2.  [TheBrandBoy](https://thebrandboy.com/make-up-company-about-us/) the content of my about us page was copied from this page, and the wording altered slightly for grammatical purposes.
+3. [mdbootstrap](https://mdbootstrap.com/snippets/jquery/mdbootstrap/949845#css-tab-view) the order progress section in my basket/checkout pages adapted the code found on this page (html & css).
+4. [Stackoverflow](https://stackoverflow.com/questions/19966417/prevent-typing-non-numeric-in-input-type-number) I adapted the solution on this page to stop non numeric characters being entered into the input box on the basket page.
 
 ### Images
-- [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) The Kaggle data set contains applicable URLs to all product images across the site.
-- [Pixabay](https://pixabay.com/) The category images were sourced from the Pixabay images library, and are all free for use, sharing or modification.
-
-
+* [kaggle](https://www.kaggle.com/oftomorrow/herokuapp-makeup-products) The Kaggle data set contains applicable URLs to all product images across the site.
+* [Pixabay](https://pixabay.com/) The category images were sourced from the Pixabay images library, and are all free for use, sharing or modification.
 
 ### Acknowledgements
 
-- [learndjango](https://learndjango.com/tutorials/django-slug-tutorial) + CI Tutor Miklos Sarosi for guidance on implementing slugs into my project to assist with 'bug #1 / #2'.
-- [Code Institute](https://codeinstitute.net/) For the excellent overall content & mini projects within the course.
-- [ckz8780 - Github](https://github.com/ckz8780/boutique_ado_v1) ckz8780's fantastic Django module produced for the Code Institute has been invaluable in providing guidance for creating key functionality across the project.
-- [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/advanced/) for guidance on the setUp and tearDown test methods to keep the database clean.
-- [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/tools/) for guidance on the available testing tools and required arguments to be passed etc.
-- [Stackoverflow](https://stackoverflow.com/questions/4424435/how-to-convert-a-django-queryset-to-a-list) for guidance on transforming data for assertQuerysetEqual tests.
+* [learndjango](https://learndjango.com/tutorials/django-slug-tutorial) + CI Tutor Miklos Sarosi for guidance on implementing slugs into my project to assist with 'bug #1 / #2'.
+* [Code Institute](https://codeinstitute.net/) For the excellent overall content & mini projects within the course.
+* [ckz8780 - Github](https://github.com/ckz8780/boutique_ado_v1) ckz8780's fantastic Django module produced for the Code Institute has been invaluable in providing guidance for creating key functionality across the project.
+* [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/advanced/) for guidance on the setUp and tearDown test methods to keep the database clean.
+* [Django documentation](https://docs.djangoproject.com/en/3.1/topics/testing/tools/) for guidance on the available testing tools and required arguments to be passed etc.
+* [Stackoverflow](https://stackoverflow.com/questions/4424435/how-to-convert-a-django-queryset-to-a-list) for guidance on transforming data for assertQuerysetEqual tests.
     - [w3schools](https://www.w3schools.com/python/python_lambda.asp) for explanation of Lambda function.
-- [Stackoverflow](https://stackoverflow.com/questions/2897609/how-can-i-unit-test-django-messages) for guidance on testing messages.
-- [Stackoverflow](https://stackoverflow.com/questions/1995615/how-can-i-format-a-decimal-to-always-show-2-decimal-places) for guidance on how to fix an issue when testing the order model which was preventing me from matching values due to floating point imprecision. 
-- CI Tutor Kevin, for his guidance on test unit testing for my basket. I was having an issue with passing the correct data in the post request (which was resulting in a 404 error), and Kevin pointed out that I had incorrectly named a parameter that I was passing as post data.
+* [Stackoverflow](https://stackoverflow.com/questions/2897609/how-can-i-unit-test-django-messages) for guidance on testing messages.
+* [Stackoverflow](https://stackoverflow.com/questions/1995615/how-can-i-format-a-decimal-to-always-show-2-decimal-places) for guidance on how to fix an issue when testing the order model which was preventing me from matching values due to floating point imprecision. 
+* CI Tutor Kevin, for his guidance on test unit testing for my basket. I was having an issue with passing the correct data in the post request (which was resulting in a 404 error), and Kevin pointed out that I had incorrectly named a parameter that I was passing as post data.
+* [Flickity](https://flickity.metafizzy.co/style) for guidance on the styling of the slider for my featured products.
+* [Medium](https://whizzoe.medium.com/in-5-mins-set-up-google-login-to-sign-up-users-on-django-e71d5c38f5d5) for guidance on how to set up the Google social login/ registration.
+* [Travis-CI](https://docs.travis-ci.com/user/languages/python/) for guidance on how to create the .yml file for my continuous integration builds + ensuring all tests pass before deployment to Heroku.
+* [Stackoverflow](https://stackoverflow.com/questions/39985774/custom-404-django-template) for guidance on creating custom error templates.
+* [Stackoverflow](https://stackoverflow.com/questions/3015319/settimeout-cleartimeout-problems) for guidance on the timeout issues I was having when updating the basket quantity, see bug/fix #4.
+* [w3schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) for guidance on how to update the input field so the default up/down arrows weren't displayed.
 
 [Back to Top](#overview)
-
