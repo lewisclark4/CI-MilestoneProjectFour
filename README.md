@@ -481,20 +481,46 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
     [x] I am able to delete a product colour via the product detail view.
     [x] I receive a warning to confirm I want to delete the record.    
 
+### Manaul Testing
+
+#### Common elements
+
+1. Navbar
+    [x] Hover over icons/ links and confirm highlighted as expected.
+    [x] Click the logo and confirm I am returned to the home/index page.
+    [x] Click each link in the navbar to confirm that it leads to the correct page.
+    [x] Confirm that when logged out the options "Register" and "Log in" are visible in the profile list.
+    [x] Confirm that when logged in the options and that "My Profile" and "Log out" are visible in the profile list.
+    [x] Click the "Products" link in the navbar, confirm that all categories are listed.
+    [x] Add an item to the basket, confirm that the basket total is updated.
+    [x] Remove all items from the basket & confirm the value returns to £0.00
+
+2. Footer
+    [x] Hover over icons/ links and confirm highlighted as expected.
+    [x] Click each link in the navbar to confirm that it leads to the correct page.
+    [x] Try to subscribe to newsletter without email & confirm a prompt to complete the field is received.
+    [x] Try to subscribe to newsletter with email & confirm a message is displayed to show that I have subscribed.
+    
+3. Featured items slider
+    [x] Check that the images slide by mouse click & slide and by finger swipe on mobile devices.
+    [x] Check the images slide by clicking/ pressing the arrow buttons to move through the images.
+    [x] Hover over the image and confirm the applicable javascript works as expected.
+    [x] Select the products & confirm I am redirected to the product detail page.
+
 ### General code validation
 
-* HTML validation with [W3C Markup Validation Service](https://validator.w3.org/). My code is fully compliant and there are no errors.
+[x] HTML validation with [W3C Markup Validation Service](https://validator.w3.org/). My code is fully compliant and there are no errors.
     - When completing the validation, I came across a few minor errors:
         - A couple of stray div end tags.
         - Missing alt attributes for a couple of images.
         - Some duplicate ids (see bug 3 for more detailed explanation)
 
-* CSS validation with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). My code is fully compliant and there are no errors.
+[x] CSS validation with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). My code is fully compliant and there are no errors.
 
-* Javascript validation with [JSHint](https://jshint.com/). My code is fully compliant. There are some warnings about the undefined $ variable being used (e.g given the use of jQuery in my js files).
+[x] Javascript validation with [JSHint](https://jshint.com/). My code is fully compliant. There are some warnings about the undefined $ variable being used (e.g given the use of jQuery in my js files).
     - When completing this validation, I also identified a few missing semi colons from my code.
 
-* Python validation with [PEP8 Online](http://pep8online.com/). My code is fully compliant, and there are no errors.
+[x] Python validation with [PEP8 Online](http://pep8online.com/). My code is fully compliant, and there are no errors.
     - When completing the validation, I came across a few minor errors:
         - Mostly, these were lines being too long. I have updated the majority of these. There are some instances where I have intentionally left the line 'too long', where it would the code too unreadable.
         - It identified a couple of cases where imports were not being used, so I have removed them.
@@ -576,9 +602,6 @@ To improve performance, Lighthouse suggests improvements such as resizing images
 At the moment, this isn't feasible across the site, as the majority images are all sourced externally (the category images & logo images could be resized to improve performance).
 
 However obtaining correctly sized images should be considered as a future enhancement should the site grow and have more content to be loaded. These images could be hosted in the S3 bucket.
-
-### Functional testing
-
 
 ### Bugs & Interesting Issues Encountered & Fixed
 
