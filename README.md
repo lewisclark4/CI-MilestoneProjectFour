@@ -100,56 +100,59 @@ The goals of the Hex Cosmetics business are:
 
 ### User stories
 
-#### Viewing and Navigation
+#### Viewing and sorting products
+
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| user    | view a list of available products | identify if there are any products I would like to purchase |
-|&checkmark;| user    | view individual products details | view the price, description and reviews |
-|&checkmark;      | user    | View the total of my cart at any time | see how much money I will spend on the products I want to purchase |
+|&checkmark;| user | view a list of available products | identify if there are any products I would like to purchase |
+|&checkmark;| user | view individual products details | view the price and description etc. |
+|&checkmark;| user | View the total of my basket at any time | see how much money I will spend on the products I want to purchase |
+|&checkmark;| user | sort the list of products| easily identify the best-priced products|
+|&checkmark;| user | search for a product by name or description | find a specific product I would like to purchase |
+|&checkmark;| user | easily see what I have searched for | quickly decide whether the product I want is available |
 
 #### Registration and User Accounts
-| Done | As a... | I would like to be able to... | So that I may...|
-| ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| user    | register for an account | have an account to be able to store my details for repeat use |
-|&checkmark;| user    | login or logout | to access my account and help ensure security of my personal information |
-|&checkmark;| user    | log into my account using my Google account | speed up the registration process |
-|&checkmark;| user    | recover my password | recover access to my account if I forget my credentials |
-|&checkmark;| user    | have a personalized user profile | view my order history and store delivery information for future use |
 
-#### Scrolling and Searching
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| user    | sort the list of products| easily identify the best-priced products|
-|&checkmark;| user    | search for a product by name or description. | find a specific product I would like to purchase |
-|&checkmark;| user    | easily see what I have searched for | quickly decide whether the product I want is available |
+|&checkmark;| user | register for an account | have an account to be able to store my details for repeat use |
+|&checkmark;| user | login or logout | to access my account and help ensure security of my personal information |
+|&checkmark;| user | log into my account via an existing social or email account | speed up the registration process |
+|&checkmark;| user | recover my password | recover access to my account if I forget my credentials |
+|&checkmark;| user | have a personalized user profile | view my order history and store delivery information for future use |
 
-#### Purchasing and Checkout
-| Done | As a... | I would like to be able to... | So that I may...|
-| ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| user    | easily add or remove the product I want to purchase | easily make changes to my purchase before checkout |
-|&checkmark;| user    | view items in my basket to be purchased  | confirm I am purchasing all the products I intend |
-|&checkmark;| user    | view the total cost of the products | identify the total cost of my purchase and all the products I wish to purchase |
-|&checkmark;| user    | enter my payment information  | check out and pay for the products I want to buy |
-|&checkmark;| user    | feel my personal and payment information is safe and secure | confidently provide the needed information to make a purchase |
-|&checkmark;| user    | view an order confirmation after checkout | verify that I have not made any errors and confirm that my order has been submitted |
-|&checkmark;| user    | receive an email confirmation after checking out | keep the confirmation of what I have purchased for my records |
+#### Basket and Checkout
 
-#### About HEX
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| user    | view a list of frequently asked questions | identify the answer to a query I may have|
-|&checkmark;| user    | view details about Hex Cosmetics | so that I can become more familiar with the brand |
-|&checkmark;| user    | subscribe to the Hex Cosmetics newsletter | so that I can keep up to date with the latest products & offers |
-|&checkmark;| user    | find Hex Cosmetics on social media | so that I can follow the brand and keep up to date with their latest content |
+|&checkmark;| user | easily add items to my basket | purchase the items |
+|&checkmark;| user | easily remove items from my basket | remove items that I no longer wish to purchase |
+|&checkmark;| user | easily edit the quantity of items in my basket | purchase the required number of products. |
+|&checkmark;| user | view items in my basket | confirm I am purchasing all the products I intend |
+|&checkmark;| user | view the total cost of the products | identify the total cost of my purchase and all the products I wish to purchase |
+|&checkmark;| user | enter my payment information  | check out and pay for the products I want to buy |
+|&checkmark;| user | feel my personal and payment information is safe and secure | confidently provide the needed information to make a purchase |
+|&checkmark;| user | view an order confirmation after checkout | verify that I have not made any errors and confirm that my order has been submitted |
+|&checkmark;| user | receive an email confirmation after checking out | keep the confirmation of what I have purchased for my records |
+
+#### Contact HEX
+
+| Done | As a... | I would like to be able to... | So that I may...|
+| ---- | ------- | ----------------------------- | --------------- |
+|&checkmark;| user | view a list of frequently asked questions | identify the answer to a query I may have|
+|&checkmark;| user | view details about Hex Cosmetics | become more familiar with the brand |
+|&checkmark;| user | subscribe to the Hex Cosmetics newsletter |  keep up to date with the latest products & offers |
+|&checkmark;| user | find Hex Cosmetics on social media |  follow the brand and keep up to date with their latest content |
+|&checkmark;| user | contact Hex Cosmetics | ask any questions that I have |
+
 
 #### Admin and Store Management
+
 | Done | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
-|&checkmark;| Admin   | add a product | add new products to the store |
-|&checkmark;| Admin   | edit a product | change product prices, descriptions, images and other criteria |
-|&checkmark;| Admin   | delete a product | remove products that are no longer for sale |
-|&checkmark;| Admin   | have access to an admin dashboard | manage products and orders |
-|&checkmark;| Admin   | view any previous order made | see what was purchased to ensure they get fulfilled |
+|&checkmark;| Admin | add a product | add new products to the store |
+|&checkmark;| Admin | edit a product | change product prices, descriptions, images and other criteria |
+|&checkmark;| Admin | delete a product | remove products that are no longer for sale |
 
 ### Wireframes
 
@@ -335,7 +338,148 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 
 ### Test User Stories
 
+#### Viewing and sorting products
 
+1. As a user, I would like to be able to view a list of available products, so that I may identify if there are any products I would like to purchase
+    [x] I am able to select to view all products via the site home/index page.
+    [x] I am able to select to view all products via the products list in the navbar.
+    [x] I am able to select to view all products in a specific category via the site home/index page.
+    [x] I am able to select to view all products in a specific category via the products list in the navbar.
+    [x] I am able to select to view all featured products via the products list in the navbar.
+
+2. As a user, I would like to be able to view individual products details, so that I may view the price and description etc.
+    [x] I am able to view the product name, brand, price and image when looking for products.
+    [x] I am able to select a product to view more information about that product.
+    [x] I am also able to view a description of a product, as well as all available colours for that product.
+
+3. As a user, I would like to be able to View the total of my basket at any time, so that I may see how much money I will spend on the products I want to purchase
+    [x] I am able to view the total value of my basket (excluding delivery charges) via the navbar on any page across the site.
+    [x] I am also able to navigate to my basket to see the total value (including delivery charges) via the navbar at any time.
+
+4. As a user, I would like to be able to sort the list of products, so that I may easily identify the best-priced products.
+    [x] I am able to sort all products by price high-to-low & low-to-high when viewing all products.
+    [x] I am able to sort all products by price high-to-low & low-to-high when viewing all products in a specific category.
+    [x] I am able to sort all products by price high-to-low & low-to-high when viewing all featured products.
+
+5. As a user, I would like to be able to search for a product by name or description, so that I may find a specific product I would like to purchase.
+    [x] I am able to search for a product based on product name.
+    [x] I am able to search for a product based on product description.
+    [x] I am able to search for a product based on brand name.
+    [x] I am able to search for a product based on product colour.
+
+6. As a user, I would like to be able to easily see what I have searched for, so that I may quickly decide whether the product I want is available.
+    [x] When I search for items, I am displayed a message to confirm the number of results for my search.
+    [x] If there are no results for my search, I am displayed a message to inform me. 
+
+#### Registration and User Accounts
+
+7. As a user, I would like to be able to register for an account, so that I may have an account to be able to store my details for repeat use.
+    [x] I am able to register for an account/ profile.
+    [x] I am able to record & update my personal details on the profile for repeat use.
+
+8. As a user, I would like to be able to login or logout, so that I may to access my account and help ensure security of my personal information.
+    [x] (if not logged in) I am able to log in to my account via the navbar at any time, or when checking out
+    [x] (if logged in) I am able to log out of my account at any time, via the navbar.
+
+9. As a user, I would like to be able to log into my account via an existing social or email account, so that I may speed up the registration process.
+    [x] I am able to register for/ log into an account via my Google account.
+    [x] I can select the button to log in via google, then select which google account I wish to use.
+    [x] I am then logged into my account.
+
+10. As a user, I would like to be able to recover my password, so that I may recover access to my account if I forget my credentials.
+    [x] I am able to navigate to the forgot password page, via the log in page.
+    [x] I am able to submit the email address for my account.
+    [x] I receive an email to my email address with a link to reset my password.
+    [x] I am able to set a new password by using the link sent to me on email.
+
+11. As a user, I would like to be able to have a personalized user profile, so that I may view my order history and store delivery information for future use.
+    [x] When I create an account, I view the details stored on my profile via the profile link on the navbar.
+    [x] I am able to save & amend my personal details (e.g. name, email address) via the profile.
+    [x] I am able to save & amend my delivery details (e.g. address) via the profile.
+    [x] I am able to save & amend my personal details (e.g. name, email address) when processing an order.
+    [x] I am able to save & amend my delivery details (e.g. address) when processing an order.
+
+#### Basket and Checkout
+
+12. As a user, I would like to be able to easily add items to my basket, so that I may purchase the items.
+    [x] I am able to add a product to my basket via a button when viewing a product's details.
+    [x] I am able to select the colour of the product I wish to add to my basket.
+    [x] I am able to select the quantity of the product I wish to add to my basket.
+
+13. As a user, I would like to be able to easily remove items from my basket, so that I may remove items that I no longer wish to purchase.
+    [x] I am able to navigate to my basket via the navbar.
+    [x] I am able to reduce the quantity of a product to 0, and the item is removed from my basket.
+    [x] I am also able to select the 'trash' icon and the product is removed from my basker
+
+14. As a user, I would like to be able to easily edit the quantity of items in my basket, so that I may purchase the required number of products.
+    [x] I am able increment the quantity in my basket by pressing the '+' button against the product I wish to increase the quantity.
+    [x] I am able decrement the quantity in my basket by pressing the '-' button against the product I wish to decrease the quantity.
+    [x] I am able to type in a numeric value for the number of items I wish to purchase.
+    [x] I am able to see my basket has been updated when I change the quantity of a product in my basket.  
+
+15. As a user, I would like to be able to easily view all items in my basket, so that I can check what products I have selected to purchase.
+    [x] I am able to see a list of products (colours, quantity & price) that have been added to my basket.
+
+16. As a user, I would like to be able to view the total cost of the products, so that I may identify the total cost of my purchase and all the products I wish to purchase.
+    [x] I am able to easily identify the cost of each product.
+    [x] I am able to easily identify line item total based on the quantity of product I wish to purchase.
+    [x] I am able to easily identify the total value of all items in my basket.
+    [x] I am able to easily identify if there is a delivery charge.
+    [x] I am able to easily identify the total value of the order (including delivery).
+
+17. As a user, I would like to be able to enter my payment information, so that I may check out and pay for the products I want to buy.
+    [x] I am able to enter my card details into a payment field.
+    [x] I am able to submit my payment and order.
+
+18. As a user, I would like to be able to feel my personal and payment information is safe and secure, so that I may confidently provide the needed information to make a purchase.
+    [x] I am able to see a payment form that is familiar in format to other reuptable companies.
+    [x] I receive clear errors if incorrect details are input into the field so I can trust there is validation occuring.
+
+19. As a user, I would like to be able to view an order confirmation after checkout, so that I may verify that I have not made any errors and confirm that my order has been submitted.
+    [x] I am taken to an order success page following a successful checkout which reconfirms details of my order.
+
+20. As a user, I would like to be able to receive an email confirmation after checking out, so that I may keep the confirmation of what I have purchased for my records.
+    [x] I receive an email following a successful checkout to confirm my order has been placed.
+
+#### Contact HEX
+21. As a user, I would like to be able to view a list of frequently asked questions, so that I may identify the answer to a query I may have.
+    [x] I am able to navigate (via the navbar or footer) to an FAQs page.
+    [x] I am able to see a list of FAQs that answer my query.
+
+22. As a user, I would like to be able to view details about Hex Cosmetics, so that I may so that I can become more familiar with the brand.
+    [x] I am able to navigate to the about page via the navbar,
+    [x] I am able to view details of the companies ethics and mission.
+
+23. As a user, I would like to be able to subscribe to the Hex Cosmetics newsletter, so that I may so that I can keep up to date with the latest products & offers.
+    [x] I am able to subscribe to the newsletter via the footer (available on every page).
+    [x] I receive a message to confirm that I am subscribed.
+
+24. As a user, I would like to be able to find Hex Cosmetics on social media, so that I may so that I can follow the brand and keep up to date with their latest content.
+    [x] I am able to navigate to the social accounts via the footer (available on every page), so that I can like, follow & subscribe.
+
+25. As a user, I would like to be able to contact Hex Cosmetics, so that I ask any questions that I have.
+    [x] I am able to navigate (via the navbar or footer) to the contact page.
+    [x] I am able to submit my query via a form on this page.
+    [x] I receive a message to confirm the message has been received and an indication of when to expect a reply.
+
+#### Administration
+
+26. As an admin, I would like to be able to add a product, so that I may add new products to the store.
+    [x] I am able to navigate to the add product page via the navbar.
+    [x] I am able to complete a form for all the required details to add a new product.
+    [x] I am then redirected to the add colour page, so I can add the required colours for the product.
+    [x] I receive an error message if any details are not completed correctly.
+
+27. As an admin, I would like to be able to edit a product, so that I may change product prices, descriptions, images and other criteria.
+    [x] I am able to edit a product via the product detail view.
+    [x] I am able to edit a product colour via the product detail view.
+    [x] I am able to view the details already recorded and update required fields.
+    [x] I receive an error message if any details are not completed correctly.
+
+28. As an admin, I would like to be able to delete a product, so that I may remove products that are no longer for sale.
+    [x] I am able to delete a product via the product detail view.
+    [x] I am able to delete a product colour via the product detail view.
+    [x] I receive a warning to confirm I want to delete the record.    
 
 ### General code validation
 
@@ -425,7 +569,7 @@ Lighthouse enabled me to identify various issues and implement change across my 
     - Addition of Meta description
     - Addition of aria labels or applicable elements
 
-- To revisit responsiveness across the site due to image resizing.
+- To revisit responsiveness across the site due to image resizing, while still not perfect, this helped improve the performance result.
 
 To improve performance, Lighthouse suggests improvements such as resizing images and/or serving these images in next gen formats.
 
@@ -438,7 +582,7 @@ However obtaining correctly sized images should be considered as a future enhanc
 
 ### Bugs & Interesting Issues Encountered & Fixed
 
-1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price/ rating). The issue I found was that when I initially created the function, the URL was only designed to pass in the sort type and direction, and thereore if I had already filtered the list to a specific category, using the sort order returned all products.
+1. The first interesting bug/ hurdle I encountered was when implementing the sorting filter (by price). The issue I found was that when I initially created the function, the URL was only designed to pass in the sort type and direction, and thereore if I had already filtered the list to a specific category, using the sort order returned all products.
     - To fix this I needed to pass in the category (if it had be selected). I utilised slugs to help acheive this (which also improved the URL naming) and passed these arguments into the all_products view.
 
 2. Following the implementation of slugs, I had the issue when attempting to view 'all products' as I was getting a NoReverseMatch error, in this case because a catgeory slug was not being passed into my href url against each product.
