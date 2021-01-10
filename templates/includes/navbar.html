@@ -33,13 +33,18 @@
                     Profile
                     </a>
                 <div class="dropdown-menu" aria-labelledby="navbarProfileDropdownMobile">
-                    {% if request.user.is_superuser %}
-                        <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
-                        <a class="dropdown-item" href="{% url 'add_colour' %}">Add Product Colour</a>
-                        <div class="dropdown-divider rose-rule"></div>
-                    {% endif %}
-                    <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
+                {% if request.user.is_superuser %}
+                    <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
+                    <a class="dropdown-item" href="{% url 'add_colour' %}">Add Product Colour</a>
+                    <div class="dropdown-divider rose-rule"></div>
                     <a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a>
+                {% else %}
+                    <a class="dropdown-item" href="{% url 'profile' %}">My Details</a>
+                    <a class="dropdown-item" href="{% url 'delivery' %}">Delivery Details</a>
+                    <a class="dropdown-item" href="{% url 'order_history' %}">Order History</a>
+                    <div class="dropdown-divider rose-rule"></div>
+                    <a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a>
+                {% endif %}
                 </div>
             </li>
             {% else %}
@@ -95,16 +100,25 @@
             <li class="nav-item dropdown d-none d-lg-block">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarProfileDropdownDesktop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="nav-icon fas fa-user-circle"></i>
-                    Profile
+                    {% if request.user.is_superuser %}
+                        Admin
+                    {% else %}
+                        Profile
+                    {% endif %}
                     </a>
                 <div class="dropdown-menu" aria-labelledby="navbarProfileDropdownDesktop">
-                    {% if request.user.is_superuser %}
-                        <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
-                        <a class="dropdown-item" href="{% url 'add_colour' %}">Add Product Colour</a>
-                        <div class="dropdown-divider rose-rule"></div>
-                    {% endif %}
-                    <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
+                {% if request.user.is_superuser %}
+                    <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
+                    <a class="dropdown-item" href="{% url 'add_colour' %}">Add Product Colour</a>
+                    <div class="dropdown-divider rose-rule"></div>
                     <a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a>
+                {% else %}
+                    <a class="dropdown-item" href="{% url 'profile' %}">My Details</a>
+                    <a class="dropdown-item" href="{% url 'delivery' %}">Delivery Details</a>
+                    <a class="dropdown-item" href="{% url 'order_history' %}">Order History</a>
+                    <div class="dropdown-divider rose-rule"></div>
+                    <a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a>
+                {% endif %}
                 </div>
             </li>
             {% else %}
