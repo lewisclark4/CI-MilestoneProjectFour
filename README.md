@@ -11,7 +11,7 @@
     - [Wireframes](#Wireframes)
 4. [Technologies and Tools](#technologies-and-tools)
 5. [Features](#features)
-    -[Future Features](#future-features-to-implement)
+    - [Future Features](#future-features-to-implement)
 6. [Testing](#testing)
     - [User Story Testing](#test-user-stories)
     - [Manual Testing](#manual-testing)
