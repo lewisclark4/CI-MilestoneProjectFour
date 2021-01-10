@@ -341,279 +341,285 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 #### Viewing and sorting products
 
 1. As a user, I would like to be able to view a list of available products, so that I may identify if there are any products I would like to purchase
-    [x] I am able to select to view all products via the site home/index page.
-    [x] I am able to select to view all products via the products list in the navbar.
-    [x] I am able to select to view all products in a specific category via the site home/index page.
-    [x] I am able to select to view all products in a specific category via the products list in the navbar.
-    [x] I am able to select to view all featured products via the products list in the navbar.
+- [x] I am able to select to view all products via the site home/index page.
+- [x] I am able to select to view all products via the products list in the navbar.
+- [x] I am able to select to view all products in a specific category via the site home/index page.
+- [x] I am able to select to view all products in a specific category via the products list in the navbar.
+- [x] I am able to select to view all featured products via the products list in the navbar.
 
 2. As a user, I would like to be able to view individual products details, so that I may view the price and description etc.
-    [x] I am able to view the product name, brand, price and image when looking for products.
-    [x] I am able to select a product to view more information about that product.
-    [x] I am also able to view a description of a product, as well as all available colours for that product.
+- [x] I am able to view the product name, brand, price and image when looking for products.
+- [x] I am able to select a product to view more information about that product.
+- [x] I am also able to view a description of a product, as well as all available colours for that product.
 
 3. As a user, I would like to be able to View the total of my basket at any time, so that I may see how much money I will spend on the products I want to purchase
-    [x] I am able to view the total value of my basket (excluding delivery charges) via the navbar on any page across the site.
-    [x] I am also able to navigate to my basket to see the total value (including delivery charges) via the navbar at any time.
+- [x] I am able to view the total value of my basket (excluding delivery charges) via the navbar on any page across the site.
+- [x] I am also able to navigate to my basket to see the total value (including delivery charges) via the navbar at any time.
 
 4. As a user, I would like to be able to sort the list of products, so that I may easily identify the best-priced products.
-    [x] I am able to sort all products by price high-to-low & low-to-high when viewing all products.
-    [x] I am able to sort all products by price high-to-low & low-to-high when viewing all products in a specific category.
-    [x] I am able to sort all products by price high-to-low & low-to-high when viewing all featured products.
+- [x] I am able to sort all products by price high-to-low & low-to-high when viewing all products.
+- [x] I am able to sort all products by price high-to-low & low-to-high when viewing all products in a specific category.
+- [x] I am able to sort all products by price high-to-low & low-to-high when viewing all featured products.
 
 5. As a user, I would like to be able to search for a product by name or description, so that I may find a specific product I would like to purchase.
-    [x] I am able to search for a product based on product name.
-    [x] I am able to search for a product based on product description.
-    [x] I am able to search for a product based on brand name.
-    [x] I am able to search for a product based on product colour.
+- [x] I am able to search for a product based on product name.
+- [x] I am able to search for a product based on product description.
+- [x] I am able to search for a product based on brand name.
+- [x] I am able to search for a product based on product colour.
 
 6. As a user, I would like to be able to easily see what I have searched for, so that I may quickly decide whether the product I want is available.
-    [x] When I search for items, I am displayed a message to confirm the number of results for my search.
-    [x] If there are no results for my search, I am displayed a message to inform me. 
+- [x] When I search for items, I am displayed a message to confirm the number of results for my search.
+- [x] If there are no results for my search, I am displayed a message to inform me. 
 
 #### Registration and User Accounts
 
 7. As a user, I would like to be able to register for an account, so that I may have an account to be able to store my details for repeat use.
-    [x] I am able to register for an account/ profile.
-    [x] I am able to record & update my personal details on the profile for repeat use.
+- [x] I am able to register for an account/ profile.
+- [x] I am able to record & update my personal details on the profile for repeat use.
 
 8. As a user, I would like to be able to login or logout, so that I may to access my account and help ensure security of my personal information.
-    [x] (if not logged in) I am able to log in to my account via the navbar at any time, or when checking out
-    [x] (if logged in) I am able to log out of my account at any time, via the navbar.
+- [x] (if not logged in) I am able to log in to my account via the navbar at any time, or when checking out
+- [x] (if logged in) I am able to log out of my account at any time, via the navbar.
 
 9. As a user, I would like to be able to log into my account via an existing social or email account, so that I may speed up the registration process.
-    [x] I am able to register for/ log into an account via my Google account.
-    [x] I can select the button to log in via google, then select which google account I wish to use.
-    [x] I am then logged into my account.
+- [x] I am able to register for/ log into an account via my Google account.
+- [x] I can select the button to log in via google, then select which google account I wish to use.
+- [x] I am then logged into my account.
 
 10. As a user, I would like to be able to recover my password, so that I may recover access to my account if I forget my credentials.
-    [x] I am able to navigate to the forgot password page, via the log in page.
-    [x] I am able to submit the email address for my account.
-    [x] I receive an email to my email address with a link to reset my password.
-    [x] I am able to set a new password by using the link sent to me on email.
+- [x] I am able to navigate to the forgot password page, via the log in page.
+- [x] I am able to submit the email address for my account.
+- [x] I receive an email to my email address with a link to reset my password.
+- [x] I am able to set a new password by using the link sent to me on email.
 
 11. As a user, I would like to be able to have a personalized user profile, so that I may view my order history and store delivery information for future use.
-    [x] When I create an account, I view the details stored on my profile via the profile link on the navbar.
-    [x] I am able to save & amend my personal details (e.g. name, email address) via the profile.
-    [x] I am able to save & amend my delivery details (e.g. address) via the profile.
-    [x] I am able to save & amend my personal details (e.g. name, email address) when processing an order.
-    [x] I am able to save & amend my delivery details (e.g. address) when processing an order.
+- [x] When I create an account, I view the details stored on my profile via the profile link on the navbar.
+- [x] I am able to save & amend my personal details (e.g. name, email address) via the profile.
+- [x] I am able to save & amend my delivery details (e.g. address) via the profile.
+- [x] I am able to save & amend my personal details (e.g. name, email address) when processing an order.
+- [x] I am able to save & amend my delivery details (e.g. address) when processing an order.
 
 #### Basket and Checkout
 
 12. As a user, I would like to be able to easily add items to my basket, so that I may purchase the items.
-    [x] I am able to add a product to my basket via a button when viewing a product's details.
-    [x] I am able to select the colour of the product I wish to add to my basket.
-    [x] I am able to select the quantity of the product I wish to add to my basket.
+- [x] I am able to add a product to my basket via a button when viewing a product's details.
+- [x] I am able to select the colour of the product I wish to add to my basket.
+- [x] I am able to select the quantity of the product I wish to add to my basket.
 
 13. As a user, I would like to be able to easily remove items from my basket, so that I may remove items that I no longer wish to purchase.
-    [x] I am able to navigate to my basket via the navbar.
-    [x] I am able to reduce the quantity of a product to 0, and the item is removed from my basket.
-    [x] I am also able to select the 'trash' icon and the product is removed from my basker
+- [x] I am able to navigate to my basket via the navbar.
+- [x] I am able to reduce the quantity of a product to 0, and the item is removed from my basket.
+- [x] I am also able to select the 'trash' icon and the product is removed from my basker
 
 14. As a user, I would like to be able to easily edit the quantity of items in my basket, so that I may purchase the required number of products.
-    [x] I am able increment the quantity in my basket by pressing the '+' button against the product I wish to increase the quantity.
-    [x] I am able decrement the quantity in my basket by pressing the '-' button against the product I wish to decrease the quantity.
-    [x] I am able to type in a numeric value for the number of items I wish to purchase.
-    [x] I am able to see my basket has been updated when I change the quantity of a product in my basket.  
+- [x] I am able increment the quantity in my basket by pressing the '+' button against the product I wish to increase the quantity.
+- [x] I am able decrement the quantity in my basket by pressing the '-' button against the product I wish to decrease the quantity.
+- [x] I am able to type in a numeric value for the number of items I wish to purchase.
+- [x] I am able to see my basket has been updated when I change the quantity of a product in my basket.  
 
 15. As a user, I would like to be able to easily view all items in my basket, so that I can check what products I have selected to purchase.
-    [x] I am able to see a list of products (colours, quantity & price) that have been added to my basket.
+- [x] I am able to see a list of products (colours, quantity & price) that have been added to my basket.
 
 16. As a user, I would like to be able to view the total cost of the products, so that I may identify the total cost of my purchase and all the products I wish to purchase.
-    [x] I am able to easily identify the cost of each product.
-    [x] I am able to easily identify line item total based on the quantity of product I wish to purchase.
-    [x] I am able to easily identify the total value of all items in my basket.
-    [x] I am able to easily identify if there is a delivery charge.
-    [x] I am able to easily identify the total value of the order (including delivery).
+- [x] I am able to easily identify the cost of each product.
+- [x] I am able to easily identify line item total based on the quantity of product I wish to purchase.
+- [x] I am able to easily identify the total value of all items in my basket.
+- [x] I am able to easily identify if there is a delivery charge.
+- [x] I am able to easily identify the total value of the order (including delivery).
 
 17. As a user, I would like to be able to enter my payment information, so that I may check out and pay for the products I want to buy.
-    [x] I am able to enter my card details into a payment field.
-    [x] I am able to submit my payment and order.
+- [x] I am able to enter my card details into a payment field.
+- [x] I am able to submit my payment and order.
 
 18. As a user, I would like to be able to feel my personal and payment information is safe and secure, so that I may confidently provide the needed information to make a purchase.
-    [x] I am able to see a payment form that is familiar in format to other reuptable companies.
-    [x] I receive clear errors if incorrect details are input into the field so I can trust there is validation occuring.
+- [x] I am able to see a payment form that is familiar in format to other reuptable companies.
+- [x] I receive clear errors if incorrect details are input into the field so I can trust there is validation occuring.
 
 19. As a user, I would like to be able to view an order confirmation after checkout, so that I may verify that I have not made any errors and confirm that my order has been submitted.
-    [x] I am taken to an order success page following a successful checkout which reconfirms details of my order.
+- [x] I am taken to an order success page following a successful checkout which reconfirms details of my order.
 
 20. As a user, I would like to be able to receive an email confirmation after checking out, so that I may keep the confirmation of what I have purchased for my records.
-    [x] I receive an email following a successful checkout to confirm my order has been placed.
+- [x] I receive an email following a successful checkout to confirm my order has been placed.
 
 #### Contact HEX
 21. As a user, I would like to be able to view a list of frequently asked questions, so that I may identify the answer to a query I may have.
-    [x] I am able to navigate (via the navbar or footer) to an FAQs page.
-    [x] I am able to see a list of FAQs that answer my query.
+- [x] I am able to navigate (via the navbar or footer) to an FAQs page.
+- [x] I am able to see a list of FAQs that answer my query.
 
 22. As a user, I would like to be able to view details about Hex Cosmetics, so that I may so that I can become more familiar with the brand.
-    [x] I am able to navigate to the about page via the navbar,
-    [x] I am able to view details of the companies ethics and mission.
+- [x] I am able to navigate to the about page via the navbar,
+- [x] I am able to view details of the companies ethics and mission.
 
 23. As a user, I would like to be able to subscribe to the Hex Cosmetics newsletter, so that I may so that I can keep up to date with the latest products & offers.
-    [x] I am able to subscribe to the newsletter via the footer (available on every page).
-    [x] I receive a message to confirm that I am subscribed.
+- [x] I am able to subscribe to the newsletter via the footer (available on every page).
+- [x] I receive a message to confirm that I am subscribed.
 
 24. As a user, I would like to be able to find Hex Cosmetics on social media, so that I may so that I can follow the brand and keep up to date with their latest content.
-    [x] I am able to navigate to the social accounts via the footer (available on every page), so that I can like, follow & subscribe.
+- [x] I am able to navigate to the social accounts via the footer (available on every page), so that I can like, follow & subscribe.
 
 25. As a user, I would like to be able to contact Hex Cosmetics, so that I ask any questions that I have.
-    [x] I am able to navigate (via the navbar or footer) to the contact page.
-    [x] I am able to submit my query via a form on this page.
-    [x] I receive a message to confirm the message has been received and an indication of when to expect a reply.
+- [x] I am able to navigate (via the navbar or footer) to the contact page.
+- [x] I am able to submit my query via a form on this page.
+- [x] I receive a message to confirm the message has been received and an indication of when to expect a reply.
 
 #### Administration
 
 26. As an admin, I would like to be able to add a product, so that I may add new products to the store.
-    [x] I am able to navigate to the add product page via the navbar.
-    [x] I am able to complete a form for all the required details to add a new product.
-    [x] I am then redirected to the add colour page, so I can add the required colours for the product.
-    [x] I receive an error message if any details are not completed correctly.
+- [x] I am able to navigate to the add product page via the navbar.
+- [x] I am able to complete a form for all the required details to add a new product.
+- [x] I am then redirected to the add colour page, so I can add the required colours for the product.
+- [x] I receive an error message if any details are not completed correctly.
 
 27. As an admin, I would like to be able to edit a product, so that I may change product prices, descriptions, images and other criteria.
-    [x] I am able to edit a product via the product detail view.
-    [x] I am able to edit a product colour via the product detail view.
-    [x] I am able to view the details already recorded and update required fields.
-    [x] I receive an error message if any details are not completed correctly.
+- [x] I am able to edit a product via the product detail view.
+- [x] I am able to edit a product colour via the product detail view.
+- [x] I am able to view the details already recorded and update required fields.
+- [x] I receive an error message if any details are not completed correctly.
 
 28. As an admin, I would like to be able to delete a product, so that I may remove products that are no longer for sale.
-    [x] I am able to delete a product via the product detail view.
-    [x] I am able to delete a product colour via the product detail view.
-    [x] I receive a warning to confirm I want to delete the record.    
+- [x] I am able to delete a product via the product detail view.
+- [x] I am able to delete a product colour via the product detail view.
+- [x] I receive a warning to confirm I want to delete the record.    
 
 ### Manaul Testing
+
+#### General
+
+- [x] Use of Google DevTools to identify any console errors.
+- [x] Constant iterations of bootstrap grid reviews to ensure responsiveness across the site (also with Google DevTools)
+- [x] Repeat checks to make sure all css & js effects worked as expected.
 
 #### Common elements
 
 1. Navbar
-    [x] Hover over icons/ links and confirm highlighted as expected.
-    [x] Click the logo and confirm I am returned to the home/index page.
-    [x] Click each link in the navbar to confirm that it leads to the correct page.
-    [x] Confirm that when logged out the options "Register" and "Log in" are visible in the profile list.
-    [x] Confirm that when logged in the options and that "My Profile" and "Log out" are visible in the profile list.
-    [x] Click the "Products" link in the navbar, confirm that all categories are listed.
-    [x] Add an item to the basket, confirm that the basket total is updated.
-    [x] Remove all items from the basket & confirm the value returns to £0.00
+- [x] Hover over icons/ links and confirm highlighted as expected.
+- [x] Click the logo and confirm I am returned to the home/index page.
+- [x] Click each link in the navbar to confirm that it leads to the correct page.
+- [x] Confirm that when logged out the options "Register" and "Log in" are visible in the profile list.
+- [x] Confirm that when logged in the options and that "My Profile" and "Log out" are visible in the profile list.
+- [x] Click the "Products" link in the navbar, confirm that all categories are listed.
+- [x] Add an item to the basket, confirm that the basket total is updated.
+- [x] Remove all items from the basket & confirm the value returns to £0.00
 
 2. Footer
-    [x] Hover over icons/ links and confirm highlighted as expected.
-    [x] Click each link in the navbar to confirm that it leads to the correct page.
-    [x] Try to subscribe to newsletter without email & confirm a prompt to complete the field is received.
-    [x] Try to subscribe to newsletter with email & confirm a message is displayed to show that I have subscribed.
+- [x] Hover over icons/ links and confirm highlighted as expected.
+- [x] Click each link in the navbar to confirm that it leads to the correct page.
+- [x] Try to subscribe to newsletter without email & confirm a prompt to complete the field is received.
+- [x] Try to subscribe to newsletter with email & confirm a message is displayed to show that I have subscribed.
     
 3. Featured items slider
-    [x] Check that the images slide by mouse click & slide and by finger swipe on mobile devices.
-    [x] Check the images slide by clicking/ pressing the arrow buttons to move through the images.
-    [x] Hover over the images and confirm the applicable javascript works as expected.
-    [x] Select the products & confirm I am redirected to the product detail page.
+- [x] Check that the images slide by mouse click & slide and by finger swipe on mobile devices.
+- [x] Check the images slide by clicking/ pressing the arrow buttons to move through the images.
+- [x] Hover over the images and confirm the applicable javascript works as expected.
+- [x] Select the products & confirm I am redirected to the product detail page.
 
 #### Pages
 
 1. Home Page
-    [x] Click categories to confirm that it redirects to the correct category / view of products.
-    [x] Hover over the images and confirm the applicable javascript works as expected.
+- [x] Click categories to confirm that it redirects to the correct category / view of products.
+- [x] Hover over the images and confirm the applicable javascript works as expected.
 
 2. All Product
-    [x] Click products link to confirm that it redirects to the correct product detail view.
-    [x] Test the 'sort by' button and confirm products are ordered correctly based on selection.
-    [x] Hover over the images and confirm the applicable javascript works as expected.
+- [x] Click products link to confirm that it redirects to the correct product detail view.
+- [x] Test the 'sort by' button and confirm products are ordered correctly based on selection.
+- [x] Hover over the images and confirm the applicable javascript works as expected.
 
 3. Category product view.
-    [x] Same tests as per 2.
-    [x] Test that the breadcrumb allows me to return to the all products view.
+- [x] Same tests as per 2.
+- [x] Test that the breadcrumb allows me to return to the all products view.
 
 3.  Product detail view.
-    [x] Test that I am able to collapse the description accordion.
-    [x] Check that only the colours applicable to the product can be selected.
-    [x] Test that the product increment decrement buttons change the value as expected.
-    [x] Test that I am unable to input a non-numeric character into the quantity input box. 
-    [x] Test that the breadcrumb allows me to return to the all products view or the applicable category view.
-    [x] Test that the category tag returns me to the applicable category view.
-    [x] Test that I can add the product, colour & quantity to the basket.
-    [x] Test that I receive a message to confirm the product has been added to the basket.
-    [x] Test that the product maintenance accordion is only visible if logged in as superuser.
-    [x] Test that the superuser can show the accordion body.
-    [x] Test that the superuser can navigate to the edit product page.
-    [x] Test that the superuser can navigate to the edit product colour page.
-    [x] Test that the superuser is displayed a warning modal if attempting to delete a product.
-    [x] Test that the superuser is displayed a warning modal if attempting to delete a product colour.
-    [x] Test that the superuser can delete the product.
-    [x] Test that the superuser can delete a product colour.
+- [x] Test that I am able to collapse the description accordion.
+- [x] Check that only the colours applicable to the product can be selected.
+- [x] Test that the product increment decrement buttons change the value as expected.
+- [x] Test that I am unable to input a non-numeric character into the quantity input box. 
+- [x] Test that the breadcrumb allows me to return to the all products view or the applicable category view.
+- [x] Test that the category tag returns me to the applicable category view.
+- [x] Test that I can add the product, colour & quantity to the basket.
+- [x] Test that I receive a message to confirm the product has been added to the basket.
+- [x] Test that the product maintenance accordion is only visible if logged in as superuser.
+- [x] Test that the superuser can show the accordion body.
+- [x] Test that the superuser can navigate to the edit product page.
+- [x] Test that the superuser can navigate to the edit product colour page.
+- [x] Test that the superuser is displayed a warning modal if attempting to delete a product.
+- [x] Test that the superuser is displayed a warning modal if attempting to delete a product colour.
+- [x] Test that the superuser can delete the product.
+- [x] Test that the superuser can delete a product colour.
 
 4. Edit Product / Product colours
-    [x] Test that the applicable product details are pre populated into the form.
-    [x] Test that I am able to update product detials.
-    [x] Test that if I cancel the edit, I am returned to the applicable product detail page.
+- [x] Test that the applicable product details are pre populated into the form.
+- [x] Test that I am able to update product detials.
+- [x] Test that if I cancel the edit, I am returned to the applicable product detail page.
 
 5. Add Product / Product colours
-    [x] Test that I am able to add a product.
-    [x] Test that I am redirected to add a product colour after adding a product.
-    [x] Test that I am returned to the products view if I select cancel on the add page.
+- [x] Test that I am able to add a product.
+- [x] Test that I am redirected to add a product colour after adding a product.
+- [x] Test that I am returned to the products view if I select cancel on the add page.
 
 6. Search
-    [x] Test that I am able to search for key words and be displayed appropriate results.
-    [x] Test that I can see how many results are found for my search.
-    [x] Test that I receive a message if no results are found.
+- [x] Test that I am able to search for key words and be displayed appropriate results.
+- [x] Test that I can see how many results are found for my search.
+- [x] Test that I receive a message if no results are found.
 
 7. Basket
-    [x] Test that all items added to my basket are present.
-    [x] Test that I can increase and decrease the quantity of a product using the '+' & '-' buttons.
-    [x] Test that I can type in the quantity of a product that I want.
-    [x] Test that I am unable to input a non-numeric character into the quantity input box. 
-    [x] Test that the basket is updated when I have finished updating the quantity.
-    [x] Test that items are removed from the basket if the quantity is changed to 0.
-    [x] Test that items are removed from the basket if the trash icon is selected.
-    [x] Test that the delivery charge is correct based on the value of items in the basket.
-    [x] Test that the total value of my order is correct based on the price of the items in my basket + delivery costs.
-    [x] Test that I can progress to the checkout page.
-    [x] Test that I can return to the products view.
-    [x] Test that the order progress bar highlights that I'm currently at the basket stage.
+- [x] Test that all items added to my basket are present.
+- [x] Test that I can increase and decrease the quantity of a product using the '+' & '-' buttons.
+- [x] Test that I can type in the quantity of a product that I want.
+- [x] Test that I am unable to input a non-numeric character into the quantity input box. 
+- [x] Test that the basket is updated when I have finished updating the quantity.
+- [x] Test that items are removed from the basket if the quantity is changed to 0.
+- [x] Test that items are removed from the basket if the trash icon is selected.
+- [x] Test that the delivery charge is correct based on the value of items in the basket.
+- [x] Test that the total value of my order is correct based on the price of the items in my basket + delivery costs.
+- [x] Test that I can progress to the checkout page.
+- [x] Test that I can return to the products view.
+- [x] Test that the order progress bar highlights that I'm currently at the basket stage.
 
 8. Checkout
-    [x] Test that all items added to my basket are displayed in the order summary.
-    [x] Test that the total value of my order is correct based on the price of the items in my basket + delivery costs.
-    [x] Test that my personal information is prepopulated into the order form, if it has previously been saved.
-    [x] Test that I am able to return to my basket to adjust my order.
-    [x] Test that I am add my details & card details and submit my order.
-    [x] Test that I am redirected to the confirmation page after a successful checkout.
-    [x] Test that I am able to save the order form details to my profile for future use.
-    [x] Test that my order form details are not saved if I do not select that option.
-    [x] Test that the order progress bar highlights that I've progressed past the basket and now at the payment stage.
+- [x] Test that all items added to my basket are displayed in the order summary.
+- [x] Test that the total value of my order is correct based on the price of the items in my basket + delivery costs.
+- [x] Test that my personal information is prepopulated into the order form, if it has previously been saved.
+- [x] Test that I am able to return to my basket to adjust my order.
+- [x] Test that I am add my details & card details and submit my order.
+- [x] Test that I am redirected to the confirmation page after a successful checkout.
+- [x] Test that I am able to save the order form details to my profile for future use.
+- [x] Test that my order form details are not saved if I do not select that option.
+- [x] Test that the order progress bar highlights that I've progressed past the basket and now at the payment stage.
 
 9. Checkout success
-    [x] Test that the order number is displayed.
-    [x] Test that an email is sent to confirm the order has been placed.
-    [x] Test that the appropriate order summary replayed.
-    [x] Test that the correct delivery details are displayed.
-    [x] Test that the order progress bar highlights that I am at the confirmation stage.
-    [x] Test that I can return to the products view.
+- [x] Test that the order number is displayed.
+- [x] Test that an email is sent to confirm the order has been placed.
+- [x] Test that the appropriate order summary replayed.
+- [x] Test that the correct delivery details are displayed.
+- [x] Test that the order progress bar highlights that I am at the confirmation stage.
+- [x] Test that I can return to the products view.
 
 10. Contact
-    [x] Test that I can view the contact pages
-    [x] Test that I can toggle the accordion on the FAQs pag to view the answers to relevant questions.
-    [x] Test that I can submit a query via the contact form.
-    [x] Test that I receive a message confirming that the query has been received.
+- [x] Test that I can view the contact pages
+- [x] Test that I can toggle the accordion on the FAQs pag to view the answers to relevant questions.
+- [x] Test that I can submit a query via the contact form.
+- [x] Test that I receive a message confirming that the query has been received.
 
 11. Profile
-    [x] Test that I am able to view the details recorded on my profile (name, email, phone number, address).
-    [x] Test that I am able to update these details.
-    [x] Test that I am able to view my order history and view the details of those order.
-    [x] Test that I am able to update my password.
+- [x] Test that I am able to view the details recorded on my profile (name, email, phone number, address).
+- [x] Test that I am able to update these details.
+- [x] Test that I am able to view my order history and view the details of those order.
+- [x] Test that I am able to update my password.
 
 ### General code validation
 
-[x] HTML validation with [W3C Markup Validation Service](https://validator.w3.org/). My code is fully compliant and there are no errors.
+- [x] HTML validation with [W3C Markup Validation Service](https://validator.w3.org/). My code is fully compliant and there are no errors.
     - When completing the validation, I came across a few minor errors:
         - A couple of stray div end tags.
         - Missing alt attributes for a couple of images.
         - Some duplicate ids (see bug 3 for more detailed explanation)
 
-[x] CSS validation with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). My code is fully compliant and there are no errors.
+- [x] CSS validation with [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). My code is fully compliant and there are no errors.
 
-[x] Javascript validation with [JSHint](https://jshint.com/). My code is fully compliant. There are some warnings about the undefined $ variable being used (e.g given the use of jQuery in my js files).
+- [x] Javascript validation with [JSHint](https://jshint.com/). My code is fully compliant. There are some warnings about the undefined $ variable being used (e.g given the use of jQuery in my js files).
     - When completing this validation, I also identified a few missing semi colons from my code.
 
-[x] Python validation with [PEP8 Online](http://pep8online.com/). My code is fully compliant, and there are no errors.
+- [x] Python validation with [PEP8 Online](http://pep8online.com/). My code is fully compliant, and there are no errors.
     - When completing the validation, I came across a few minor errors:
         - Mostly, these were lines being too long. I have updated the majority of these. There are some instances where I have intentionally left the line 'too long', where it would the code too unreadable.
         - It identified a couple of cases where imports were not being used, so I have removed them.
