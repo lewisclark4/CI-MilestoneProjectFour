@@ -330,7 +330,168 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 
 ## Features
 
-### Future Features to implement
+### Navbar
+
+The navbar (collapsable and reordered on smaller devices) can be used to navigate to different areas of the site depending on user interaction.
+
+The navbar is fixed so that it can be selected by the user at all times for improved UX/ site navigation.
+
+The links in the navbar are highlighted when hovered over, to give feedback to the user that they can interact with these links.
+
+The website logo also acts as a link back to the home page, as is standard expectation for users.
+
+The links displayed to the users change depending on whether the visitor is a registered user and in session.
+
+This removes the unnecesary links to login or register, and displays links to view their personal profile details, as well as log out if required.
+
+The navbar also displays the current value of a users basket, and this is also used to navigate to view the basket contents.
+
+The navbar also contains the search bar, to enable users to search for products based on keywords (product name, brand name, description or category).
+
+### Footer
+
+The footer displays links to helpful pages (About, FAQ, & Contact pages), as is fairly common convention across many websites.
+
+The footer also allows users to sign up to the newsletter. It was intentionally added to the footer so that it would be available across the site and increase usage.
+
+This could be used by the admin to utilise for targeted advertisement.
+
+Also as is common convention, links to social media pages can also be found in the footer. This can help increase online presence and be used for further marketing activities.
+
+Selectable icons & links in the footer should all have effects when hovered over, to give feedback to the user that they can interact with these links.
+
+### Featured items slider
+
+This slider is present on every page and it displays all products marked as featured in the products model.
+
+The slider is looped so when a user looks through all of the products, it will start again from the first product.
+
+This tool could be used to promote new products or best sellers etc. to increase sales across the site.
+
+### Search
+
+The search page displays all products that match the key words searched by a user.
+
+The search page will tell the user how many results have been found for their search.
+
+The products will be displayed as cards, as per the product views.
+
+### Home
+
+The home page has a large picture of the Hex Cosmetics logo, to try to reinforce the brand image.
+
+Users can then select to shop all products, or shop by a particular type of product.
+
+All categories are displayed in as cards, with an image of the type of product, and a banner which is labelled "Shop 'category'".
+
+When hovered over, the image, banner, & text is enlarged, and the text changes colour.
+
+This provides feedback to the user that they can interact and select the card.
+
+When a card is clicked, it will redirect the user to a product view for the applicable product type, displaying all relevant products.
+
+### Product views
+
+The product views contains a 'breadcrumbs' list at the top of the page, to improve navigation around the site.
+
+This allows users to return to the all products view if currently viewing a specific category.
+
+There is a sort button, which allows a user to select whether to view products with a price high-to-low, or low-to-high.
+
+All products are displayed in a card style list, and contain an image of the product, and the product name, brand & price.
+
+When a user hovers over the card, the image is enlarged, there is a shadow effect on the card, and some font changes colour.
+
+This provides feedback to the user that they can interact and select the card.
+
+When a card is clicked, it will redirect the user to the product detail of the selected product.
+
+### Product Details
+
+The product deatils view contains a 'breadcrumbs' list at the top of the page, to improve navigation around the site.
+
+This allows users to return to the all products view or a category view.
+
+This page expands on the product details already shown to the user.
+
+A product description is contained in an accordion so can be displayed or hidden by the user.
+
+There an a select list to enable users to select the colour of product that they wish to purchase.
+
+There is an input field (with '+' & '-' buttons) to allow a client to select how many items they would like.
+
+There is an add to basket button which will add the applicable product, colour & quantity to the basket.
+
+#### Product Maintenance
+
+In additon, superusers are able to edit or deleted products/ product colours via the product maintenance accordion on this page.
+
+The edit buttons will redirect the super user to the appropriate edit product (or product colour) form, which will be prepopulated will the current details recorded in the database.
+
+If a super user attempts to delete a product, they will be presented with a warning modal to confirm they want to delete the product first.
+
+### Basket
+
+There is an order progress bar which highlights that the user is at the first step of the checkout process.
+
+The items in the basket are then displayed in a tabular style format.
+
+The applicable product details are displayed (an image, product name, product colour & product price).
+
+The quantity the user has selected is also displayed, and can be updated as required.
+
+If a user changes the value to 0 the item is removed from the basket (there is also a trash icon, which will remove the item from the basket).
+
+If the user increases or decreases the quantity, the basket gets updates and a message is displayed to the client to confirm the change made. The basket total should update too.
+
+The line item total is displayed (product price * quantity).
+
+The total item costs is displayed (sum line items).
+
+The total delivery charge is displayed.
+
+The total cost is displayed (sum line items + delivery).
+
+You are able to navigate back to the products view, or proceed to the checkout page.
+
+### Checkout
+
+There is an order progress bar which highlights that the user is now at the checkout stage.
+
+There is an order for for a user to complete with their details & delivery details (prepopulated if already saved against the user profile).
+
+There is also an order summary displayed to highlight the items to be purchased + total value of the order.
+
+There is a stripe card element mounted to the page that a user can complete enter their card details.
+
+A user can then submit an order or return to update their basket.
+
+### Checkout success
+
+There is an order progress bar which highlights that the user is now at the confirmation stage.
+
+This page is just a final confirmation of the order that has been placed (e.g. products purchased, delivery address & order number)
+
+A user is able to return to the shop to view more products.
+
+### Contact
+
+#### About
+
+This page give a summary of the companies ethics and mission.
+
+#### FAQs
+
+This page displays an accordion with a list of the most common questions that might be asked, so that a user can easily find the answer they require.
+
+#### Contact Us
+
+This pages displayes a form that a user can submit with their name, email address & any message or question that they have.
+
+When the form is submitted then a message is displayed to the client to inform them the message was received and they will receive a response soon (assuming the form was valid).
+
+
+## Future Features to implement
 
 I believe the following are features that should be built in future releases.
 
@@ -346,13 +507,23 @@ It would need to ensure that a user cannot add more items to the basket than is 
 
 I think this would act as a cross between the orderLineItem model and the basket, to enable a product & colour to be recorded and persist across sessions.
 
+4. I would like to implement views for products that are on sale. 
+
+This would also require updates to the basket & checkout apps, as these currently use the product price to calculate order totals. 
+
 4. To improve brand exposure, I would like to implement a blog on the site, and have articles for all of the latest trends or items.
 
 5. Complete further unit testing to cover all Python code.
 
-6. The ability for a admin to mark orders as dispatched. This could also notify the user that their order has been dispatched.
+6. Improved Admin functionality, such as the ability for a admin to mark orders as dispatched. 
+
+This could also notify the user that their order has been dispatched.
 
 7. Ability for a user to unsubscribe from the newletter.
+
+8. Additional payment methods (e.g. paypal).
+
+
 
 
 [Back to Top](#overview)
@@ -388,7 +559,7 @@ I think this would act as a cross between the orderLineItem model and the basket
 - [x] I am able to search for a product based on product name.
 - [x] I am able to search for a product based on product description.
 - [x] I am able to search for a product based on brand name.
-- [x] I am able to search for a product based on product colour.
+- [x] I am able to search for a product based on product category.
 
 6. As a user, I would like to be able to easily see what I have searched for, so that I may quickly decide whether the product I want is available.
 - [x] When I search for items, I am displayed a message to confirm the number of results for my search.
