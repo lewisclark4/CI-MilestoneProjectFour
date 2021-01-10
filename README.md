@@ -330,7 +330,30 @@ There is also the use of green (success), orange (warning), red(error) & lightbl
 
 ## Features
 
-## Future Features to implement
+### Future Features to implement
+
+I believe the following are features that should be built in future releases.
+
+1. I think a boolean 'Active' field should be added to the products & colours models. This could allow products or colours to be removed from sale temporarily (or permanently without a full delete.)
+
+This would be important if products or colours become discontinued, as currently the order model is set to PROTECT on delete, which prevents a product/ colour being deleted if there has been a previous order.
+
+2. Currently there is no stock/ inventory management on the site. This should be implemented to prevent orders being made that cannot be fulfilled.
+
+It would need to ensure that a user cannot add more items to the basket than is currently available, and a user is also not able tp purchase items that are now out of stock.
+
+3. I would like to implement a wishlist, that a user can save their favourit products to.
+
+I think this would act as a cross between the orderLineItem model and the basket, to enable a product & colour to be recorded and persist across sessions.
+
+4. To improve brand exposure, I would like to implement a blog on the site, and have articles for all of the latest trends or items.
+
+5. Complete further unit testing to cover all Python code.
+
+6. The ability for a admin to mark orders as dispatched. This could also notify the user that their order has been dispatched.
+
+7. Ability for a user to unsubscribe from the newletter.
+
 
 [Back to Top](#overview)
 
