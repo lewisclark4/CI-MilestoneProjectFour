@@ -7,7 +7,8 @@ from django.db.models import Q
 def search_result(request):
     """
     Product name, brand name, category & description
-    are all queried for matches based on the search
+    are all queried for matches based on the search.
+    Message passed back to user if no results
     """
     products = None
     query = None

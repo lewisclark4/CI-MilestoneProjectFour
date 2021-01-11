@@ -3,13 +3,13 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product, Colour
 
-"""
-Context processor for the basket to allow basket
-to be available across all apps.
-"""
-
 
 def basket_contents(request):
+    """
+    Context processor for the basket to allow basket
+    to be available across all apps.
+    This processor also handles calculating delivery costs
+    """
 
     empty_basket = True
     basket_items = []

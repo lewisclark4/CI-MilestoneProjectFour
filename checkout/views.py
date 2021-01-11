@@ -15,6 +15,13 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    This view creates stripe payment intent metadata
+    to allow our webhook handler to identify whether
+    a user selects to 'save info' when placing an
+    order. This then allows us to update the user
+    profile where applicable.
+    """
     try:
         payment_intent_id = request.POST.get(
                                     'client_secret').split('_secret')[0]
@@ -34,6 +41,19 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    This view displays the order form & basket
+    so that a user can check their order, add
+    their delivery details and checkout.
+    User details are prepopulated
+    where known.
+    When a user posts the form, this view
+    will also create a stripe payment intent,
+    create the order & order line items.
+    The "checkout" boolean is used to identify
+    the order progress.
+    """
+
     stripe_public_key = settings.STRIPE_PUBLISHABLE_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -134,6 +154,14 @@ def checkout(request):
 
 
 def checkout_success(request, order_number):
+    """
+    This view displays details of a users order.
+    The view also updates the user profile if the
+    save-info box has been ticked.
+    The session basket is also cleared.
+    The "checkout success" boolean is used to
+    identify the order progress.
+    """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 

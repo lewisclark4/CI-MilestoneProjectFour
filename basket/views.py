@@ -9,7 +9,14 @@ def view_basket(request):
 
 
 def add_to_basket(request, product_id):
-    """Add products to the basket"""
+    """ This view enables adding products to the session.
+        The basket is passed the colour ID of a product
+        (as this is unique to a product).
+        The basket it passed the quanitity from the
+        input form on the product detail page.
+        The user is redirected back to the product
+        page, with a success message.
+    """
     product = get_object_or_404(Product, pk=product_id)
     colour_id = request.POST.get('colour')
     colour = get_object_or_404(Colour, pk=colour_id)
@@ -35,7 +42,11 @@ def add_to_basket(request, product_id):
 
 
 def update_basket(request, colour_id):
-    """updates products in the basket"""
+    """ This view enables updating session basket items.
+        Items are removed from the basket if the quantity is zero.
+        The basket is updated with the appropriate
+        quanitity if a numeric value other than 0
+    """
 
     colour = get_object_or_404(Colour, pk=colour_id)
     product = get_object_or_404(Product, pk=colour.product.id)
@@ -58,7 +69,7 @@ def update_basket(request, colour_id):
 
 
 def remove_from_basket(request, colour_id):
-    """Remove the product from the shopping basket"""
+    """This view enables removing session basket items."""
 
     colour = get_object_or_404(Colour, pk=colour_id)
     product = get_object_or_404(Product, pk=colour.product.id)

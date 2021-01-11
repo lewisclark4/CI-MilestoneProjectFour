@@ -8,7 +8,10 @@ from .forms import ProductForm, ColourForm
 def all_products(request, category_slug=None):
 
     """
-    To display all products, or products filter & sort dependent.
+    This view is used to display products
+    dependent on a users selection.
+    This view also enables sorting products
+    on price.
     """
     products = Product.objects.all()
     category = None
@@ -47,6 +50,12 @@ def all_products(request, category_slug=None):
 
 
 def featured_products(request):
+    """
+    This view is used to display
+    featured products.
+    This view also enables sorting products
+    on price.
+    """
 
     if 'sort' in request.GET:
         sortkey = request.GET['sort']
@@ -69,9 +78,10 @@ def featured_products(request):
 
 
 def product_detail(request, product_slug, category_slug):
-
     """
-    returns the product detail view with all of the products information
+    This view is used to return the product
+    detail view with all of the products'
+    information
     """
     category = Category.objects.get(slug=category_slug)
     product = Product.objects.get(
@@ -93,10 +103,15 @@ def product_detail(request, product_slug, category_slug):
 
 @login_required
 def add_product(request):
+    """
+    This view enables a superuser to add new products
+    and will validate the form before submission.
+    The view will prevent non authorised access.
+    """
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('home'))
 
@@ -122,12 +137,17 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
+    """
+    This view enables a superuser to update product information
+    and will validate the form before submission.
+    The view will prevent non authorised access.
+    """
 
     product = get_object_or_404(Product, pk=product_id)
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('product_detail',
                                 args=[product.category.slug,
@@ -157,12 +177,15 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-
+    """
+    This view enables an admin user to delete a product.
+    The view will prevent non authorised access.
+    """
     product = get_object_or_404(Product, pk=product_id)
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('product_detail',
                                 args=[product.category.slug,
@@ -175,9 +198,14 @@ def delete_product(request, product_id):
 
 @login_required
 def add_colour(request):
+    """
+    This view enables a superuser to add new products
+    colours and will validate the form before submission.
+    The view will prevent non authorised access.
+    """
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('products'))
 
@@ -203,12 +231,17 @@ def add_colour(request):
 
 @login_required
 def edit_colour(request, colour_id):
+    """
+    This view enables a superuser user to update product colours
+    and will validate the form before submission.
+    The view will prevent non authorised access.
+    """
     colour = get_object_or_404(Colour, pk=colour_id)
     product = get_object_or_404(Product, pk=colour.product.id)
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('product_detail',
                                 args=[product.category.slug,
@@ -241,13 +274,16 @@ def edit_colour(request, colour_id):
 
 @login_required
 def delete_colour(request, colour_id):
-
+    """
+    This view enables an admin user to delete a product colour.
+    The view will prevent non authorised access.
+    """
     colour = get_object_or_404(Colour, pk=colour_id)
     product = get_object_or_404(Product, pk=colour.product.id)
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('product_detail',
                                 args=[product.category.slug,
