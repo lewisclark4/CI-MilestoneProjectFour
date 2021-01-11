@@ -50,7 +50,7 @@ The following test users can be used as required.
 
 1. **Superuser**
 - Username: admin
-- Password
+- Password: admin
 
 2. **Standard user**
 - Username: testuser
