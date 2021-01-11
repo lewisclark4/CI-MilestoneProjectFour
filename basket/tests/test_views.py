@@ -38,7 +38,10 @@ class TestBasketViews(TestCase):
             'quantity': '1',
             'redirect_url': '/'
         }
-        response = self.client.post(reverse('add_to_basket', kwargs={'product_id': new_product.id}), data=post_data)
+        response = self.client.post(reverse(
+                                'add_to_basket',
+                                kwargs={'product_id': new_product.id}),
+                                data=post_data)
         messages = list(get_messages(response.wsgi_request))
         expected_message = (f"Successfully added {post_data['quantity']} "
                             + f"x {new_product.product_name} "
@@ -57,7 +60,10 @@ class TestBasketViews(TestCase):
             'quantity': '2',
             'redirect_url': '/'
         }
-        response_2 = self.client.post(reverse('add_to_basket', kwargs={'product_id': new_product.id}), data=post_data_2)
+        response_2 = self.client.post(reverse(
+                                    'add_to_basket',
+                                    kwargs={'product_id': new_product.id}),
+                                    data=post_data_2)
         messages_2 = list(get_messages(response_2.wsgi_request))
         expected_message_2 = (f"Successfully added {post_data_2['quantity']} "
                               + f"x {new_product.product_name} "
@@ -75,7 +81,10 @@ class TestBasketViews(TestCase):
             'quantity': '1',
             'redirect_url': '/'
         }
-        self.client.post(reverse('add_to_basket', kwargs={'product_id': new_product.id}), data=post_data)
+        self.client.post(reverse(
+                        'add_to_basket',
+                        kwargs={'product_id': new_product.id}),
+                        data=post_data)
 
         """
         Test amending quantity in the basket
@@ -84,7 +93,10 @@ class TestBasketViews(TestCase):
         post_data_2 = {
             'quantity': '2',
         }
-        response = self.client.post(reverse('update_basket', kwargs={'colour_id': new_colour.id}), data=post_data_2)
+        response = self.client.post(reverse(
+                                'update_basket',
+                                kwargs={'colour_id': new_colour.id}),
+                                data=post_data_2)
         messages = list(get_messages(response.wsgi_request))
         expected_message = ("Successfully updated "
                             + f"{new_product.product_name} "
@@ -101,10 +113,14 @@ class TestBasketViews(TestCase):
         post_data_3 = {
             'quantity': '0',
         }
-        response_2 = self.client.post(reverse('update_basket', kwargs={'colour_id': new_colour.id}), data=post_data_3)
+        response_2 = self.client.post(reverse(
+                                    'update_basket',
+                                    kwargs={'colour_id': new_colour.id}),
+                                    data=post_data_3)
         messages_2 = list(get_messages(response_2.wsgi_request))
-        expected_message_2 = (f"Successfully removed {new_product.product_name} "
-                              + f"({new_colour.colour}) from your basket")
+        expected_message_2 = ("Successfully removed"
+                              + f" {new_product.product_name}"
+                              + f" ({new_colour.colour}) from your basket")
 
         self.assertRedirects(response_2, '/basket/')
         self.assertEqual(messages_2[0].tags, 'success')
@@ -118,8 +134,13 @@ class TestBasketViews(TestCase):
             'quantity': '1',
             'redirect_url': '/'
         }
-        self.client.post(reverse('add_to_basket', kwargs={'product_id': new_product.id}), data=post_data)
-        response = self.client.post(reverse('remove_from_basket', kwargs={'colour_id': new_colour.id}))
+        self.client.post(reverse(
+                        'add_to_basket',
+                        kwargs={'product_id': new_product.id}),
+                        data=post_data)
+        response = self.client.post(reverse(
+                                'remove_from_basket',
+                                kwargs={'colour_id': new_colour.id}))
         messages = list(get_messages(response.wsgi_request))
         expected_message = (f"Successfully removed {new_product.product_name} "
                             + f"({new_colour.colour}) from your basket")

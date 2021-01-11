@@ -8,7 +8,7 @@ from .forms import UserProfileForm, UserForm
 @login_required
 def profile(request):
     """
-    This view will display the user form and 
+    This view will display the user form and
     display any user details already known
     """
 
@@ -33,7 +33,7 @@ def profile(request):
 @login_required
 def delivery_details(request):
     """
-    This view will display the user profile form and 
+    This view will display the user profile form and
     display any delivery details already known
     """
 

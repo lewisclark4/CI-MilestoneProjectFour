@@ -71,15 +71,17 @@ class TestProductsViews(TestCase):
         self.assertTemplateUsed(response, 'products/products.html')
 
     def test_feautred_product_sort_price_asc(self):
-        new_category = Category.objects.get(name='test_category')
-        response = self.client.get('/products/featured/?sort=price&direction=asc')
+        Category.objects.get(name='test_category')
+        response = self.client.get(
+                            '/products/featured/?sort=price&direction=asc')
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
 
     def test_feautred_product_sort_price_desc(self):
-        new_category = Category.objects.get(name='test_category')
-        response = self.client.get('/products/featured/?sort=price&direction=desc')
+        Category.objects.get(name='test_category')
+        response = self.client.get(
+                            '/products/featured/?sort=price&direction=desc')
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
