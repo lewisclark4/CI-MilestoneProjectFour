@@ -37,6 +37,16 @@ class StripeWH_Handler:
             status=200)
 
     def handle_payment_intent_succeeded(self, event):
+        """
+        This WH handler will check if an order has
+        been created by the checkout view.
+        If not, the handler will create the order
+        and applicable order line items.
+        This handler will also update the user
+        profile if the payment intent meta data
+        identifies that the save-info button
+        was selected.
+        """
 
         intent = event.data.object
         payment_intent_id = intent.id
