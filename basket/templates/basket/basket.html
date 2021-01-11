@@ -8,13 +8,13 @@
         <div class="row text-center">
             <div class="col-12">
                 {% if empty_basket %}
-                    <h3>Your basket is currently empty!</h3>
+                    <h1 class="mb-3">Your basket is currently empty!</h1>
                     <a href="{% url 'products' %}" class="btn submit-button">
                         <span>Continue shopping</span>
                         <span><i class="fas fa-chevron-right fa-xs ml-2"></i></span>
                     </a>
                 {% else %}
-                    <h3>Basket</h3>
+                    <h1>Basket</h1>
                 {% endif %}
             </div>
         </div>
@@ -46,7 +46,7 @@
             <div class="col-12 col-md-4">
                 <div class="row text-center">
                     <div class="col-12">
-                        <h5>{{ item.product.product_name }}</h5>
+                        <h5><strong>{{ item.product.product_name }}</strong></h5>
                     </div>
                 </div>
                 <div class="row text-center">

@@ -40,7 +40,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="product-details-container mx-auto">
-                    <h4>{{ product.product_name }}</h4>
+                    <h3><strong>{{ product.product_name }}</strong></h3>
                     {% if product.category %}
                     <p>
                         <a class="text-muted product-category-tag" href="{% url 'products_by_category' product.category.slug %}">
@@ -120,7 +120,7 @@
                 <div id="collapseProductMaintenance" class="collapse" aria-labelledby="productMaintenance" data-parent="#accordionProductMaintenance">
                     <div class="card-body">
                         <div class="row text-center">
-                            <h5>Edit or Remove Product</h5>
+                            <h6>Edit or Remove Product</h6>
                         </div>
                         <div class="row mb-3">
                             <div class="col-12 col-md-6">
@@ -132,7 +132,7 @@
                         </div>
                         <hr class="rose-rule">
                         <div class="row text-center">
-                            <h5>Edit or Remove Product Colours</h5>
+                            <h6>Edit or Remove Product Colours</h6>
                         </div>
                         <div class="row mb-3">              
                             {% for colour in colours %}   

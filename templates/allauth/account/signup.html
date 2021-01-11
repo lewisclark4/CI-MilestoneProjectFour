@@ -6,28 +6,24 @@
 {% block head_title %}{% trans "Register" %}{% endblock %}
 
 {% block inner_content %}
-<h2 class="text-center">{% trans "Register" %}</h2>
+<h1 class="text-center">{% trans "Register" %}</h1>
 <hr class="rose-rule">
-<div class="container">
-    <div class="row text-center">
-        <div class="col-10 offset-1 col-sm-8 offset-sm-2">
-            {% get_providers as socialaccount_providers %}
-            {% if socialaccount_providers %}
-                {% include "socialaccount/snippets/login_extra.html" %}
-                {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-            {% endif %}
-            
-            <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">log in</a>.{% endblocktrans %}</p>
-            <hr class="rose-rule">
-            <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-                {% csrf_token %}
-                {{ form|crispy }}
-                {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
-                <button type="submit" class="btn submit-button">{% trans "Register" %} &raquo;</button>
-            </form>
-        </div>      
-    </div>
-</div>
+
+{% get_providers as socialaccount_providers %}
+{% if socialaccount_providers %}
+    {% include "socialaccount/snippets/login_extra.html" %}
+    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+{% endif %}
+
+<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">log in</a>.{% endblocktrans %}</p>
+<hr class="rose-rule">
+<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    {% csrf_token %}
+    {{ form|crispy }}
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <button type="submit" class="btn submit-button">{% trans "Register" %} &raquo;</button>
+</form>
+ 
 {% endblock %}

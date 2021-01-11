@@ -9,9 +9,11 @@
                 <img class="home-image" src="{% static 'images/hex-logo-desktop.png' %}" alt="Hex Cosmetics Logo">
             </div>
             <div class="col-12 col-md-6 shop-all justify-content-center">
-                <a href="{% url 'products' %}">
-                    <span class="btn submit-button"><strong>Shop all products</strong></span>
-                </a>
+                <h1>
+                    <a href="{% url 'products' %}">
+                        <span class="btn submit-button"><strong>Shop all products</strong></span>
+                    </a>
+                </h1>
             </div>
         </div>
     </section>
@@ -20,14 +22,16 @@
         <div class="row text-center">
         {% for category in all_categories %}
             <div class="col-12 col-md-6 col-lg-3">
-                <a class="card category-card" href="{% url 'products_by_category' category.slug %}">
-                {% if category.image %}
-                    <img class="category-image" src="{{ MEDIA_URL }}{{ category.image }}" alt="Shop {{ category.friendly_name }}">
-                {% else %}
-                    <img class="category-image" src="{{ MEDIA_URL }}noimage.png" alt="Shop {{ category.friendly_name }}">
-                {% endif %}
-                    <span class="category-friendly-name"><strong>Shop {{ category.friendly_name }}</strong></span>
-                </a>
+                <h4>
+                    <a class="card category-card" href="{% url 'products_by_category' category.slug %}">
+                    {% if category.image %}
+                        <img class="category-image" src="{{ MEDIA_URL }}{{ category.image }}" alt="Shop {{ category.friendly_name }}">
+                    {% else %}
+                        <img class="category-image" src="{{ MEDIA_URL }}noimage.png" alt="Shop {{ category.friendly_name }}">
+                    {% endif %}
+                        <span class="category-friendly-name"><strong>Shop {{ category.friendly_name }}</strong></span>
+                    </a>
+                </h4>
             </div> 
         {% endfor %}
         </div>
