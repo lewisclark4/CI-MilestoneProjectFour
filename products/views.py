@@ -96,7 +96,7 @@ def add_product(request):
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('home'))
 
@@ -127,7 +127,7 @@ def edit_product(request, product_id):
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('product_detail',
                                 args=[product.category.slug,
@@ -162,7 +162,7 @@ def delete_product(request, product_id):
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('product_detail',
                                 args=[product.category.slug,
@@ -177,7 +177,7 @@ def delete_product(request, product_id):
 def add_colour(request):
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('products'))
 
@@ -208,7 +208,7 @@ def edit_colour(request, colour_id):
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('product_detail',
                                 args=[product.category.slug,
@@ -247,7 +247,7 @@ def delete_colour(request, colour_id):
 
     if not request.user.is_superuser:
         messages.error(
-            request, 'You do not have the correct permissions'
+            request, 'You do not have the correct permissions '
                      + 'to complete this action.')
         return redirect(reverse('product_detail',
                                 args=[product.category.slug,
