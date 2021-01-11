@@ -49,7 +49,7 @@ $(document).ready(function () {
     This also prevent multiple messages being displayed to a user re updated items.*/
 
     // Global variable that set when the update basket function runs on the basket page.
-    let submitTimer
+    let submitTimer;
 
     // Used to allow user to increase the value of the quantity input boxes on product detail & basket pages for improved UX
     $('.increment-qty').click(function incrementQty() {
@@ -63,7 +63,7 @@ $(document).ready(function () {
             input.value = maxVal;
         }
         if (submitTimer) {
-            stopTimer()
+            stopTimer();
         }
       updatebasket(productId);
     });
@@ -80,7 +80,7 @@ $(document).ready(function () {
             input.value = 1;
         }
         if (submitTimer) {
-            stopTimer()
+            stopTimer();
         }
         updatebasket(productId);
     });
@@ -98,7 +98,6 @@ $(document).ready(function () {
     $(".qty_input").keyup(function(){
         let productId = $(this).data('item_id');
         let input = document.getElementById(`id_qty_${productId}`);
-        let currentVal = parseInt(input.value);
         let minVal = parseInt(input.getAttribute("min"));
         let maxVal = parseInt(input.getAttribute("max"));
         if (input.value < minVal ) {
@@ -106,10 +105,10 @@ $(document).ready(function () {
         } else if (input.value > maxVal ){
             input.value = 99;
         } else {
-            input.value = input.value
+            input.value = input.value;
         }
         if (submitTimer) {
-            stopTimer()
+            stopTimer();
         }
         updatebasket(productId);
     });
