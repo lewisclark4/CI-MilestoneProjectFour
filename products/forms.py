@@ -3,7 +3,12 @@ from .models import Product, Category, Colour
 
 
 class ProductForm(forms.ModelForm):
-
+    """
+    This form will display all model fields
+    except slug as this is updated on save.
+    It will display category friendly names
+    for improved user experience
+    """
     class Meta:
         model = Product
         exclude = ('slug',)
