@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.com/lewisclark4/CI-MilestoneProjectFour.svg?branch=master)](https://travis-ci.org/lewisclark4/CI-MilestoneProjectFour) ![Django](https://img.shields.io/badge/Django-3.1-pink) ![Python](https://img.shields.io/badge/python-3.8-pink.svg) ![Code style](https://img.shields.io/badge/code%20style-pep8-success)
 
+My project is hosted on Heroku and can be found [here](https://hex-cosmetics.herokuapp.com/).
+
 ## Table of Contents
 1. [Overview](#overview)
 2. [Live Site](#live-site)
@@ -43,6 +45,16 @@ _NOTE: This is my final project in relation to my studies with Code Institute. T
 
 ## Live site
 My project is hosted on Heroku and can be found [here](https://hex-cosmetics.herokuapp.com/).
+
+The following test users can be used as required.
+
+1. **Superuser**
+- Username: admin
+- Password
+
+2. **Standard user**
+- Username: testuser
+- Password: verysecretpassword
 
 ## UX
 
